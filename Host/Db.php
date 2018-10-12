@@ -21,8 +21,8 @@ $dbName = "Test";
 $connection = new mysqli($dbServer, $dbUserName, $dbPassword, $dbName);
 echo"<pre>";
 print_r($connection);
-
-$query = "INSERT INTO Author (Name, LastName, Title, year) VALUES ('DDD', 'RRR', 'BookLLL', 1986)";
+$todayIs =   date("l");
+$query = "INSERT INTO Author (Name, LastName, Title, year) VALUES ('$todayIs', 'RRR', 'BookLLL', 1986)";
 
 print_r($query);
 
@@ -49,7 +49,7 @@ function insertId(){
     //INSERT INTO `Author` (`Name`, `LastName`, `Title`, `year`) VALUES ('Omid', 'Rad', 'Book', '3982');
     $var = date("l");
     //$query = "SELECT first_name, last_name, pen_name FROM Authors WHERE first_name = ?";
-    $quert = "INSERT INTO Author (Name, LastName, Title, year) VALUES ('Rad', 'Kian', 'Book', '3982')";
+    $quert = "INSERT INTO Author (Name, LastName, Title, year) VALUES ('$var', 'Kian', 'Book', '3982')";
 //    $statementObj = $this->myConnection->prepare($query);
 
   //  $statementObj->bind_param("s", "kianKian");
