@@ -1,0 +1,36 @@
+{
+    "style": {
+        "font_stack": "Helvetica, Arial, sans-serif",
+        "page_bg": "#e0e0e0",
+        "template_border": "#cbcbcb",
+        "preheader_text": "#ffffff",
+        "preheader_link": "#ffffff",
+        "preheader_bg": "#555555",
+        "logo_bg": "#ffffff",
+        "body_text": "#222222",
+        "body_link": "#777777",
+        "body_bg": "#0b0510",
+        "button_text": "#ffffff",
+        "button_bg": "#1890fb",
+        "footer_text": "#ffffff",
+        "footer_link": "#ffffff",
+        "footer_bg": "#555555",
+        "buttons": {
+            "square": {
+                "button_radius": "0px",
+                "arcsize": "0%"
+            },
+            "pill": {
+                "button_radius": "25px",
+                "arcsize": "63%"
+            },
+            "round": {
+                "button_radius": "5px",
+                "arcsize": "18%"
+            }
+        }
+    },
+    "config": {
+        "button_corners": "round"
+    }
+}

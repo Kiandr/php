@@ -1,0 +1,8 @@
+<h3>Find us on...</h3>
+<ul class="social-media-links">
+	<li><a href="https://www.facebook.com/" target="_blank" class="ico-facebook slideout-link" title="Find us on Facebook">Facebook</a></li>
+	<li><a href="https://plus.google.com/" target="_blank" class="ico-google slideout-link" title="Find us on Google+">Google+</a></li>
+	<li><a href="https://twitter.com/" target="_blank" class="ico-twitter slideout-link" title="Find us on Twitter">Twitter</a></li>
+	<li><a href="https://www.linkedin.com/" target="_blank" class="ico-linkedin slideout-link" title="Find us on LinkedIn">LinkedIn</a></li>
+	<li><a href="https://www.pinterest.com/" target="_blank" class="ico-pinterest slideout-link" title="Find us on Pinterest">Pinterest</a></li>
+</ul>

@@ -1,0 +1,1 @@
+ALTER TABLE `users_searches` CHANGE `frequency` `frequency` ENUM( 'daily', 'weekly', 'monthly' ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'weekly' ;

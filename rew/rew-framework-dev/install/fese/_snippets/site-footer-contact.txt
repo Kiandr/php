@@ -1,0 +1,9 @@
+<div class="foot-col">
+<h3>Company Name</h3>
+<p>
+223 Commercial Street<br>
+Nanaimo, BC, Canada <br>
+V9R 5G8<br>
+</p>
+</div>
+<div class="foot-col"><img src="/inc/skins/fese/img/rew-logo-white.png" alt="" class="site-foot-logos" style="opacity:.5;"/></div>

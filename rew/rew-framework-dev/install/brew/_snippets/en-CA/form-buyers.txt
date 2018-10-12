@@ -1,0 +1,191 @@
+<form action="?submit" method="post">
+
+	<input type="hidden" name="buyersform" value="true">
+
+    <input type="text" name="registration_type" style="display: none;" tabindex="-1" autocomplete="off">
+
+    <fieldset>
+    
+        <h4>Your Contact Information</h4>
+        
+        <div class="field x6">
+            <label>First Name <small class="required">*</small></label>
+            <input name="onc5khko" value="" required>
+        </div>
+        
+        <div class="field x6 last">
+            <label>Last Name <small class="required">*</small></label>
+            <input name="sk5tyelo" value="" required>
+        </div>
+        
+        <div class="field x12">
+            <label>Email <small class="required">*</small></label>
+            <input type="email" name="mi0moecs" value="" required>
+            <small>Please provide a valid email address.</small>
+        </div>
+        
+        <div class="field x6">
+            <label>Primary Phone</label>
+            <input type="tel" name="telephone" value="">
+        </div>
+        
+        <div class="field x6 last">
+            <label>Secondary Phone</label>
+            <input type="tel" name="fm-mobile" value="">
+        </div>
+        
+        <div class="field x6">
+            <label>Address <small class="required">*</small></label>
+            <input name="fm-addr" value="" required>
+        </div>
+        
+        <div class="field x6 last">
+            <label>City <small class="required">*</small></label>
+            <input name="fm-town" value="" required>
+        </div>
+        
+        <div class="field x6">
+            <label>Province</label>
+            <input name="fm-state" value="">
+        </div>
+        
+        <div class="field x6 last">
+            <label>Postal Code</label>
+            <input name="fm-postcode" value="">
+        </div>
+        
+    </fieldset>
+
+    <fieldset>
+    
+        <h4>Property Information</h4>
+        
+        <div class="field x6">
+            <label>Number of Bedrooms</label>
+            <select name="bedrooms">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7+">7+</option>
+            </select>
+        </div>
+        
+        <div class="field x6 last">
+            <label>Number of Bathrooms</label>
+            <select name="bathrooms">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7+">7+</option>
+            </select>
+        </div>
+        
+        <div class="field x6">
+            <label>Square Feet</label>
+            <select name="square_feet">
+                <option value="Less than 1000">&lt; 1000</option>
+                <option value="1000 - 1500">1000 - 1500</option>
+                <option value="1500 - 2000">1500 - 2000</option>
+                <option value="2000 - 2500">2000 - 2500</option>
+                <option value="2500 - 3000">2500 - 3000</option>
+                <option value="3000 - 3500">3000 - 3500</option>
+                <option value="3500 - 4000">3500 - 4000</option>
+                <option value="4000 - 4500">4000 - 4500</option>
+                <option value="4500 - 5000">4500 - 5000</option>
+                <option value="5000 - 6000">5000 - 6000</option>
+                <option value="6000 - 7000">6000 - 7000</option>
+                <option value="7000 - 8000">7000 - 8000</option>
+                <option value="8000 - 9000">8000 - 9000</option>
+                <option value="9000 - 10,000">9000 - 10,000</option>
+                <option value="10,000 +">10,000 +</option>
+            </select>
+        </div>
+        
+        <div class="field x6 last">
+            <label>Contact You By</label>
+            <select name="contact_you_how">
+                <option value="Email">Email</option>
+                <option value="Primary Phone">Primary Phone</option>
+                <option value="Secondary Phone">Secondary Phone</option>
+            </select>
+        </div>
+        
+        <div class="field x12">
+            <label>Price Range</label>
+            <select name="price_range">
+                <option value="Less than $300,000">Less than $300,000</option>
+                <option value="$300,000 - $500,000">$300,000 - $500,000</option>
+                <option value="$500,000 - $700,000">$500,000 - $700,000</option>
+                <option value="$700,000 - $900,000">$700,000 - $900,000</option>
+                <option value="$900,000 - $1,000,000">$900,000 - $1,000,000</option>
+                <option value="$1,000,000 - $2,000,000">$1,000,000 - $2,000,000</option>
+                <option value="Over $5,000,000">Over $2,000,000</option>
+            </select>
+        </div>
+        
+    </fieldset>
+
+    <fieldset>
+    
+        <h4>Moving Details</h4>
+        
+        <div class="field x6">
+            <label>When do you want to move?</label>
+            <select name="move_when">
+                <option value="">Choose</option>
+                <option value="Less than 30 days">Less than 30 days</option>
+                <option value="1 Month">1 Month</option>
+                <option value="2 Months">2 Months</option>
+                <option value="3 Months">3 Months</option>
+                <option value="4 Months +">4 Months +</option>
+            </select>
+        </div>
+        
+        <div class="field x6 last">
+            <label>When did you start looking?</label>
+            <select name="length_looking">
+                <option value="">Choose</option>
+                <option value="Less than 30 days">Less than 30 days</option>
+                <option value="1 Month">1 Month</option>
+                <option value="2 Months">2 Months</option>
+                <option value="3 Months">3 Months</option>
+                <option value="4 Months +">4 Months +</option>
+            </select>
+        </div>
+        
+        <div class="field x6">
+            <label>Where would you like to own?</label>
+            <input name="where_own" id="where_own" size="28" value="">
+        </div>
+        
+        <div class="field x6 last">
+            <label>Are you currently with an agent?</label>
+            <select name="working_with_agent">
+                <option value="">Choose</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+        
+        <div class="field x12">
+            <label>Describe your Dream Home</label>
+            <textarea cols="32" rows="8" name="comments"></textarea>
+        </div>
+        
+    </fieldset>
+    
+    <div class="field x12">
+		{opt_in}
+	</div>
+
+    <div class="btnset">
+        <button type="submit" class="positive">Submit Form</button>
+    </div>
+
+</form>

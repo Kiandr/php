@@ -1,0 +1,303 @@
+// BODY COPY & BUTTONS ================================================================ BODY COPY & BUTTONS //
+
+.btn.positive:hover,
+button.positive:hover {
+	background:@swatch2;
+}
+
+.idx.dashboard .btn.show-compose { // compose message button found withhin user dashboard settings
+	&:hover {
+		background:@swatch2;
+	}
+}
+
+.flag {
+	background:@swatch2;
+		&:before {
+			border-color:@swatch2 transparent @swatch2 @swatch2;
+		}
+}
+// END BODY COPY
+
+
+// HEADER & NAVIGATION ================================================================ HEADER & NAVIGATION //
+
+#brand {
+	background:@swatch1;
+}
+
+#primary_nav {
+	background:#fff;
+
+	ul li a {
+		color:@swatch1;
+	}
+
+	.current > a::after {
+		background:@swatch2;
+	}
+}
+
+#head .phone {
+	color:#fff;
+}
+
+#primary_nav .menu { // Mega-Menu
+
+	background:#fff;
+	border: 1px solid #d4d4d4;
+	.drop-shadow();
+
+	.form {
+		background:@swatch3;
+		color: #fff;
+		h4 {
+			border: none;
+		}
+	}
+
+	h4 {
+		color:@swatch1;
+		border-bottom-color: #fff;
+	}
+
+	h4:empty {
+		display: none;
+	}
+
+	ul li a {
+		color:lighten(@swatch1,20%);
+		&:hover {
+			color:lighten(@swatch1,5%);
+		}
+	}
+
+	.photo {
+		border-color:@swatch3;
+		h4 {
+			color: #fff;
+			border: none;
+		}
+	}
+}
+
+// END HEADER & NAVIGATION
+
+// QUICKSEARCH ================================================================ QUICKSEARCH //
+
+.feed-switcher .current a {
+	background:darken(@swatch2,5%);
+}
+
+.pagination li.current a,
+.pagination.dots li.current a {
+	background:@swatch2;
+	border-color:@swatch2 !important;
+}
+
+.gallery .pagination a {
+	border-color:#fff;
+}
+
+
+// HOMEPAGE CTAS ================================================================ HOMEPAGE CTAS //
+
+.extended-left {
+	&:before, .kicker span {
+		background:darken(@swatch2,5%);
+	}
+}
+
+.extended-center {
+	&:before, .kicker span {
+		background:darken(@swatch2,10%);
+	}
+}
+
+.extended-right {
+	&:before, .kicker span {
+		background:darken(@swatch2,15%);
+	}
+}
+// END HOMEPAGE CTAS
+
+
+// FOOT ================================================================ FOOT //
+
+#foot {
+	background:@swatch1;
+
+	li a, ul {
+		color: #b5b5b5;
+	}
+
+	a:hover {
+		color:#fff;
+	}
+
+	address {
+		color: #b5b5b5;
+			a {
+				color:#fff;
+					&:hover {
+						color:#ddd;
+					}
+			}
+	}
+
+	.footer-logos {
+		border-color:@swatch3;
+	}
+
+	.copyright {
+		color:@swatch3;
+			a {
+				color:@swatch3;
+			}
+	}
+
+	.colset {
+		border-bottom-color:rgba(255, 255, 255, 0.6);
+	}
+}
+// END FOOT
+
+
+// DETAILS PAGE ================================================================ DETAILS PAGE //
+
+#listing-body {
+	.actions a {
+		background:@swatch1;
+	}
+
+	.val {
+		color:@swatch1;
+	}
+}
+
+.calc-payment {
+	color:@swatch2;
+}
+
+#extended-details .dataset {
+	h3 {
+		color:#fff;
+		background:@swatch1;
+	}
+
+	.col > strong {
+		color:@swatch1;
+	}
+}
+// END DETAILS PAGE
+
+// CALCULATOR/LOG-IN ================================================================ CALCULATOR/LOG-IN //
+#dialog-login,
+#dialog-calc {
+
+	background:@swatch1;
+	border: 1px solid @swatch1;
+	.drop-shadow();
+
+	h4 {
+		color:#fff;
+	}
+
+	.social-connect {
+		background:lighten(@swatch1,10%);
+	}
+
+	input {
+		background: #eee;
+		border: 1px solid #ccc;
+	}
+
+	a {
+		color:@swatch3;
+	}
+
+	label,
+	h4 small {
+		color:@swatch3;
+	}
+
+	button {
+		background: @swatch2;
+	}
+}
+
+#dialog-login .field input,
+#dialog-calc .field input,
+#dialog-login .field select,
+#dialog-calc .field select,
+#dialog-calc .inputset {
+	border: 1px solid #ccc;
+	background: #fff !important; color: #444;
+}
+// End Calculator
+
+
+// POPUP ================================================================ POPUP //
+.window header {
+	.gradient(darken(@swatch1, 5%),@swatch1,darken(@swatch1, 5%));
+}
+
+.msg {
+	&.negative {
+		background:lighten(@swatch3,5%);
+			p {
+				color:darken(@swatch1,10%);
+			}
+	}
+	&.positive {
+		background: @swatch2;
+			p {
+				color:#fff;
+			}
+	}
+}
+// POPUP
+
+// SAVED PAGES ================================================================ SAVED PAGES //
+#dashboard_tabs li.current a {
+	color: @swatch1;
+}
+// END SAVED PAGES
+
+// TEST.PHP PAGE ================================================================ TEST.PHP PAGE //
+div.highlight,
+p.highlight {
+	color:@swatch1;
+	background:rgba(204, 9, 48, 0.2);
+}
+
+div.highlight, div.important {
+	margin-bottom: 20px;
+	color:@swatch1;
+		p {
+			color:@swatch1;
+		}
+}
+
+.important {
+	background:rgba(255, 242, 123, 0.5);
+	padding: 19px;
+	color:@swatch1;
+		p {
+			color:@swatch1;
+		}
+}
+
+.footnote {
+	font: 11px/16px "helvetica neue",arial,serif;
+	margin: 20px 0;
+}
+
+#content .nav a {
+	color:#555;
+
+	&:hover {
+		color:@swatch3;
+	}
+}
+// END TEST PAGES

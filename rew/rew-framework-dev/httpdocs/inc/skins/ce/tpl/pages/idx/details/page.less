@@ -1,0 +1,311 @@
+.enhanced-listing {
+	/* \\ This should be a class to make more reusable */
+	#head.head {
+		position: absolute;
+		z-index: 1001;
+	}
+
+	// Tpl Specific Styles
+	#head{
+		background-color: transparent;
+	}
+
+	.logo-link {
+		color: @white;
+		fill: @white;
+	}
+
+	.head .nav__link {
+		text-transform: uppercase;
+		color: @white;
+
+		@media (max-width: 991px) {
+			color: @black;
+		}
+	}
+
+	.head .nav__link:hover {
+		color: @white;
+	}
+
+	.head .nav__link.-pill {
+		border-color: @white;
+
+		@media (max-width: 991px) {
+			color: @black;
+		}
+	}
+
+	.head-contact {
+		border-bottom: transparent;
+	}
+
+	.head .nav__icon {
+		color: @white;
+		fill: @white;
+	}
+}
+
+/* // This should be a class to make more reusable */
+
+.mnu-trigger {
+    fill: #222;
+}
+
+.dataset h4 {
+    color: #222;
+}
+
+.img .shim {
+    display: none;
+}
+
+.remarks {
+    padding: 20px 0 0 0;
+}
+
+.photoGrid3A,
+.photoGrid2A,
+.photoGrid1A  {
+    margin-bottom: 100px;
+}
+
+.flag {
+    background: #fff; color: #000;
+    padding: 5px 8px 2px 8px;
+    font-size: 14px;
+    vertical-align: middle;
+    position: relative;
+    top: -3px; letter-spacing: 1px;
+    margin: 0 5px;
+    mix-blend-mode: screen;
+    font-weight: bold;
+}
+
+.actions {
+    display: flex;
+    padding: 20px 0 0 0;
+    align-items: center;
+}
+
+#map-streetview,
+#map-birdseye,
+#map-canvas {
+    background: #222;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.btn.inquire {
+    border-color: #fff;
+}
+
+h1 + h2 {
+    margin: 0 0 20px 0;
+}
+
+h2 + div {
+    margin: 0 0 80px 0;
+}
+
+a.strong {
+    color: #222;
+    font-weight: 400;
+}
+
+.details__agent a.popup {
+	text-decoration: none;
+}
+
+/* Don't display empty prev/next button container */
+#idx-paginate:empty {
+    display: none !important;
+}
+
+@media (max-width: 800px) {
+  .listing-nav .prev-listing,
+  .listing-nav .next-listing {
+    margin: 0;
+    width: -webkit-calc(50% - 24px);
+    width: -moz-calc(50% - 24px);
+    width: calc(50% - 24px);
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -moz-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+
+  .listing-nav .nextprev,
+  .listing-nav #idx-paginate {
+    margin: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: .6;
+    -webkit-flex-grow: .6;
+    -moz-box-flex: .6;
+    -ms-flex-positive: .6;
+    flex-grow: .6;
+  }
+
+  .prev-listing .icon,
+  .next-listing .icon {
+    fill: #999;
+    margin-bottom: 0;
+  }
+
+  .listing-nav .nav__list {
+    align-items: center;
+  }
+
+  .listing-nav .nav__wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
+#feature .drag-warning {
+  width: 100%;
+  height: 100%;
+  background: rgba(100, 100, 100, 0.6);
+  opacity: 0;
+}
+
+#feature .drag-warning:after {
+  content: "Use " attr(data-touches) " fingers to interact";
+  font-size: large;
+  font-weight: bold;
+  color: #ffffff;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 50vh;
+}
+
+/* Click to view mls photos (enhanced listings) */
+.control {
+    z-index: 50;
+    position: absolute;
+    top: 50%;
+}
+
+.control--left {
+    left: 0;
+}
+
+.control--right {
+    right: 0;
+}
+
+.control svg {
+    fill: #999;
+}
+
+.control--left svg {
+    transform: rotate(180deg);
+}
+
+@media (max-width: 857px) {
+
+    .control svg {
+        width: 35px;
+        height: 35px;
+    }
+
+    .hero__fg .column {
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+}
+
+@media (max-width: 400px) {
+    .control {
+        top: 40%;
+    }
+
+    .hero__fg h3.view {
+        font-size: 18px;
+    }
+}
+
+@media (orientation: landscape) {
+    .hero__fg h1 {
+        font-size: 26px;
+    }
+}
+
+.slider-controls {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 99999;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* Prevent quick search overlapping arrows on cover page */
+.slider-controls {
+  top: ~"calc(50% + 48px)";
+  pointer-events: none;
+}
+
+.slider-controls .prev {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.slider-controls .prev,
+.slider-controls .next {
+  width: 60px;
+  height: 60px;
+  fill: #999999;
+}
+
+@media (max-width: 899px) {
+  .slider-controls {
+    top: ~"calc(50% + 19px)";
+  }
+  .slider-controls .prev,
+  .slider-controls .next {
+    width: 30px;
+    height: 30px;
+  }
+
+  .slider-controls .button {
+    padding: 8px 0;
+  }
+}
+
+/* Restructure hero section on IDX details page -- VIS-350 */
+.hero--details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 90;
+}

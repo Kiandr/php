@@ -1,0 +1,64 @@
+<ul class="uk-navbar-nav uk-float-right">
+    <li class="uk-parent" data-uk-dropdown="{delay: 1}">
+        <a href="/idx">Search</a>
+        <div class="uk-dropdown uk-dropdown-navbar uk-padding-vertical-remove">
+
+            <ul class="uk-nav uk-nav-dropdown" style="list-style: none;">
+                <li><a href="/idx/">Search Listings</a></li>
+                <li><a href="/idx/map/">Search by Map</a></li>
+                <li><a href="/featured-listings.php">Featured Listings</a></li>
+                <li><a href="/listings.php">Our Listings</a></li>
+            </ul>
+
+        </div>
+    </li>
+
+    <li class="uk-parent" data-uk-dropdown>
+        <a href="/neighborhoods.php">Neighborhoods</a>
+        <div class="uk-dropdown uk-dropdown-navbar uk-padding-vertical-remove">
+            <ul class="uk-nav uk-nav-dropdown" style="list-style: none;">
+                <li><a href="#">Neighborhood One</a></li>
+                <li><a href="#">Neighborhood Two</a></li>
+                <li><a href="#">Neighborhood Three</a></li>
+                <li><a href="#">Neighborhood Four</a></li>
+                <li><a href="/neighborhoods.php">View All</a></li>
+            </ul>
+        </div>
+    </li>
+
+    <li class="uk-parent" data-uk-dropdown>
+        <a href="/buying.php">Buy</a>
+        <div class="uk-dropdown uk-dropdown-navbar uk-padding-vertical-remove">
+            <ul class="uk-nav uk-nav-dropdown" style="list-style: none;">
+                <li><a href="/home-finder.php">Join the Home Finder</a></li>
+                <li><a href="/first-time-home-buying.php">First-Time Home Buyer?</a></li>
+                <li><a href="/mortgage-calculator.php">Mortgage Calculator</a></li>
+                <li><a href="/guarantee.php">Buyer's Guarantee</a></li>
+            </ul>
+        </div>
+    </li>
+
+    <li class="uk-parent" data-uk-dropdown>
+        <a href="/selling.php">Sell</a>
+        <div class="uk-dropdown uk-dropdown-navbar uk-padding-vertical-remove">
+            <ul class="uk-nav uk-nav-dropdown" style="list-style: none;">
+                <li><a href="/marketing-plan.php">Marketing Plan</a></li>
+                <li><a href="/cma.php">Home Evaluation</a></li>
+            </ul>
+        </div>
+    </li>
+
+    <li class="uk-parent" data-uk-dropdown>
+        <a href="/about.php">About Us</a>
+        <div class="uk-dropdown uk-dropdown-navbar uk-padding-vertical-remove">
+            <ul class="uk-nav uk-nav-dropdown" style="list-style: none;">
+                <li><a href="/agents.php">Our Agents</a></li>
+                <li><a href="/testimonials.php">Testimonials</a></li>
+            </ul>
+        </div>
+    </li>
+
+
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/contact.php">Contact Us</a></li>
+</ul>

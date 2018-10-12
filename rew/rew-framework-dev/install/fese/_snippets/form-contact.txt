@@ -1,0 +1,52 @@
+<form action="?submit" method="post" class="marB-md"  id="fese_cms_form_contact">
+
+    <input type="hidden" name="contactform" value="true">
+
+    <input class="hidden" name="email" value="" autocomplete="off">
+    <input class="hidden" name="first_name" value="" autocomplete="off">
+    <input class="hidden" name="last_name" value="" autocomplete="off">
+
+    <div class="cols">
+
+        <div class="col fld w1/2">
+            <label>First Name</label>
+            <input name="onc5khko" value="" required>
+        </div>
+
+        <div class="col fld w1/2">
+            <label>Last Name</label>
+            <input name="sk5tyelo" value="" required>
+        </div>
+
+        <div class="col fld w1/2">
+            <label>Email</label>
+            <input type="email" name="mi0moecs" value="" required>
+            <small>Please provide a valid email address.</small>
+        </div>
+
+        <div class="col fld w1/2">
+            <label>Phone <small>(optional)</small></label>
+            <input type="tel" name="telephone" value="">
+        </div>
+
+        <div class="col fld w1/1">
+            <label>Subject <small>(optional)</small></label>
+            <input name="subject" value="">
+        </div>
+
+        <div class="col fld w1/1">
+            <label>Message</label>
+            <textarea cols="32" rows="6" name="comments" required></textarea>
+        </div>
+
+        <div class="col fld w1/1">
+            {opt_in}
+        </div>
+
+    </div>
+
+    <div class="btns">
+        <button type="submit" class="btn btn--primary">Send Email</button>
+    </div>
+
+</form>

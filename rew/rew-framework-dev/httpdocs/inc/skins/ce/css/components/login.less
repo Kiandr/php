@@ -1,0 +1,237 @@
+/* LOGIN POPUP / PAGE */
+.login-page a {
+	text-transform: uppercase;
+	text-decoration: none;
+}
+// Stacked Fields - Needs to be made global
+.field.field--stacked input {
+	-webkit-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+}
+.field.field--stacked + .field.field--stacked {
+	padding-top:0;
+}
+.field.field--stacked + .field.field--stacked input {
+	-webkit-border-radius:0 0 5px 5px;
+	border-radius:0 0 5px 5px ;
+}
+.field.field--stacked:first-child {
+	padding-bottom:0;
+}
+.field.field--stacked:first-child input {
+	border-bottom:0;
+}
+.forgot-password {
+	display: block;
+	font-size:12px;
+	text-align: center;
+}
+.register .btns .R {
+    float: right;
+    padding: 10px;
+}
+
+.login-register {
+    text-align: center;
+    color: @btn-grey;
+}
+.login-with {
+    text-align: center;
+    padding: 20px 0;
+    position: relative
+}
+
+.login__field.field--stacked:first-child input {
+    border-bottom: 1px solid #ccc;
+}
+
+.login__field.field--stacked input,
+.login__field.field--stacked + .field.field--stacked input {
+    border-radius: 3px;
+}
+
+.login-with:after {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid @border-grey;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0
+}
+
+.login-with span {
+    background: @white;
+    padding: 8px;
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    text-align: center;
+    position: relative;
+    z-index: 999;
+}
+.or {
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.or:after {
+    content: " ";
+    display: block;
+	border-top: 1px solid @border-grey;
+    border-bottom: 1px solid @grey;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+}
+
+.or span {
+    background: @white;
+    padding: 8px;
+    display: block;
+    margin: 0 auto;
+    width: 60px;
+    text-align: center;
+    position: relative;
+    z-index: 999;
+}
+.btn.network-login {
+    background: @btn-grey;
+    border-radius: 24px;
+    text-transform: uppercase;
+    color: @white;
+    padding-top: 12px;
+}
+
+.btn.facebook {
+    background: @facebook;
+}
+// Social Connect 
+.networks {
+	padding:30px 0;
+}
+.social-login {
+	.flex();
+	.flex-wrap();
+	justify-content: space-around;
+	margin:0;
+	padding:0;
+}
+.social-login li {
+	list-style: none;
+	width:~'calc(50% - 24px)';
+	margin-bottom:8px;
+	@media (max-width:768px) {
+		width:100%;
+	}
+}
+.social-login a {
+	display:block;
+	text-align: center;
+	border:1px solid @border-grey;
+	border-radius:5px;
+	font-size:14px;
+	font-weight:600;
+	padding:10px;
+	transition: all .2s;
+	text-decoration: none;
+}
+.social-login i:after {
+	display:inline-block;
+	font-family:@body-font;
+	padding-left:5px;
+	font-size:14px;
+	content:"Sign in with ";
+	font-weight:600;
+}
+
+.social-login a:hover > i {
+	color:@white;
+}
+// Social Specific Colours
+// Facebook Branding
+.social-login .facebook a {
+	color:@facebook;
+	border-color:@facebook;
+}
+.social-login .facebook a:hover {
+	color:@white;
+	background-color:@facebook;
+}
+// Google Branding
+.social-login .google a {
+	color:@google;
+	border-color:@google;
+} 
+.social-login .google a:hover {
+	color:@white;
+	background-color:@google;
+}
+// Windows Branding
+.social-login .windows a {
+	color:@windows;
+	border-color:@windows;
+}
+.social-login .windows a:hover {
+	color:@white;
+	background-color:@windows;
+}
+// Twitter Branding
+.social-login .twitter a {
+	color:@twitter;
+	border-color:@twitter;
+} 
+.social-login .twitter a:hover {
+	color:@white;
+	background-color:@twitter;
+}
+// Yahoo Branding
+.social-login .yahoo a {
+	color:@yahoo;
+	border-color:@yahoo;
+}
+.social-login .yahoo a:hover {
+	color:@white;
+	background-color:@yahoo;
+}
+// Linkedin Branding
+.social-login .linkedin a {
+	color:@linkedin;
+	border-color:@linkedin;
+} 
+.social-login .linkedin a:hover {
+	color:@white;
+	background-color:@linkedin;
+}
+.social-login--text {
+	display:block;
+	text-align: center;
+	@media (min-width:681px) {
+		display:none;
+	}
+}
+
+// Fixes 
+// Sign In Pop Up
+@media (max-width: 768px) {
+	.window {
+		width:100vw !important;
+		max-width: 100vw !important;
+	}
+	.window .wrp {
+		width:100% !important;
+	}
+	body.popup #content .wrp {
+		width:100% !important;
+	}
+}
+.pref-contact {
+	margin-right:16px;
+	@media (max-width:768px) {
+		display:block;
+		margin-right:0;
+		margin-bottom:8px;
+	}
+}

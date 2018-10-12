@@ -1,0 +1,5 @@
+<h1>Our Listings</h1>
+<p>Our office is pleased to highlight the following properties. If you're a home buyer, simply click View Details to learn more about each property. If you're selling your home with us, we'll feature your property here too, so that it receives optimal exposure on our site.</p>
+<p class="highlight">If you have any questions about the properties listed on this page, please feel free to <a href="/contact.php">contact us</a>.</p>
+<p>#cms-listings#</p>
+<p class="highlight">If you'd like to expand your property search, see all <a href="/idx/">homes for sale</a> in the local market.</p>

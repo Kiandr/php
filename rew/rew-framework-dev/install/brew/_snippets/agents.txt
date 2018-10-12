@@ -1,0 +1,6 @@
+{
+	"_comment" : "Agents Module",
+	"name" : "agents",
+	"config" : {
+	}
+}

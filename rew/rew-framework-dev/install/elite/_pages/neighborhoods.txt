@@ -1,0 +1,8 @@
+<h1>Local Communities</h1>
+<p>Home seekers will enjoy the many different neighborhoods to choose from here, as well as the variety of houses, condos and townhomes available. Depending on where you settle, you could be right downtown, next to a popular community park or near top-rated schools.</p>
+<p>We hope that our website's community information will help you to choose between the many wonderful areas; each has a lot to offer the home buyer.</p>
+<div class="uk-panel uk-panel-box uk-margin-large-bottom">
+    <p class="highlight"><a href="/contact.php">Contact us</a> anytime for more information about local areas!</p>
+</div>
+<p>#communities#</p>
+<p>#cta-communities#</p>

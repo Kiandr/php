@@ -1,0 +1,6 @@
+{
+	"_comment" : "Featured Listings Module",
+	"name" : "idx-listings",
+	"config" : {
+	}
+}

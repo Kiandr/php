@@ -1,0 +1,99 @@
+/*--------------------------------------------------------------------------------------------
+HOMEPAGE BLOG ARTICLES
+---------------------------------------------------------------------------------------------*/
+
+.fw-home-blog .post-container:last-of-type .home-post {
+    margin-bottom: 0;
+}
+
+.fw-home-blog .post-container:nth-of-type(2) .home-post, .fw-home-blog .post-container:nth-of-type(3) .home-post {
+    @include bp-medium {
+        margin-bottom: 0;
+    }
+}
+
+.fw-home-blog {
+    padding-top:40px;
+    padding-bottom:40px;
+  
+    @include bp-medium {
+        padding: 40px 75px;
+    }
+
+    @include bp-large {
+        padding: 40px 150px;
+    }
+
+    @include bp-xlarge {
+        padding: 40px 0px;
+    }
+
+    .post-container {
+        @include bp-small {
+            padding-left:20px;
+        }
+    }
+
+    .home-post {
+        padding:20px;
+        padding-right:10px;
+        min-height:144px;
+        margin-bottom:20px;
+        position:relative;
+    
+        @include bp-xlarge {
+            margin-bottom:0;
+        }
+
+        span.blog-date {
+            display:block;
+            font-weight:300;
+        }
+
+        span.blog-title {
+            display:block;
+            margin-top:10px;
+            margin-bottom:10px;
+            font-size:20px;
+        }
+
+        a {
+            display:block;
+
+            i {
+                margin-left:10px;
+            }
+        }
+
+        span.blog-tag {
+            display:block;
+            position:absolute;
+            right:0;
+            bottom:0;
+            text-transform: uppercase;
+            font-size: 12px;
+            padding: 4px 10px 1px;
+            text-align: center;
+        }
+    }
+
+    .home-post.post-title {
+        border-bottom:none;
+
+        h5 {
+            font-weight:300;
+            text-transform: uppercase;
+            font-size: 36px;
+            line-height: 36px;
+            margin-bottom:5px;
+        }
+
+        a {
+            display:block;
+
+            i {
+                margin-left:10px;
+            }
+        }
+    }
+}

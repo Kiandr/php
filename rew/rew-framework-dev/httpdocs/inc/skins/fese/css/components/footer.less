@@ -1,0 +1,213 @@
+#foot {
+    background-color: #888; 
+    margin-top:40px;
+    color: @btn-grey;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font: 14px/18px @sub-heading-font;
+    text-transform: uppercase;
+}
+#foot #foot--b,
+#foot .foot-b-wrp {
+	@media only screen and (max-width: 1024px) {
+		overflow-x: hidden;
+		width: 100%;
+	}
+}
+
+/* purple sky */
+
+#foot--a {
+    color: @white;
+    background-size: cover;
+    padding-top: 40px;
+}
+
+#foot blockquote {
+    padding: 40px 40px 40px 0;
+}
+
+#foot--a blockquote::before {
+    font: 400 50px/30px @sub-heading-font;
+    color: rgba(255, 255, 255, .66);
+}
+
+.mls-disclaimer {
+    width: 1020px;
+    margin: 0 auto;
+    padding: 0 20px 40px 20px;
+    font-size: 14px;
+    max-width: 100%;
+}
+
+.wrp > .mls-disclaimer {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* copyright etc. */
+.rew-logo {
+	opacity:.6; /* setting opacity to get logo to match footer link colour*/
+	@media only screen and (max-width:680px) {
+		display:block;
+		text-align: center;
+	}
+}
+#foot--b {
+    background: #0b0510;
+    padding: 10px 0 20px 0;
+	overflow: hidden;
+}
+
+#foot a {
+    text-decoration: none;
+    transition: color, 0.5s;
+}
+
+#foot a:hover {
+    color: @border-grey;
+}
+
+#foot .cms {
+	@media only screen and (max-width: 680px) {
+		padding-top:10px;
+	}
+}
+
+@media only screen and (max-width: 680px) {
+    #foot--b .mnu-item {
+        float: none;
+        margin: 0;
+		text-align: center;
+    }
+
+    #foot .R {
+        float: none;
+        margin-top: 20px;
+    }
+	
+}
+#foot .foot-r {
+    clear: both;
+    float: none;
+    margin-top: 10px;
+	text-align: center;
+    @media only screen and (min-width: 681px) {
+        margin-top: -4px;
+        clear: none;
+        float: right;
+    }
+}
+#foot .L {
+	@media only screen and (max-width: 680px) {
+		float:none;
+		text-align: center;
+		margin-bottom:5px;
+	}
+}
+/* Foot Phone Number */
+
+#foot .phone a {
+    display: inline-block;
+    float: right;
+    font: 400 14px/20px @sub-heading-font;
+	text-decoration: none;
+    margin-right: 0px;
+    margin-left: auto;
+    padding: 10px 0;
+    @media only screen and (max-width: 890px) {
+        display: block;
+        float: none;
+        margin: 0;
+    }
+	@media only screen and (max-width: 680px) {
+        text-align: center;
+    }
+}
+
+.foot-links {
+    margin: 16px 0 20px 0;
+    border-bottom: 1px solid @black;
+}
+
+.foot-links a {
+    font: 400 14px/20px @sub-heading-font;
+    padding: 10px 0;
+    text-decoration: none;
+    display: block;
+	transition: color, 0.5s;
+}
+
+.foot-links .phone a {
+    font-size: 22px;
+}
+
+@media (min-width: 899px) {
+    .foot-links {
+        display: flex;
+        align-items: center;
+    }
+
+    .foot-links a {
+        float: left;
+        margin-right: 10px;
+    }
+
+        .foot-links .phone {
+        float: right;
+        margin-left: auto;
+    }
+
+    /* removing vertical line on small screens/stacked display */
+
+    .foot-links a:not(:last-of-type):after {
+        content: "\007C";
+        margin-left: 10px;
+    }
+}
+
+/* footer contact address and logos */
+
+.foot-contact {
+	width: 100%;
+    border-bottom: 1px solid #222;
+    margin: 10px 0 20px 0;
+    display: flex;
+
+    .foot-colset {
+        width: 49%;
+        @media (max-width: 879px) {
+            width: 100%;
+        }
+    }
+
+    .foot-col {
+		width: 49%;
+		display: inline-block;
+		padding: 5px 35px 5px 0;
+		-webkit-box-flex: 1;
+		-moz-box-flex: 1;
+		-webkit-flex: 1;
+		-ms-flex: 1;
+		flex: 1;
+		vertical-align: text-top;
+	}
+}
+
+@media (max-width:898px) {
+	.foot-contact {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+    	-moz-box-orient: vertical;
+		-moz-box-direction: normal;
+		-ms-flex-direction: column;
+		-webkit-flex-direction: column;
+		flex-direction: column;
+	}
+}
+
+@media (max-width:500px) {
+	.foot-contact .foot-col {
+		width: 100%;
+	}
+}

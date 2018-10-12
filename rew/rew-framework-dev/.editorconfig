@@ -1,0 +1,22 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+
+# Indentation rules
+indent_style = space
+indent_size = 4
+
+# Formatting rules
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# HTML/Twig
+[*.{html,html.twig}]
+quote_type = double
+
+# JS/CSS/PHP
+[*.{js,css,php}]
+quote_type = single
+curly_bracket_next_line = false

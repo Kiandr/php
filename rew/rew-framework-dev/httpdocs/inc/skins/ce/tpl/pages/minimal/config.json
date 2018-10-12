@@ -1,0 +1,14 @@
+{
+    "config": {
+        "selectable": false
+    },
+    "containers": {
+    },
+    "variables": {
+        "showNav": {
+            "type": "boolean",
+            "title": "Show Navigation",
+            "default": false
+        }
+    }
+}

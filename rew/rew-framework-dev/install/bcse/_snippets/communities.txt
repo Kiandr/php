@@ -1,0 +1,11 @@
+{
+	"_comment" : "Communities Module",
+	"name" : "communities",
+	"config" : {
+		"template" : "results.tpl.php",
+		"javascript" : "results.js.php",
+		"stylesheet" : false,
+		"orderBy" : "title",
+		"loadImages" : 1
+	}
+}

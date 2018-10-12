@@ -1,0 +1,7 @@
+{
+    "config" : {
+        "title"			: "IDX Map Search Results",
+        "description"	: "Use for IDX Map Search Results",
+        "selectable"	: false
+    }
+}

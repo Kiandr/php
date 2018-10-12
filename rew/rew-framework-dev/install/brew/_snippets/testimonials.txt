@@ -1,0 +1,6 @@
+{
+	"_comment" : "Testimonials Module",
+	"name" : "testimonials",
+	"config" : {
+	}
+}

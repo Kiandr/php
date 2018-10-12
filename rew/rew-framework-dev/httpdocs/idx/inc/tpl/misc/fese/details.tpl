@@ -1,0 +1,1 @@
+<a class="idx-details-back-link" href="<?=$listing['url_details']; ?>">Back to Property Details</a>

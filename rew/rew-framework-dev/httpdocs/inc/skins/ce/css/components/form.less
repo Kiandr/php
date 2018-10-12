@@ -1,0 +1,92 @@
+
+.field + .cols::before, .field + .field {
+    border-top: none;
+}
+
+.field textarea {
+	width: 100%;
+    border: 1px solid @border-grey;
+    padding: 7px;
+	border-radius: 3px;
+}
+
+.field .boolean {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.field .boolean input {
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+    margin-right: 5px;
+}
+
+.field label.toggle {
+    white-space: normal;
+    padding-left: 25px;
+    position: relative;
+	display:block;
+}
+
+.field label.toggle input {
+    white-space: normal;
+    position: absolute;
+    left: 0;
+    top: 6px;
+}
+
+.field input {
+	max-height:48px;
+    min-height:48px;
+	@media all and (-ms-high-contrast:none) {
+		padding-top:5px;
+		padding-bottom:5px;
+	}
+}
+
+.field input[type="checkbox"],
+.field input[type="radio"] {
+	max-height:auto;
+    min-height:auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+    border: 0 !important;
+}
+
+input:invalid {
+    color: inherit;
+}
+
+// CE Form Styles 
+
+.input {
+	width: 100%;
+	display: flex;
+	background: #fff;
+}
+
+.input.-isfocused {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+
+.input input {
+	border: none;
+	padding: 0 24px;
+	color: #222;
+	flex-grow: 9;
+	line-height: 48px;
+	width: 80px; /* this fixes overflow issues */
+}
+
+select {
+    padding: 7px;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;	background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAMCAYAAACulacQAAAAQUlEQVQYla2PMQ4AMAgCwV/zejrZWBK3shhzKIGSMGQA7KUCzHmh8coNE1wD7Y29mR8hJa2hhVE6D/ttGpiZTOMBbsEN6P1Z68sAAAAASUVORK5CYII=") no-repeat scroll right 10px center;
+   	background-position: right 10px center;
+	background-color: @white;
+}

@@ -1,0 +1,354 @@
+{
+    "config" : {
+        "order"			: 4,
+        "title"			: "Guaranteed Sold",
+        "description"	: "Radio Landing Page",
+        "selectable"	: "{REW_RADIO_LANDING_PAGE}"
+    },
+    "scripts" : [
+        "audiojs/audio.min.js"
+    ],
+    "containers" : {
+        "feature" : {
+            "rate-feature" : {
+                "_enabled"		: true,
+                "module"		: "{variable.feature}",
+                "rate-feature-cta" : {
+                    "heading"		: "{variable.feature.ctaTitle}",
+                    "subheading"	: "{variable.feature.ctaSubtitle}",
+                    "linkText"		: "{variable.feature.ctaLinkText}",
+                    "linkUrl"		: "{variable.feature.ctaLinkUrl}"
+                },
+                "rate-feature-video" : {
+                    "heading"		: "{variable.feature.videoTitle}",
+                    "subheading"	: "{variable.feature.videoSubtitle}",
+                    "linkText"		: "{variable.feature.videoLinkText}",
+                    "linkUrl"		: "{variable.feature.videoLinkUrl}"
+                },
+                "rate-feature-radio" : {
+                    "heading"		: "{variable.feature.radioTitle}",
+                    "subheading"	: "{variable.feature.radioSubtitle}",
+                    "linkText"		: "{variable.feature.radioLinkText}",
+                    "linkUrl"		: "{variable.feature.radioLinkUrl}"
+                },
+                "rate-feature-search" : {
+                    "heading"		: "{variable.feature.searchTitle}",
+                    "subheading"	: "{variable.feature.searchSubtitle}",
+                    "linkText"		: "{variable.feature.searchLinkText}",
+                    "linkUrl"		: "{variable.feature.searchLinkUrl}"
+                }
+            }
+        },
+        "mid-feature" : {
+            "rate-midfeature" : {
+                "_enabled"		: true,
+                "module"		: "{variable.mid-feature}",
+                "rate-midfeature-form" : {
+                    "addressPlaceholder"	: "{variable.mid-feature.addressPlaceholder}",
+                    "emailPlaceholder"		: "{variable.mid-feature.emailPlaceholder}",
+                    "submitButton"			: "{variable.mid-feature.submitButton}"
+                }
+            }
+        },
+        "sub-feature" : {
+            "rate-subfeature" : {
+                "_enabled"		: true,
+                "module"		: "{variable.sub-feature}",
+                "communities" : {
+                    "heading"		: "{variable.sub-feature.communitiesTitle}",
+                    "subheading"	: "{variable.sub-feature.communitiesSubtitle}",
+                    "template"		: "feature.tpl.php",
+                    "thumbnails"	: "284x190/f",
+                    "stylesheet"	: false,
+                    "javascript"	: false,
+                    "loadStats"		: false,
+                    "loadImages"	: 1,
+                    "limit"			: 4
+                },
+                "idx-listings" : {
+                    "heading"		: "{variable.sub-feature.listingsTitle}",
+                    "subheading"	: "{variable.sub-feature.listingsSubtitle}",
+                    "linkUrl"		: "{variable.sub-feature.listingsLinkUrl}",
+                    "linkText"		: "{variable.sub-feature.linkText}",
+                    "template"		: "feature.tpl.php",
+                    "thumbnails"	: "284x190/f",
+                    "limit"			: 4
+                },
+                "rate-subfeature-videos" : {
+                    "heading"		: "{variable.sub-feature.videoTitle}",
+                    "subheading"	: "{variable.sub-feature.videoSubtitle}",
+                    "linkUrl"		: "{variable.sub-feature.videoLinkUrl}",
+                    "linkText"		: "{variable.sub-feature.linkText}"
+                },
+                "rate-subfeature-radio" : {
+                    "heading"		: "{variable.sub-feature.radioTitle}",
+                    "subheading"	: "{variable.sub-feature.radioSubtitle}",
+                    "linkUrl"		: "{variable.sub-feature.radioLinkUrl}",
+                    "linkText"		: "{variable.sub-feature.linkText}"
+                }
+            }
+        },
+        "slideshow" : {
+            "slideshow" : {
+                "_enabled" : "{module.REW_SLIDESHOW_MANAGER}"
+            }
+        }
+    },
+    "variables" : {
+        "feature" : {
+            "type"			: "select",
+            "title"			: "Feature Type",
+            "default"		: "cta",
+            "placeholder"	: false,
+            "required"		: true,
+            "options"		: [
+                { "value" : "none",		"title" : "- No Feature -"	},
+                { "value" : "cta",		"title" : "Call to Action"	},
+                { "value" : "video",	"title" : "Video Feature"	},
+                { "value" : "radio",	"title" : "Radio Feature"	},
+                { "value" : "search",	"title" : "Search Feature"	}
+            ],
+            "children" : {
+                "ctaTitle" : {
+                    "_enabled"	: "cta",
+                    "title"		: "CTA Title",
+                    "type"		: "text",
+                    "default"	: "Your Property",
+                    "required"	: true
+                },
+                "ctaSubtitle" : {
+                    "_enabled"	: "cta",
+                    "title"		: "CTA Sub-Title",
+                    "type"		: "text",
+                    "default"	: "Guaranteed Sold",
+                    "required"	: true
+                },
+                "ctaLinkText" : {
+                    "_enabled"	: "cta",
+                    "title"		: "CTA Link Text",
+                    "type"		: "text",
+                    "default"	: "Find Out More",
+                    "required"	: true
+                },
+                "ctaLinkUrl" : {
+                    "_enabled"	: "cta",
+                    "title"		: "CTA Link URL",
+                    "type"		: "text",
+                    "default"	: "/radio.php",
+                    "required"	: true
+                },
+                "videoTitle" : {
+                    "_enabled"	: "video",
+                    "title"		: "Video Title",
+                    "type"		: "text",
+                    "default"	: "Featured Video",
+                    "required"	: true
+                },
+                "videoSubtitle" : {
+                    "_enabled"	: "video",
+                    "title"		: "Video Sub-Title",
+                    "type"		: "text",
+                    "default"	: ""
+                },
+                "videoLinkText" : {
+                    "_enabled"	: "video",
+                    "title"		: "Video Link Text",
+                    "type"		: "text",
+                    "default"	: "View All Videos"
+                },
+                "videoLinkUrl" : {
+                    "_enabled"	: "video",
+                    "title"		: "Video Link URL",
+                    "type"		: "text",
+                    "default"	: "/radio.php"
+                },
+                "radioTitle" : {
+                    "_enabled"	: "radio",
+                    "title"		: "Radio Title",
+                    "type"		: "text",
+                    "default"	: "Guaranteed Sale",
+                    "required"	: true
+                },
+                "radioSubtitle" : {
+                    "_enabled"	: "radio",
+                    "title"		: "Radio Sub-Title",
+                    "type"		: "text",
+                    "default"	: "As Heard On ...",
+                    "required"	: true
+                },
+                "radioLinkText" : {
+                    "_enabled"	: "radio",
+                    "title"		: "Radio Link Text",
+                    "type"		: "text",
+                    "default"	: "All Radio Ads"
+                },
+                "radioLinkUrl" : {
+                    "_enabled"	: "radio",
+                    "title"		: "Radio Link URL",
+                    "type"		: "text",
+                    "default"	: "/radio.php"
+                },
+                "searchTitle" : {
+                    "_enabled"	: "search",
+                    "title"		: "Heading",
+                    "type"		: "text",
+                    "default"	: "Search Far & Wide."
+                },
+                "searchLinkText" : {
+                    "_enabled"	: "search",
+                    "title"		: "Link Text",
+                    "type"		: "text",
+                    "default"	: "Advanced Search"
+                },
+                "searchLinkUrl" : {
+                    "_enabled"	: "search",
+                    "title"		: "Link URL",
+                    "type"		: "text",
+                    "default"	: "/idx/?advanced"
+                },
+                "background" : {
+                    "_enabled"  : "{!module:REW_SLIDESHOW_MANAGER}",
+                    "type"      : "image",
+                    "title"     : "Background Image"
+                },
+                "position" : {
+                    "_enabled"  : "{!module:REW_SLIDESHOW_MANAGER}",
+                    "type"      : "select",
+                    "title"     : "Background Position",
+                    "default"   : "center",
+                    "required"  : true,
+                    "options"   : [
+                        { "value" : "top",      "title" : "Top" },
+                        { "value" : "center",   "title" : "Center" },
+                        { "value" : "bottom",   "title" : "Bottom" }
+                    ]
+                }
+            }
+        },
+        "mid-feature" : {
+            "type"			: "select",
+            "title"			: "Mid-Feature",
+            "default"		: "quicksearch",
+            "placeholder"	: false,
+            "required"		: true,
+            "options"		: [
+                { "value" : "none",				"title" : "- No Mid-Feature -"	},
+                { "value" : "quicksearch",		"title" : "Quicksearch",	    "disabled" : "{variable.feature.search}" },
+                { "value" : "guaranteed-sold",	"title" : "Guaranteed Sold"	    }
+            ],
+            "children" : {
+                "addressPlaceholder" : {
+                    "_enabled"	: "guaranteed-sold",
+                    "title"		: "Address Placeholder",
+                    "type"		: "text",
+                    "default"	: "... Just enter your address ..."
+                },
+                "emailPlaceholder" : {
+                    "_enabled"	: "guaranteed-sold",
+                    "title"		: "Email Placeholder",
+                    "type"		: "text",
+                    "default"	: "... and your Email ...."
+                },
+                "submitButton" : {
+                    "_enabled"	: "guaranteed-sold",
+                    "title"		: "Submit Button",
+                    "type"		: "text",
+                    "default"	: "Find out!"
+                }
+            }
+        },
+        "sub-feature" : {
+            "type"			: "select",
+            "title"			: "Sub-Feature",
+            "default"		: "communities",
+            "placeholder"	: false,
+            "required"		: true,
+            "options"		: [
+                { "value" : "none",			"title" : "- No Sub-Feature -"		},
+                { "value" : "communities",	"title" : "Featured Communities"	},
+                { "value" : "listings",		"title" : "Featured Listings"		},
+                { "value" : "video",		"title" : "Video Testimonials"		},
+                { "value" : "radio",		"title" : "Radio Ad Player"			}
+            ],
+            "children" : {
+                "communitiesTitle" : {
+                    "_enabled"	: "communities",
+                    "title"		: "Communities Title",
+                    "type"		: "text",
+                    "default"	: "Featured Communities"
+                },
+                "communitiesSubtitle" : {
+                    "_enabled"	: "communities",
+                    "title"		: "Communities Sub-Title",
+                    "type"		: "text",
+                    "default"	: ""
+                },
+                "listingsTitle" : {
+                    "_enabled"	: "listings",
+                    "title"		: "Listings Title",
+                    "type"		: "text",
+                    "default"	: "Featured Listings"
+                },
+                "listingsSubtitle" : {
+                    "_enabled"	: "listings",
+                    "title"		: "Listings Sub-Title",
+                    "type"		: "text",
+                    "default"	: ""
+                },
+                "videoTitle" : {
+                    "_enabled"	: "video",
+                    "title"		: "Video Title",
+                    "type"		: "text",
+                    "default"	: "Video Testimonials"
+                },
+                "videoSubtitle" : {
+                    "_enabled"	: "video",
+                    "title"		: "Video Sub-Title",
+                    "type"		: "text",
+                    "default"	: ""
+                },
+                "radioTitle" : {
+                    "_enabled"	: "radio",
+                    "title"		: "Radio Title",
+                    "type"		: "text",
+                    "default"	: "As Heard On..."
+                },
+                "radioSubtitle" : {
+                    "_enabled"	: "radio",
+                    "title"		: "Radio Sub-Title",
+                    "type"		: "text",
+                    "default"	: ""
+                },
+                "linkText" : {
+                    "_enabled"	: ["listings", "video", "radio"],
+                    "title"		: "Link Text",
+                    "type"		: "text",
+                    "default"	: "View All"
+                },
+                "listingsLinkUrl" : {
+                    "_enabled"	: "listings",
+                    "title"		: "Link URL",
+                    "type"		: "text",
+                    "default"	: "/featured-listings.php"
+                },
+                "videoLinkUrl" : {
+                    "_enabled"	: "video",
+                    "title"		: "Link URL",
+                    "type"		: "text",
+                    "default"	: "/radio.php"
+                },
+                "radioLinkUrl" : {
+                    "_enabled"	: "radio",
+                    "title"		: "Link URL",
+                    "type"		: "text",
+                    "default"	: "/radio.php"
+                }
+            }
+        },
+        "showCtas" : {
+            "type"		: "boolean",
+            "title"		: "Call to Actions",
+            "default"	: true
+        }
+    }
+}

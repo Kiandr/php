@@ -1,0 +1,5 @@
+<h1>Contact Us</h1>
+<div class="modal-body">
+<div>#form-contact#</div>
+<p>*Your information will never be shared with any third party.</p>
+</div>

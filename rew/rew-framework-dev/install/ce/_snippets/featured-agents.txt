@@ -1,0 +1,9 @@
+{
+    "name": "agents",
+    "config": {
+        "template": "cover.tpl.php",
+        "mode": "featured",
+        "truncate": 110,
+        "limit": 4
+    }
+}

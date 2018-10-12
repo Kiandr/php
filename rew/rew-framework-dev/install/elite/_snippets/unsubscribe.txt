@@ -1,0 +1,6 @@
+{
+    "_comment" : "Unsubscribe Module",
+    "name" : "unsubscribe",
+    "config" : {
+    }
+}

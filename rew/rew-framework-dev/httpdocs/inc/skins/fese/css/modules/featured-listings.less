@@ -1,0 +1,308 @@
+// Featured Listings - Homepage
+.h-feat-homes .cols .col {
+    margin:0;
+}
+.h-feat-homes .h-feat-listings .img--cover img {
+    top:0;
+    left:0; 
+}
+.h-feat-homes .h-feat-listings .cols .col {
+	max-height:160px;
+	min-height:160px;
+	.flex();
+}
+.h-feat-homes .h-feat-listings .cols .col:before {
+ 	margin-left:0;   
+}
+    // Safari Display Fix
+.h-feat-homes .h-feat-listings .cols .col div.img--cover:before {
+	padding:0;
+}
+.h-feat-homes .h-feat-listings .cols .col .cpt {
+	background:none;
+	transition: all 1s;
+	padding:0;
+}
+.h-feat-homes .h-feat-listings .cols .col .pad.BM {
+	padding:5px;
+	opacity:0;
+	transition: all 1s;
+}
+.h-feat-homes .h-feat-listings .cols .col .pad.BM:after {
+    top:60%;
+	background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.8));
+}
+.h-feat-homes .h-feat-listings .cols .col .pad.BM h4, 
+.h-feat-homes .h-feat-listings .cols .col .pad.BM p {
+	font-weight:400;
+}
+.h-feat-homes .h-feat-listings .cols .col:hover .cpt .pad {
+	opacity: 1;
+}
+.h-feat-homes .h-feat-listings .cols .col:hover .cpt:after {
+	top:-50%;
+}
+
+
+
+/* If content cannot appear over listing images b/c compliance requirements, load this layout */
+.idx-featured-listing__wrap {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: -ms-flex;
+	display: flex;
+	
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+	
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+		
+	background: none;
+	width: 100%;
+	height: 100%;
+}
+
+.idx-featured-listing {
+	transition: background-color 0.5s ease;
+	box-shadow: 0 0 2px rgba(0, 0, 0, .35);
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-bottom: 0;
+	
+	-webkit-flex: 1 1 12.66666667%;
+	-moz-flex: 1 1 12.66666667%;
+	-ms-flex: 1 1 12.66666667%;
+	flex: 1 1 12.66666667%;
+	
+	&:hover { background-color: #e7e7e7; }
+	 	
+	@media (max-width: 1020px) {
+		-webkit-flex: 1 1 32.333%;
+		-moz-flex: 1 1 32.333%;
+		-ms-flex: 1 1 32.333%;
+		flex: 1 1 32.333%;
+		margin-bottom: 4px;
+	}
+	
+	@media (max-width: 680px) {
+		-webkit-flex: 1 1 49.333%;
+		-moz-flex: 1 1 49.333%;
+		-ms-flex: 1 1 49.333%;
+		flex: 1 1 49.333%;
+	}
+
+	@media (max-width: 480px) {
+		width: 100%;
+		-webkit-flex: none;
+		-moz-flex: none;
+		-ms-flex: none;
+		flex: none;
+	}
+ 	 
+	&.restrict-width { // If count <= 3, restrict-width class is added
+		-webkit-flex: 1 1 32.333%;
+		-moz-flex: 1 1 32.333%;
+		-ms-flex: 1 1 32.333%;
+		flex: 1 1 32.333%;
+		margin-left: 2px;
+		margin-right: 2px;
+		
+		@media (max-width: 680px) {
+			-webkit-flex: none;
+			-moz-flex: none;
+			-ms-flex: none;
+			flex: none;
+			width: 100%;
+			margin-bottom: 4px;
+		}
+	}
+}
+
+
+// If 4 listings exist, tweak the tablet layout
+.idx-featured-listing__4 .idx-featured-listing {
+	
+	@media (min-width: 681px) and (max-width: 1020px) {
+		-webkit-flex: 1 1 49.333%;
+		-moz-flex: 1 1 49.333%;
+		-ms-flex: 1 1 49.333%;
+		flex: 1 1 49.333%;
+		margin-bottom: 4px;
+	}
+}
+
+
+// if 7-12 listing exist, then don't let the flex items grow
+.idx-featured-listing__7,
+.idx-featured-listing__8,
+.idx-featured-listing__9,
+.idx-featured-listing__10,
+.idx-featured-listing__11,
+.idx-featured-listing__12 {
+	-webkit-justify-content: left;
+	-moz-justify-content: left;
+	-ms-justify-content: left;
+	justify-content: left;
+	
+	.idx-featured-listing {
+		-webkit-flex: 0 1 16.25%;
+		-moz-flex: 0 1 16.25%;
+		-ms-flex: 0 1 16.25%;
+		flex: 0 1 16.25%;
+		margin-bottom: 4px;
+		
+		@media (max-width: 1020px) {
+			-webkit-flex: 0 1 32.7%;
+			-moz-flex: 0 1 32.7%;
+			-ms-flex: 0 1 32.7%;
+			flex: 0 1 32.7%;
+		}
+		
+		@media (max-width: 680px) {
+			-webkit-flex: 0 1 49.25%;
+			-moz-flex: 0 1 49.25%;
+			-ms-flex: 0 1 49.25%;
+			flex: 0 1 49.25%;
+		}
+	
+		@media (max-width: 589px) {
+			width: 100%;
+			-webkit-flex: none;
+			-moz-flex: none;
+			-ms-flex: none;
+			flex: none;
+		}
+	}
+}
+// end 7-12 listing adjustment
+
+
+.idx-featured-listing--url {
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+}
+
+.idx-featured-listing__info {
+	display: block;
+	padding: 5px 10px 3px;
+	
+	> h4, > p {
+		margin-bottom: 0;
+		font-weight: 200;
+	}
+	
+	> h4 {
+		font: 200 22px/30px overpass, sans-serif;
+		text-transform: uppercase;
+		color: #777;  
+	} 
+	
+    > p {	 
+		font-family: 'pathway gothic one', sans-serif;   
+		font-size: 25px;
+		font-style: normal;
+		color: #222; 
+    }
+
+	@media (min-width: 481px) {
+		
+		> h4 { font: 200 16px/1.25 overpass, sans-serif; }
+		
+		> p {	 
+			font-family: 'pathway gothic one', sans-serif;   
+			font-size: 20px;
+		} 
+	}
+}
+
+.h-feat-homes .idx-featured-listing--img-wrap {
+	overflow: hidden;
+	position: relative;
+	background-color: #222;
+	width: 100%;
+	
+	/* viewport width / aspect ratio & media queries. 
+	Default scenario = 6+ listings */
+	height: calc((1020px / 6) / (5 / 3));
+	
+    @media (max-width: 1020px) { height: calc((100vw / 3) / (5 / 3)); }
+	@media (max-width: 680px) { height: calc((100vw / 2) / (5 / 3)); }
+	@media (max-width: 589px) { height: calc(100vw / (5 / 3)); }
+}
+
+
+/* Scenarios for featured listing images to maintain aspect ratio 
+for scenarios between 1 - 5 listings. 6+ listings is the default scenario */
+
+// If 5 listings exist
+.h-feat-homes .idx-featured-listing__5 .idx-featured-listing--img-wrap {
+	
+	@media (min-width: 1021px) { height: calc((1020px / 5) / (5 / 3)); }
+}
+
+
+// If 4 listings exist
+.h-feat-homes .idx-featured-listing__4 .idx-featured-listing--img-wrap {
+	height: calc((1020px / 4) / (5 / 3));
+	
+	@media (max-width: 1020px) { height: calc((100vw / 2) / (5 / 3)); }
+	@media (max-width: 589px) { height: calc(100vw / (5 / 3)); }
+}
+
+
+// If 3 listings exist
+.h-feat-homes .idx-featured-listing__3 .idx-featured-listing--img-wrap {
+	height: calc((1020px / 3) / (5 / 3));
+	
+	@media (max-width: 1020px) { height: calc((100vw / 3) / (5 / 3)); }
+	@media (max-width: 680px) { height: calc(100vw / (5 / 3)); }
+}
+
+
+// If 2 listings exist 
+.h-feat-homes .idx-featured-listing__2 .idx-featured-listing--img-wrap {
+	height: calc((1020px / 3) / (5 / 3));
+	
+	@media (max-width: 1020px) { height: calc((100vw / 2) / (5 / 3)); }
+	@media (max-width: 680px) { height: calc(100vw / (5 / 3)); }
+}	
+
+
+// If 1 listing exists
+.h-feat-homes .idx-featured-listing__1 .idx-featured-listing--img-wrap {
+	height: calc((1020px / 2) / (5 / 3));
+	
+	@media (max-width: 1020px) { height: calc((100vw / 2) / (5 / 3)); }
+	@media (max-width: 680px) { height: calc(100vw / (5 / 3)); }
+}
+
+/* End listing image scenarios responsive tweaks */
+
+
+.idx-featured-listing--img-inner-wrap {
+	vertical-align: middle;
+	position: absolute;
+	width: 100%;
+	height: auto;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.idx-featured-listing--img {
+	vertical-align: middle;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+	height: auto;
+}

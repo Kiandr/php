@@ -1,0 +1,71 @@
+/**
+ * https://github.com/dbushell/Nestable
+ * TODO: Review use case of this plugin, currently jqueryui sortable is being used for drag and drop
+ */
+.dd {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.dd-list {
+    display: block;
+    position: relative;
+    padding: 0;
+    list-style: none;
+}
+
+.dd-collapsed .dd-list {
+    display: none;
+}
+
+.dd-item,
+.dd-empty,
+.dd-placeholder {
+    display: block;
+    position: relative;
+    padding: 0;
+    min-height: 20px;
+}
+
+.dd-handle {
+    display: block;
+}
+
+.dd-item > button {
+    display: none;
+}
+
+.dd-placeholder,
+.dd-empty {
+    padding: 0;
+    background: #f3f3f3;
+}
+
+.dd-empty {
+    border: 1px dashed #bbb;
+    min-height: 100px;
+    background-color: #e5e5e5;
+}
+
+.dd-dragel {
+    position: absolute;
+    pointer-events: none;
+    z-index: 9999;
+    border: 1px solid #f8f7fa;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .1);
+    margin: 0;
+    padding: 0 10px;
+    opacity: .95 !important;
+}
+
+.dd-dragel .article {
+    border-bottom-color: transparent;
+}
+
+.dd-dragel ul {
+    margin: 0 0 0 24px;
+}

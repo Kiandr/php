@@ -1,0 +1,216 @@
+/*! Compliance CSS */
+.mls-disclaimer {
+	clear: both;
+}
+
+/* Metrolist */
+.metrolistco {
+	.popover .office,
+	.listing .office {
+		font-weight: bold;
+		color: #000;
+	}
+	.popover .status,
+	.listing .status {
+		display: block;
+	}
+	.carousel .slideset .slide {
+		span.office {
+			font-weight: bold;
+		}
+	}
+	.window .gallery {
+		p.mls-provider {
+			color: #000;
+			font-weight: bold;
+		}
+	}
+
+}
+
+/* FMLS */
+body.fmls {
+	&.details .mls-provider { // details
+		text-align: center;
+	}
+	&.idx.birdseye, &.idx.streetview, &.idx.local {
+		#content h1 {
+			display: none;
+		}
+	}
+	&.idx.local .popover {
+		display: none;
+	}
+	.articleset article footer, // listings
+			#feature .listings .slideset .slide .data-provider { // featured listings
+		text-align: left;
+		&, span {
+			font-size: 13px;
+			line-height: 20px;
+		}
+		.icon {
+			position: absolute;
+			right: 0;
+			bottom: 0px;
+		}
+		.office {
+			display: inline-block;
+			position: relative;
+			&:after {
+				content: '';
+				width: 85px;
+				height: 1em;
+				display: inline-block;
+			}
+		}
+	}
+	&.popup .carousel .slideset .slide { // dashboard listings
+		padding-bottom: 21px;
+		.icon {
+			position: absolute;
+			left: 50%; bottom: 0;
+			margin-left: -35px;
+		}
+	}
+	.popover .icon img { // map popups
+		float: right !important;
+	}
+	&.sitemap { // sitemap
+		ul {
+			display: inline-block;
+		}
+		li {
+			position: relative;
+		}
+		.icon {
+			position: absolute;
+			right: 0;
+			top: 50%;
+			margin-top: -9px;
+		}
+		.office {
+			padding-right: 90px;
+		}
+	}
+}
+
+/* CMLS */
+body.cmls .mls-disclaimer p.disclaimer {
+	font-size: 11px;
+}
+
+/* 
+SHOW POPUP HEADER (show MLS#):
+ - CINCYMLS 
+ - GGAR
+*/
+body.cincymls .popover.stacked .popover header,
+body.ggar .popover.stacked .popover header
+{
+	display: block;
+}
+
+/* EREB */
+
+.listings .provider-first .provider  {
+  clear: left;
+  float: left;
+}
+.ereb .popover.stacked .popover header,
+.erebcom .popover.stacked .popover header,
+.creb .popover.stacked .popover header {
+  display:block;
+  
+}
+@media only screen and (min-width:481px){
+  .listings.flowgrid_x1 .provider-first .provider
+  {
+    position:absolute;
+    top:0;
+    float:none;
+    clear:none;
+  }
+  .listings.flowgrid_x1 .provider-first
+  {
+    padding-top:2em;
+  }
+}
+.ereb .articleset article .body .photo,
+.creb .articleset article .body .photo,
+.erebcom .articleset article .body .photo
+{
+  overflow:visible;
+}
+.ereb .articleset article .photo .btn.vanilla.save,
+.erebcom .articleset article .photo .btn.vanilla.save,
+.creb .articleset article .photo .btn.vanilla.save
+{
+    background: none repeat scroll 0 0 #666666 !important;
+    border: 3px solid #FFFFFF !important;
+    border-radius: 20px;
+    padding: 2px 4px 0 !important;
+    position:absolute;
+    right: 15px;
+    top: auto !important; 
+    bottom:-25px;
+    z-index:3;
+}
+
+// SBBOR Compliance
+.sbbor .disclaimer {
+	text-align: center;
+}
+
+// CBROH Compliance
+.cbroh #content .articleset.flowgrid_x1 article footer {
+	bottom: 0 !important;
+}
+
+/* show_below_details */
+.details-foot .mls-disclaimer {
+	border-top: 0;
+	padding-top: 0;
+}
+.details-foot {
+	clear: both;
+}
+#dashboard .mls-disclaimer {
+	border-top: 0;
+}
+.show-immediately-below-listings .mls-disclaimer {
+	border-top: 0;
+}
+
+#foot-modules .mls-disclaimer .disclaimer p {
+	color: inherit;
+}
+#foot-modules .mls-disclaimer .disclaimer p {
+	color: inherit;
+}
+#feature .mls-disclaimer .disclaimer p
+{
+	color: inherit;
+}
+
+// MCMLS COMPLIANCE
+body.mcmls.details .mls-provider {
+	font-size: 200%;
+}
+body.mcmls .mls-disclaimer .copy {
+	font-style: italic;
+}
+
+// REBGV Compliance
+body.rebgv .flowgrid article.listing footer .icon {
+	display: block;
+}
+
+// WPML Compliance
+.wpml .wpmlLogo {
+    padding: 5px;
+}
+
+// HCMLS Office Compliance size on details page
+.hcmls .mls-disclaimer p.disclaimer.office {
+    font-size: 133% !important;
+}

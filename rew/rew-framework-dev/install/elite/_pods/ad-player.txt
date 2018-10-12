@@ -1,0 +1,9 @@
+<section class="uk-container pod radioAds uk-panel">
+
+        <header class="uk-nbfc">
+                <h2><i class="uk-icon uk-icon-microphone"></i> {heading}</h2>
+        </header>
+
+        {audio-files}
+
+</section>

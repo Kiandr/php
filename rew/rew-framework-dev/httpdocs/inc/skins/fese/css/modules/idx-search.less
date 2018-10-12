@@ -1,0 +1,620 @@
+.sale,
+.sale .range,
+.sale .range .min,
+.sale .range .max {
+    .inline-flex();
+}
+
+select::-moz-focus-inner {
+    margin: -1px;
+    padding: 0;
+    border-width: 1px;
+}
+
+.mmm,
+.nnn {
+    margin: 10px 20px 10px 0;
+}
+body:not(.idx) {
+    .mmm {
+        margin-right:0;
+    }
+}
+
+
+.nnn { margin-right: 0; }
+
+.nnn .tween {
+    font: 14px/14px @body-font;
+    align-self: center;
+    padding: 0 10px;
+    color: @body-font-colour;
+}
+
+.show-advanced {
+    width: 120px;
+}
+
+.nnn a {
+    padding: 10px 10px 10px 20px;
+    font: 14px/14px @body-font;
+    align-self: center;
+    margin-left: auto; margin-right: 0;
+    color: @btn-grey;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAECAYAAABCxiV9AAAAJElEQVQImWOsrKz8z4ADMDEwMDDikGNkgjHQJWA6GdAUwBUCABSFAnhcifi9AAAAAElFTkSuQmCC') no-repeat center right;
+}
+.nnn .show-advanced.open {				 
+	background:	url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAECAYAAABCxiV9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAChJREFUeNpirKysZEAC/4GYEcZhQpNApuGS/xlQwX+YJLoEXAFAgAEAAwgIbT8isBsAAAAASUVORK5CYII=');
+}
+
+.mmm .ac-input {
+    border: 1px solid #a8a8a8;
+    border-radius: 3px 0 0 3px;
+    border-right: none;
+    padding: 0;
+	background: @white;
+    position: relative;
+    .flex-1();
+    .flex();
+}
+
+.mmm .ac-input input {
+    font: 14px/14px @body-font;
+    padding: 10px 12px 7px 12px;
+	padding-right: 88px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.nnn select {
+    font: 14px/14px @body-font;
+    padding: 6px 24px 4px 6px;
+    border: 1px solid #a8a8a8;
+    border-radius: 2px;
+    min-height: 34px;
+}
+
+.mmm button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-radius: 0 3px 3px 0;
+    font: 14px/14px @body-font;
+    padding: 10px 12px 7px 12px;
+}
+
+.nnn select {
+	-webkit-appearance: none;
+   	-moz-appearance: none;
+	appearance: none;
+	background: #fff url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAMCAYAAACulacQAAAAQUlEQVQYla2PMQ4AMAgCwV/zejrZWBK3shhzKIGSMGQA7KUCzHmh8coNE1wD7Y29mR8hJa2hhVE6D/ttGpiZTOMBbsEN6P1Z68sAAAAASUVORK5CYII=') no-repeat center right 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    #idx-search_1 div {
+        .flex-wrap();
+    }
+
+    .mmm,
+    .nnn {
+        width: 100%;
+        margin-right: 0;
+        .flex-wrap();
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    .nnn-b {
+        width: 100%;
+        margin: 0 0 20px 0 !important;
+    }
+
+    .nnn select {
+        flex-grow: 2;
+    }
+
+}
+
+.mmm {
+    .flex-no-wrap();
+}
+.mmm .ac-input {
+    input {
+        border: none;
+        width: 100%;
+    }
+}
+/* IDX Feed Switcher */
+.idx-feed-select {
+	display: block;
+	padding: 0;
+	margin: 0;
+	text-align: left;
+}
+.idx-feed-select li {
+	display: inline-block;
+	list-style:none;
+	padding:0 8px 0 0;
+}
+.idx-feed-select li:first-child {
+	padding-left:0;
+}
+.idx-feed-select li a {
+	display: block;
+	padding:0px;
+	font-size:14px;
+	text-decoration: none;
+	color:@black;
+	opacity:.8;
+	-webkit-transition: all .6s;
+	transition: all .6s;
+	border-bottom:2px solid transparent;
+}
+.idx-feed-select li a:hover,
+.idx-feed-select li a.selected {
+	display: block;
+	color:@black;
+	border-bottom:2px solid @black;
+	opacity:1;
+}
+
+/* Search criteria - selected search options */
+.search-criteria .btn {
+	@media (max-width:680px) {
+		margin-bottom:2px;
+	}
+}
+
+// LISTINGS PAGE
+.idx-search-form {
+    .flex();
+    padding-bottom: 10px;
+    @media only screen and (max-width: 940px) {
+        display: block;
+    }
+    .search-input-container {
+        .flex();
+        .flex-1();
+        @media only screen and (max-width: 940px) {
+            margin-bottom: 20px;
+        }
+    }
+	.sale {
+        @media (max-width: 800px) {
+            width:100%;
+        } 
+        .range {
+            @media (max-width: 800px) {
+                width:100%;
+                .min {
+                    display:inline-block;
+                    width:45%;
+                    float:left;
+                }
+                .tween {
+                    display:inline-block;
+                    width:10%;
+                    margin:10px auto 0;
+                    text-align: center;
+                }
+                .max {
+                    display:inline-block;
+                    width:45%;
+                    float:right;
+                }
+                select {
+                    width:100%;
+                }
+            }   
+        }
+    }
+}
+
+// Listings Link Fix 
+.pg-listings,
+.idx,
+.search.tpl-search {
+	.bar.idx-sort-bar {
+		.mnu-item {
+			&:hover {
+				background-color:@grey;
+			}
+		}
+		@media only screen and (max-width:768px) {
+			.mnu-item, .ttl {
+				font-size:14px;
+				padding-left:5px;
+				padding-right:5px;
+				&:hover {
+					background-color:@grey;
+				}
+			}
+			display:block;
+			width:100%;
+			&:after {
+				content: '';
+				display:table;
+				clear:both;
+			}
+			.ttl {
+				width: 50%;
+    			display: inline-block;
+    			float: left;
+				padding-right: 10px;
+    			padding-left: 10px;
+				text-align: center;
+			}
+			.sort.mini {
+				width:50%;
+				text-align: center;
+				a {
+					padding-right: 10px;
+    				padding-left: 10px;
+				}
+				.mnu-item {
+					padding-right:25px;
+					display:block;
+					text-align: center;
+				}
+			}
+			.right-idx-bar {
+				width:100%;
+				a {
+					width:25%;
+					display:inline-block;
+					text-align:center;
+					padding-right:10px;
+					padding-left:10px;
+				}
+			}
+		}
+		
+		@media only screen and (max-width:480px) {
+			.right-idx-bar {
+				width:100%;
+				a {
+					width:50%;
+					text-align: center;
+					float:left;
+					display:inline-block;
+				}
+			}
+		}
+		@media only screen and (max-width:400px) {
+			.mnu-item, .ttl {
+				font-size:12px;
+			}
+			.right-idx-bar {
+				width:100%;
+				a {
+					white-space: normal;
+					padding-right:0;
+				}
+			}
+		}
+	}
+	@media only screen and (max-width:568px) {
+		#sort-menu {
+			left: auto !important;
+    		right: 20px;
+		}
+	}
+}
+// Listings View Listings Button
+
+.pg-listings .marB {
+    margin-bottom: 20px;
+}
+
+.view-listings-link .navbar {
+    margin: 20px 0;
+    a {
+        &:last-child {
+            border-right: none;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+/* Search Criteria */
+.register .msg {
+    a {
+        font-size:14px;
+        margin:5px 5px 5px 0;
+        &:last-child {
+            margin-bottom:5px;
+        }
+        svg {
+            margin-left:2px;
+        }
+    }	
+}
+
+/* Selected Tags */
+.search-criteria .msg {
+	padding: 9px 12px;
+}
+.search-criteria .msg .btn {
+	margin:2px;
+}
+
+/* Advanced Search */
+.advanced-options {
+	padding:20px 0;
+	overflow: hidden;
+	// Field Styles
+	.field {
+		position: relative;
+		overflow: visible;
+		max-width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-bottom:20px;
+		&:last-child {
+			margin-bottom:0;
+		}
+        @media (max-width:680px) {
+            margin-bottom:5px;
+        }
+		label,.label {
+			position: relative;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			padding: 10px 0;
+			display:block;
+			overflow: hidden;
+		}
+		input {
+			.flex();
+			border: 1px solid @border-grey;
+			background: transparent;
+			padding: 10px;
+			box-sizing: border-box;
+			width: 100%;
+		}
+		input[type="checkbox"],
+		input[type="radio"] {
+			display:inline-block;
+			margin-left:2px !important;
+		}
+		select {
+			border: 1px solid @border-grey;
+			padding: 10px 30px 10px 5px;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			width: 100%;
+			background: transparent url("data:image/svg+xml,\<svg height='50' viewBox='0 0 50 50' width='50' xmlns='http://www.w3.org/2000/svg'\>\<path fill='none' d='M0 0h50v50H0z'/\>\<path fill='grey' d='M47.25 15l-2.086-2.086L25 33.078 4.836 12.914 2.75 15 25 37.25'/\>\</svg\>") no-repeat;
+			background-size: 16px 16px;
+			background-position: right 10px center;
+            @media all and (-ms-high-contrast:none) {
+                padding-top:5px;
+                padding-bottom:5px;
+            }
+		}
+	}
+	// Form Layout Styles for specific panels
+	.field {
+		display: inline-block;
+		float: left;
+		width: ~"calc(50% - 4px)";
+        @media (max-width:680px) {
+            width:100%;
+        }
+	}
+	// If the Fields are Checkboxes or Radios we make them full width, looks better
+	#field-type,
+	#field-city,
+	#field-features {
+		display: block;
+		width: 100%;
+	}
+	// Exterior Features list
+	#field-exterior.scrollable .details {
+		overflow-y: scroll;
+		max-height:230px;
+	}
+	// Cities list
+	#field-city.scrollable .details .toggleset {
+		overflow-y: scroll;
+		max-height:230px;
+	}
+    .field .range,
+    #field-sqft,
+	#field-year {
+        .min {
+            display:inline-block;
+            width:45%;
+            float:left;
+        }
+        .tween {
+            display:inline-block;
+            width:10%;
+            margin:10px auto 0;
+            text-align: center;
+        }
+        .max {
+            display:inline-block;
+            width:45%;
+            float:right;
+        }
+    }
+	button {
+		float:left;
+        clear:both;
+        margin:15px 10px 0;
+		@media (max-width:480px) {
+			display:block;
+			float:none;
+			width:100%;
+			margin:30px 0 15px 10px;
+		}
+	}
+    .ac-input .menu label {
+        width:100%;
+    }
+
+}
+
+
+
+
+
+
+// Listing Search Fallback for browsers that don't fully support Flex
+.pg-listings,
+.pg-idx,
+.search.tpl-search {
+    @media only screen and (max-width: 1199px) {
+        #idx-search_1 {
+            .idx-search-form {
+                .search-input-container {
+                    width: 100%;
+                    -webkit-box-lines: single;
+                    -moz-box-lines: single;
+                    .flex-no-wrap();
+                    max-height: 41px;
+                    min-height: 41px;
+                    padding-right: 20px;
+                    .ac-input {
+                        width: ~"calc(100% - 87.77px)";
+                        display: inline-block;
+                        max-height: 41px;
+                        min-height: 41px;
+						
+                    }
+                    button {
+                        float: right;
+                        display: inline-block;
+                        min-height: 41px;
+                    }
+                }
+                // Selects
+                .nnn {
+                    .flex-1();
+                    .nnn-b {
+                        max-height: 41px;
+                        min-height: 41px;
+                        select {
+
+                        }
+                        span {
+
+                        }
+                    }
+                    select {
+                        max-height: 41px;
+                        min-height: 41px;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 1025px) {
+        // Selects
+        .nnn {
+            display: block;
+            .flex();
+            width: 100%;
+            .nnn-b {
+                display: inline-block;
+                float: left;
+                select {
+                    display: inline-block;
+                    width: auto;
+                }
+                span {
+                    display: inline-block;
+                }
+            }
+            a.show-advanced {
+                display: inline-block;
+                text-align: right;
+            }
+        }
+    }
+    @media only screen and (max-width: 940px) {
+        #idx-search_1 {
+            .idx-search-form {
+                .search-input-container {
+                    padding-right: 0;
+                }
+                // Selects
+                .nnn {
+                    display: block;
+                    width: 100%;
+                    .nnn-b {
+                        width: 100%;
+                        margin: 0 0 20px 0 !important;
+                        select {
+                            display: inline-block;
+                            width: ~"calc(50% - 20px)";
+                            &:nth-child(1) {
+                                float: left;
+                            }
+                            &:nth-child(2) {
+                                float: right;
+                            }
+                        }
+                        span {
+                            display: inline-block;
+                        }
+                    }
+                    select[name="minimum_bedrooms"] {
+                        width: ~"calc(50% - 20px)";
+                    }
+                    select[name="minimum_bathrooms"] {
+                        width: ~"calc(50% - 20px)";
+                        margin-left: 15px;
+                        float: right;
+                    }
+                    a.show-advanced {
+                        display: block;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+    .pg-listings,
+    .pg-idx,
+    .search.tpl-search {
+        #idx-search_1 {
+            .idx-search-form {
+                .nnn {
+                    .flex-justify-end();
+                }
+            }
+        }
+    }
+}
+@media (max-width: 680px) {
+    .advanced-options .toggleset label {
+        width: 50% !important;
+    }
+}
+@media (max-width: 480px) {
+	.advanced-options .toggleset label {
+        width: 100% !important;
+		display:block;
+    }
+} 
+
+
+
+
+
+
+
+
+
+
+

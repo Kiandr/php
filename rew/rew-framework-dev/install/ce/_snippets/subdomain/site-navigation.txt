@@ -1,0 +1,25 @@
+<ul class="nav__list nav--main -text-xs">
+    <li class="nav__item">
+        <a class="nav__link" href="/">Home</a>
+    </li>
+    <li class="nav__item">
+        <a class="nav__link" href="/idx">Listings</a>
+    </li>
+    <li class="nav__item">
+        <a class="nav__link" href="/selling.php">Sell My Home</a>
+        <ul class="dropdown">
+            <li class="dropdown__item">
+                <a class="dropdown__link" href="/marketing-plan.php">Marketing Plan</a>
+            </li>
+            <li class="dropdown__item">
+                <a class="dropdown__link" href="/home-evaluation.php">Home Evaluation</a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav__item">
+        <a class="nav__link" href="/blog/">Blog</a>
+    </li>		            
+    <li class="nav__item">
+        <a class="nav__link" href="/contact.php">Contact</a>
+    </li>
+</ul>

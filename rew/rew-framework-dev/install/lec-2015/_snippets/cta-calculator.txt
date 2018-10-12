@@ -1,0 +1,5 @@
+<div class="ad">
+	<a href="/mortgage-calculator.php">
+		<img src="/inc/skins/lec-2015/img/fake-mortgage.jpg" alt="How Much House Can You Afford?">
+	</a>
+</div>

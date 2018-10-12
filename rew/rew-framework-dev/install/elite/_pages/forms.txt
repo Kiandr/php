@@ -1,0 +1,10 @@
+<h2>#<em>form-approve</em>#</h2>
+<p>#form-approve#</p>
+<h2>#<em>form-buyers</em>#</h2>
+<p>#form-buyers#</p>
+<h2>#<em>form-contact</em>#</h2>
+<p>#form-contact#</p>
+<h2>#<em>form-seller</em>#</h2>
+<p>#form-seller#</p>
+<h2>#<em>mortgage-calculator</em>#</h2>
+<p>#mortgage-calculator#</p>

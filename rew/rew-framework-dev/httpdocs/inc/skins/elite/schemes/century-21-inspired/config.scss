@@ -1,0 +1,14 @@
+$color-primary 			: 	#000000 				!default; 	// Pure Black	
+
+$color-secondary    :   #fdd166         !default;   // Century 21 yellow (darker)
+$secondary-light 		: 	lighten(#fdd166, 5%) 	!default;	// Lighten Secondary Colour
+
+$color-accent-primary 	: 	#ffffff 				!default; 	// White
+$color-accent-secondary : #fdc94d         !default;   // Century 21 Yellow (lighter)
+$accent-secondary-light    :   lighten(#fdc94d, 5%)  !default; // Lighten Accent Secondary Colour
+
+
+$base-link-color: $color-secondary 			!default;
+$base-link-hover-color: $secondary-light 	!default;
+
+$base-gray: #e8e9ed !default; //light grey

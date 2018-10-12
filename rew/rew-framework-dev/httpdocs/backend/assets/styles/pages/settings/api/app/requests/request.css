@@ -1,0 +1,46 @@
+.request-data h2 {
+    color: inherit;
+    line-height: 20px;
+    padding: 5px 0 !important;
+    font-weight: bold;
+}
+
+.request-data a {
+    color: #06c;
+}
+
+.request-data p {
+    padding: 10px 10px 10px 20px;
+    overflow: hidden;
+}
+
+.request__list {
+    padding: 0;
+    margin: 0 0 15px;
+    overflow: hidden;
+}
+
+.request__key {
+    color: inherit;
+    float: left;
+    width: 50%;
+    border-top: 1px solid #ccc;
+    clear: left;
+    padding: 5px 0;
+}
+
+.request__value {
+    overflow: hidden;
+    border-top: 1px solid #ccc;
+    padding: 5px 0;
+}
+
+@media (max-width: 700px) {
+    .request__value,
+    .request__key {
+        font-size: 14px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}

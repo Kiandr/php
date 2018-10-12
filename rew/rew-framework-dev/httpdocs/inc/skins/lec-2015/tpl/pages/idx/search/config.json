@@ -1,0 +1,13 @@
+{
+	"config" : {
+		"title"			: "IDX Search Results",
+		"description"	: "Use for IDX Search Results",
+		"selectable"	: false
+	},
+	"scripts" : [
+		"js/lib/select2-3.4.6.min.js"
+	],
+	"styles" : [
+		"css/lib/select2-3.4.6.css"
+	]
+}

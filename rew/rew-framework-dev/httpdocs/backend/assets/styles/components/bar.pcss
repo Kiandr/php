@@ -1,0 +1,151 @@
+.bar {
+    padding: 8px;
+    line-height: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar::after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.bar__title {
+    padding: 16px 20px 16px 16px;
+    font-size: 18px;
+    line-height: 24px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: inherit;
+    color: inherit;
+    position: relative;
+}
+
+.bar__title .sprite {
+    margin-right: 8px;
+}
+
+.bar__link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.bar__actions {
+    margin-left: auto;
+    display: inline-flex;
+    margin-right: -8px;
+}
+
+.bar__action {
+    padding: 16px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #91909a;
+}
+
+.bar__action .thumb {
+    vertical-align: middle;
+    bottom: -2px;
+}
+
+.bar__label {
+    position: relative;
+    bottom: -3px;
+}
+
+.bar__action.is-current,
+.bar__action.is-current .icon {
+    color: #40404e;
+    fill: #40404e;
+    font-weight: bold;
+}
+
+.bar__sprite {
+    position: relative;
+    bottom: -1px;
+}
+
+@media only screen and (max-width: 900px) {
+    .bar .ttl .ico {
+        display: inline;
+    }
+}
+
+/* Prevent wrapping `.icon--drop` on smaller screens */
+@media only screen and (max-width: 400px) {
+    .bar .bar__title.drop-target {
+        font-size: 16px;
+        width: 183px;
+        display: flex;
+    }
+
+    .bar__actions {
+        align-items: center;
+    }
+
+    .bar__action {
+        padding: 8px;
+    }
+}
+
+/* Theming */
+.bar.theme--eee {
+    background: #fff;
+    border: none;
+}
+
+.bar.theme--eee .mnu a:hover {
+    background: transparent;
+    color: #40404e;
+}
+
+.bar.theme--eee .mnu .current a {
+    color: #40404e;
+}
+
+.bar.theme--eee .mnu a {
+    color: #888;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    padding: 24px 12px;
+}
+
+/**
+ * TODO: Review use cases for these selectors (maybe deletable?)
+ * e.g currently we use: `bar__title`, `bar__actions`
+ */
+
+.bar .ttl {
+    float: left;
+    margin: 0 12px 0 0;
+    color: inherit;
+    text-decoration: inherit;
+    padding: 24px 12px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.bar .ttl .ico {
+    vertical-align: middle;
+    color: #fff;
+    opacity: .33;
+    position: relative;
+    margin: -2px -2px 0 -8px;
+    display: none;
+}
+
+.bar .btns {
+    float: right;
+    padding: 0 15px;
+}

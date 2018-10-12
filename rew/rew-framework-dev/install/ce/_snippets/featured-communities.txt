@@ -1,0 +1,14 @@
+{
+    "name": "communities",
+    "config": {
+        "template": "cover.tpl.php",
+        "javascript": "cover.js.php",
+        "stylesheet": "cover.css.php",
+        "thumbnails": "x700",
+        "loadImages": 1,
+        "searchUrl": 1,
+        "loadStats": 0,
+        "truncate": 110,
+        "limit": 4
+    }
+ }

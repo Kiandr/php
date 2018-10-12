@@ -1,0 +1,8 @@
+{
+    "config" : {
+        "order"			: 1,
+        "title"			: "1 Column",
+        "description"	: "The 1 Column template does not include a sidebar for navigation and should be used when a more immersive reading experience is desirable.",
+        "selectable"	: "true"
+    }
+}

@@ -1,0 +1,216 @@
+.field {
+    padding: 12px 0;
+}
+
+.field__label {
+    font-size: 14px;
+    display: block;
+    padding: 6px 0;
+    color: #40404e;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+}
+
+.input {
+    border: 1px solid #d2d1d8;
+    border-radius: 2px;
+    background: #fff;
+    padding: 14px;
+    display: inline-flex;
+    vertical-align: top; /* line up w/ inline-block */
+}
+
+.input input,
+.input select,
+.input .selectize-control,
+.input .selectize-input {
+    flex: 10 1 auto;
+    border: 0;
+    padding: 0;
+    min-width: 48px;
+    min-height: auto;
+    outline: none;
+}
+
+.input textarea:focus,
+.input input:focus,
+.input select:focus {
+    outline: none;
+}
+
+.input .selectize-input {
+    padding: 0 !important;
+}
+
+.input .btn {
+    flex-shrink: 0;
+    align-self: center;
+    margin: 0 0 0 8px;
+    font-size: 13px;
+    line-height: 20px;
+    padding: 0 8px;
+}
+
+.input .selectize-control.multi .selectize-input > div {
+    padding: 4px 8px;
+    display: inline-flex; /* fixes spacing issues */
+}
+
+.input .selectize-control.multi .selectize-input.has-items {
+    float: left;
+    margin: -2px 0 -3px 0;
+}
+
+[data-selectize] {
+    visibility: hidden;
+    height: 26px;
+}
+
+.selectize-dropdown-content .token {
+    padding: 14px;
+}
+
+.qq-uploader {
+    display: inline;
+}
+
+#og_image {
+    padding: 0;
+    background: #fff;
+    max-width: 600px;
+}
+
+/* New Radio / Checkbox format */
+.toggle {
+    display: inline-flex;
+    align-items: center;
+}
+
+.toggle__label {
+    padding: 0 8px;
+}
+
+.toggle--stacked {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.toggle--stacked .toggle__label,
+.toggle--stacked input,
+.toggle--stacked img {
+    vertical-align: middle;
+}
+
+/**
+ * TODO: Review use cases for .fld (maybe deletable?)
+ * currently we use `.field`
+ * e.g `.field__label`
+ * Review tpl files and change `.fld` to `.field`
+ */
+
+.fld.group_swatches {
+    overflow: hidden;
+}
+
+.fld.title {
+    width: 100%;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+
+.fld.title input {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+}
+
+.fld.vanilla label.group_swatch {
+    display: inline-block;
+    width: auto;
+    margin-right: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.fld.vanilla label.group_swatch input {
+    position: absolute;
+    left: -999px;
+}
+
+.fld.vanilla label.boolean {
+    display: inline;
+    margin-right: 10px;
+}
+
+.fld.vanilla input[type=radio] {
+    display: inline;
+    width: auto;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.fld {
+    padding: 12px 0;
+}
+
+.fld-label {
+    font-size: 14px;
+    display: block;
+    padding: 6px 0;
+    color: #40404e;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+}
+
+.fld--ghost input,
+.fld--ghost textarea,
+.fld--ghost select {
+    border: none;
+    padding: 0 18px 0 0;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.fld--ghost .tween {
+    padding: 0;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .fld--ghost select {
+        margin-left: -2px;
+    }
+}
+
+@supports (-ms-accelerator:true) {
+    /* IE Edge 12+ */
+    .fld--ghost select {
+        margin-left: -3px;
+    }
+}
+
+.fld-inputs {
+    display: flex;
+}
+
+.fld-inputs .wFill {
+    flex: 1;
+}
+
+.fld .ui-slider {
+    margin: 12px 0;
+}
+
+.input input,
+.input select {
+    flex: 1 1 auto;
+}
+
+.input input:focus {
+    border: none;
+    border-color: transparent !important;
+}

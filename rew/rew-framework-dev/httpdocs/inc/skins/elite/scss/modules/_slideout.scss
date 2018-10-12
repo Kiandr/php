@@ -1,0 +1,63 @@
+#sm-slideout {
+    background: rgba(0,0,0,0.4);
+    
+    .uk-offcanvas .uk-offcanvas-bar {
+        background: #fff none repeat scroll 0 0 !important;
+    }
+    
+    .uk-offcanvas-bar {
+        width: 315px;
+        background: #fff none repeat scroll 0 0 !important;
+        background-color: $base-white;
+
+        @include bp-xsmall {
+            width: 295px;
+        }
+
+        @include bp-small {
+            width: 315px;
+        }
+    }    
+
+    #sm-slideout-wrap {
+        background-color: $base-white !important;
+        padding: 50px 30px 20px;
+        text-align: left;
+    }
+
+    h3 {
+        padding-bottom: 0.5em;
+        border-bottom: 1px solid $color-secondary;
+    }
+
+    ul li {
+        font-family: $base-body-font-family;
+        padding: 0.50em 0 0.50em 0.25em;
+
+        &:hover {
+            background: #e7e7e7;
+        }
+
+        a {
+            color: $color-primary;
+
+            &:hover {
+                color: $color-primary;
+                text-decoration: none;
+            }
+        }
+    }
+
+    ul.sign-in li {
+        display:inline-block;
+        .btn { color: $color-secondary; }
+    }
+}
+
+#sm-slideout.open,
+.menu-trigger:hover + #sm-slideout {
+    right: 0;
+    left: auto;
+    visibility: visible;
+}
+

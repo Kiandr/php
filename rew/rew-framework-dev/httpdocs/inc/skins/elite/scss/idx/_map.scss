@@ -1,0 +1,139 @@
+/*--------------------------------------------------------------------------------------------
+MAP
+---------------------------------------------------------------------------------------------*/
+
+// MAP CONTAINER
+.fw-idx-map, #idx-map-onboard {
+    height: 450px;
+    max-height: 450px;
+    overflow: hidden;
+    -webkit-transition: max-height 0.8s;
+    -moz-transition: max-height 0.8s;
+    transition: max-height 0.8s;
+}
+
+// MAP MARKER TOOLTIP
+#idx-map-message {
+    em {
+        font-style: normal;
+        font-weight: $font-weight-semi-bold;
+    }
+}
+
+.fw-idx-map, #idx-map-onboard {
+    height: 65vh;
+    max-height: 65vh;
+}
+
+.map-tooltip {
+    h3, h4 {
+        margin: 0;
+        padding: 0;
+        line-height: 1.5em;
+    }
+
+    .popover {
+        padding: 1em;
+        border-radius: 3px;
+
+        a.action-close {
+            display: none;
+        }
+
+        &.stacked {
+            max-width: 300px;
+            border-radius: 3px;
+            box-sizing: border-box;
+            height: 400px;
+            overflow: auto;
+            padding: 10px;
+            resize: both;
+
+            .uk-thumbnail {
+                margin-bottom: 1em;
+            }
+        }
+    }
+}
+
+#idx-map-legend {
+    right: 0;
+    top: 75px;
+    width: $map-legend-width;
+
+    &.closed {
+        right: -($map-legend-width - 21px);
+
+        .legend-content {
+            display: none;
+        }
+    }
+
+    .legend-content {
+        top: 0;
+        left: 20px;
+        right: 1px;
+        padding: 10px 20px 20px;
+        min-height: 225px;
+    }
+}
+
+.map-tab {
+    background: rgba(0, 0, 0, 0) url("/img/map/tools/map-legendtabs.png") no-repeat scroll;
+    cursor: pointer;
+    position: relative;
+    right: -1px;
+
+    &.options {
+        background-position: 0 0;
+        height: 70px;
+        width: 20px;
+    }
+
+    &.stats {
+        background-position: -20px -70px;
+        height: 56px;
+        top: 2px;
+        width: 20px;
+    }
+}
+
+.hidden {
+    // As fun as it is to change all references to .hidden to reference .uk-hidden, it's too many JS changes.
+    @extend .uk-hidden;
+}
+
+#map-draw-controls {
+    a, span {
+        color: inherit;
+
+        @extend .uk-margin;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .tip {
+        display: block;
+    }
+
+    #GPolygonControl, #GRadiusControl {
+
+    }
+}
+
+.cma-property-valuation {
+    right: 8px;
+
+    #map-draw-controls a, #map-draw-controls span, .uk-margin {
+        margin-top: 0;
+        margin-bottom: 0;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,70 @@
+/*--------------------------
+GRID & LAYOUT
+--------------------------*/
+@colWidth		:	60;
+@gutterWidth	:	20;
+@idx-map-height :	500px;
+
+/*--------------------------
+COLORS
+--------------------------*/
+
+// Layout Colors
+@bgA			:	#fff;				// Main Container
+@fgA			:	#777;				// Main Content
+@bgB			:	#1f2031;			// Foot
+@fgB			:	#fff;				// Foot
+
+// New Fandango
+@swatch1		:	#65C0C3;
+@swatch1_lite	:	lighten(@swatch1,10%);
+@swatch1_dark	:	darken(@swatch1,10%);
+
+// UI Colors
+@bgU			:	#999;
+@fgU			:	#fff;
+@uiAccentColor	:	@swatch1_lite;
+@quickSearchButton : #008000;
+@sliderColor	: #777;
+
+
+/*--------------------------
+TYPOGRAPHY
+--------------------------*/
+@baseline		:	24px;
+@font_pageCopy	:	montserrat, serif;
+@font_Headings	:	montserrat, serif;
+.ui_font()			{ font: 300 16px montserrat, serif; line-height: @baseline; }
+.ui_font_bolder()	{ font: 400 16px montserrat, serif; line-height: @baseline; }
+.ui_font_small()	{ font: normal 11px montserrat, serif; line-height: @baseline; }
+.swatchHeadings ()	{ color: #444; }
+.swatchFgMuted ()	{ .fgColorUp(5%,@fgA,@bgA); }
+
+@grey-line 	: #e9e9e9;
+@background : #FAFAFA;
+@text-color	: #666666;
+@dark-border: #cccccc;
+@font-stack	: montserrat,helvetica,arial,sans-serif;
+@body-text	: montserrat, sans-serif;
+@sub-feature: #65c0c3;
+@swatch1 : #00a4df;
+@swatch2 : #ef8c00;
+@swatch1-light: lighten(@swatch1,10%);
+@swatch2-light: lighten(@swatch2,10%);
+@section-dark: #3a3a3a;
+@feature-background-path : url(../schemes/default/img/feature-background.jpg);
+@agent-background-path: url(../img/agent-bg.jpg);
+
+/*------------------------------
+// Sellers/Radio Landing
+------------------------------*/
+
+@radioPrimary: @bgB; // Dark
+@radioSecondary: #5372A1; // Light
+@radioAccent: #FEB218; // Yellow
+@radioImg: url(/inc/skins/brew/img/bg-radio-landing.jpg);
+
+/**
+ * LEC 2015 scheme settings
+ */
+@searchBtnImg: url(../schemes/default/img/ico-mg.png);

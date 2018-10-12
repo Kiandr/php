@@ -1,0 +1,63 @@
+.article {
+    text-decoration: none;
+    color: inherit;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    display: block;
+    position: relative;
+}
+
+.article__head {
+    padding: 0 0 16px;
+}
+
+.article__body {
+    display: flex;
+    align-items: center;
+}
+
+.article__foot {
+    padding: 16px 0 0;
+}
+
+.article__thumb {
+    margin-right: 16px;
+    border-radius: 2px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.article__content {
+    min-width: 0; /* this fixes text-overflow: ellipsis on child elements */
+    flex-grow: 10;
+}
+
+.article .icon {
+    align-self: center;
+}
+
+.article .ttl {
+    flex: 1 1 auto;
+    padding: 12px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    align-content: center;
+}
+
+.article .ttl .thb {
+    flex-shrink: 0;
+}
+
+.article .btns {
+    position: relative;
+    flex-grow: 0;
+    flex-shrink: 0;
+    min-height: 0;
+    min-width: 0;
+}
+
+.article .usr .ttl {
+    padding: 0;
+}

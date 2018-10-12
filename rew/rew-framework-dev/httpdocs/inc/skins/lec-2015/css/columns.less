@@ -1,0 +1,308 @@
+/* -------------------------------
+
+	BETTER GRID SYSTEM
+
+
+	example:
+
+	<div class="colset colset-3">
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+	</div>
+
+---------------------------------*/
+
+
+.colset {
+	position: relative;
+	margin: 0 -20px;
+
+	/* CLEARFIX */
+	&:after {
+		content: " ";
+		height: 0;
+		clear: both;
+		display: block;
+	}
+}
+
+.col {
+	position: relative;
+	margin: 0 20px;
+	float: left;
+}
+
+.colset-4 > .col {
+	width: calc(~'25% - 40px');
+}
+
+.colset-3 > .col {
+	width: calc(~'33.33% - 40px');
+}
+
+.colset-2 > .col {
+	width: calc(~'50% - 40px');
+}
+
+.colset-1 > .col {
+	width: calc(~'100% - 40px');
+}
+
+
+.width-1 {
+	width: calc(~'100% - 40px');
+}
+
+.width-1\/5 {
+	width: calc(~'20% - 40px');
+}
+
+.width-1\/4 {
+	width: calc(~'25% - 40px');
+}
+
+.width-1\/3 {
+	width: calc(~'33.333% - 40px');
+}
+
+.width-1\/2 {
+	width: calc(~'50% - 40px');
+}
+
+.width-3\/4 {
+	width: calc(~'75% - 40px');
+}
+
+.width-2\/5 {
+	width: calc(~'40% - 40px');
+}
+
+.width-2\/3 {
+	width: calc(~'66.66% - 40px');
+}
+
+
+/* SMALL SCREENS */
+
+@media only screen and (max-width : 480px) {
+
+	.colset-4-sm > .col {
+		width: calc(~'25% - 40px');
+	}
+
+	.colset-3-sm > .col {
+		width: calc(~'33.33% - 40px');
+	}
+
+	.colset-2-sm > .col {
+		width: calc(~'50% - 40px');
+	}
+
+	.colset-1-sm > .col {
+		width: calc(~'100% - 40px');
+	}
+
+	.width-1\/5-sm {
+		width: calc(~'20% - 40px');
+	}
+
+	.width-1\/4-sm {
+		width: calc(~'25% - 40px');
+	}
+
+	.width-1\/3-sm {
+		width: calc(~'33.333% - 40px');
+	}
+
+	.width-1\/2-sm {
+		width: calc(~'50% - 40px');
+	}
+
+	.width-3\/4-sm {
+		width: calc(~'75% - 40px');
+	}
+
+	.width-2\/5-sm {
+		width: calc(~'40% - 40px');
+	}
+
+	.width-2\/3-sm {
+		width: calc(~'66.66% - 40px');
+	}
+
+	.width-1-sm {
+		width: calc(~'100% - 40px');
+	}
+
+	.hidden-sm {
+		display: none;
+	}
+
+}
+
+/* MEDIUM SCREENS */
+
+@media only screen and (min-width : 481px) and (max-width : 991px) {
+
+	.colset-4-md > .col {
+		width: calc(~'25% - 40px');
+	}
+
+	.colset-3-md > .col {
+		width: calc(~'33.33% - 40px');
+	}
+
+	.colset-2-md > .col {
+		width: calc(~'50% - 40px');
+	}
+
+	.colset-1-md > .col {
+		width: calc(~'100% - 40px');
+	}
+
+	.width-1\/5-md {
+		width: calc(~'20% - 40px');
+	}
+
+	.width-1\/4-md {
+		width: calc(~'25% - 40px');
+	}
+
+	.width-1\/3-md {
+		width: calc(~'33.333% - 40px');
+	}
+
+	.width-1\/2-md {
+		width: calc(~'50% - 40px');
+	}
+
+	.width-3\/4-md {
+		width: calc(~'75% - 40px');
+	}
+
+	.width-2\/5-md {
+		width: calc(~'40% - 40px');
+	}
+
+	.width-2\/3-md {
+		width: calc(~'66.66% - 40px');
+	}
+
+	.width-1-md {
+		width: calc(~'100% - 40px');
+	}
+
+	.hidden-md {
+		display: none;
+	}
+
+}
+
+/* LARGE SCREENS */
+
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+	.colset-4-lg > .col {
+		width: calc(~'25% - 40px');
+	}
+
+	.colset-3-lg > .col {
+		width: calc(~'33.33% - 40px');
+	}
+
+	.colset-2-lg > .col {
+		width: calc(~'50% - 40px');
+	}
+
+	.width-1\/5-lg {
+		width: calc(~'20% - 40px');
+	}
+
+	.width-1\/4-lg {
+		width: calc(~'25% - 40px');
+	}
+
+	.width-1\/3-lg {
+		width: calc(~'33.333% - 40px');
+	}
+
+	.width-1\/2-lg {
+		width: calc(~'50% - 40px');
+	}
+
+	.width-3\/4-lg {
+		width: calc(~'75% - 40px');
+	}
+
+	.width-2\/5-lg {
+		width: calc(~'40% - 40px');
+	}
+
+	.width-2\/3-lg {
+		width: calc(~'66.66% - 40px');
+	}
+
+	.width-1-lg {
+		width: calc(~'100% - 40px');
+	}
+
+	.hidden-lg {
+		display: none;
+	}
+
+}
+
+/* X-LARGE SCREENS */
+
+@media only screen and (min-width : 1200px) {
+
+	.colset-4-xl > .col {
+		width: calc(~'25% - 40px');
+	}
+
+	.colset-3-xl > .col {
+		width: calc(~'33.33% - 40px');
+	}
+
+	.colset-2-xl > .col {
+		width: calc(~'50% - 40px');
+	}
+
+	.width-1\/5-xl {
+		width: calc(~'20% - 40px');
+	}
+
+	.width-1\/4-xl {
+		width: calc(~'25% - 40px');
+	}
+
+	.width-1\/3-xl {
+		width: calc(~'33.333% - 40px');
+	}
+
+	.width-1\/2-xl {
+		width: calc(~'50% - 40px');
+	}
+
+	.width-3\/4-xl {
+		width: calc(~'75% - 40px');
+	}
+
+	.width-2\/5-xl {
+		width: calc(~'40% - 40px');
+	}
+
+	.width-2\/3-xl {
+		width: calc(~'66.66% - 40px');
+	}
+
+	.width-1-xl {
+		width: calc(~'100% - 40px');
+	}
+
+	.hidden-xl {
+		display: none;
+	}
+
+}

@@ -1,0 +1,144 @@
+<form action="?submit" method="post" class="marB-md">
+
+    <input type="hidden" name="approveform" value="true">
+
+    <input class="hidden" name="email" value="" autocomplete="off">
+    <input class="hidden" name="first_name" value="" autocomplete="off">
+    <input class="hidden" name="last_name" value="" autocomplete="off">
+
+    <div class="divider -pad-vertical">
+    	<div class="divider__label -left">Contact Information</div>
+    </div>
+
+    <div class="columns">
+
+        <div class="column field -width-1/2 -width-1/1@sm -width-1/1@xs">
+            <label for="fld-fname" class="field__label">First Name <small class="required">*</small></label>
+            <input id="fld-fname" name="onc5khko" value="" required>
+        </div>
+
+        <div class="column field -width-1/2 -width-1/1@sm -width-1/1@xs">
+            <label for="fld-lname" class="field__label">Last Name <small class="required">*</small></label>
+            <input id="fld-lname" name="sk5tyelo" value="" required>
+        </div>
+
+        <div class="column field -width-1/2 -width-1/1@sm -width-1/1@xs">
+            <label for="fld-email" class="field__label">Email <small class="required">*</small></label>
+            <input id="fld-email" type="email" name="mi0moecs" value="" required>
+            <small class="field__tip">Please provide a valid email address.</small>
+        </div>
+
+        <div class="column field -width-1/2 -width-1/1@sm -width-1/1@xs">
+            <label for="fld-phone" class="field__label">Phone</label>
+            <input id="fld-phone" type="tel" name="telephone" value="">
+        </div>
+    </div>
+
+    <div class="divider -pad-vertical">
+    	<div class="divider__label -left">Mailing Address</div>
+    </div>
+
+    <div class="columns">
+
+        <div class="column field -width-1/2 -width-1/1@sm -width-1/1@xs">
+            <label for="fld-addr" class="field__label">Address <small class="required">*</small></label>
+            <input id="fld-addr" name="fm-addr" value="" required>
+        </div>
+
+        <div class="column field -width-1/2 -width-1/1@sm -width-1/1@xs">
+            <label for="fld-town" class="field__label">City <small class="required">*</small></label>
+            <input id="fld-town" name="fm-town" value="" required>
+        </div>
+
+        <div class="column field -width-1/2 -width-1/1@sm -width-1/1@xs">
+            <label for="fld-state" class="field__label">State</label>
+            <input id="fld-state" name="fm-state" value="">
+        </div>
+
+        <div class="column field -width-1/2 -width-1/1@sm -width-1/1@xs">
+            <label for="fld-postcode" class="field__label">Postal Code</label>
+            <input id="fld-postcode" name="fm-postcode" value="">
+        </div>
+
+    </div>
+
+    <div class="divider -pad-vertical">
+    	<div class="divider__label -left">Credit Information</div>
+    </div>
+
+    <div class="columns">
+
+        <div class="column field -width-1/2 -width-1/1@sm -width-1/1@xs">
+            <label for="fld-loan" class="field__label">Desired Loan Amount</label>
+            <input id="fld-loan" name="loan_amount" value="">
+        </div>
+
+        <div class="column field -width-1/2 -width-1/1@sm -width-1/1@xs">
+            <label for="fld-mortgage" class="field__label">Mortgage Balance</label>
+            <input id="fld-mortgage" name="mortgage_balance" value="">
+        </div>
+
+        <div class="column field -width-1/2 -width-1/1@sm -width-1/1@xs">
+            <label for="fld-credit" class="field__label">Credit Rating</label>
+            <select id="fld-credit" name="credit_rating">
+                <option value="choose">Choose...</option>
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+                <option value="fair">Fair</option>
+                <option value="poor">Poor</option>
+            </select>
+        </div>
+
+        <div class="column field -width-1/2 -width-1/1@sm -width-1/1@xs">
+            <label for="fld-proptype" class="field__label">Type of Property</label>
+            <select id="fld-proptype" name="type_of_property">
+                <option value="house">House</option>
+                <option value="condo">Condo</option>
+                <option value="land">Land</option>
+                <option value="townhome">Townhome</option>
+                <option value="Investment">Investment</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="column field -width-1/2 -width-1/1@sm -width-1/1@xs">
+            <label for="fld-employer" class="field__label">Place of Employment</label>
+            <input id="fld-employer" name="place_of_employment" value="">
+        </div>
+
+        <div class="column field -width-1/2 -width-1/1@sm -width-1/1@xs">
+            <label for="fld-payments" class="field__label">Monthly Payments</label>
+            <input id="fld-payments" name="monthly_payments" value="">
+        </div>
+
+        <div class="column field -width-1/2 -width-1/1@sm -width-1/1@xs">
+            <label for="fld-job" class="field__label">Years at Job</label>
+            <select id="fld-job" name="years_at_job">
+                <option value="0-2">0-2 Years</option>
+                <option value="2-5">2-5 Years</option>
+                <option value="5-10">5-10 Years</option>
+                <option value="over_10">Over 10 Years</option>
+            </select>
+        </div>
+
+        <div class="column field -width-1/2 -width-1/1@sm -width-1/1@xs">
+            <label for="fld-income" class="field__label">Annual Household Income</label>
+            <input id="fld-income" name="householdincome" value="">
+        </div>
+
+        <div class="column field -width-1/1">
+            <label for="fld-comments" class="field__label">Comments</label>
+            <textarea id="fld-comments" cols="32" rows="8" name="comments"></textarea>
+        </div>
+
+        <div class="column field -width-1/1">
+            {opt_in}
+        </div>
+        
+    </div>
+    
+    <div class="buttons">
+        <button type="submit" class="button button--strong">Send</button>
+    </div>
+    
+</form>

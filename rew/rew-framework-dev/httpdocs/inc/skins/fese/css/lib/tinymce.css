@@ -1,0 +1,225 @@
+body {
+    background: #fff;
+    color: #222;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    padding-left: 15px;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+    outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* base styles */
+body {
+    padding: 10px;
+    font: 12px/20px overpass, Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background: #fff !important;
+}
+
+h2,h3,h4,p,ul,ol,table,dl,address,blockquote {
+    margin: 0 0 20px 0;
+}
+
+h1,h2,h3,h4,h5,table,dl,address {
+    text-transform:uppercase;
+}
+
+address {
+    font-style: italic;
+}
+
+h1 {
+    font-family: overpass;
+    font-size: 48px;
+    line-height: 48px;
+    margin: 0 0 24px;
+}
+
+h2 {
+    font-family: overpass;
+    font-size: 27px;
+    line-height: 32px;
+    margin: 0 0 24px;
+}
+
+h3 {
+    font-family: overpass;
+    font-size: 26px;
+    line-height: 30px;
+    margin: 0 0 24px;
+}
+
+h4 {
+    font-family: overpass;
+    font-size: 22px;
+    line-height: 24px;
+    margin: 0 0 24px;
+}
+
+h5 {
+    font-family: overpass;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 0 24px;
+}
+
+h6 {
+    font-family: overpass;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 24px;
+}
+
+.footnote {
+    font-size: 85%;
+}
+
+.pleft,
+.video-pleft {
+    float: left;
+    margin: 0 10px 10px 0px;
+}
+
+.pright,
+.video-pright {
+    float: right;
+    margin: 0 10px 10px 0px;
+}
+
+.pleft + ul,
+.pleft + ol,
+.video-pleft + ul,
+.video-pleft + ol {
+    float: left;
+}
+
+.pright + ul,
+.pright + ol,
+.video-pright + ul,
+.video-pright + ol {
+    float: right;
+}
+
+.pleft + ul + *,
+.pleft + ol + *,
+.pleft + p + *,
+.video-pleft + ul + *,
+.video-pleft + ol + *,
+.video-pleft + p + * {
+    clear: left;
+}
+
+.pright + ul + *,
+.pright + ol + *,
+.pright + p + *,
+.video-pright + ul + *,
+.video-pright + ol + *,
+.video-pright + p + * {
+    clear: right;
+}
+
+/* ratio aware video container */
+.video {
+    padding-top: 56.25%;
+    position: relative;
+}
+
+.video video,
+.video iframe,
+.video object,
+.video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 780px) {
+    .pleft,
+    .video-pleft,
+    .pright,
+    .video-pright {
+        width: 100%;
+        height: auto;
+    }
+
+    .video-pleft,
+    .video-pright {
+        padding-top: 56.25%;
+        position: relative;
+    }
+
+    .video-pleft video,
+    .video-pright video,
+    .video-pleft iframe,
+    .video-pright iframe,
+    .video-pleft object,
+    .video-pright object,
+    .video-pleft embed,
+    .video-pright embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+#tinymce .video {
+    padding-top: 0;
+}
+
+#tinymce .video img {
+    width: 100%;
+}

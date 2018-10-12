@@ -1,0 +1,142 @@
+/* ## GENERAL ---------------------------------- */
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font: 16px/24px 'Lato', sans-serif;
+    color: #40404e;
+    height: 100%;
+}
+
+body {
+    background: #fff;
+    fill: #666;
+    overflow-x: hidden;
+    overflow-y: inherit;
+}
+
+header::after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* ## TYPE ------------------------------------- */
+
+select,
+input {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.4;
+}
+
+pre {
+    overflow: auto;
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+h2 {
+    -moz-osx-font-smoothing: grayscale;
+    font: 18px/24px Lato, sans-serif;
+    text-rendering: optimizelegibility;
+    margin: 20px 0;
+}
+
+h3 {
+    -moz-osx-font-smoothing: grayscale;
+    font: 16px/24px Lato, sans-serif;
+    text-rendering: optimizelegibility;
+    margin: 20px 0;
+    color: #60606d;
+}
+
+h2 a,
+h3 a {
+    color: inherit;
+    text-decoration: inherit;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    color: #0096d8;
+}
+
+/* ## FORMS ------------------------------------- */
+input,
+textarea,
+select,
+#og_image,
+.selectize-input {
+    border: 1px solid #d2d1d8;
+    padding: 11px;
+    border-radius: 2px;
+    text-overflow: ellipsis;
+}
+
+input:focus,
+input:active,
+textarea:focus,
+select:focus {
+    border: 1px solid #0096d8;
+    outline: none;
+    border-color: #0096d8 !important;
+}
+
+select {
+    appearance: none;
+    background: #fff url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20276.7%20153%22%20enable-background%3D%22new%200%200%20276.7%20153%22%3E%3Cstyle%3E.arrow%7Bfill%3A%23b4b8bb%3B%7D%3C%2Fstyle%3E%3Cpath%20class%3D%22arrow%22%20d%3D%22M276.7%200H0l138.2%20153z%22%20%2F%3E%3C%2Fsvg%3E") 0 0 no-repeat;
+    background-position: right 14px center;
+    background-size: auto 6px;
+    padding-right: 24px !important;
+}
+
+@-moz-document url-prefix() {
+    select {
+        text-indent: -2px;
+    }
+}
+
+/* Remove default select arrows on ie */
+select::-ms-expand {
+    display: none;
+}
+
+textarea[readonly],
+input[readonly],
+select[disabled] {
+    background: #f8f7fa;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+textarea[disabled],
+input[disabled] {
+    color: #40404e;
+    background: transparent;
+}
+
+button {
+    padding: 0;
+    margin: 0;
+}
+
+#root {
+    padding: 16px;
+}

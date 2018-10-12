@@ -1,0 +1,26 @@
+{
+    "type": "theme",
+    "name": "rew-theme/enterprise",
+    "license": "proprietary",
+    "version": "1.0.3",
+    "repositories": [{
+        "type": "composer",
+        "url": "https://packagist.rewhosting.com/"
+    }],
+    "require": {
+        "php": ">=5.6.18",
+        "rew-theme/boilerplate": "1.2.0",
+        "rew-module/enhanced-listings": "2.1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "REW\\Theme\\Enterprise\\": "src"
+        }
+    },
+    "bin": [
+        "bin/rew-enterprise-install"
+    ],
+    "config": {
+        "sort-packages": true
+    }
+}

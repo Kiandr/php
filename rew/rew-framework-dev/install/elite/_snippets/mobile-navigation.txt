@@ -1,0 +1,49 @@
+<ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon uk-padding-remove" data-uk-nav>
+
+    <li class="uk-parent"><a href="#">Search</a>
+        <ul class="uk-nav-sub uk-padding-remove">
+            <li><a href="/idx">Start Searching</a></li>
+            <li><a href="/idx/map/">Search by Map</a></li>
+            <li><a href="/featured-listings.php">Featured Listings</a></li>
+        </ul>
+    </li>
+
+    <li class="uk-parent"><a href="#">Neighborhoods</a>
+        <ul class="uk-nav-sub uk-padding-remove">
+            <li><a href="#">Neighborhood One</a></li>
+            <li><a href="#">Neighborhood Two</a></li>
+            <li><a href="#">Neighborhood Three</a></li>
+            <li><a href="#">Neighborhood Four</a></li>
+            <li><a href="/neighborhoods.php">View All</a></li>
+        </ul>
+    </li>
+
+    <li class="uk-parent"><a href="#">Buy</a>
+        <ul class="uk-nav-sub uk-padding-remove">
+            <li><a href="/buying.php">Home Buyer's Guide</a></li>
+            <li><a href="/home-finder.php">Join the Home Finder</a></li>
+            <li><a href="/first-time-home-buying.php">First-Time Home Buyer?</a></li>
+            <li><a href="/mortgage-calculator.php">Mortgage Calculator</a></li>
+            <li><a href="/guarantee.php">Buyer's Guarantee</a></li>
+        </ul>
+    </li>
+
+    <li class="uk-parent"><a href="#">Sell</a>
+        <ul class="uk-nav-sub uk-padding-remove">
+            <li><a href="/selling.php">Home Seller's Guide</a></li>
+            <li><a href="/marketing-plan.php">Marketing Plan</a></li>
+            <li><a href="/home-evaluation.php">Home Evaluation</a></li>
+        </ul>
+    </li>
+
+    <li class="uk-parent"><a href="#">About</a>
+        <ul class="uk-nav-sub uk-padding-remove">
+            <li><a href="/about.php">About Us</a></li>
+            <li><a href="/agents.php">Our Agents</a></li>
+            <li><a href="/testimonials.php">Testimonials</a></li>
+        </ul>
+    </li>
+
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/contact.php">Contact Us</a></li>
+</ul>

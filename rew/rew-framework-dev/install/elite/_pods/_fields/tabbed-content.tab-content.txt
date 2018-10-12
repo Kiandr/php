@@ -1,0 +1,10 @@
+<ul class="uk-tab" data-uk-tab="{connect:'#tab-content'}">
+		<li class="uk-active"><a href="#">Tab One</a></li>
+		<li><a href="#">Tab Two</a></li>
+		<li><a href="#">Tab Three</a></li>
+</ul>
+<ul id="tab-content" class="uk-switcher uk-margin">
+		<li class="uk-active">Tab one content</li>
+		<li>Tab two content</li>
+		<li>Tab three content</li>
+</ul>

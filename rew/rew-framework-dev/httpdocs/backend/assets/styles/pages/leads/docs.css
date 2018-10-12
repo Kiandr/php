@@ -1,0 +1,13 @@
+/* @import '../../new.css'; */
+
+#documents-list a[href*='document'] {
+    text-decoration: none;
+}
+
+.node__wrap {
+    align-items: center;
+}
+
+.nodes__actions {
+    align-self: center;
+}

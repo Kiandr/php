@@ -1,0 +1,158 @@
+/*--------------------------------------------------------------------------------------------
+BUSINESS DIRECTORY PAGES
+---------------------------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------------------------------
+MAIN DIRECTORY RESULTS PAGE
+---------------------------------------------------------------------------------------------*/
+#directory-header h1,
+#directory-add h1 {
+    font-size: 30px;
+
+    @include bp-small {
+        font-size: 36px;
+    }
+}
+
+#directory-header .search .uk-grid div:last-of-type {
+    @include bp-small {
+        padding-left: 0;
+    }
+}
+
+#directory-header .search .uk-button {
+    width: 100%;
+    min-height: 40px;
+    line-height: 40px;
+}
+
+.category-results h2 {
+    text-transform: uppercase;
+}
+
+.category-results a,
+.related-categories a {
+    color: $base-black;
+}
+
+.directory-option {
+    border-right: 1px solid $base-gray;
+    margin-right: 1em;
+    padding-right: 1em;
+}
+
+
+/*--------------------------------------------------------------------------------------------
+CATEGORY RESULTS PAGE
+---------------------------------------------------------------------------------------------*/
+.category-results ul,
+.related-categories ul {
+    margin-left: 0;
+}
+
+.category-results ul li,
+.related-categories ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid $base-gray;
+
+    span {
+        margin-left: 0.1em;
+        font-weight: 600;
+        color: $color-primary;
+    }
+}
+
+.category-listings article .body {
+    background-color: $base-gray;
+    border-bottom: 3px solid $base-black;
+
+    .details {
+        padding: 1em;
+    }
+}
+
+
+/*--------------------------------------------------------------------------------------------
+BUSINESS DETAILS PAGE
+---------------------------------------------------------------------------------------------*/
+.directory-details div {
+    padding-left: 0;
+
+    @include bp-medium { padding-left: 20px; }
+}
+
+#directory-details.uk-container {
+    padding: 0;
+}
+
+#directory-details h1 {
+    margin-top: 15px;
+
+    @include bp-medium { margin-top: 0; }
+}
+
+.business-gallery-container {
+    .slick-arrow::before {
+        color: $color-primary;
+        font-size: 30px;
+    }
+
+    .slick-prev {
+        left: 10px;
+        z-index: 10;
+    }
+
+    .slick-next {
+        right: 10px;
+        z-index: 10;
+    }
+}
+
+.business-image-carousel {
+    background: $base-gray;
+    padding: 1.5rem 3rem 1.5rem 2.8rem;
+
+    .slick-arrow::before {
+        color: $color-primary;
+        font-size: 15px;
+    }
+
+    .slick-prev {
+        left: 5px;
+        z-index: 10;
+    }
+
+    .slick-next {
+        right: 5px;
+        z-index: 10;
+    }
+
+    .slick-list {
+        margin: 0 -5px;
+    }
+
+    .slick-slide {
+        margin: 0 5px;
+    }
+}
+
+#directory-map {height:400px}
+
+
+/*--------------------------------------------------------------------------------------------
+ADD BUSINESS LISTING PAGE
+---------------------------------------------------------------------------------------------*/
+.directory-category label h3 {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+/*--------------------------------------------------------------------------------------------
+DIRECTORY SITEMAP PAGE
+---------------------------------------------------------------------------------------------*/
+.site-map-category h2 {
+    margin-bottom: 30px;
+}

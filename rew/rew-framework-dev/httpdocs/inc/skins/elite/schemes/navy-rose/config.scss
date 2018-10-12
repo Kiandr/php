@@ -1,0 +1,8 @@
+$color-primary 			: 	#212433 				!default; 	// Navy Blue	
+$color-secondary		: 	#5f3448 				!default; 	// Purple
+$secondary-light 		: 	lighten(#5f3448, 5%) 	!default;	// Lighten Secondary Colour
+$color-accent-primary 	: 	#ffffff 				!default; 	// White
+$color-accent-secondary :	#e1003a					!default;	// Rose Pink
+
+$base-link-color: $color-secondary 			!default;
+$base-link-hover-color: $secondary-light 	!default;

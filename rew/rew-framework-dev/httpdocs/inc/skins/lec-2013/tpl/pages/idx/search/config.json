@@ -1,0 +1,24 @@
+{
+	"config" : {
+		"title"			: "IDX Results",
+		"description"	: "Use for IDX Search Results",
+		"selectable"	: false
+	},
+	"scripts" : [
+		"js/jquery.nouislider.min.js"
+	],
+    "containers" : {
+        "content" : {
+            "user-bar" : {
+            }
+        },
+        "sidebar" : {
+        	"idx-search" : {
+        		"template"	: "refine.tpl.php"
+        	},
+		    "cms-snippet" : {
+		    	"name"		: "lec-sidebar"
+		    }
+        }
+    }
+}

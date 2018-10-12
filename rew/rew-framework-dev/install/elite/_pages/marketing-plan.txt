@@ -1,0 +1,14 @@
+<h1>Our Marketing Plan</h1>
+<p>When you're ready to take the next step toward selling your home, we're here to help. Our comprehensive marketing plan will get your home seen by thousands of motivated buyers.</p>
+<h3>The Right Price</h3>
+<p>We'll quickly put together a <strong>custom marketing plan</strong> with an effective price. A well priced home often generates competing offers and drives up the final sale value. Our market analysis takes into account the most actively searched prices and home values throughout your area, including expired listings and properties still on the market.</p>
+<h3>The Right Exposure</h3>
+<p>In marketing your home, we also develop a listing that emphasizes its unique and sellable aspects. We then put your home in front of buyers, establishing it on the local MLS&reg; as well as broader ones, new listings sheets, and real estate publications. Our nation-wide network of professional real estate contacts and buyers will also have the opportunity to check out your listing.</p>
+<h3>Effective Internet Marketing</h3>
+<p>In addition, we'll use the Internet and our innovative website to make your listing highly visible. With more than 80% of buyers checking the web first when looking for a home, this is a part of your marketing strategy that you can't afford to miss.</p>
+<h3>The Best Deal</h3>
+<p>When we list your home, we do so at no additional cost. When you start to get offers, we can represent you during the emotionally charged negotiating process and ensure that you get the best price, and favorable closing terms that are clearly spelled out. As your professional aides, we also <strong>oversee all paperwork</strong> related to the sale.</p>
+<p class="highlight">For most of us, our home is our biggest investment. When it's time to sell, get the value you deserve with the help of a professional real estate agent. If you'd like to discuss your next home sale today, please <a href="/contact.php">contact us</a> anytime.</p>
+<p align="center"><strong>Fill out the form below for your free home evaluation:</strong></p>
+<p>#form-seller#</p>
+<p class="footnote">*Your information will never be shared with any third party.</p>

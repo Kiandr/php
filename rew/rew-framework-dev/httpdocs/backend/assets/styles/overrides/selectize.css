@@ -1,0 +1,46 @@
+.selectize-input {
+    line-height: 1.4;
+}
+
+.selectize-control.multi .selectize-input.has-items {
+    padding: 3px;
+}
+
+.selectize-control.plugin-remove_button [data-value] .remove {
+    font-size: 16px;
+    padding: 4px 4px 4px 0;
+}
+
+.selectize-control.multi .selectize-input > div.item {
+    padding: 8px;
+    display: inline-block;
+}
+
+.selectize-control.multi .selectize-input > div.active {
+    background: #efefef;
+    color: #333;
+}
+
+@media (max-width: 600px) {
+    .selectize-control.multi .selectize-input > div.item {
+        padding: 4px;
+    }
+
+    .selectize-control.multi .selectize-input > div {
+        display: inline-block;
+    }
+}
+
+/* Prevent cut off dropdown in action plans group modal */
+.ui-dialog .task-action-form {
+    overflow: visible;
+}
+
+.task-action-form .selectize-dropdown {
+    max-height: 130px;
+    overflow: hidden;
+}
+
+.task-action-form .selectize-dropdown-content {
+    padding-bottom: 80px;
+}

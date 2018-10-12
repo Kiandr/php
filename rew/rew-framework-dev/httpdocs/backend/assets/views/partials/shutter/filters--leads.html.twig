@@ -1,0 +1,78 @@
+<div class="shutter">
+    <div class="shutter__head">Filter Leads</div>
+    <div class="shutter__body shutter__body--scrollable">
+        <form>
+
+            <div class="fields">
+                <div class="divider">
+                    <span class="divider__label divider__label--left text text--mute">Status</span>
+                </div>
+    
+                <div class="toggles toggles--stacked">
+                    <div class="toggle toggle--square">
+                        <input class="toggle__checkbox" type="checkbox" checked id="s1">
+                        <label class="toggle__proxy" for="s1"></label>
+                        <label class="toggle__label" for="s1">All</label>
+                    </div>
+                    <div class="toggle toggle--square">
+                        <input class="toggle__checkbox" type="checkbox" id="s2">
+                        <label class="toggle__proxy" for="s2"></label>
+                        <label class="toggle__label" for="s2">Pending</label>
+                    </div>
+                    <div class="toggle toggle--square">
+                        <input class="toggle__checkbox" type="checkbox" id="s3">
+                        <label class="toggle__proxy" for="s3"></label>
+                        <label class="toggle__label" for="s3">Accepted</label>
+                    </div>
+                    <div class="toggle toggle--square">
+                        <input class="toggle__checkbox" type="checkbox" id="s4">
+                        <label class="toggle__proxy" for="s4"></label>
+                        <label class="toggle__label" for="s4">Rejected</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fields">
+                <div class="divider">
+                    <span class="divider__label divider__label--left text text--mute">Assigned to</span>
+                </div>
+    
+                <div class="field">
+                    <input type="text" class="w1/1">
+                </div>
+            </div>
+
+            <div class="fields">
+                <div class="divider">
+                    <span class="divider__label divider__label--left text text--mute">Groups</span>
+                </div>
+    
+                <div class="field">
+                    <input type="text" class="w1/1">
+                </div>
+            </div>
+
+            <div class="field">
+                <span class="input split">
+                    <select name="order" class="split__major"><option value="">Sort by…</option> <option value="score">Score</option> <option value="value">Value</option> <option value="name">Name</option> <option value="email">Email</option> <option value="status">Status</option> <option value="agent">Agent</option> <option value="lender">Lender</option> <option value="created">Created</option> <option value="active">Active</option></select>
+                    <select name="sort" class="split__minor" style="width: 40px"><option value="ASC">ASC</option> <option value="DESC">DESC</option></select>
+                </span>
+            </div>
+
+        </form>
+    </div>
+    <div class="shutter__foot">
+        <div class="pad w1/1 mar0">
+            <a href="#" class="button button--strong w1/1">
+                Filter Leads
+            </a>
+            
+            <a href="#" class="button w1/1">
+                <svg class="icon icon--sm">
+                    <use xlink:href="/backend/img/v2.svg#icon--close"></use>
+                </svg>
+                Cancel
+            </a>
+        </div>
+    </div>
+</div>

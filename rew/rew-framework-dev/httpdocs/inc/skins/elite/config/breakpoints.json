@@ -1,0 +1,7 @@
+{
+  "breakpoint-xsmall": 320,
+  "breakpoint-small": 480,
+  "breakpoint-medium": 768,
+  "breakpoint-large": 1024,
+  "breakpoint-xlarge": 1260
+}

@@ -1,0 +1,46 @@
+{
+	"config" : {
+		"order"			: 4,
+		"title"			: "Community",
+		"description"	: "",
+		"selectable"	: true
+	},
+    "containers" : {
+        "hero" : {
+		    "communities" : {
+				"_enabled"		: "{variable.community}",
+				"mode"			: "{variable.community}",
+				"template"		: "page-hero.tpl.php",
+				"javascript"	: false,
+				"stylesheet"	: false,
+				"thumbnails"	: false,
+				"loadTags"		: true,
+				"truncate"		: 500,
+				"limit"			: 1
+			}
+        },
+        "community" : {
+		    "communities" : {
+				"_enabled"		: "{variable.community}",
+				"mode"			: "{variable.community}",
+				"template"		: "page-body.tpl.php",
+				"thumbnails"	: "416x284",
+				"loadStats"		: true,
+				"loadExtra"		: true,
+				"loadResults"	: 4,
+				"limit"			: 1
+			}
+        }
+    },
+	"variables" : {
+		"community" : {
+			"type"			: "select",
+			"title"			: "Community",
+			"placeholder"	: "Choose Community",
+			"required"		: true,
+			"options"		: {
+				"query" : "SELECT `id` AS `value`, `title` FROM `featured_communities` WHERE `is_enabled` = 'Y' ORDER BY `title` ASC;"
+			}
+		}
+	}
+}

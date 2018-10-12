@@ -1,0 +1,41 @@
+#body {
+	.brewRow();
+}
+
+#feature {
+	padding: 40px 0 40px 0;
+}
+
+#content .tabset {
+	text-align: center;
+}
+
+#sidebar {
+	margin-top: 20px;
+	padding: 30px 20px;
+	background: lighten(@swatch1, 60%);
+	.nav li {
+		border-color: lighten(@swatch1, 45%);
+	}
+}
+
+#content {
+	padding: 20px 10px;
+	clear: left;
+}
+
+.left-sidebar #content {
+	.brewCol(9,3,12,1.818181);
+}
+
+.left-sidebar #sidebar {
+	.brewCol(3,0,12,1.75438%);
+}
+
+.popup #sidebar {
+	display: none;
+}
+
+.popup #content {
+	.brewColReset();
+}

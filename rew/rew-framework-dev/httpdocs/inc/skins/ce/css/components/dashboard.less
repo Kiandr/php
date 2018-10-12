@@ -1,0 +1,251 @@
+// Dashboard Menu
+.dashboard__menu {
+	display:block;
+	padding:0;
+	overflow: hidden;
+}
+.dashboard__list {
+	display:inline-block;
+	float:left;
+	list-style: none;
+	padding:16px;
+	@media (max-width:510px) {
+		width:50%;
+		text-align: center;
+		padding:8px;
+	}
+}
+.dashboard__list:first-child {
+	@media (min-width:511px) {
+		padding-left:0;	
+	}
+}
+.dashboard__list > a {
+	display:block;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding:0 0 16px 0;
+	border-bottom:1px solid transparent;
+	transition:all .5s;
+	@media (max-width:510px) {
+		display:inline-block; 
+		padding-bottom:8px;
+	}
+}
+.dashboard__list a:hover {
+	color:@blue;
+}
+.dashboard__list .current {
+	color:@blue;
+	border-bottom-color:@blue;
+}
+
+// Dashboard Filter Menu
+.dashboard__filters {
+	margin-bottom:24px;
+	display:inline-block;
+	list-style: none;
+	padding:0;
+}
+
+// Saved Searches
+.saved__searches {
+	padding:24px 0;
+}
+.saved__searches h2 {
+	position:relative;
+	padding-right:46px;
+}
+.search__title {
+	display:inline-block;
+	font-size:20px;
+	font-weight:600;
+	margin-right:16px;
+}
+.search__stats {
+	min-width:100%;
+	margin-top:16px;
+}
+.search__stat {
+	padding: 8px;
+	background: @grey;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+	font-size:14px;
+    border-radius: 3px;
+	margin-bottom:2px;
+}
+
+.search__delete {
+	background:transparent;
+	border:none;
+	position:absolute;
+	right:0;
+	top:0;
+}
+
+.dashboard .icon-trash {
+	display:block;
+	width:18px;
+	height:18px;
+	fill:@border-grey;
+}
+
+// Messages
+.messages__header {
+	margin-bottom:24px;
+	overflow: hidden;
+	.flex();
+	.flex-align-center();
+	.flex-wrap();
+}
+.messages__header > span {
+	text-decoration: none;
+	font-weight:bold;
+	text-transform: uppercase;
+	padding: 8px 8px 8px 0;
+}
+.message__thread {
+	margin-bottom:48px;
+	padding-right:48px;
+	position:relative;
+	.flex();
+	.flex-align-center();
+	.flex-wrap();
+}
+.message__thread a {
+	display:inline-block;
+	font-size:20px;
+	font-weight:600;
+	margin-right:16px;
+	text-decoration: none;
+}
+.message__thread button {
+	background:transparent;
+	border:none;
+}
+.thread__delete {
+	margin-left:auto;
+	position:absolute;
+	right:0;
+	top:0;
+}
+.thread__delete .icon-trash {
+	display:block;
+	width:18px;
+	height:18px;
+	fill:@border-grey;
+}
+.thread__details {
+	min-width:100%;
+}
+.thread__details span:after {
+	content: "\2022";
+	dislay:inline-block;
+	margin:0 8px;
+}
+.thread__details span:last-child:after {
+	display:none;
+}
+
+// Message/Thread Details
+.message__header {
+	padding:16px 0;
+}
+.message {
+	position:relative;
+	margin:24px 0;
+	padding-left:64px;
+}
+.message__avatar {
+	background-color:#F5F6F7;
+	overflow: hidden;
+	display: inline-block;
+	position:absolute;
+	width:48px;
+	height:48px;
+	top:auto;
+	bottom:0;
+	left:0;
+}
+.message__content {
+	background-color:@grey;
+	padding:16px;
+	border-radius:3px;
+	position: relative;
+}
+.message__content:before {
+	content:"";
+	width: 0;
+  	height: 0; 
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent; 
+  	border-right:10px solid @grey; 
+	position:absolute;
+	left:-10px;
+	bottom:14px;
+}
+.message__title {
+	display:block;
+	font-weight:600;
+	margin-bottom:16px;
+}
+.message__body {
+	display:block;
+}
+.message__timestamp {
+	font-size:12px;
+	display:block;
+}
+// Agent Messages 
+.message--agent {
+	padding-left:0;
+	padding-right:64px;
+}
+.message--agent .message__content:before {
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent; 
+  	border-left:10px solid @grey; 
+	border-right:none;
+	left:auto;
+	right:-10px;
+}
+.message--agent .message__avatar {
+	left:auto;
+	right:0;
+}
+.message .button-sm {
+	font-size:12px;
+}
+.reply--field  input {
+	border-radius: 3px 0 3px 0;
+	border-right:none;
+	margin-right:-1px;
+}
+.reply--field  input + .btn {
+	-webkit-border-radius: 0 3px 3px 0;
+	border-radius: 0 3px 3px 0;
+}
+
+// Preferences 
+.preferences .divider {
+	margin-top:24px;
+}
+.preference__btns .btn {
+	@media (max-width:480px) {
+		display:block;
+		margin:8px 0;
+		width:100%;
+	}
+}
+
+// Fixes 
+.message__header a,
+.messages__header a,
+.show-messages {
+	@media (max-width:480px) {
+		font-size:12px;
+		padding:4px;
+	}
+}

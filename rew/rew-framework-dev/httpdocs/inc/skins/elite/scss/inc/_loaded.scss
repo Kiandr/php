@@ -1,0 +1,10 @@
+// This overrides the important bits of the loading CSS, in case an error occurred
+html body {
+    > .content {
+        display: block;
+    }
+
+    > .loading {
+        display: none;
+    }
+}

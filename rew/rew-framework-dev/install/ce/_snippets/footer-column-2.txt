@@ -1,0 +1,17 @@
+<div class="nav nav--stacked">
+    <h3 class="nav__heading -text-invert">Vision Real Estate</h3>
+    <ul class="nav__list">
+        <li class="nav__item">
+            <a class="nav__link -text-invert" href="/about.php">About Us</a>
+        </li>
+        <li class="nav__item">
+            <a class="nav__link -text-invert" href="/agents.php">Our Agents</a>
+        </li>
+        <li class="nav__item">
+            <a class="nav__link -text-invert" href="/listings.php">Our Listings</a>
+        </li>
+        <li class="nav__item">
+            <a class="nav__link -text-invert" href="/contact.php">Contact Us</a>
+        </li>
+    </ul>
+</div>

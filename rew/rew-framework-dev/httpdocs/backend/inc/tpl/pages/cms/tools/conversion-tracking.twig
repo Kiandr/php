@@ -1,0 +1,97 @@
+{% autoescape 'html' %}
+<form action="?submit" method="post" class="rew_check">
+
+    <div class="bar">
+        <div class="bar__title">Conversion Tracking</div>
+        <div class="bar__actions">
+            <a class="bar__action" href="/backend/cms/tools/{{ postLink }}"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/backend/img/icos.svg#icon-left-a"></use></svg></a>
+        </div>
+    </div>
+
+    <div class="block">
+        {{ subdomainSelector|raw }}
+    </div>
+
+
+    <div class="block">
+
+        <div class="msg"> Use the following form to save your conversion tracking codes to be used on your website.
+            For more information, check out Google's resources about <a href="http://support.google.com/adwords/bin/answer.py?hl=en&answer=1722054" target="_blank">Setting up conversion tracking</a>. </div>
+        <div class="field">
+            <label class="field__label">IDX Registration</label>
+            <textarea class="w1/1" name="ppc[idx-register]" rows="6">{{ attribute(settings.ppc, 'idx-register') }}</textarea>
+            <label class="hint">This code is included after a new lead successfully registers on your website.</label>
+        </div>
+        <div class="field">
+            <label class="field__label">IDX Property &ndash; Listing Inquiry</label>
+            <textarea class="w1/1" name="ppc[idx-inquire]" rows="6">{{ attribute(settings.ppc, 'idx-inquire') }}</textarea>
+            <label class="hint">This code is included after when a new property inquiry is received.</label>
+        </div>
+        <div class="field">
+            <label class="field__label">IDX Property &ndash; Showing Request</label>
+            <textarea class="w1/1" name="ppc[idx-showing]" rows="6">{{ attribute(settings.ppc, 'idx-showing') }}</textarea>
+            <label class="hint">This code is included when a visitor requests a property showing.</label>
+        </div>
+        {% if displayIdxPhone %}
+        <div class="field">
+            <label>IDX Property &ndash; Send to Mobile Device</label>
+            <textarea class="w1/1" name="ppc[idx-phone]" rows="6">{{ attribute(settings.ppc, 'idx-phone') }}</textarea>
+            <label class="hint">This code is included after a text message containing property details is requested.</label>
+        </div>
+        {% endif %}
+        <div class="field">
+            <label class="field__label">Contact Form</label>
+            <textarea class="w1/1" name="ppc[form-contact]" rows="6">{{ attribute(settings.ppc, 'form-contact') }}</textarea>
+            <label class="hint">This code will be included when the <strong>#form-contact#</strong> form snippet has been submitted.</label>
+        </div>
+        <div class="field">
+            <label class="field__label">Buyer's Form</label>
+            <textarea class="w1/1" name="ppc[form-buyers]" rows="6">{{ attribute(settings.ppc, 'form-buyers') }}</textarea>
+            <label class="hint">This code will be included when the <strong>#form-buyers#</strong> form snippet has been submitted.</label>
+        </div>
+        <div class="field">
+            <label class="field__label">Seller's Form</label>
+            <textarea class="w1/1" name="ppc[form-seller]" rows="6">{{ attribute(settings.ppc, 'form-seller') }}</textarea>
+            <label class="hint">This code will be included when the <strong>#form-seller#</strong> form snippet has been submitted.</label>
+        </div>
+        <div class="field">
+            <label class="field__label">Approve Form</label>
+            <textarea class="w1/1" name="ppc[form-approve]" rows="6">{{ attribute(settings.ppc, 'form-approve') }}</textarea>
+            <label class="hint">This code will be included when the <strong>#form-approve#</strong> form snippet has been submitted.</label>
+        </div>
+        {% if displayCMATool %}
+        <div class="field">
+            <label class="field__label">CMA Tool</label>
+            <textarea class="w1/1" name="ppc[form-cma]" rows="6">{{ attribute(settings.ppc, 'form-cma') }}</textarea>
+            <label class="hint">This code will be included when the <strong>#form-cma#</strong> and <strong>#form-cma-capture#</strong> form snippets has been submitted.</label>
+        </div>
+        {% endif %}
+        {% if displayRTRegs %}
+        <div class="field">
+            <label class="field__label">RT Registration</label>
+            <textarea class="w1/1" name="ppc[rt-register]" rows="6">{{ attribute(settings.ppc, 'rt-register') }}</textarea>
+            <label class="hint">This code is included after a new lead successfully registers on your website through the RT.</label>
+        </div>
+        {% endif %}
+        <div class="field">
+            <label class="field__label">Global Tracking Script</label>
+            <textarea class="w1/1" name="ppc[global-tracking-script]" rows="6">{{ attribute(settings.ppc, 'global-tracking-script') }}</textarea>
+            <label class="hint">This code is included on every site page.</label>
+        </div>
+        <div class="field">
+            <label class="field__label">Conversion Tracking</label>
+            <div>
+                <input type="radio" id="enabled_yes" name="ppc[enabled]" value="true"{% if settings.ppc.enabled == 'true' %} checked{% endif %}>
+                <label for="enabled_yes">Enabled</label>
+                <input type="radio" id="enabled_no" name="ppc[enabled]" value="false"{% if settings.ppc.enabled != 'true' %} checked{% endif %}>
+                <label for="enabled_no">Disabled</label>
+            </div>
+        </div>
+        <div class="btns btns--stickyB"> <span class="R">
+		<button class="btn btn--positive"><svg class="icon icon-check mar0"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/backend/img/icos.svg#icon-check"></use></svg> Save </button>
+		</span>
+        </div>
+
+    </div>
+</form>
+{% endautoescape %}

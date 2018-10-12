@@ -1,0 +1,13 @@
+<div class="communities-nav">
+    <h2>Browse Communities</h2>
+    <ul class="nav uk-grid">
+        <li class="uk-width-1-1 uk-width-small-1-2 uk-width-medium-1-4"><a href="#">Community Name</a></li>
+        <li class="uk-width-1-1 uk-width-small-1-2 uk-width-medium-1-4"><a href="#">Community Name</a></li>
+        <li class="uk-width-1-1 uk-width-small-1-2 uk-width-medium-1-4"><a href="#">Community Name</a></li>
+        <li class="uk-width-1-1 uk-width-small-1-2 uk-width-medium-1-4"><a href="#">Community Name</a></li>
+        <li class="uk-width-1-1 uk-width-small-1-2 uk-width-medium-1-4"><a href="#">Community Name</a></li>
+        <li class="uk-width-1-1 uk-width-small-1-2 uk-width-medium-1-4"><a href="#">Community Name</a></li>
+        <li class="uk-width-1-1 uk-width-small-1-2 uk-width-medium-1-4"><a href="#">Community Name</a></li>
+        <li class="uk-width-1-1 uk-width-small-1-2 uk-width-medium-1-4"><a href="#">Community Name</a></li>
+    </ul>
+</div>

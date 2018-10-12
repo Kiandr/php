@@ -1,0 +1,8 @@
+class_name: ApiTester
+modules:
+    enabled:
+        - \REW\Test\Helper\Api
+        - Asserts
+        - REST:
+            depends: PhpBrowser
+            part: Json

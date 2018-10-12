@@ -1,0 +1,169 @@
+/* # IDX Map Search
+=====================================================================================================
+=====================================================================================================*/
+
+
+#idx-map-search-wrap {
+    position: relative;
+    overflow: hidden;
+    height: auto; width: 100%;
+    margin-bottom: 10px;
+}
+
+	#idx-map-search {
+		height: 700px;
+		width: 720px;
+		background: #ccc;
+		position: relative;
+		top: 0;
+		margin: 0;
+	}
+
+/* # Map Search Legend
+=====================================================================================================
+=====================================================================================================*/
+
+
+#idx-map-legend {
+    width: 220px;
+    float: left;
+}
+
+#idx-map-legend .legend_tab {
+    background: url(/img/map/tools/map-legendtabs.png) no-repeat 0 0;
+    cursor: pointer;
+    float: left;
+    width: 20px;
+    height: 70px;
+    right: -1px;
+    position: relative;
+}
+
+#idx-map-legend .legend_tab:hover {
+}
+
+#idx-map-legend .legend_tab.current {
+    background: url(/img/map/tools/map-legendtabs.png) no-repeat -20px 0;
+    cursor: pointer;
+    float: left;
+    width: 20px;
+    height: 70px;
+}
+
+#idx-map-legend .legend_contents,
+#idx-map-legend .stats_contents {
+    min-height: 225px;
+}
+
+#idx-map-legend .legend_content {
+    background: #fff;
+    padding: 20px 20px 0px 20px;
+    border: 1px solid #9CB3C6; border-right: none;
+    float: left;
+    width: 200px;
+    margin-top: -100px;
+}
+
+#idx-map-legend .legend_content form {
+    margin: 0;
+}
+
+#idx-map-legend .legend_content form .legend {
+    margin: 0; padding: 0;
+}
+
+#idx-map-legend .legend_content form .toggleset label input {
+    position: absolute;
+    right: 5px; top: 2px;
+}
+
+#idx-map-legend .stats_tab {
+    background: url(/img/map/tools/map-legendtabs.png) no-repeat 0 -70px;
+    cursor: pointer;
+    float: left;
+    width: 20px;
+    height: 56px;
+    right: -1px;
+    top: 2px;
+    position: relative;
+    clear: left;
+}
+
+#idx-map-legend .stats_tab.current {
+    background: url(/img/map/tools/map-legendtabs.png) no-repeat -20px -70px;
+}
+
+#idx-map-legend .legend_content .field
+{
+	margin-bottom: 20px;
+}
+
+#idx-map-legend .legend_content label
+{
+	display: block;
+	border-bottom: 1px solid #eee;
+	position: relative;
+
+	img
+	{
+		position: absolute;
+		right: 0; top: 3px;
+	}
+}
+
+#idx-map-search-wrap .stats_contents .keyvalset
+{
+
+	h5 { margin: 0;	}
+
+	ul
+	{
+		margin-bottom: 20px;
+	}
+
+	li
+	{
+		border-bottom: 1px solid #eee;
+	
+		strong, span
+		{
+			padding: 3px 0;
+		}
+	}
+}
+
+
+// ie sucks
+.ie7 #idx-map-legend .legend_content {
+    margin-top: 0px;
+}
+
+div.msg
+{
+    clear: both;
+	margin: 0 0 20px 0; padding: 10px;
+	background: #fff;
+	border: 1px solid #ccc;
+}
+
+	div.msg p { margin-bottom: 0; }
+
+	div.msg .title
+	{
+		margin: -10px -10px 10px -10px; padding: 5px 10px;
+		background: #316B11;
+		color: #fff;
+	}
+
+	div.msg.error .title, .msg.errors .title { background: #8F0000; }
+
+	div.msg.notice { padding: 19px 29px; }
+	div.msg.notice .title
+	{
+		margin: -10px -10px 10px -10px; padding: 10px 10px 0 10px;
+		color: #316B11; background: none;
+	}
+	
+.footnote {
+	font-size: 85%;
+}

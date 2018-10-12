@@ -1,0 +1,277 @@
+@tan: #eee;
+
+#sidebar form.idx-search,
+#content-secondary form.idx-search,
+#body .idx-user-bar
+{
+  background: @tan !important; border-color: darken(@tan,20%) !important;
+}
+
+#sidebar form.idx-search .action-toggle-more,
+#content-secondary form.idx-search .action-toggle-more
+{
+  background-color: darken(@tan,15%); border-color: darken(@tan,20%);
+  color:#777;
+}
+
+//REMAX-INSPIRED
+
+body.popup.idx.dashboard{
+  background:#fff;
+  #body{
+    background:#fff;
+  }
+  #dashboard_tabs .current a{
+    color:#fff;
+  }
+  #dashboard_tabs a{
+    color:#ccc;
+  }
+}
+
+.tpl-homepage #head{
+  background:none;  
+}
+
+.agent-site #head,
+#head{
+  background:@main;
+  .wrap{
+    border-color:#555;
+  }
+  nav.horizontal li a{
+    color:#fff;
+  }
+  nav.horizontal li .menu .cta a{
+    background:darken(@swatch1_dark, 10%);
+    &:hover{
+      background:@swatch1_dark;
+    }
+  }
+}
+
+.bg{
+  background:@main;
+}
+
+#feature{
+  .quicksearch{
+    .gradient(@darkPurple, @main, @main);
+    .tabset ul li a{
+      color:#fff;
+    }
+    .tabset ul li.current a{
+      background:#c50106;
+      color: #fff;
+    }
+    form{
+      label{color:#fff;}
+    }
+    .nav .pright, .nav a{
+      color:#fff;
+    }
+  }
+
+  #feature_cta{
+    background: @main;
+    background: fade(@main,86%);
+    border-color: #333;
+    border-color: fade(#333,33%);
+    .wrap{
+      p{
+        color:#fff;
+        a{
+          color:#fff;
+        }
+      }
+    }
+  }
+}
+
+.dashboard .btn.pright,
+button.positive, .btn.positive,
+#feature #feature_cta .wrap p .btn,
+#feature .quicksearch form .btnset button{
+  .gradient(@grey,@darkGrey,@darkGrey);
+  border-color:@darkGrey;
+  box-shadow:inset 0 1px 0 #fff;
+  color:#202020;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.33);
+  &:hover{
+    .gradient(lighten(@lightGrey, 7%),@darkGrey,@darkGrey);
+  }
+}
+
+#search_mast .btn,
+#listing-body .btn.strong{
+  .gradient(@grey,@darkGrey,@darkGrey);
+  border-color:@lightPurple;
+  box-shadow:inset 0 1px 0 #fff;
+  color:#202020;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.33);
+  &:hover{
+    .gradient(lighten(@lightGrey, 7%),@darkGrey,@darkGrey);
+    border-color:@lightPurple;
+  }
+}
+
+//----- Details Page Button
+#listing-details {
+	#search_mast .btn, #listing-body .btn.strong{
+	  .gradient(@lightPurple,@main,@main);
+	  border-color:@lightPurple;
+	  box-shadow:inset 0 1px 0 lighten(@lightPurple, 5%);
+	  color:#fff;
+	  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.33);
+	  &:hover{
+	    .gradient(lighten(@hoverPurple, 7%),@main,@main);
+	    border-color:@lightPurple;
+	  }
+	}
+}
+
+#sidebar {
+	background: @lightGrey;
+}
+
+.pg-homepage #sidebar{
+	background: #fff;
+}
+
+#sidebar .nav li{
+  border-color:#ccc;
+}
+
+#sidebar .nav a,
+#sidebar .nav li ul{
+  background:@main;
+  color:#fff;
+}
+
+#sidebar .nav .current > a{
+  background:@main;
+  color:#fff;
+}
+
+#sidebar .nav h4{
+  color:#222;
+}
+.articleset {
+	border-bottom-color: @grey;
+}
+.articleset.listings{
+  article .data-mlsid{
+    color:#333;
+  }
+  
+  article li.data-summary{
+    color:@lightPurple;
+  }
+  
+  article .action-favorite{
+    color: #333;
+  }
+}
+
+.articleset.listings.colset_3 article .data-price{
+  color:#333;
+}
+
+#search_head div.line.line_1 .nav{
+  .grid:before, .list:before, .map:before{
+    color:@swatch1_lite;
+  }
+  .grid.current:before, .list.current:before, .map.current:before{
+    color:@swatch1_dark;
+  }
+}
+
+#search_head div.line.line_1 .nav li{
+  a{
+    color:@swatch1;
+  }
+}
+
+#search_head div.line.line_1 .nav li.current a,
+.articleset.listings.colset_3 article .action-favorite{
+  color:@swatch1_dark;
+}
+
+#search_head div.line.line_2 .msg{
+  color:#333;
+}
+
+.nav.horizontal ul li.current{
+  border-color:#333;
+}
+
+.nav li.current>a{
+  background:#555;
+}
+
+.tpl-homepage article.listing .badge{
+  background-image: url('img/badge.png') !important;
+}
+
+.wrap > .pagination {
+	background: @lightGrey;
+}
+
+.mls-disclaimer{
+	border-top-color: lighten(@grey, 5%);
+}
+
+#foot{
+  color:#eee;
+  background:@main;
+  a{
+    color:#fff;
+  }
+  blockquote{
+    p,small{
+      color:#eee;
+    }
+  }
+  .copyright{
+    color:#eee;
+    a{
+      color:#fff;
+    }
+  }
+}
+
+.nav li a{
+  color:#444;
+}
+
+p.strong, blockquote.strong p{
+  color:#555;
+}
+
+blockquote.strong:before{
+  color:#ccc;
+}
+
+div .important, p.important,
+div .highlight, p.highlight{
+  color:#333;
+  p{
+    color:#333;
+  }
+}
+
+form .field label{
+  color:#555
+}
+
+.window.init header h4{
+  color:#fff;
+}
+
+.pagination a{
+  color:#333;
+}
+
+#feature .quicksearch .tabset ul li.current a {
+  background: @grey_dark2;
+}

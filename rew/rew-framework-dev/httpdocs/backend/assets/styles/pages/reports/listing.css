@@ -1,0 +1,17 @@
+#leads_dashboard_summary {
+    overflow: hidden;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 1200px) {
+    #leads_dashboard_summary {
+        flex-direction: column;
+    }
+}
+
+.chart-wrapper {
+    overflow: hidden;
+    margin-bottom: 24px;
+}

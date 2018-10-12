@@ -1,0 +1,194 @@
+/*--------------------------------------------------------------------------------------------
+HOMEPAGE VALUATION FORM
+---------------------------------------------------------------------------------------------*/
+
+.home-valuation-section {
+    overflow: hidden;   
+    background: linear-gradient(rgba($base-black, 0.80), rgba($base-black, 0.80)), url(#{$skin-url}img/homepage-cma-bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    @include bp-xsmall {
+        min-height: 212px;
+        max-height: 212px;
+        height: 212px;
+    }
+
+    @include bp-medium {
+        min-height: 212px;
+        max-height: 212px;
+        height: 212px;
+    }
+
+    @include bp-large {
+        min-height: 202px;
+        max-height: 202px;
+        height: 202px;
+    }
+
+    @include bp-xlarge {
+        min-height: 180px;
+        max-height: 180px;
+        height: 180px;
+    }
+
+    .home-valuation-title {
+        h5 {
+            text-transform: uppercase;
+            margin-bottom: 5px; 
+            font-weight: $font-weight-semi-bold;
+
+            @include bp-xsmall {
+                font-size: 24px;
+                text-align: center;
+            }
+
+            @include bp-medium {
+                font-size: 24px;
+                text-align: center;
+                line-height: 24px;
+                display: block;
+            }
+
+            @include bp-large {
+                font-size: 24px;
+                margin-top: 16px;
+                line-height: 20px;
+                display: inline-block;
+                text-align: left;
+            }
+
+            @include bp-xlarge {
+                text-indent: 30px;
+                display: block;
+                font-size: 28px;
+            }
+        }
+
+        span {      
+            font-weight: 300;
+            margin: 0;
+
+            @include bp-xsmall {
+                text-align: center;
+                font-size: 16px;
+                padding: 12px;
+                display: block;
+            }
+
+            @include bp-small {
+                text-align: center;
+                font-size: 18px;
+                padding: 12px;
+                display: block;
+            }
+
+            @include bp-medium {
+                text-align: center;
+                display: block;
+                padding: 6px 0 12px;
+                font-size: 22px;
+            }
+
+            @include bp-large {
+                display: inline-block;
+                text-indent: 6px;
+                text-align: left;
+                font-size: 22px;
+            }
+
+            @include bp-xlarge {
+                display: block;
+                font-size: 22px;
+            }
+        }
+    }
+
+    .home-valuation-container {
+        @include bp-xsmall {
+            padding-top: 3.5em;
+            text-align: center;
+        }
+
+        @include bp-medium {
+            padding-top: 2.25em;
+            text-align: left;
+        }
+
+        @include bp-large {
+            padding-top: 2.25em;
+        } 
+
+        @include bp-xlarge {
+            padding-top: 3.5em;
+        }
+    }  
+
+    form {
+        margin-top: 10px;
+    }
+
+    input, select {
+        min-height: 55px;
+        font-size: 18px;
+    }
+
+    .uk-button {    
+        @include bp-xsmall {
+            margin: 16px auto 0;
+            padding: 8px 5px;
+            width: 80%;
+        }
+
+        @include bp-small {
+            margin: 16px auto 0;
+            padding: 8px 5px;
+            width: 40%;
+        }
+
+        @include bp-medium {
+            min-height: 55px;
+            max-height: 55px;
+            font-size: 17px;
+            text-align: center;
+            white-space: nowrap;
+            display: block;
+            width: 100%;
+            padding:0 5px; 
+            margin: 0;
+            font-size: 14px;
+        }
+
+        @include bp-large {
+            padding: 0;
+            margin: 0;
+            font-size: 18px;
+        }
+    }
+}
+
+
+// THIS CODE APPLIES TO THE /CMA.PHP PAGE THAT ALSO HOLDS A PROPERTY VALUATION MODULE
+.cma-property-valuation {
+    span {
+        display: inline-block;
+    }
+
+    .cma-estimate-average {
+        margin: 12px 0;
+    }
+
+    .cma-estimate-minimum {
+        margin: 12px 0;
+    }
+
+    .cma-estimate-maximum {
+        margin: 12px 0;
+    }
+
+    #cma-map {
+        background-color: #f2f2f2;
+    }
+}
+

@@ -1,0 +1,7 @@
+<h1>Home Seller's Guide</h1>
+<p><a href="/home-evaluation.php"><strong>Ask for a Free Home Evaluation</strong></a>: A well-priced home will generate competing offers and drive up the final sale value. Our free market analysis takes into account the most actively searched prices and home values in the area and provides you with a detailed evaluation that puts it all in perspective.</p>
+<p><a href="/marketing-plan.php"><strong>Sell Your Home with a Professional</strong></a>: Our tried and true marketing plan will take the guesswork out of selling your home.</p>
+<p><a href="/idx/"><strong>See What's on The Market</strong></a>: Use the search tools on this site to get an idea of the competition.</p>
+<p><a href="/contact.php"><strong>Connect to a Professional</strong></a>: Contact us anytime you need to know what's really going on in this market. When you're ready to take the next step toward selling your home, we're here to help. We'll make sure your listing gets the best exposure and reaches the right buyer&mdash;whether they're out of state, in another country, or right around the corner.</p>
+<div>#form-seller#</div>
+<p>*Your information will never be shared with any third party.</p>

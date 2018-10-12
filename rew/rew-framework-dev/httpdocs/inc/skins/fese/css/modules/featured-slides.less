@@ -1,0 +1,142 @@
+.slide-cta {
+    position:absolute;
+    top:40%;
+    left:0;
+    width:100%;
+    z-index:1000;
+    @media (max-width:680px) {
+    	padding-left:0px;
+		padding-right:0px;
+    }
+	@media (max-device-width:800px) and (orientation:landscape) {
+		top:150px !important;
+		left:0 !important;
+    	width:100% !important;
+	}
+    h1 {
+        color:@white;
+		text-shadow: 0px 0px 5px rgba(0,0,0,.4);
+        margin-top:10px;
+        -moz-osx-font-smoothing: grayscale;
+        @media (max-width:680px) {
+            font-size:48px;
+            line-height:48px;
+			margin-bottom:5px;
+			margin-top:0;
+        }
+		@media (max-device-width:680px) and (orientation:landscape) {
+			font-size:48px;
+            line-height:48px;
+			margin-bottom:5px;
+		}
+    }
+    span {
+        color:@white;
+        text-transform: uppercase;
+        font-weight:300;
+        font-size:16px;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    p {
+        font-weight:300;
+        font-size:20px;
+        display:block;
+        margin-bottom:20px;
+        -moz-osx-font-smoothing: grayscale;
+        @media (max-width:680px) {
+            font-size:16px;
+            line-height:normal;
+			margin-bottom:5px;
+        }
+		@media (max-device-width:680px) and (orientation:landscape) {
+			margin-bottom:0px;
+		}
+    }
+    p.italic {
+        font-style:italic;
+    }
+    .slide-btn {
+        display:inline-block;
+		width:auto;
+        border:2px solid @white;
+        padding:15px 30px;
+        text-transform: uppercase;
+		text-decoration:none;
+        font-size:14px;
+        font-weight:300;
+        margin-top:10px;
+        transition:all .4s;
+        &:hover {
+            background-color:@white;
+            color:@black;
+        }
+		@media (max-width:680px) {
+			text-align: center;
+			margin-right:auto;
+			margin-left:auto;
+		}
+		@media (max-device-width:680px) and (orientation:landscape) {
+			padding:8px 15px;
+		}
+    }
+	// Slide Position Classes
+
+	// Vertical Postions
+
+	// Top
+    &.slide-TL,
+    &.slide-TM,
+    &.slide-TR {
+        top: 20%;
+    }
+	// Center
+    &.slide-CL,
+    &.slide-CM,
+    &.slide-CR {
+        top: 40%;
+    }
+
+    &.slide-BL,
+    &.slide-BM,
+    &.slide-BR {
+        top: auto;
+        bottom: 10%;
+		@media (max-width:1170px) {
+			bottom:130px;
+		}
+    }
+
+	// Horizontal Positions
+
+	// Left
+    &.slide-TL,
+    &.slide-CL,
+    &.slide-BL {
+        width: auto;
+        left: 10%;
+		@media (max-width:1024px) {
+			left:20px;
+		}
+    }
+
+	// Middle
+    &.slide-TM,
+    &.slide-CM,
+    &.slide-BM {
+        text-align: center;
+        width: 100%;
+        left: 0;
+    }
+
+	// Right
+    &.slide-TR,
+    &.slide-CR,
+    &.slide-BR {
+        width: auto;
+        left: auto;
+        right: 10%;
+		@media (max-width:1024px) {
+			right:20px;
+		}
+    }
+}

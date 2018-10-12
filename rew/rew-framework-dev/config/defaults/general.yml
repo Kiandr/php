@@ -1,0 +1,37 @@
+lang: en-US
+skin:
+skin_scheme:
+idx_feed:
+ssl: false
+# Redirect pages without .php to ones with
+http_redirect_php: true
+subdomains:
+  # Each weight level can handle up to ten million subdomains before the order gets borked. If a requirement for more
+  # than ten million ever shows up, just increase these weights.
+  agent:
+    classes:
+      settings: \REW\Backend\CMS\SubdomainFactory\AgentSubdomainSettings
+    module: 'REW_AGENT_CMS'
+    weight: 1
+  team:
+    classes:
+      settings: \REW\Backend\CMS\SubdomainFactory\TeamSubdomainSettings
+    module: 'REW_TEAM_CMS'
+    weight: 2
+  domain:
+    classes:
+      settings: \REW\Backend\CMS\SubdomainFactory\DomainSettings
+    weight: 0
+custom_field_types:
+  number:
+    title: Number
+    class: \REW\Backend\Leads\CustomField\CustomNumber
+  string:
+    title: Short Text
+    class: \REW\Backend\Leads\CustomField\CustomString
+  text:
+    title: Long Text
+    class: \REW\Backend\Leads\CustomField\CustomText
+  date:
+    title: Date
+    class: \REW\Backend\Leads\CustomField\CustomDate

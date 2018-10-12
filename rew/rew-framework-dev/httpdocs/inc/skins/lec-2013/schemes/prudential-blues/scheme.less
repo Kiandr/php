@@ -1,0 +1,148 @@
+.tpl-homepage #head .wrap
+{
+	border-bottom: 1px solid #444 !important;
+}
+
+#head nav.horizontal li a,
+#feature .quicksearch .nav .pright
+{
+	color: #fff;
+}
+
+#feature .quicksearch form label,
+#feature .quicksearch form .tween,
+#feature #feature_cta .wrap p,
+#feature #feature_cta .wrap p a
+{
+	color: #fff;
+}
+
+#feature #feature_cta .wrap p a:hover {
+  color: #999999;
+}
+
+#feature .quicksearch .tabset ul li.current a
+{
+	-webkit-box-shadow: 0 -1px 1px 1px rgba(255, 255, 255, 0.2) inset;
+	-moz-box-shadow: 0 -1px 1px 1px rgba(255, 255, 255, 0.2) inset;
+	-ms-box-shadow: 0 -1px 1px 1px rgba(255, 255, 255, 0.2) inset;
+	box-shadow: 0 -1px 1px 1px rgba(255, 255, 255, 0.2) inset;
+}
+
+.tpl-homepage article.listing .badge
+{
+	background-image: url('img/badge-black.png') !important;
+}
+
+/* feature and quicksearch */
+
+#feature #feature_cta
+{
+  background-color:@swatch1;
+  border: 1px solid desaturate(lighten(@swatch1,8%),33%);
+}
+#feature .quicksearch
+{
+  .gradient(darken(@swatch1,15%), darken(@swatch1,5%), darken(@swatch1,5%));
+  
+}
+
+
+#feature #feature_cta .wrap p a:hover,
+#feature .quicksearch .nav a:hover,
+#feature .quicksearch .tabset ul li a:hover,
+#feature .quicksearch .tabset ul li.current a
+{
+	color: @uiColor2;
+  transition-duration: 0.2s;
+}
+
+.tpl-homepage article.listing .badge {
+  color: @uiColor2;
+}
+
+/* remove gradient on inner header */
+
+#head{
+  .gradient(darken(@swatch1,10%), @swatch1, @swatch1);
+}
+body.tpl-homepage #head {
+	background: none;
+}
+
+/* main nav dropdown feature */
+
+#head nav.horizontal li .menu .cta a
+{
+  background: @swatch1;
+}
+#head nav.horizontal li .menu .cta a:hover
+{
+  background: lighten(@swatch1, 10%);
+}
+
+/* override green buttons */
+
+#feature .quicksearch form .btnset button,
+#search_mast .btn,
+#listing-body .btn.strong,
+button.positive, .btn.positive {
+  .gradient(@uiColor2,darken(@uiColor2, 10%) ,@uiColor2);
+  border-color:@uiColor2;
+  color: darken(@uiColor2, 40%);
+  text-shadow: 0 1px 0 lighten(@uiColor2, 30%);
+}
+#feature .quicksearch form .btnset button:hover,
+#search_mast .btn:hover,
+#listing-body .btn.strong:hover,
+button.positive:hover, .btn.positive:hover {
+  .gradient(@uiColor2,@uiColor2 ,@uiColor2);
+  border-color:@uiColor2;
+}
+
+/* fix for others (shadow doesn't look so good with blue)*/
+
+button, a.btn,
+button.strong, .btn.strong {
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.33);
+}
+
+/* idx  */
+
+.idx-user-bar p
+{
+  color:#333;
+}
+
+/* dashboard */
+
+.window.init header {
+  background: @swatch1;
+}
+.window.init header h4 {
+  color: @bgA;
+}
+.window.init header .btnset .close.btn {
+  background: darken(@swatch1, 5%);
+  border-color: darken(@swatch1, 10%);
+}
+.window.init header .btnset .close.btn:hover
+{
+  background: lighten(@swatch1, 10%);
+  border-color: darken(@swatch1, 10%);
+}
+.window.init header .btnset .close.btn i
+{
+  color:lighten(@swatch1, 20%);
+}
+/** footer **/
+  
+#foot,
+#foot blockquote p,
+#foot blockquote small,
+#foot a {
+  color: #fff;
+}
+
+
+

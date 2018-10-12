@@ -1,0 +1,84 @@
+{
+	"config" : {
+		"order"			: 4,
+		"title"			: "Landing",
+		"description"	: "Use for homepage &amp; landing pages. This template includes a dramatic header and 3 featured listings.",
+		"selectable"	: "true"
+	},
+    "containers" : {
+        "feature" : {
+            "feature" : {
+            	"image"			: "{variable.image}",
+            	"position"		: "{variable.position}",
+            	"heading"		: "{variable.heading}",
+            	"subheading"	: "{variable.subheading}"
+            }
+        },
+        "body" : {
+            "idx-listings" : {
+            	"_enabled"		: "{variable.showListings}",
+            	"mode"			: "featured",
+            	"template"		: "feature.tpl.php",
+            	"stylesheet"	: "feature.css.php",
+            	"viewClass"		: "colset_3",
+            	"limit"			: 3
+            },
+            "user-bar" : {
+            }
+        },
+        "sidebar" : {
+        	"social-share" : {},
+		    "cms-snippet"  : {
+		    	"name"		: "lec-sidebar"
+		    },
+            "communities" : {
+            	"template"		: "feature.tpl.php",
+            	"thumbnails"	: "150x112",
+            	"loadStats"		: false,
+            	"limit"			: 8
+            }
+        }
+    },
+    "variables" : {
+	    "image" : {
+		    "type"		: "image",
+		    "title"		: "Background Image",
+		    "required"	: true
+	    },
+	    "position" : {
+		    "type"		: "select",
+		    "title"		: "Background Position",
+		    "default"	: "center",
+		    "required"	: true,
+		    "options"	: [
+		    	{ "value" : "top",		"title" : "Top" },
+			    { "value" : "center",	"title" : "Center" },
+			    { "value" : "bottom",	"title" : "Bottom" }
+		    ]
+	    },
+	    "showVignette" : {
+		    "type"		: "boolean",
+		    "title"		: "Image Vignette",
+		    "default"	: true
+	    },
+	    "heading" : {
+		    "type"		: "text",
+		    "default"	: "Welcome to My Real Estate Website",
+		    "required"	: false
+	    },
+	    "subheading" : {
+		    "type"		: "text",
+		    "required"	: false
+	    },
+	    "showSearch" : {
+		    "type"		: "boolean",
+		    "title"		: "Quick Search",
+		    "default"	: true
+	    },
+	    "showListings" : {
+		    "type"		: "boolean",
+		    "title"		: "Featured Listings",
+		    "default"	: true
+	    }
+    }
+}

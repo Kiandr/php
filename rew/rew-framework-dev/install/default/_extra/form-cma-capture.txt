@@ -1,0 +1,44 @@
+<div class="copy">
+	<p>Simply fill out this form to receive your free home evaluation. Our experienced real estate team will review your home's details, and provide you with an up-to-date Comparable Market Analysis.</p>
+</div>
+
+<form action="?submit" method="post"  id="default_cms_extra_form_cma_capture">
+
+	<input type="hidden" name="cmaform" value="true">
+
+	<input type="text" name="registration_type" style="display: none;" tabindex="-1" autocomplete="off">
+
+	<div class="field x6">
+		<label>First Name</label>
+		<input name="onc5khko" value="" required>
+	</div>
+
+	<div class="field x6 last">
+		<label>Last Name</label>
+		<input name="sk5tyelo" value="" required>
+	</div>
+
+	<div class="field x6">
+		<label>Email</label>
+		<input type="email" name="mi0moecs" value="" required>
+	</div>
+
+	<div class="field x6 last">
+		<label>Phone <small>(optional)</small></label>
+		<input type="tel" name="telephone" value="">
+	</div>
+
+	<div class="field x12">
+		<label>Confirm Your Address</label>
+		<input name="address" value="" required>
+	</div>
+	
+	<div class="field x12">
+		{opt_in}
+	</div>
+
+	<div class="btnset">
+		<button type="submit" class="positive">Continue</button>
+	</div>
+
+</form>

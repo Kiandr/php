@@ -1,0 +1,31 @@
+.token {
+    display: inline-block;
+    color: inherit;
+    text-decoration: inherit;
+    padding: 0 2px;
+    border-radius: 2px;
+    vertical-align: middle;
+    white-space: nowrap;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.token__thumb {
+    align-self: center;
+    vertical-align: middle;
+}
+
+.token__label {
+    padding-left: 8px;
+    padding-right: 8px;
+    vertical-align: middle;
+}
+
+.token__thumb input {
+    visibility: hidden;
+}
+
+.token__thumb input:checked {
+    visibility: visible;
+}

@@ -1,0 +1,25 @@
+/**
+ * TODO: Currently used on leads/action_plans/edit/...
+ * Review other use cases and refactor to provide more context
+ * `main-header` is too generic and implies that this is being used sitewide
+ */
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header > * {
+    align-items: center; /* display: flex; breaks text-overflow */
+}
+
+.main-header h2 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.main-header .R {
+    margin-left: auto;
+}

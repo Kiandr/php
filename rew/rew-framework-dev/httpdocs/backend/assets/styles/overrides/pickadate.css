@@ -1,0 +1,4 @@
+input[readonly].picker__input {
+    opacity: 1;
+    pointer-events: auto;
+}

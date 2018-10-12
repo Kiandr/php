@@ -1,0 +1,45 @@
+/*--------------------------------------------------------------------------------------------
+SUBDOMAIN - HOMEPAGE - AGENT
+---------------------------------------------------------------------------------------------*/
+
+.agent-subdomain-header-wrapper {
+    min-height: 300px;
+
+    @include bp-xsmall {
+        padding: 25px 0px;
+    }
+
+    @include bp-medium {
+        padding: 75px 0px;
+    }
+
+    #agent-subdomain-header {
+        background-color: rgba(0,0,0,0.7);
+        padding:20px;
+
+        .agent-image-container {
+            @include bp-xsmall {
+                text-align: center;
+            }
+
+            @include bp-medium {
+                text-align: left;
+            }
+        }
+
+        text-align: left;
+
+        h1, p, li, a {
+            color: #fff;
+
+            @include bp-xsmall {
+                text-align: center;
+            }
+
+            @include bp-medium {
+                text-align: left;
+            }
+
+        }
+    }
+}

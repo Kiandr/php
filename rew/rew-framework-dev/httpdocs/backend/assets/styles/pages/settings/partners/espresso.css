@@ -1,0 +1,9 @@
+@media (max-width: 400px) {
+    .img-wrapper {
+        text-align: center;
+    }
+
+    #login-espresso-submit {
+        width: 100%;
+    }
+}

@@ -1,0 +1,5 @@
+SHELL=/bin/bash
+PATH=/usr/local/bin:/bin:/usr/bin
+MAILTO="cronlogs@realestatewebmasters.com"
+PHPRC=~/etc/
+#X	X	*	*	*	php ~/app/httpdocs/backend/cron/mirror.php

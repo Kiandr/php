@@ -1,0 +1,65 @@
+.win {
+    position: fixed;
+    top: 24px;
+    left: 24px;
+    right: 24px;
+    bottom: 24px;
+    z-index: 9999;
+
+    border: 1px solid #ccc;
+    background: #fff;
+    box-shadow: 0 1px 12px rgba(0, 0, 0, .1);
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+.win__hd {
+    flex: 0 0 auto;
+    padding: 0 24px;
+}
+
+.win__hd .btn,
+.win__hd .btn:hover {
+    background: transparent;
+    border-color: transparent;
+}
+
+.win__bd {
+    flex-grow: 5;
+    overflow: auto;
+    padding: 0 24px 24px;
+}
+
+.win__ft {
+    flex: 0 0 auto;
+    padding: 24px;
+}
+
+.win__ft form {
+    padding: 0 !important;
+}
+
+.win.win--S {
+    height: auto;
+    bottom: auto;
+    max-height: calc(100% - 48px);
+    top: 50%;
+    transform: translate(0, -50%);
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+.win.win-F {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+@media only screen and (min-width: 800px) {
+    .win {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}

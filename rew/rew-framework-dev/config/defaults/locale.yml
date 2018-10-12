@@ -1,0 +1,4 @@
+localization:
+  domain: messages
+  path: resources/locale
+  default_locale: en_US

@@ -1,0 +1,1834 @@
+/* Non-LESS, non-responsive version of the styles for non-Brew sites */
+
+
+/*-----------------------------------------------------
+General Template overrides
+*/
+
+
+#content,
+#content-primary,
+#page #content {
+    width: auto;
+    float: none;
+    margin: 0;
+    left: 0;
+    min-height: 500px;
+}
+
+#content-primary {
+    padding: 0 21px;
+}
+
+#sidebar,
+#content-secondary,
+#aside {
+    display: none;
+}
+
+
+.item-image {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.brewImage {
+    background: #ddd !important;
+    background: rgba(0, 0, 0, 0.2) !important;
+    position: relative;
+}
+
+.brewImage img {
+    position: absolute;
+}
+
+img.landscape.scale {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 3;
+}
+
+img.portrait.scale {
+    position: absolute;
+    height: 100%;
+    width: auto;
+    z-index: 3;
+}
+
+img.landscape.crop {
+    position: absolute;
+    height: 100%;
+    width: auto;
+    z-index: 3;
+    max-width: 999em;
+}
+
+img.portrait.crop {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 3;
+    max-width: 999em;
+}
+
+::-webkit-input-placeholder {
+    color: #999;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: #999;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #999;
+}
+
+:-ms-input-placeholder {
+    color: #999;
+}
+
+input,
+select {
+    text-transform: none;
+}
+
+input[type="checkbox"] {
+    border: 0;
+}
+
+#content form {
+    background: transparent;
+}
+
+#content form:before,
+#content form:after {
+    background: transparent;
+}
+
+
+ul {
+    text-indent: 0;
+}
+
+li:before {
+    display: none;
+}
+
+img {
+    height: auto;
+}
+
+
+/*-----------------------------------------------------
+overrides for specific templates -
+*/
+
+/* all non-responsive sites don't have the btnset styles */
+
+.btnset {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 0 0 22px 0;
+    padding: 12px 0;
+    clear: both;
+}
+
+.btnset .btn,
+.btnset button {
+    background: #999;
+    color: #fff !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#999999), to(#858585));
+    background: -moz-linear-gradient(top, #999999, #858585);
+    background: -ms-linear-gradient(top, #999999, #858585);
+    background: linear-gradient(#999999, #858585);
+    margin: 0 0 4px 0;
+    padding: 6px 12px 6px 12px;
+    font-weight: bold;
+    line-height: 24px;
+    border: 1px solid #828282;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    outline: none;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+    overflow: hidden;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.33);
+    font-size: 1.0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+}
+
+
+/* PT-1 */
+
+.pt-1 .bdx-state-item h2,
+.pt-1 .bdx-city-item h2 {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.pt-1 #content .bdx-slideshow ul,
+.pt-1 #content .bdx-slideshow ul li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* PT-2 */
+
+.pt-2 #content-inner {
+    width: 100%;
+    float: none;
+    padding: 0;
+}
+
+.pt-2 .bdx-state-item h2,
+.pt-2 .bdx-city-item h2 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.pt-2 .search-title-container h2 {
+    border-bottom: 0 !important;
+}
+
+.pt-2 #content .bdx-slideshow ul,
+.pt-2 #content .bdx-slideshow ul li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* LEC2 */
+
+.lec2 #page-body,
+.lec2 #page-body-wrap {
+    background-image: none;
+    background-color: #fff;
+}
+
+.lec2 #content-feature,
+.lec2 #quick-search-icon,
+.lec2 #refine-search-icon {
+    display: none;
+}
+
+/* LEC4	*/
+
+.lec4 #content .bdx-slideshow ul,
+.lec4 #content .bdx-slideshow ul li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* adjusting space around .btnset to match newer skins */
+.lec4 #content .btnset {
+    margin: 0 0 22px 0;
+    padding: 12px 0;
+}
+
+.lec4 #content .bdx-sidebar_search_form form .btnset {
+    margin-bottom: 0;
+}
+
+.lec4 #content .bdx-sidebar_search_form form .btnset:first-child {
+    padding-top: 0;
+}
+
+/* LEC5 */
+.lec5 #content .bdx-slideshow ul,
+.lec5 #content .bdx-slideshow ul li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* LEC6 */
+
+.lec6 #content .bdx-slideshow ul,
+.lec6 #content .bdx-slideshow ul li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* removing sidebar background image */
+.lec6 #page-body {
+    background-image: none;
+}
+
+.lec6 #content-primary {
+    padding-top: 20px;
+}
+
+
+
+/*-----------------------------------------------------
+Breadcrumbs
+*/
+.bdx-breadcrumbs {
+    margin-bottom: 12px;
+}
+
+.bdx-breadcrumbs ul,
+.bdx-breadcrumbs li {
+    list-style: none;
+    padding: 0 !important;
+    padding: 0 !important;
+    color: #bbb;
+}
+
+.bdx-breadcrumbs li {
+    display: inline;
+}
+
+.bdx-breadcrumbs a {
+    color: #777;
+    margin: 0 5px 0 0;
+}
+
+.bdx-breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.bdx-breadcrumbs li:after {
+    content: "\002F";
+    margin: 0 10px;
+    color: #aaa;
+}
+
+.bdx-breadcrumbs li:last-child {
+    color: #555;
+}
+
+.bdx-breadcrumbs li:last-child:after {
+    content: "";
+}
+
+/*-----------------------------------------------------
+Pagination
+*/
+
+.pagination {
+    clear: both;
+}
+
+/*-----------------------------------------------------
+Messages
+*/
+
+.bdx-msg-negative,
+.bdx-msg-positive {
+    padding: 10px;
+    margin-bottom: 12px;
+}
+
+.bdx-msg-negative p,
+.bdx-msg-positive p {
+    margin-bottom: 8px;
+    font-size: 95%;
+    line-height: 1.6;
+}
+
+.bdx-msg-negative p:last-of-type,
+.bdx-msg-positive p:last-of-type {
+    margin-bottom: 0;
+}
+
+.bdx-msg-negative {
+    border: 1px solid #d2a762;
+    background: #e9d8bc;
+}
+
+.bdx-msg-positive {
+    border: 1px solid #4eab23;
+    background: #d3e8ca;
+}
+
+.bdx-provider {
+    clear: both;
+    color: #666;
+    color: rgba(0,0,0,0.7);
+    font-style: italic;
+    padding: 0 0 20px;
+}
+
+/*-----------------------------------------------------
+Tab container
+*/
+
+.bdx-tabcontain ul {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.bdx-tabcontain ul:before,
+.bdx-tabcontain ul:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.bdx-tabcontain ul li {
+    float: left;
+    margin: 0 3px 0 0;
+    padding: 0;
+    -webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    -ms-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.bdx-tabcontain ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 3px 10px;
+    position: relative;
+    color: #777;
+}
+
+.bdx-tabcontain ul li.selected {
+    background: #ddd;
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.bdx-tabcontain ul li.selected a {
+    color: #444;
+}
+
+/*-----------------------------------------------------
+Slideshow
+*/
+
+.bdx-slideshow {
+    position: relative;
+    margin-bottom: 24px;
+    border: 1px solid #ccc;
+    border-color: rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    background: #ddd;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.bdx-slideshow ul,
+.bdx-slideshow ul li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bdx-slideshow ul li.brewImage {
+    background: transparent !important;
+}
+
+.bdx-slideshow .flex-container a:hover,
+.bdx-slideshow .flex-slider a:hover,
+.bdx-slideshow .flex-container a:focus,
+.bdx-slideshow .flex-slider a:focus {
+    outline: none;
+}
+
+.bdx-slideshow .slides,
+.bdx-slideshow .flex-control-nav,
+.bdx-slideshow .flex-direction-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.bdx-slideshow .flex-pauseplay span {
+    text-transform: capitalize;
+}
+
+/* Base styles */
+
+.bdx-slideshow .flexslider {
+    margin: 0;
+    padding: 0;
+}
+
+.bdx-slideshow .flexslider .slides > li {
+    display: none;
+    -webkit-backface-visibility: hidden;
+}
+
+.bdx-slideshow .flexslider .slides img {
+    max-width: 100%;
+    display: block;
+}
+
+.bdx-slideshow .flexslider .slides:after {
+    content: "\0020";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+html[xmlns] .flexslider .slides {
+    display: block;
+}
+
+* html .flexslider .slides {
+    height: 1%;
+}
+
+.no-js .flexslider .slides > li:first-child {
+    display: block;
+}
+
+
+/* Default theme */
+
+.bdx-slideshow .flexslider {
+    position: relative;
+    zoom: 1;
+}
+
+.bdx-slideshow .flexslider .slides {
+    zoom: 1;
+}
+
+.bdx-slideshow .flex-viewport {
+    max-height: 2000px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.loading .flex-viewport {
+    max-height: 300px;
+}
+
+.bdx-slideshow .carousel li {
+    margin-right: 5px;
+}
+
+
+/* Direction Nav */
+
+.bdx-slideshow .flex-direction-nav {
+    *height: 0;
+}
+
+.bdx-slideshow .flex-direction-nav a {
+    text-decoration: none;
+    text-indent: -99999em;
+    display: block;
+    width: 20px;
+    height: 30px;
+    margin: -20px 0 0;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    overflow: hidden;
+    opacity: 0;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.bdx-slideshow .flex-direction-nav a:before {
+    font-size: 40px;
+    display: inline-block;
+}
+
+.bdx-slideshow .flex-direction-nav .flex-prev {
+    left: -50px;
+    background: url('/builders/res/img/sprites.png') 0 0 no-repeat;
+    background-size: 30px auto;
+}
+
+.bdx-slideshow .flex-direction-nav .flex-next {
+    right: -50px;
+    background: url('/builders/res/img/sprites.png') 0 -30px no-repeat;
+    background-size: 30px auto;
+}
+
+.bdx-slideshow .flexslider:hover .flex-direction-nav .flex-prev {
+    opacity: 1.0;
+    left: 10px;
+}
+
+.bdx-slideshow .flexslider:hover .flex-direction-nav .flex-next {
+    opacity: 1.0;
+    right: 10px;
+}
+
+.bdx-slideshow .flex-direction-nav .flex-disabled {
+    display: none;
+}
+
+.bdx-slideshow .flex-pauseplay a {
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    opacity: 0.8;
+    z-index: 10;
+    overflow: hidden;
+    cursor: pointer;
+    color: #000;
+}
+
+.bdx-slideshow .flex-pauseplay a:before {
+    font-family: "flexslider-icon";
+    font-size: 20px;
+    display: inline-block;
+    content: '\f004';
+}
+
+.bdx-slideshow .flex-pauseplay a:hover {
+    opacity: 1;
+}
+
+.bdx-slideshow .flex-pauseplay a .flex-play:before {
+    content: '\f003';
+}
+
+.bdx-slideshow .flex-control-nav {
+    width: 100%;
+    position: absolute;
+    bottom: -40px;
+    text-align: center;
+}
+
+.bdx-slideshow .flex-control-nav li {
+    margin: 0 6px;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+
+.bdx-slideshow .flex-control-paging li a {
+    width: 11px;
+    height: 11px;
+    display: block;
+    background: #666;
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    text-indent: -9999px;
+    -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.bdx-slideshow .flex-control-paging li a:hover {
+    background: #333;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.bdx-slideshow .flex-control-paging li a.flex-active {
+    background: #000;
+    background: rgba(0, 0, 0, 0.9);
+    cursor: default;
+}
+
+.bdx-slideshow .flex-control-thumbs {
+    margin: 5px 0 0;
+    position: static;
+    overflow: hidden;
+}
+
+.bdx-slideshow .flex-control-thumbs li {
+    width: 25%;
+    float: left;
+    margin: 0;
+}
+
+.bdx-slideshow .flex-control-thumbs img {
+    width: 100%;
+    display: block;
+    opacity: .7;
+    cursor: pointer;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.bdx-slideshow .flex-control-thumbs img:hover {
+    opacity: 1;
+}
+
+.bdx-slideshow .flex-control-thumbs .flex-active {
+    opacity: 1;
+    cursor: default;
+}
+
+@media screen and (max-width: 860px) {
+    .bdx-slideshow .flex-direction-nav .flex-prev {
+        opacity: 1;
+        left: 10px;
+    }
+
+    .bdx-slideshow .flex-direction-nav .flex-next {
+        opacity: 1;
+        right: 10px;
+    }
+}
+
+
+/*-----------------------------------------------------
+Listing items
+*/
+
+.bdx-listings-grid {
+    /* for IE8 */
+    float: left;
+    width: 100%;
+}
+
+.bdx-listings-grid:before,
+.bdx-listings-grid:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.bdx-listing-item {
+    width: 23.5%;
+    margin-right: 2%;
+    float: left;
+    margin-bottom: 20px;
+    min-height: 0 !important;
+}
+
+.bdx-listing-item:nth-of-type(4n+4) {
+    margin-right: 0;
+}
+
+.bdx-listing-item:nth-of-type(4n+1) {
+    clear: left;
+}
+
+.bdx-listing-item header {
+    margin-bottom: 8px;
+}
+
+.bdx-listing-item header .pricerange {
+    color: #666;
+    color: rgba(0, 0, 0, 0.5);
+    font-style: italic;
+}
+
+.bdx-listing-item .item-image {
+    border: 1px solid #ddd;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.bdx-listing-item .details {
+    padding: 10px 0;
+}
+
+.bdx-listing-item p.var {
+    margin-bottom: 0;
+}
+
+.bdx-listing-item p.var.name strong {
+    font-weight: normal;
+}
+
+.bdx-listing-item p.var.name span {
+    color: #666;
+    color: rgba(0, 0, 0, 0.7);
+    font-style: italic;
+}
+
+.bdx-listing-item sup {
+    font-size: 0.7em;
+}
+
+/*-----------------------------------------------------
+Similar Listings
+
+each listing uses the 'listing item' class
+
+*/
+.bdx-similar-listings-container {
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    border-top-color: rgba(0, 0, 0, 0.3);
+    clear: both;
+}
+
+.bdx-similar-listings-container:before,
+.bdx-similar-listings-container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*-----------------------------------------------------
+State List and City List (or individual state) landing pages
+eg. /builders/ and /builders/texas/
+*/
+
+.state-results-container .bdx-state-item,
+.city-results-container .bdx-city-item {
+    margin-right: 2%;
+    float: left;
+    text-align: center;
+    border: 1px solid #ccc;
+    background-color: rgba(0, 0, 0, 0);
+    -webkit-transition: background-color 0.2s;
+    -moz-transition: background-color 0.2s;
+    -o-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+    margin-bottom: 20px;
+    min-height: 0 !important;
+}
+
+.state-results-container .bdx-state-item:hover,
+.city-results-container .bdx-city-item:hover {
+    background-color: #eee;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.state-results-container .bdx-state-item a,
+.city-results-container .bdx-city-item a {
+    text-decoration: none;
+    display: block;
+}
+
+.state-results-container .bdx-state-item .images,
+.city-results-container .bdx-city-item .images {
+    line-height: 0;
+    padding: 10px 0 8px;
+    text-align: center;
+}
+
+.state-results-container .bdx-state-item .images:before,
+.city-results-container .bdx-city-item .images:before,
+.state-results-container .bdx-state-item .images:after,
+.city-results-container .bdx-city-item .images:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.state-results-container .bdx-state-item .images .item-image,
+.city-results-container .bdx-city-item .images .item-image {
+    width: 30%;
+    display: inline-block;
+    border-radius: 100px;
+}
+
+.state-results-container .bdx-state-item .images .item-image:nth-of-type(4),
+.city-results-container .bdx-city-item .images .item-image:nth-of-type(4) {
+    display: none;
+}
+
+.state-results-container .bdx-state-item .images .item-image img,
+.city-results-container .bdx-city-item .images .item-image img {
+    left: 0;
+}
+
+.state-results-container .bdx-state-item .details,
+.city-results-container .bdx-city-item .details {
+    padding: 0 20px;
+}
+
+.state-results-container .bdx-state-item header,
+.city-results-container .bdx-city-item header {
+    margin-bottom: 5px;
+    padding-top: 15px;
+}
+
+.state-results-container .bdx-state-item .info a,
+.city-results-container .bdx-city-item .info a {
+    color: #666;
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+}
+
+.state-results-container .bdx-state-item .info a:hover,
+.city-results-container .bdx-city-item .info a:hover {
+    text-decoration: underline;
+}
+
+.state-results-container .bdx-state-item p strong,
+.city-results-container .bdx-city-item p strong,
+.state-results-container .bdx-state-item p span,
+.city-results-container .bdx-city-item p span {
+    font-weight: normal;
+    display: block;
+}
+
+.state-results-container .bdx-state-item p strong,
+.city-results-container .bdx-city-item p strong {
+    font-size: 16px;
+}
+
+.state-results-container .bdx-state-item p span,
+.city-results-container .bdx-city-item p span {
+    font-size: 14px;
+}
+
+.state-results-container .bdx-state-item {
+    width: 31.3333%;
+}
+
+.state-results-container .bdx-state-item:nth-of-type(3n+1) {
+    clear: both
+}
+
+.state-results-container .bdx-state-item:nth-of-type(3n+3) {
+    margin-right: 0;
+}
+
+.state-results-container .bdx-state-item .images {
+    padding: 18px 4px 8px;
+}
+
+.city-results-container .bdx-city-item {
+    width: 23%;
+}
+
+.city-results-container .bdx-city-item:nth-of-type(4n+1) {
+    clear: both;
+}
+
+.city-results-container .bdx-city-item:nth-of-type(4n+4) {
+    margin-right: 0;
+}
+
+/*-----------------------------------------------------
+Search - at top of Cities list/Individual State pages
+eg. /builders/texas/
+*/
+.search-wrapper {
+    background: #ddd;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 10px 20px;
+    margin: 0 0 24px;
+    border-top: 0;
+}
+
+.subdivision-search-container form,
+.homeplan-search-container form {
+    margin-bottom: 0;
+}
+
+.subdivision-search-container .bdx-search-row,
+.homeplan-search-container .bdx-search-row {
+    padding: 8px 0;
+}
+
+.subdivision-search-container .bdx-search-row:before,
+.homeplan-search-container .bdx-search-row:before,
+.subdivision-search-container .bdx-search-row:after,
+.homeplan-search-container .bdx-search-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.subdivision-search-container .bdx-search-field,
+.homeplan-search-container .bdx-search-field {
+    float: left;
+    margin-right: 10px;
+}
+
+.subdivision-search-container .bdx-search-input,
+.homeplan-search-container .bdx-search-input {
+    float: left;
+    width: 30%;
+}
+
+.subdivision-search-container .bdx-search-input input,
+.homeplan-search-container .bdx-search-input input {
+    display: block;
+    width: 100%;
+    padding: 4px;
+}
+
+.subdivision-search-container .bdx-search_price,
+.homeplan-search-container .bdx-search_price {
+    width: 65%;
+    margin-left: 5%;
+    float: left;
+}
+
+.subdivision-search-container .bdx-slider-header:before,
+.homeplan-search-container .bdx-slider-header:before,
+.subdivision-search-container .bdx-slider-header:after,
+.homeplan-search-container .bdx-slider-header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.subdivision-search-container .bdx-slider-header label,
+.homeplan-search-container .bdx-slider-header label {
+    float: left;
+}
+
+.subdivision-search-container .bdx-slider-header small,
+.homeplan-search-container .bdx-slider-header small {
+    float: right;
+}
+
+.subdivision-search-container .btnset,
+.homeplan-search-container .btnset {
+    width: 15%;
+    float: right;
+    clear: none;
+    text-align: right;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.subdivision-search-container .btnset button,
+.homeplan-search-container .btnset button {
+    float: none;
+}
+
+.subdivision-search-container .bdx-search-options,
+.homeplan-search-container .bdx-search-options {
+    width: 85%;
+    float: left;
+    padding: 8px 0 0;
+}
+
+.subdivision-search-container .bdx-search-options:before,
+.homeplan-search-container .bdx-search-options:before,
+.subdivision-search-container .bdx-search-options:after,
+.homeplan-search-container .bdx-search-options:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.subdivision-search-container .bdx-search-options label,
+.homeplan-search-container .bdx-search-options label {
+    display: inline-block;
+}
+
+.subdivision-search-container .bdx-search-options select,
+.homeplan-search-container .bdx-search-options select,
+.subdivision-search-container .bdx-search-options input,
+.homeplan-search-container .bdx-search-options input {
+    display: inline-block;
+}
+
+.subdivision-search-container .bdx-search-options input[type="checkbox"],
+.homeplan-search-container .bdx-search-options input[type="checkbox"],
+.subdivision-search-container .bdx-search-options input[type="radio"],
+.homeplan-search-container .bdx-search-options input[type="radio"] {
+    margin: -3px 4px 0 0;
+}
+
+
+/*-----------------------------------------------------
+Communities page, AKA individual City page
+eg. /builders/texas/communities/?search[City]=San+Antonio
+*/
+
+.bdx-sidebar_search_form {
+    width: 25%;
+    float: right;
+    padding-top: 60px;
+}
+
+.bdx-sidebar_search_form .close-search {
+    display: none;
+    position: absolute;
+    top: -5px;
+    right: 10px;
+}
+
+.bdx-sidebar_search_form .close-search .btn {
+    padding: 1px 4px;
+}
+
+.bdx-sidebar_search_form input[type=text],
+.bdx-sidebar_search_form select {
+    width: 100%;
+}
+
+.bdx-sidebar_search_form select[multiple] {
+    height: 80px;
+}
+
+.bdx-sidebar_search_form form {
+    clear: both;
+}
+
+.bdx-sidebar_search_form .field {
+    padding-bottom: 10px;
+}
+
+.bdx-sidebar_search_form .field label {
+    font-weight: bold;
+    margin-bottom: 3px;
+    display: block;
+}
+
+.bdx-sidebar_search_form form .btnset:first-child {
+    padding-top: 0;
+}
+
+.bdx-sidebar_search_form form .btnset {
+    margin-bottom: 0;
+}
+
+.bdx-sidebar_search_form form button {
+    display: block;
+    float: none;
+    width: 100%;
+}
+
+.bdx-sidebar_search_form .ac-input .menu {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+.bdx-sidebar_search_form .ac-input label {
+    line-height: 1.5;
+    padding: 5px 10px;
+}
+
+.bdx-sidebar_search_form .ac-input label em {
+    font-style: normal;
+    font-weight: bold;
+}
+
+.bdx-sidebar_search_form .ac-input label:hover {
+    background-color: #eee;
+}
+
+.bdx-sidebar_search_form .search-City {
+    max-height: 230px;
+    overflow: auto;
+}
+
+.community-results-container,
+.listing-results-container {
+    float: left;
+    width: 70%;
+}
+
+.listing-results-container .bdx-listings-grid .bdx-listing-item {
+    width: 32%;
+}
+
+.listing-results-container .bdx-listings-grid .bdx-listing-item:nth-of-type(4n+1) {
+    clear: none;
+}
+
+.listing-results-container .bdx-listings-grid .bdx-listing-item:nth-of-type(4n+4) {
+    margin-right: 2%;
+}
+
+.listing-results-container .bdx-listings-grid .bdx-listing-item:nth-of-type(3n+3) {
+    margin-right: 0;
+}
+
+
+.bdx-search-toggle {
+    display: none;
+}
+
+.search-title-container .search-title {
+    margin: 0 0 30px;
+}
+
+.search-title h1 {
+    margin-bottom: 12px;
+}
+
+.search-title h2 {
+    color: #888;
+    margin-bottom: 12px;
+}
+
+.search-title p {
+    font-style: italic;
+}
+
+
+/*-----------------------------------------------------
+Individual Community
+eg. /builders/community/2852/
+*/
+
+#bdx-community-detail .addthis_toolbox {
+    display: none;
+}
+
+#bdx-community-detail .bdx-col1 {
+    width: 64.6666667%;
+    float: left;
+}
+
+#bdx-community-detail .bdx-col2 {
+    width: 33.3333334%;
+    float: right;
+}
+
+#bdx-community-detail .bdx-features-container {
+    margin-bottom: 24px;
+}
+
+#bdx-community-detail .bdx-features-container:before,
+#bdx-community-detail .bdx-features-container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#bdx-community-detail .bdx-features-container ul.list-group {
+    list-style: none;
+    padding-left: 1em;
+    text-indent: -1em;
+    margin: 0;
+}
+
+#bdx-community-detail .bdx-features-container li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#bdx-community-detail .bdx-features-container .list-group li {
+    width: 33.3333%;
+    float: left;
+}
+
+#bdx-community-detail .bdx-features-container .list-group li:before {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url('/builders/res/img/sprites.png') 0 -58px no-repeat;
+    background-size: 30px auto;
+    content: "";
+    margin-right: 5px;
+}
+
+#bdx-community-detail .community-listings-cta {
+    padding: 20px 0 0;
+    border-top: 1px solid #eee;
+    border-top-color: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 10px 10% 20px;
+    display: table;
+    width: 80%;
+}
+
+#bdx-community-detail .community-listings-cta p {
+    margin: 0;
+}
+
+#bdx-community-detail .community-listings-cta .cta-intro {
+    font-style: italic;
+    display: table-cell;
+    vertical-align: middle;
+    width: 30%;
+    text-align: center;
+}
+
+#bdx-community-detail .community-listings-cta .cta-image {
+    display: block;
+    line-height: 0;
+    margin-bottom: 5px;
+    display: table-cell;
+    vertical-align: middle;
+    width: 40%;
+    text-align: center;
+}
+
+#bdx-community-detail .community-listings-cta .cta-link {
+    font-size: 0.95em;
+    text-transform: uppercase;
+    display: table-cell;
+    vertical-align: middle;
+    width: 30%;
+    text-align: center;
+}
+
+#bdx-community-detail .community-listings-cta .cta-link a {
+    text-decoration: none;
+    color: #888;
+}
+
+#bdx-community-detail #community-listings {
+    clear: both;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    border-top-color: rgba(0, 0, 0, 0.3);
+}
+
+.community-listings-container:before,
+.bdx-community-item:before,
+.community-listings-container:after,
+.bdx-community-item:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.bdx-community-item {
+    padding-bottom: 0;
+    margin-bottom: 30px;
+}
+
+.bdx-community-item .btnset {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.bdx-community-item .image-container {
+    float: left;
+    width: 27%;
+    position: relative;
+    border: 1px solid #ccc;
+    border-color: rgba(0, 0, 0, 0.3);
+}
+
+
+.bdx-community-item header {
+    margin-bottom: 0;
+}
+
+.bdx-community-item header h3 {
+    display: inline-block;
+    margin-top: 0;
+}
+
+.bdx-community-item p.val.address {
+    margin-bottom: 0;
+}
+
+.bdx-community-item header .pricerange {
+    color: #888;
+    font-size: inherit;
+    font-style: italic;
+}
+
+.bdx-community-item .details {
+    float: right;
+    width: 70%;
+}
+
+.bdx-community-item .details p {
+    margin-bottom: 0;
+}
+
+.bdx-community-item .val.address {
+    color: #888;
+    text-transform: uppercase;
+}
+
+
+/*-----------------------------------------------------
+Agent and Lender CTAs
+Used on both the individual Community and individual Listing pages
+*/
+.bdx-agent-info,
+.bdx-lender-info,
+.bdx-community-property-info {
+    margin-bottom: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.bdx-agent-info .bdx-cta-title h5,
+.bdx-lender-info .bdx-cta-title h5,
+.bdx-community-property-info .bdx-cta-title h5 {
+    margin-bottom: 8px;
+}
+
+.bdx-agent-info .bdx-cta-body,
+.bdx-lender-info .bdx-cta-body,
+.bdx-community-property-info .bdx-cta-body {
+    display: table;
+    width: 100%;
+}
+
+.bdx-agent-info .bdx-agent-photo-contain,
+.bdx-lender-info .bdx-lender-photo-contain,
+.bdx-community-property-info .bdx-properties-photo-contain {
+    width: 35%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 20px 0 0;
+}
+
+.bdx-agent-info .bdx-agent-photo,
+.bdx-lender-info .bdx-lender-photo,
+.bdx-community-property-info .bdx-properties-photo {
+    border-radius: 100px;
+    overflow: hidden;
+    -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+    min-width: 80px;
+}
+
+.bdx-agent-info .bdx-info,
+.bdx-lender-info .bdx-info,
+.bdx-community-property-info .bdx-info {
+    width: 65%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.bdx-agent-info .bdx-info .bdx-name,
+.bdx-lender-info .bdx-info .bdx-name,
+.bdx-community-property-info .bdx-info .bdx-name {
+    margin-bottom: 0;
+    font-size: 20px;
+    color: #666;
+}
+
+.bdx-agent-info .bdx-info .bdx-title,
+.bdx-lender-info .bdx-info .bdx-title,
+.bdx-community-property-info .bdx-info .bdx-title,
+.bdx-agent-info .bdx-info .bdx-phone,
+.bdx-lender-info .bdx-info .bdx-phone,
+.bdx-community-property-info .bdx-info .bdx-phone {
+    display: block;
+}
+
+.bdx-agent-info .bdx-info .btnset,
+.bdx-lender-info .bdx-info .btnset,
+.bdx-community-property-info .bdx-info .btnset {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.bdx-agent-info .bdx-info .btnset .btn,
+.bdx-lender-info .bdx-info .btnset .btn,
+.bdx-community-property-info .bdx-info .btnset .btn {
+    white-space: normal;
+}
+
+/*-----------------------------------------------------
+BDX Inquire Form
+*/
+
+.bdx-inquire-form .field.firstname,
+.bdx-inquire-form .field.lastname,
+.bdx-inquire-form .field.email,
+.bdx-inquire-form .field.phone {
+    width: 48%;
+}
+
+.bdx-inquire-form .field.firstname input,
+.bdx-inquire-form .field.lastname input,
+.bdx-inquire-form .field.email input,
+.bdx-inquire-form .field.phone input {
+    display: block;
+    width: 100%;
+}
+
+.bdx-inquire-form .field.firstname,
+.bdx-inquire-form .field.email {
+    float: left;
+    clear: left;
+}
+
+.bdx-inquire-form .field.lastname,
+.bdx-inquire-form .field.phone {
+    float: right;
+}
+
+.bdx-inquire-form .field.message {
+    clear: both;
+    width: 100%;
+}
+
+.bdx-inquire-form .field.message textarea {
+    display: block;
+    width: 100%;
+}
+
+.popup #body {
+    padding: 0 20px;
+}
+
+
+
+/*-----------------------------------------------------
+Inquire form
+Used on both the individual Community and individual Listing pages
+*/
+
+
+.community-inquire-wrap,
+.listing-inquire-wrap {
+    border: 1px solid #ddd;
+    border-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.community-inquire-wrap h4,
+.listing-inquire-wrap h4 {
+    margin-top: 0;
+}
+
+.community-inquire-wrap .bdx-agent-info,
+.listing-inquire-wrap .bdx-agent-info {
+    display: table;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.community-inquire-wrap .bdx-agent-info .bdx-agent-photo-contain,
+.listing-inquire-wrap .bdx-agent-info .bdx-agent-photo-contain {
+    width: 35%;
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 0;
+    background: transparent;
+}
+
+.community-inquire-wrap .bdx-agent-info .bdx-agent-photo,
+.listing-inquire-wrap .bdx-agent-info .bdx-agent-photo {
+    overflow: hidden;
+    position: relative;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    -o-border-radius: 200px;
+    border-radius: 200px;
+    -webkit-transform: rotate(0);
+}
+
+.community-inquire-wrap .bdx-agent-info .bdx-info,
+.listing-inquire-wrap .bdx-agent-info .bdx-info {
+    width: 65%;
+    padding-left: 12px;
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 1.4;
+}
+
+.community-inquire-wrap .bdx-agent-info .bdx-name,
+.listing-inquire-wrap .bdx-agent-info .bdx-name,
+.community-inquire-wrap .bdx-agent-info .bdx-title,
+.listing-inquire-wrap .bdx-agent-info .bdx-title,
+.community-inquire-wrap .bdx-agent-info .bdx-phone,
+.listing-inquire-wrap .bdx-agent-info .bdx-phone {
+    display: block;
+}
+
+.community-inquire-wrap .bdx-agent-info .bdx-name,
+.listing-inquire-wrap .bdx-agent-info .bdx-name {
+    font-size: 18px;
+}
+
+.community-inquire-wrap .bdx-agent-info .bdx-title,
+.listing-inquire-wrap .bdx-agent-info .bdx-title {
+    text-transform: uppercase;
+}
+
+.community-inquire-wrap .bdx-inquire-form,
+.listing-inquire-wrap .bdx-inquire-form {
+    clear: both;
+}
+
+.community-inquire-wrap .bdx-inquire-form form,
+.listing-inquire-wrap .bdx-inquire-form form {
+    padding: 0 !important;
+    border: 0 !important;
+    margin-bottom: 0;
+}
+
+.community-inquire-wrap .bdx-inquire-form div:before,
+.listing-inquire-wrap .bdx-inquire-form div:before,
+.community-inquire-wrap .bdx-inquire-form div:after,
+.listing-inquire-wrap .bdx-inquire-form div:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.community-inquire-wrap .bdx-inquire-form label,
+.listing-inquire-wrap .bdx-inquire-form label {
+    display: block;
+}
+
+.community-inquire-wrap .bdx-inquire-form input,
+.listing-inquire-wrap .bdx-inquire-form input,
+.community-inquire-wrap .bdx-inquire-form textarea,
+.listing-inquire-wrap .bdx-inquire-form textarea {
+    display: block;
+    width: 100%;
+    padding: 4px;
+}
+
+/* overrides for LEC4*/
+.community-inquire-wrap .bdx-inquire-form .message,
+.listing-inquire-wrap .bdx-inquire-form .message {
+    background-color: transparent !important;
+    border: 0 !important;
+    padding: 0;
+    margin: 0;
+}
+
+.community-inquire-wrap .bdx-inquire-form .btnset,
+.listing-inquire-wrap .bdx-inquire-form .btnset {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-align: right;
+}
+
+/*-----------------------------------------------------
+Individual listings pages
+eg. /builders/community/2852/1082053/
+*/
+
+#bdx-listing-detail {
+    padding-bottom: 30px;
+}
+
+#bdx-listing-detail:before,
+#bdx-listing-detail:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#bdx-listing-detail .addthis_toolbox {
+    display: none;
+}
+
+#bdx-listing-detail .bdx-col1 {
+    width: 64.6666667%;
+    float: left;
+}
+
+#bdx-listing-detail .bdx-col1:before,
+#bdx-listing-detail .bdx-col1:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#bdx-listing-detail .bdx-col2 {
+    width: 33.3333334%;
+    float: right;
+}
+
+#bdx-listing-detail .bdx-listing-info,
+#bdx-listing-detail .bdx-community-info {
+    width: 49%;
+    float: left;
+}
+
+#bdx-listing-detail .bdx-listing-info {
+    margin-right: 2%;
+}
+
+#bdx-listing-detail .bdx-listing-detail-section,
+#bdx-listing-detail .bdx-community-detail-section {
+    margin-bottom: 30px;
+}
+
+#bdx-listing-detail .bdx-listing-detail-section h3,
+#bdx-listing-detail .bdx-community-detail-section h3 {
+    margin-bottom: 8px;
+}
+
+#bdx-listing-detail .bdx-listing-detail-section ul,
+#bdx-listing-detail .bdx-community-detail-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#bdx-listing-detail .bdx-listing-detail-section li:before,
+#bdx-listing-detail .bdx-community-detail-section li:before,
+#bdx-listing-detail .bdx-listing-detail-section li:after,
+#bdx-listing-detail .bdx-community-detail-section li:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*-----------------------------------------------------
+Price Sliders
+*/
+
+/*	General CSS resets; */
+.bdx-noUi-target * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -ms-touch-action: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: default;
+}
+
+/*	Main slider bar; */
+.bdx-noUi-base {
+    width: 100%;
+    margin: 1px;
+    height: 15px;
+    position: relative;
+    margin: 5px 1px;
+}
+
+.bdx-noUiSlider.bdx-noUi-target {
+    margin: 0 11px;
+}
+
+/*	Handles + active state */
+.bdx-noUi-handle {
+    top: -3px;
+    left: -11px;
+    width: 22px;
+    height: 22px;
+    z-index: 1;
+    position: relative;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    background: #fff;
+}
+
+.bdx-noUi-active {
+    background: #e9e9e9;
+    box-shadow: inset 0 0 5px #ddd;
+}
+
+/*	Styling-only classes; */
+.bdx-noUi-connect {
+    -webkit-transition: background 0.6s;
+    transition: background 0.6s;
+}
+
+.bdx-noUi-background {
+    background: #aaa;
+    border-radius: 2px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3) inset;
+}
+
+/* the 'selected' part of the slider */
+.bdx-noUi-origin.bdx-noUi-origin-lower {
+    background: #ddd;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.bdx-noUi-origin.bdx-noUi-origin-upper {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3) inset;
+}
+
+/*	Functional styles for handle positioning; */
+.bdx-noUi-origin {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: inherit;
+}
+
+.bdx-noUi-origin + .bdx-noUi-origin {
+    background: inherit !important;
+}
+
+.bdx-noUi-z-index {
+    z-index: 10;
+}
+
+/*	Adaptations for the vertical slider; */
+.bdx-noUi-vertical {
+    width: 38px;
+    height: 100%;
+}
+
+.bdx-noUi-vertical .bdx-noUi-origin {
+    bottom: 0;
+    left: 0;
+}
+
+.bdx-noUi-vertical .bdx-noUi-handle {
+    top: -23px;
+    left: -3px;
+}
+
+/*	Slider disabled state; */
+[disabled] .bdx-noUi-base {
+    background: #ddd;
+}
+
+[disabled] .bdx-noUi-handle {
+    background: #f7f7f7;
+    cursor: not-allowed;
+}
+
+[disabled] .bdx-noUi-connect {
+    background: #eee;
+}
+
+/*	Transition states; */
+.bdx-noUi-state-tap .bdx-noUi-origin {
+    -webkit-transition: left 0.3s, top 0.3s;
+    transition: left 0.3s, top 0.3s;
+}
+
+.bdx-noUi-state-blocked .bdx-noUi-connect {
+    background: #7f8c8d;
+}
+
+
+/*-----------------------------------------------------
+IE8 specific styles
+*/
+
+.ie8 .state-results-container .bdx-state-item {
+    width: 31%;
+}
+
+.ie8 .city-results-container .bdx-city-item {
+    width: 22.5%;
+}
+
+.ie8 .bdx-listing-item {
+    width: 23.5%;
+    margin-right: 1.5%;
+}
+
+.ie8 .bdx-slideshow .flex-direction-nav .flex-prev,
+.ie8 .bdx-slideshow .flex-direction-nav .flex-next {
+    background-image: url('/builders/res/img/sprites-ie8.png');
+}
+
+.ie8 #bdx-community-detail .bdx-features-container .list-group li:before {
+    background-image: url('/builders/res/img/sprites-ie8.png');
+}

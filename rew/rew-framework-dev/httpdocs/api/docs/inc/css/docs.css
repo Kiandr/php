@@ -1,0 +1,161 @@
+body {
+    position: relative; /* For scrollyspy */
+    padding-top: 80px; /* Account for fixed navbar */
+}
+
+h1[id], h2[id], span[id] {
+    padding-top: 55px;
+    margin-top: -55px;
+    display: inline-block; /* required for webkit browsers */
+}
+
+.docs-nav {
+    background-color: #3b78ce;
+    border-radius: 0;
+}
+
+.docs-nav .navbar-brand {
+    color: #ffffff;
+}
+	
+.docs-nav .navbar-nav > li > a {
+    color: #dee8f7;
+}
+	
+.docs-nav .navbar-nav > li > a:hover {
+    color: #ffffff;
+}
+	
+.docs-nav .navbar-nav > .active > a, .docs-nav .navbar-nav > .active > a:hover {
+    background-color: #306cc0;
+    color: #ffffff;
+}
+	
+.docs-sidebar .nav > .active > a, .docs-sidebar .nav > .active:hover > a, .docs-sidebar .nav > .active:focus > a {
+    color: #306cc0;
+    font-weight: bold;
+    border-right: 1px solid #306cc0;
+}
+
+.docs-sidebar .nav > li > a {
+    display: block;
+    padding: 5px 20px;
+}
+
+.docs-sidebar .nav .nav {
+    display: none;
+    margin-bottom: 8px;
+}
+
+.docs-sidebar .nav > .active > ul {
+    display: block;
+}
+
+.docs-sidebar .nav .nav > li > a {
+    font-size: 90%;
+    padding-bottom: 3px;
+    padding-left: 30px;
+    padding-top: 3px;
+}
+
+@media (min-width: 1200px) {
+    .docs-sidebar.affix {
+        position: fixed;
+        top: 80px;
+    }
+
+    .docs-sidebar.affix,.docs-sidebar.affix-bottom {
+        width: 270px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .docs-sidebar.affix {
+        position: static;
+    }
+}
+
+.docs-sidenav {
+    background-color: #f5f5f5;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.docs-sidenav .dropdown-header {
+    font-weight: bold;
+}
+	
+.highlight {
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+    margin-top: 10px;
+    margin-bottom: 14px;
+    padding: 9px 14px;
+}
+
+.highlight pre.prettyprint {
+    background-color: transparent;
+    border: 0 none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+}
+	
+.label-outline {
+    border: 1px solid #999999;
+    color: #999999;
+}
+
+.table-fields {
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+.table-fields tbody>tr>th {
+    text-align: right;
+}
+	
+.table-fields tbody th code {
+    font-weight: normal;
+}
+
+.docs-object {
+    border-radius: 4px 4px 0 0;
+    border-color: #dddddd;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.docs-object .object-schema {
+    padding: 15px;
+}
+	
+.docs-object .object-schema .title {
+    color: #bbbbbb;
+    font-size: 16px;
+    font-weight: bold;
+}
+		
+.docs-object .object-schema .center {
+    text-align: center;
+}
+	
+.docs-object .highlight {
+    margin-top: 0;
+    margin-bottom: 0;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-radius: 0;
+    padding: 9px 18px;
+}
+	
+.docs-object .highlight .title {
+    color: #bbbbbb;
+    font-size: 13px;
+    font-weight: bold;
+}
+	
+.docs-object .highlight pre.prettyprint {
+    margin-top: 10px;
+}

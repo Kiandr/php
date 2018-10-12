@@ -1,0 +1,645 @@
+.tpl-homepage #head .wrap
+{
+	border-bottom: 1px solid #444 !important;
+}
+
+#head nav.horizontal li a
+{
+	color: #999;
+}
+
+#feature .quicksearch form label,
+#feature .quicksearch form .tween,
+#feature #feature_cta .wrap p,
+#feature #feature_cta .wrap p a
+{
+	color: #777;
+}
+
+#feature .quicksearch .tabset ul li.current a
+{
+	-webkit-box-shadow: 0 -1px 1px 1px rgba(255, 255, 255, 0.2) inset;
+	-moz-box-shadow: 0 -1px 1px 1px rgba(255, 255, 255, 0.2) inset;
+	-ms-box-shadow: 0 -1px 1px 1px rgba(255, 255, 255, 0.2) inset;
+	box-shadow: 0 -1px 1px 1px rgba(255, 255, 255, 0.2) inset;
+}
+
+.tpl-homepage article.listing .badge
+{
+	background-image: url('img/badge.png') !important;
+}
+
+
+#feature #feature_cta .wrap p a:hover
+{
+	color: #999;
+}
+
+
+
+
+//////////////////////////////////////////
+
+
+// Sothebys Inspired II Colour Scheme
+
+
+// 1: Universal Elements
+	// 1a: Variables & Mixins
+	// 1b: Colour & Typography
+	// 1c: Action Items & Buttons
+
+// 2: Header
+	// 2a: Primary Navigation
+	
+
+// 3: Feature
+	// 3a: Quicksearch
+
+// 4: Body
+	// 4a: IDX Styles
+	// 4b: Content
+	// 4c: Sidebar
+
+// 5: Footer
+
+// 6: Reg & Login Popups
+
+
+//////////////////////////////////////////
+
+
+// 1: Universal Elements
+
+
+// 1a: Variables & Mixins
+
+
+// Variables
+
+@sotheby-primary-blue : #245EB6;   // Light Sotheby Blue
+@sotheby-secondary-blue : #0F274C; // Dark Sotheby Blue
+@sotheby-orange : #EA8C09; 		   // Sotheby Orange
+
+@white : #fcfcfc; // default white
+@black : #222222; // default black
+
+@quick-search-bg1 : #dadada; // top of quicksearch gradient
+@quick-search-bg2 : #ffffff; // bottom of quicksearch gradient
+
+
+// Mixins
+
+.button, .btnset a.btn, a.btn {
+.gradient(lighten(@sotheby-secondary-blue,15%), darken(@sotheby-secondary-blue,15%), darken(@sotheby-secondary-blue,15%));
+border-color: lighten(@sotheby-secondary-blue,15%);
+color: @white;
+box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset;
+	&:hover {
+	.gradient(darken(@sotheby-secondary-blue,15%), lighten(@sotheby-secondary-blue,15%), lighten(@sotheby-secondary-blue,15%));
+	border-color: darken(@sotheby-secondary-blue,15%);
+	color: @white;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
+	} // end hover effect
+}
+
+
+//////////////////////////////////////////
+
+
+// 2: Header
+
+header#head {
+
+// 2a: Primary Navigation
+
+	nav.horizontal {
+	
+		ul {
+
+			li {
+
+				a {
+				color: @white;
+				color: fade(@white,85%);
+					&:hover { color: @white; }
+				} // end a
+
+			} // end li
+
+			li.has-menu:hover {
+
+				a {
+				background: @white;
+				color: @sotheby-primary-blue;
+					&:hover {
+					color: @sotheby-secondary-blue;
+					}
+				} // end a
+
+				.menu {
+				background: @white;
+
+					ul { border-color: @white; }
+
+					.cta {
+						
+						a {
+						background: @sotheby-secondary-blue;
+							p {
+							color: @white;
+							}
+							&:hover {
+							background: darken(@sotheby-secondary-blue,15%);
+							}
+						} // end a	
+	
+					} // end .cta
+
+				} // end .menu
+
+			} // end li.has-menu
+
+			li.has-menu:hover:after {
+			background: none @white;
+			} // end li.has-menu:hover:after
+
+		} // end ul
+
+	} // end nav.horizontal
+
+} // end header#head
+
+
+//////////////////////////////////////////
+
+
+// 3: Feature
+
+#feature {
+
+// 3a: Quicksearch
+
+	.quicksearch {
+	.gradient(fade(@quick-search-bg1,90%), fade(@quick-search-bg2,90%), @quick-search-bg1);
+
+	.tabset {
+
+		ul {
+
+			li {
+
+				a {
+				color: @black;
+					&:hover {
+					color: @sotheby-primary-blue;
+					}
+				} // end a
+
+			} // end li
+
+			li.current {
+
+				a {
+				background: @white;
+				background: fade(@white,60%);
+				box-shadow: 0 1px 3px rgba(0,0,0,0.45) inset;
+					color: @sotheby-primary-blue;
+					&:hover {
+					color: @sotheby-primary-blue;
+					}
+				} // end a
+
+			} // end li.current
+
+		} // end ul
+
+	} // end .tabset
+
+	form {
+
+		label, .tween { color: @sotheby-primary-blue; }
+
+		.btnset {
+
+			button[type="submit"] {
+			.button;
+			} // end button[type="submit"]
+
+		} // end .btnset
+
+	} // end form
+
+		.nav {
+		.gradient(@sotheby-secondary-blue, @black, @sotheby-secondary-blue);
+
+			a {
+			color: @white;
+				&:hover {
+				color: fade(@white,65%);
+				}
+			} // end a
+
+			.pright { color: @white; }
+
+		} // end .nav
+
+	} // end .quicksearch
+
+	#feature_cta {
+	.gradient(fade(@quick-search-bg1,80%), fade(@quick-search-bg2,80%), @quick-search-bg1);
+	border-top: solid 1px @sotheby-secondary-blue;
+	border-bottom: solid 1px @sotheby-secondary-blue;
+
+		.wrap {
+
+			p {
+			color: @sotheby-secondary-blue;
+
+				a {
+				color: @sotheby-primary-blue;
+					&:hover {
+					color: @black;
+					}
+				} // end a
+
+				a.btn {
+				.button;
+				} // end a.btn
+	
+			} // end p
+
+		} // end .wrap
+
+	} // end #feature_cta
+
+} // end #feature
+
+
+//////////////////////////////////////////
+
+
+// 4: Body
+
+#body {
+background: none @site-background;
+
+	.wrap {
+
+			.articleset {
+			border-bottom-color: @black;
+	
+				article.listing.featured {
+				
+						
+				
+						.body {
+						
+							.data-summary {
+							color: @sotheby-secondary-blue;
+							}
+				
+						} // end .body
+				
+				} // end article.listing.featured
+	
+			} // end .articleset
+
+// 4a: IDX Styles
+
+		.idx-user-bar {
+		background: lighten(#ccc,15%) !important;
+		border: solid 1px darken(#ccc,5%) !important;
+
+			.nav {
+				
+				ul {
+
+					li {
+
+						a {
+						color: @black;
+							&:hover {
+							color: @sotheby-primary-blue;
+							}
+						} // end a
+
+					} // end li
+
+				} // end ul
+
+			} // end .nav
+
+		} // end .idx-user-bar
+
+		#search_head {
+
+			.nav {
+
+				ul {
+
+					li {
+
+						a {
+						background: none transparent;
+							&:hover {
+							color: @sotheby-primary-blue;
+							}
+						} // end a
+
+					} // end li
+
+				} // end ul
+
+			} // end .nav
+
+			.pagination { background: none transparent; }
+
+		} // end #search_head
+
+		#search_mast {
+		background: darken(@sotheby-primary-blue,30%);
+
+			.noUiSlider.horizontal {
+			background: darken(@white,25%);
+		
+				a:first-child {
+				background: @white !important;
+				} // end a:first-child
+		
+				div { background: none @sotheby-orange !important; }
+		
+			} // end .noUiSlider.horizontal
+	
+			.save_search {
+			background: darken(@black,10%);
+			border-left: solid 1px @white;
+			border-left-color: fade(@white,35%);
+	
+				.btn {
+				.button;
+				} // end .btn
+	
+			} // end .save_search
+	
+		} // end #search_mast
+
+		#listing-body {
+
+			.btnset {
+
+				a.btn.strong {
+				.button;
+				} // end a.btn.strong
+
+			} // end .btnset
+
+		} // end #listing-body
+
+		#content {
+
+			.articleset.listings {
+
+				article {
+				border-color: lighten(@black,50%);
+				border-color: fade(@black,25%);
+				}
+
+			} // end .articleset.listings
+
+		} // end #content
+
+		.pagination {
+		background: lighten(@black,65%);
+		}
+
+		aside#sidebar {
+
+			#idx-feeds_1 {
+	
+				ul.nav {
+	
+					li {
+					border-bottom: none;
+	
+						a {
+						background: lighten(@white,5%);
+						} // end a
+	
+					} // end li
+	
+					li.current {
+	
+						a {
+						background: @sotheby-secondary-blue;
+						color: @white;
+						} // end a
+	
+					} // end li.current
+	
+				} // end ul.nav
+	
+			} // end #idx-feeds_1
+	
+			.idx-search {
+			background: @sotheby-secondary-blue;
+			border: solid 1px @sotheby-secondary-blue;
+			color: @white;
+
+				.field {
+
+					> label {
+					color: @white;
+					}
+
+				} // end .field
+
+				.toggleset {
+				background: @white !important;
+				padding-left: 0.25em;
+				} // end .toggleset
+
+			} // end .idx-search
+	
+		} // end aside#sidebar
+
+
+
+
+// 4b: Content
+
+	#content {
+
+		blockquote.strong {
+
+			p {
+			color: @sotheby-orange;
+			}
+
+		} // end blockquote.strong	
+
+		form { 
+		padding: 40px 0;
+		border: none;
+
+				button.positive {
+				.button;
+				} // end button.positive
+ 
+			} // end form
+
+		.pagination { background: none transparent; }	
+
+		#content-secondary {
+
+			.idx-search {
+			background: darken(@sotheby-secondary-blue,15%);
+			border: solid 1px @sotheby-secondary-blue;
+			color: @white;
+
+				.field {
+
+					> label {
+					color: @white;
+					}
+
+				} // end .field
+
+				.toggleset {
+				background: @white !important;
+				padding-left: 0.25em;
+				} // end .toggleset
+
+			} // end .idx-search
+
+		} // end #content-secondary
+				
+
+		} // end #content
+
+
+	} // end .wrap 
+
+} // end body
+
+
+
+// 4c: Sidebar
+
+		aside#sidebar {
+		background: none transparent;
+
+			.communities {
+
+				.nav {
+
+					ul {
+
+						li {
+
+							a { background: none transparent; }
+
+						} // end li
+
+					} // end ul
+
+					a {
+					background: @sotheby-secondary-blue;
+					color: @white;
+					} // end a
+
+				} // end .nav
+
+			} // end .communities
+
+			.nav {
+
+				li {
+				border-color: lighten(@black,65%);
+				border-color: fade(@black,25%);
+				}
+
+			} // end .nav
+
+
+		} // end aside#sidebar
+ 
+
+
+//////////////////////////////////////////
+
+
+// 5: Footer
+
+footer#foot {
+.gradient(@sotheby-secondary-blue, @black, @sotheby-secondary-blue);
+
+	blockquote {
+
+		p, small {
+		color: @white;
+		color: fade(@white, 80%);
+		}
+
+	} // end blockquote
+
+	address {
+	color: @white;
+	color: fade(@white, 80%);
+	}
+
+	ul, .dataset {
+
+		li {
+		color: @white;
+		color: fade(@white, 80%);
+
+			a {
+			color: @white;
+			color: fade(@white, 80%);
+				&:hover {
+				color: @white;
+				}
+			} // end a
+
+		} // end li
+
+	} // end ul
+
+	div, .copyright {
+	border-color: @white;
+	border-color: fade(@white,25%);
+	color: fade(@white, 80%);
+
+		a {
+		color: @white;
+		color: fade(@white, 80%);
+			&:hover {
+			color: @white;
+			}
+		} // end a
+
+	} // end div, .copyright
+
+} // end footer#foot
+
+
+
+
+
+#listing-body div.dataset ul li strong,
+#listing-body div.dataset ul li span
+{
+  background-color: @site-background;
+}
+
+
+.idx-map.search_map #sidebar .idx-search .field {
+  padding:0 20px !important;
+}
+
+#sidebar .idx-search #field-bounds label
+{
+  color:#fff;
+}
+

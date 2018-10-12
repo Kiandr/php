@@ -1,0 +1,59 @@
+.uk-button, .uk-button-primary {
+    text-transform: uppercase;	
+	
+    &.uk-button-secondary {
+        text-transform: uppercase;
+        font-weight: $font-weight-thin;
+    }
+  
+    &.uk-button-tertiary {
+        text-transform: none;
+        font-weight: $font-weight-thin;
+    }
+  
+    &.uk-button-idx-toolbar {
+        text-transform: uppercase; 
+    }	
+  
+    &.uk-button-blank { 
+        text-transform: uppercase;
+        font-weight: $font-weight-light;
+    }
+	
+    &.uk-button-block { width: 100%; }
+}
+
+.uk-button-large {
+    min-height: $button-large-height;
+    font-size: $button-large-font-size;
+    font-weight: $font-weight-thin;
+    line-height: $button-large-line-height;
+    padding: 0 $button-large-padding-horizontal;
+	
+    @include bp-medium {
+        min-height: 54px;
+        font-size: 21px;
+        line-height: 54px;
+        padding: 0 52px;
+    }
+}
+
+.uk-button-medium {
+    min-height: $button-medium-height;
+    font-size: $button-medium-font-size;
+    font-weight: $font-weight-thin;
+    line-height: $button-medium-line-height;
+    padding: 0 $button-medium-padding-horizontal;
+}
+
+.uk-button-inline-form-large {
+    font-size: $button-medium-font-size;
+    font-weight: $font-weight-thin;
+    line-height: 25px;
+    height: 40px;
+    padding: 8px 16px;
+}
+
+form.submitting .uk-button {
+    cursor: default;
+}

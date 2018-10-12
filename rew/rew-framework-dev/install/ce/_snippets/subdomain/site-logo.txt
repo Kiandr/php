@@ -1,0 +1,3 @@
+<svg class="logo">
+	<use xlink:href="/inc/skins/ce/img/assets.svg#logo--website" />
+</svg>

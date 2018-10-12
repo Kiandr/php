@@ -1,0 +1,6 @@
+{
+	"_comment" : "Property Valuation Module",
+	"name" : "property-valuation",
+	"config" : {
+	}
+}

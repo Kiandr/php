@@ -1,0 +1,15 @@
+.nodes__wrap {
+    align-items: center;
+}
+
+.nodes__actions {
+    align-self: center;
+}
+
+.blog-title {
+    display: block;
+    max-width: 90%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

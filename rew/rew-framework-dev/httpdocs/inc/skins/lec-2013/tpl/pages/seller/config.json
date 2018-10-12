@@ -1,0 +1,139 @@
+{
+	"config" : {
+		"order"			: 4,
+		"title"			: "Seller",
+		"description"	: "Use this template on pages that use the <u>#cma#</u> snippet. This template allows you to configure the CMA tool which allows visitors to request a Comparable Market Analysis of their home.",
+		"selectable"	: "{REW_PROPERTY_VALUATION}"
+	},
+    "containers" : {
+    	"body" : {
+            "user-bar" : {
+            }
+    	}
+    },
+	"variables" : {
+		"heading"	: {
+			"type"		: "text",
+			"title"		: "Heading",
+			"default"	: "Free Property Valuation"
+		},
+		"content"	: {
+			"type"		: "text",
+			"title"		: "Content",
+			"default"	: "Thinking about selling your home? It's important to know how much your property is worth on today's market to choose an appropriate selling price."
+		},
+		"defaults.location" : {
+			"type"			: "text",
+			"title"			: "Location"
+		},
+		"defaults.feed" : {
+			"type"			: "feed",
+			"title"			: "IDX Feed",
+			"required"		: true
+		},
+		"defaults.type" : {
+			"type"			: "idx",
+			"title"			: "Property Type",
+			"placeholder"	: "...",
+			"panel"			: "Type"
+		},
+		"defaults.subtype" : {
+			"type"			: "idx",
+			"title"			: "Sub-Type",
+			"placeholder"	: "...",
+			"panel"			: "Subtype"
+		},
+		"defaults.beds" : {
+			"type"			: "select",
+			"title"			: "Beds",
+			"placeholder"	: "...",
+			"options"		: [
+				{ "value" : "1",	"title" : "1"	},
+				{ "value" : "2",	"title" : "2"	},
+				{ "value" : "3",	"title" : "3"	},
+				{ "value" : "4",	"title" : "4"	},
+				{ "value" : "5",	"title" : "5"	},
+				{ "value" : "6",	"title" : "6"	},
+				{ "value" : "7+",	"title" : "7+"	}
+			]
+		},
+		"defaults.baths" : {
+			"type"			: "select",
+			"title"			: "Baths",
+			"placeholder"	: "...",
+			"options"		: [
+				{ "value" : "1",	"title" : "1"	},
+				{ "value" : "2",	"title" : "2"	},
+				{ "value" : "3",	"title" : "3"	},
+				{ "value" : "4",	"title" : "4"	},
+				{ "value" : "5",	"title" : "5"	},
+				{ "value" : "6",	"title" : "6"	},
+				{ "value" : "7+",	"title" : "7+"	}
+			]
+		},
+		"defaults.sqft" : {
+			"type"			: "select",
+			"title"			: "Sq. Ft.",
+			"placeholder"	: "...",
+			"options"		: [
+				{ "value" : "0-1000",		"title" : "Under 1,000 ft²"			},
+				{ "value" : "1000-2000",	"title" : "1,000 ft² - 2,000 ft²"	},
+				{ "value" : "2000-3000",	"title" : "2,000 ft² - 3,000 ft²"	},
+				{ "value" : "3000-4000",	"title" : "3,000 ft² - 4,000 ft²"	},
+				{ "value" : "4000-5000",	"title" : "4,000 ft² - 5,000 ft²"	},
+				{ "value" : "5000-6000",	"title" : "5,000 ft² - 6,000 ft²"	},
+				{ "value" : "6000-7000",	"title" : "6,000 ft² - 7,000 ft²"	},
+				{ "value" : "7000-8000",	"title" : "7,000 ft² - 8,000 ft²"	},
+				{ "value" : "8000",			"title" : "Over 8,000 ft²"			}
+			]
+		},
+		"defaults.condition" : {
+		    "type"			: "select",
+		    "title"			: "Condition",
+		    "placeholder"	: "...",
+		    "options"		: [
+			    { "value" : "Excellent",	"title" : "Excellent"	},
+			    { "value" : "Good",			"title" : "Good"		},
+			    { "value" : "Average",		"title" : "Average"		},
+			    { "value" : "Fair",			"title" : "Fair"		},
+			    { "value" : "Poor",			"title" : "Poor"		}
+		    ]
+		},
+		"cta" : {
+			"type"		: "boolean",
+			"title"		: "Show Call-to-Action",
+			"default"	: true,
+			"children"	: {
+			    "photo" : {
+				    "type"		: "image",
+				    "title"		: "Image"
+			    },
+				"heading" : {
+					"type"		: "text",
+					"title"		: "Heading",
+					"default"	: "Get a More Accurate Price Estimate!"
+				},
+				"content" : {
+					"type"		: "text",
+					"title"		: "Content",
+					"default"	: "Due to MLS rules, this tool depends on active listings to give you an idea on what your home might be worth. Agents have access to sold listings data, market statistics and additional information that can contribute to a much more accurate estimate—access to this information is as easy as signing up!"
+				},
+				"button" : {
+					"type"		: "text",
+					"title"		: "Button",
+					"default"	: "Get a Free In-Person Assessment"
+				}
+			}
+		},
+		"results" : {
+			"type"		: "boolean",
+			"title"		: "Show Comparable Properties",
+			"default"	: true
+		},
+		"capture" : {
+			"type"		: "boolean",
+			"title"		: "Lead Capture on Refine",
+			"default"	: false
+		}
+	}
+}

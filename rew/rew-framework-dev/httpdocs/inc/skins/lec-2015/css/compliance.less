@@ -1,0 +1,70 @@
+/** Show Provider First **/
+.listing .featured-provider {
+	color: #8c8c8c;
+	font: 500 16px/20px "source sans pro";
+	margin: 0 0 15px;
+	left: auto;
+	text-align: center;
+}
+
+#foot .compliance h6 {
+	color: lighten(@bgB, 33%);
+}
+
+.layout-detailed .resultIDXCompliance {
+    padding: 3px 10px;
+    font-family: 'helvetica neue', arial, serif;
+    font-size: 16px;
+    color: rgb(134, 134, 142);
+}
+
+.colset-3-xl .resultIDXCompliance {
+    padding: 0 20px;
+    font-family: 'helvetica neue', arial, serif;
+    font-size: 16px;
+    color: rgb(134, 134, 142);
+}
+
+.navListingsCompliance {
+    text-align: center;
+    margin-top: -10px;
+    color: #8585a1;
+}
+
+.navListingsCompliance {
+    text-align: center;
+    margin-top: -10px;
+    color: #8585a1;
+
+}
+
+.resultIDXCompliance span {
+	box-shadow: none;
+	border: none;
+}
+
+// BMLS
+.bmls .resultIDXCompliance .icon {
+    display: none;
+}
+
+.bmls .layout-detailed .resultIDXCompliance .icon {
+    display: block;
+}
+
+// LAAR Compliance
+body.laar .resultIDXCompliance .office {
+    font-size: 14px;
+}
+
+// SCIAR Compliance - The listing office is required on the LIST view results, but not the rest of the results.
+body.sciar {
+    .listing .office, .popover .office {
+        display: none;
+    }
+    div.listings.layout-detailed {
+        .office {
+            display: block;
+        }
+    }
+}

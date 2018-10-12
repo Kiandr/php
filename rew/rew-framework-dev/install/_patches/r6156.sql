@@ -1,0 +1,2 @@
+-- BUGFIX #0001835: agent column in `users_reminders` table should allow NULL (http://hal/mantis/view.php?id=1835)
+ALTER TABLE `users_reminders` CHANGE `agent` `agent` MEDIUMINT( 8 ) UNSIGNED NULL DEFAULT NULL; 

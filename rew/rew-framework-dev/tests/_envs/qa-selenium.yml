@@ -1,0 +1,15 @@
+modules:
+  config:
+    WebDriver:
+      url: http://rew:rew@dev.48-qa.rewdev.com
+      host: 127.0.0.1
+      browser: chrome
+      restart: false
+      log_js_errors: true
+      window_size: 1024x768
+      default_admin_password: h3eA3qP3
+    \REW\Test\Helper\Api:
+      key: be53b6a3116c0bf1ddd263480c95d9eb265490d3b6d464500d13947686782f74
+    \REW\Test\Helper\E2E:
+      domain: dev.48-qa.rewdev.com
+      domainPrefix: http://rew:rew@

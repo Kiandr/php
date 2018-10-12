@@ -1,0 +1,12 @@
+databases:
+  default:
+    alias: [cms, blog, users, directory]
+    hostname: localhost
+    username:
+    password:
+    database:
+  onboard:
+    hostname: idxdb-onboard.gce.rewhosting.com
+    username: dev_rewtemp
+    password: rCg529aO28Utosn0
+    database: onboard

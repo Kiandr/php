@@ -1,0 +1,64 @@
+<ul>
+    <li class="current">
+        <a href="/">
+            Home
+        </a>
+    </li>
+    <li>
+        <a href="/about.php">
+            About Us
+            <span>Meet the Team</span>
+        </a>
+    </li>
+    <li>
+        <a href="/agents.php">
+            Our Agents
+            <span>We Only Hire The Best</span>
+        </a>
+    </li>
+    <!--
+    <li>
+        <a href="/listings.php">
+            Our Listings
+            <span>Exclusive Properties</span>
+        </a>
+    </li>
+    -->
+    <li>
+        <a href="/idx/">
+            Search Homes
+            <span>Find What You're Looking For</span>
+        </a>
+    </li>
+    <li>
+        <a href="/developments.php">
+            Developments
+            <span>New Development Projects</span>
+        </a>
+    </li>
+    <li>
+        <a href="/communities.php">
+            Communities
+            <span>Most Popular Areas</span>
+        </a>
+    </li>
+    <!--
+    <li>
+        <a href="/buying.php">
+            For Buyers
+            <span>Buyer Resources</span>
+        </a>
+    </li>
+    <li>
+        <a href="/selling.php">
+            For Sellers
+            <span>Seller Resources</span>
+        </a>
+    </li>
+    -->
+    <li>
+        <a href="/contact.php">
+            Contact
+        </a>
+    </li>
+</ul>

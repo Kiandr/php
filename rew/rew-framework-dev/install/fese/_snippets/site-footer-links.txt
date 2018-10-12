@@ -1,0 +1,8 @@
+<a href="/">Home</a>
+<a href="/about.php">About</a>
+<a href="/agents.php">Agents</a>
+<a href="/idx/">Search</a>
+<a href="/listings.php">Listings</a>
+<a href="/developments.php">Developments</a>
+<a href="/communities.php">Communities</a>
+<a href="/contact.php">Contact</a>

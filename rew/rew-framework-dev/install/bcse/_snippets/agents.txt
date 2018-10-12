@@ -1,0 +1,7 @@
+{
+	"_comment" : "Agents Module",
+	"name" : "agents",
+	"config" : {
+		"thumbnails" : "350x350/f"
+	}
+}

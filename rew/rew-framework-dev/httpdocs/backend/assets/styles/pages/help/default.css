@@ -1,0 +1,30 @@
+body.help #app__sidebar {
+    display: none;
+}
+
+.version {
+    position: absolute;
+    left: 0;
+    z-index: 1000;
+}
+
+.version ul {
+    padding-left: 0;
+}
+
+@media (max-width: 899px) {
+    .version {
+        right: 0;
+        bottom: 0;
+    }
+
+    .btns--stickyB {
+        bottom: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .version.text {
+        font-size: 12px;
+    }
+}

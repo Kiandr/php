@@ -1,0 +1,8 @@
+$color-primary 			: 	#000000 				!default; 	// Pure Black	
+$color-secondary		: 	#f05407 				!default; 	// Orange
+$secondary-light 		: 	lighten(#f05407, 5%) 	!default;	// Lighten Secondary Colour
+$color-accent-primary 	: 	#ffffff 				!default; 	// White
+$color-accent-secondary :	#ffc42a					!default;	// Yellow
+
+$base-link-color: $color-secondary 			!default;
+$base-link-hover-color: $secondary-light 	!default;

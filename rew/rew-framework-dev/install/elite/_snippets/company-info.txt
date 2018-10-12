@@ -1,0 +1,7 @@
+<h5>Optional Statement About Company</h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non leo venenatis, efficitur purus ac, cursus elit. Fusce malesuada, turpis a auctor suscipit, nisi libero lobortis urna, a aliquam diam nibh vel ante. Duis quis elementum est, eget fermentum mi. Duis in ex at velit tempus gravida. Aliquam quis erat a nibh varius sollicitudin in non enim. Cras condimentum cursus dignissim.</p>
+<div class="comp-info-links">
+    <a href="#">Our Story</a>
+    <a href="#">Giving Back</a>
+    <a href="#">Join the Team</a>
+</div>

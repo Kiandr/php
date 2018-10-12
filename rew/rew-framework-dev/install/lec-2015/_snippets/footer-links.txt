@@ -1,0 +1,30 @@
+<div class="col">
+	<h4>Buyer Resources</h4>
+	<ul>
+		<li><a href="/buying.php">Home Buyer's Guide</a></li>
+		<li><a href="/idx/">What's on The Market</a></li>
+		<li><a href="/first-time-home-buying.php">First Time Home Buying</a></li>
+		<li><a href="/mortgage-calculator.php">Mortgage Calculator</a></li>
+		<li><a href="/guarantee.php">Our Guarantee</a></li>
+	</ul>
+</div>
+<div class="col">
+	<h4>Seller Resources</h4>
+	<ul>
+		<li><a href="/selling.php">Home Seller's Guide </a></li>
+		<li><a href="/home-evaluation.php">Home Evaluation</a></li>
+		<li><a href="/marketing-plan.php">Marketing Plan</a></li>
+		<li><a href="/agents.php">Find an Agent</a></li>
+		<li><a href="/listings.php">Our Listings</a></li>
+	</ul>
+</div>
+<div class="col">
+	<h4>Our Company</h4>
+	<ul>
+		<li><a href="/about.php">About Us</a></li>
+		<li><a href="/contact.php">Contact Us</a></li>
+		<li><a href="/blog/">Real Estate Blog</a></li>
+		<li><a href="/testimonials.php">Client Testimonials</a></li>
+		<li><a href="/offices.php">Our Offices</a></li>
+	</ul>
+</div>

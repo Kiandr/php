@@ -1,0 +1,12 @@
+{
+  "name": "@rew-theme/enterprise",
+  "description": "REW Enterprise Theme",
+  "version": "1.0.0",
+  "dependencies": {
+    "jQuery.YoutubeBackground": "git+ssh://git@git.rewhosting.com/rew-forks/jQuery.YoutubeBackground.git#v1.0.6-alpha.3",
+    "jquery-pano": "git+ssh://git@git.rewhosting.com/rew-forks/pano.git#1.3.0",
+    "pannellum": "git+ssh://git@git.rewhosting.com/rew-forks/pannellum.git#3.0.0-alpha.3",
+    "brew": "git+ssh://git@git.rewhosting.com/rew-core/brew.git#v1.1.2",
+    "svgxuse": "1.2.4"
+  }
+}

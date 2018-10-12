@@ -1,0 +1,7 @@
+$color-primary 			: 	#363636 				!default; 	// Dark Gray	
+$color-secondary		: 	#193452 				!default; 	// Dark Blue
+$secondary-light 		: 	lighten(#193452, 5%) 	!default;	// Lighten Secondary Colour
+$color-accent-primary 	: 	#ffffff 				!default; 	// White
+
+$base-link-color: $color-secondary 			!default;
+$base-link-hover-color: $secondary-light 	!default;

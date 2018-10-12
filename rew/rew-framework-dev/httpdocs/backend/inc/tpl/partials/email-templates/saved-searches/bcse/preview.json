@@ -1,0 +1,95 @@
+{
+    "default_message": "Hello {first_name},<br /><br />There are <strong>{result_count} new properties</strong> for the <em>{search_title}</em> search you saved on {site_link}",
+    "user": {
+      "first_name": "Jane",
+      "last_name": "Smith",
+      "email": "jane.smith@rewdemo.com"
+    },
+    "search": {
+      "count": 10,
+      "title": "Austin Residential",
+      "url": "#"
+    },
+    "listings": [
+        {
+          "Address": "14800 Flat Top Ranch Road",
+          "AddressCity": "Austin",
+          "ListingPrice": "6900000",
+          "NumberOfBedrooms": "5",
+          "NumberOfBathrooms": "10",
+          "NumberOfSqFt": "13731",
+          "ListingImage": "/img/email_templates/listing-01.jpg",
+          "url_details": "#"
+        },
+        {
+          "Address": "4501 Island Cove",
+          "AddressCity": "Austin",
+          "ListingPrice": "8995000",
+          "NumberOfBedrooms": "5",
+          "NumberOfBathrooms": "8",
+          "NumberOfSqFt": "11774",
+          "ListingImage": "/img/email_templates/listing-02.jpg",
+          "url_details": "#"
+        },
+        {
+          "Address": "213 Costa Bella Drive",
+          "AddressCity": "Austin",
+          "ListingPrice": "7350000",
+          "NumberOfBedrooms": "7",
+          "bathrooms": "9",
+          "NumberOfSqFt": "13630",
+          "ListingImage": "/img/email_templates/listing-03.jpg",
+          "url_details": "#"
+        },
+        {
+          "Address": "18109 Travis Circle",
+          "AddressCity": "Austin",
+          "ListingPrice": "8450000",
+          "NumberOfBedrooms": "8",
+          "NumberOfBathrooms": "10",
+          "NumberOfSqFt": "11720",
+          "ListingImage": "/img/email_templates/listing-04.jpg",
+          "url_details": "#"
+        },
+        {
+          "Address": "4433 River Garden Trail",
+          "AddressCity": "Austin",
+          "ListingPrice": "12900000",
+          "NumberOfBedrooms": "7",
+          "NumberOfBathrooms": "13",
+          "NumberOfSqFt": "20708",
+          "ListingImage": "/img/email_templates/listing-05.jpg",
+          "url_details": "#"
+        },
+        {
+          "Address": "3901 Watersedge Drive",
+          "AddressCity": "Austin",
+          "ListingPrice": "13550000",
+          "NumberOfBedrooms": "6",
+          "NumberOfBathrooms": "7",
+          "NumberOfSqFt": "76663",
+          "ListingImage": "/img/email_templates/listing-06.jpg",
+          "url_details": "#"
+        },
+        {
+          "Address": "4422 South Garden Trail",
+          "AddressCity": "Austin",
+          "ListingPrice": "13900000",
+          "NumberOfBedrooms": "8",
+          "NumberOfBathrooms": "8",
+          "NumberOfSqFt": "30708",
+          "ListingImage": "/img/email_templates/listing-01.jpg",
+          "url_details": "#"
+        },
+        {
+          "Address": "5901 Waterfront Drive",
+          "AddressCity": "Austin",
+          "ListingPrice": "15550000",
+          "NumberOfBedrooms": "6",
+          "NumberOfBathrooms": "8",
+          "NumberOfSqFt": "56663",
+          "ListingImage": "/img/email_templates/listing-04.jpg",
+          "url_details": "#"
+        }
+    ]
+}

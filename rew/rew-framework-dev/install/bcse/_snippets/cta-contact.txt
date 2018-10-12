@@ -1,0 +1,8 @@
+<header>
+	<h2>We're here to help YOU!</h2>
+	<h3 class="small-caps">Find out how</h3>
+	<hr>
+</header>
+<div class="body">
+	<a class="buttonstyle small-caps colored-bg2" href="/contact.php">Contact Us</a>
+</div>

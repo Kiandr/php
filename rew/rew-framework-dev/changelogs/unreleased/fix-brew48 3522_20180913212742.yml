@@ -1,0 +1,3 @@
+title: 'BREW48:3522: Add check for eqHeight method to prevent errors on cma page'
+author: 'Obie Egwim'
+merge_request: '3956'

@@ -1,0 +1,119 @@
+
+
+// GLOBAL  ================================================================ GLOBAL //
+
+a { color: #d9a20d; }
+
+
+// END GLOBAL
+
+
+// HEADER & NAVIGATION ================================================================ HEADER & NAVIGATION //
+
+//fix for having a solid color on the header background on internal pages
+#head.head {
+    position: relative;
+    background: none;
+}
+
+#head:before {
+    background: #000 none repeat scroll 0 0;
+    bottom: 20px;
+    content: " ";
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+//removing grey bar in header
+.head .wrp::after { display: none }
+
+//no header changes on homepage
+.pg-homepage #head.head {
+    position: absolute;
+    &:before { background: none; }
+}
+//End fix
+
+.logo-link, .logo-link small { color: @white; }
+
+.logo-link a { color: @white; }
+
+#head .mnu-trigger { fill: @swatch2 }
+
+.phone a { color: @white; }
+
+#nav a span { color: @swatch1; }
+
+// END HEADER & NAVIGATION
+
+
+// BUTTONS ================================================================ BUTTONS //
+
+.btn--primary, .btn {
+    background-color: @swatch1;
+    color: #231f20;
+    &:hover { background-color: @swatch2; }
+}
+.btn--primary svg path { fill: #231f20;  }
+
+
+.contact-cta .contact-cta-container a.cta-contact {
+    border: 1px solid @swatch2;
+    &:hover {
+        background-color: @swatch1;
+        color: #231f20;
+    }
+}
+
+// END BUTTONS
+
+// SLIDE CTA ================================================================ SLIDE CTA //
+
+.slide-cta .slide-btn {
+    border-color: @swatch2;
+    background-color: #0b0510;
+}
+
+.slide-cta .slide-btn:hover {
+    background-color: @swatch1;
+    color: #231f20;
+}
+
+// END SLIDE CTA
+
+// DETAILS ================================================================ DETAILS //
+
+.navbar a:hover { background-color: @swatch1; }
+
+// END DETAILS
+
+
+// RESULTS ================================================================ RESULTS //
+
+.listings .listing.wide-view h2 {
+    background-color: @swatch1;
+    color: #231f20;
+}
+
+.listings .stk>div .btn.save {
+    background-color: rgba(0,0,0,0);
+     &:hover { background-color: rgba(0,0,0,0); }
+}
+
+.pagination {
+    .current { background-color: @swatch1; }
+     a:hover { background-color: @swatch2; }
+}
+
+// END RESULTS
+
+
+// FOOTER ================================================================ FOOTER //
+
+#foot{
+    .foot-links a, .foot-copy a, .cms a { color: inherit; }
+}
+
+// END FOOTER

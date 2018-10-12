@@ -1,0 +1,146 @@
+<form class="uk-form uk-form-stacked" action="?submit" method="post"  id="elite_cms_en_ca_form_approve">
+    <input type="hidden" name="approveform" value="true">
+    <input type="text" name="registration_type" style="display: none;" tabindex="-1" autocomplete="off">
+    <fieldset>
+        <legend>Your Contact Information</legend>
+        <div class="uk-grid uk-grid-small">
+            <div class="uk-width-1-1 uk-width-medium-1-2 uk-margin-bottom">
+                <label class="uk-form-label">First Name <small class="required">*</small></label>
+                <div class="uk-form-controls">
+                    <input class="uk-width-1-1 uk-form-large" name="onc5khko" value="" required>
+                </div>
+            </div>
+            <div class="uk-width-1-1 uk-width-medium-1-2 uk-margin-bottom">
+                <label class="uk-form-label">Last Name <small class="required">*</small></label>
+                <div class="uk-form-controls">
+                    <input class="uk-width-1-1 uk-form-large" name="sk5tyelo" value="" required>
+                </div>
+            </div>
+            <div class="uk-width-1-1 uk-width-medium-1-2 uk-margin-bottom">
+                <label class="uk-form-label">Email <small class="required">*</small></label>
+                <div class="uk-form-controls">
+                    <input class="uk-width-1-1 uk-form-large" type="email" name="mi0moecs" required>
+                </div>
+            </div>
+            <div class="uk-width-1-1 uk-width-medium-1-2 uk-margin-bottom">
+                <label class="uk-form-label">Phone</label>
+                <div class="uk-form-controls">
+                    <input class="uk-width-1-1 uk-form-large" type="tel" name="telephone" value="">
+                </div>
+            </div>
+            <div class="uk-width-1-1 uk-width-medium-1-2 uk-margin-bottom">
+                <label class="uk-form-label">Address <small class="required">*</small></label>
+                <div class="uk-form-controls">
+                    <input class="uk-width-1-1 uk-form-large" name="fm-addr" value="" required>
+                </div>
+            </div>
+            <div class="uk-width-1-1 uk-width-medium-1-2 uk-margin-bottom">
+                <label class="uk-form-label">City <small class="required">*</small></label>
+                <div class="uk-form-controls">
+                    <input class="uk-width-1-1 uk-form-large" name="fm-town" value="" required>
+                </div>
+            </div>
+            <div class="uk-width-1-1 uk-width-medium-1-2 uk-margin-bottom">
+                <label class="uk-form-label">State / Province </label>
+                <div class="uk-form-controls">
+                    <input class="uk-width-1-1 uk-form-large" name="fm-state" value="">
+                </div>
+            </div>
+            <div class="uk-width-1-1 uk-width-medium-1-2 uk-margin-bottom">
+                <label class="uk-form-label">Zip Code / Postal Code</label>
+                <div class="uk-form-controls">
+                    <input class="uk-width-1-1 uk-form-large" name="fm-postcode" value="">
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Credit Information</legend>
+        <div class="uk-grid uk-grid-small">
+            <div class="uk-width-1-1 uk-width-medium-1-2 uk-margin-bottom">
+                <label class="uk-form-label">Desired Loan Amount</label>
+                <div class="uk-form-controls">
+                    <input class="uk-width-1-1 uk-form-large" name="loan_amount" value="">
+                </div>
+            </div>
+            <div class="uk-width-1-1 uk-width-medium-1-2 uk-margin-bottom">
+                <label class="uk-form-label">Mortgage Balance</label>
+                <div class="uk-form-controls">
+                    <input class="uk-width-1-1 uk-form-large" name="mortgage_balance" value="">
+                </div>
+            </div>
+            <div class="uk-width-1-1 uk-width-medium-1-2 uk-margin-bottom">
+                <label class="uk-form-label">Credit Rating</label>
+                <div class="uk-form-controls">
+                    <select class="uk-width-1-1 uk-form-large" name="credit_rating">
+                        <option value="choose">Choose...</option>
+                        <option value="excellent">excellent</option>
+                        <option value="good">Good</option>
+                        <option value="fair">Fair</option>
+                        <option value="poor">Poor</option>
+                    </select>
+                </div>
+            </div>
+            <div class="uk-width-1-1 uk-width-medium-1-2 uk-margin-bottom">
+                <label class="uk-form-label">Type of Property</label>
+                <div class="uk-form-controls">
+                    <select class="uk-width-1-1 uk-form-large" name="type_of_property">
+                        <option value="house">House</option>
+                        <option value="condo">Condo</option>
+                        <option value="land">Land</option>
+                        <option value="townhome">Townhome</option>
+                        <option value="Investment">Investment</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="uk-width-1-1 uk-width-medium-1-2 uk-margin-bottom">
+                <label class="uk-form-label">Place of Employment</label>
+                <div class="uk-form-controls">
+                    <input class="uk-width-1-1 uk-form-large" name="place_of_employment" value="">
+                </div>
+            </div>
+            <div class="uk-width-1-1 uk-width-medium-1-2 uk-margin-bottom">
+                <label class="uk-form-label">Monthly Payments</label>
+                <div class="uk-form-controls">
+                    <input class="uk-width-1-1 uk-form-large" name="monthly_payments" value="">
+                </div>
+            </div>
+            <div class="uk-width-1-1 uk-width-medium-1-2 uk-margin-bottom">
+                <label class="uk-form-label">Years at Job</label>
+                <div class="uk-form-controls">
+                    <select class="uk-width-1-1 uk-form-large" name="years_at_job">
+                        <option value="0-2">0-2 Years</option>
+                        <option value="2-5">2-5 Years</option>
+                        <option value="5-10">5-10 Years</option>
+                        <option value="over_10">Over 10 Years</option>
+                    </select>
+                </div>
+            </div>
+            <div class="uk-width-1-1 uk-width-medium-1-2 uk-margin-bottom">
+                <label class="uk-form-label">Annual Household Income</label>
+                <div class="uk-form-controls">
+                    <input class="uk-width-1-1 uk-form-large" name="householdincome" value="">
+                </div>
+            </div>
+            <div class="uk-width-1-1 uk-width-medium-1-1 uk-margin-bottom">
+                <label class="uk-form-label">Comments</label>
+                <div class="uk-form-controls">
+                    <textarea class="uk-width-1-1 uk-form-large" rows="8" name="comments"></textarea>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    <div class="uk-grid uk-grid-small">
+        <div class="uk-width-1-1 uk-margin-bottom">
+            <div class="uk-form-controls uk-form-controls-text uk-margin">
+                <p class="uk-form-controls-condensed">
+                    {opt_in}
+                </p>
+            </div>
+        </div>
+        <div class="uk-form-row">
+            <button type="submit" class="uk-button uk-button-medium">Submit Form</button>
+        </div>
+    </div>
+</form>

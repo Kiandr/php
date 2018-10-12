@@ -1,0 +1,1 @@
+ALTER TABLE  `agents` ADD  `cms_idxs` VARCHAR( 255 ) NULL DEFAULT NULL COMMENT  'List of IDX''s that the agent has access to';

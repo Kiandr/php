@@ -1,0 +1,14 @@
+<section class="uk-cover-background uk-margin-top uk-margin-bottom uk-position-relative pod-radio-cta" style="background-image: url('/inc/skins/elite/img/home-eva-bg.jpg');">
+    <div class="uk-container uk-container-center">
+        <div class="home-valuation-container">
+            <div class="uk-grid uk-grid-small">
+                <div class="uk-width-1-1">
+                    <div class="cta-inner-container">
+                        <h2>{heading}</h2>
+                        <a data-modal-auto="contact" href="/contact.php" class="uk-button uk-button-large">{contact-info}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

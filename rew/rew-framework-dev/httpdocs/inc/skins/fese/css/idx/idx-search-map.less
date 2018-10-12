@@ -1,0 +1,322 @@
+/* # IDX Map Search
+=====================================================================================================
+=====================================================================================================*/
+
+
+#idx-map-search-wrap {
+    position: relative;
+    overflow: hidden;
+    height: auto; width: 100%;
+    margin-bottom: 10px;
+}
+#idx-map-search {
+	height: 700px;
+	width: 100%;
+	background: @border-grey;
+	position: relative;
+	top: 0;
+	margin: 0;
+}
+// Results Found
+#idx-map-message.ttl>:first-child {
+	margin-right:2px;
+}
+
+/* IDX Map Search Toolbar */
+.idx-map .toolbar {
+	margin-bottom:10px;
+	// Sort
+	.sort {
+		select {
+			border: 1px solid @border-grey;
+			padding: 10px 30px 10px 5px;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			background: transparent url("data:image/svg+xml,\<svg height='50' viewBox='0 0 50 50' width='50' xmlns='http://www.w3.org/2000/svg'\>\<path fill='none' d='M0 0h50v50H0z'/\>\<path fill='grey' d='M47.25 15l-2.086-2.086L25 33.078 4.836 12.914 2.75 15 25 37.25'/\>\</svg\>") no-repeat;
+			background-size: 16px 16px;
+			background-position: right 10px center;
+		}
+	}
+}
+.idx-sort-bar {
+	@media (max-width:768px) {
+		.flex-direction-column();	
+	}	
+}
+.idx-sort-bar > .R {
+	@media (max-width:768px) {
+		width:100%;
+		margin:0;
+	}
+}
+.idx-sort-bar > span > .sort {
+	@media (max-width:768px) {
+		width:60%;
+		display:inline-block;
+		float:left;
+	}
+}
+.idx-sort-bar > span > #save-search {
+	@media (max-width:768px) {
+		width:40%;
+		display:inline-block;
+		float:left;
+		text-align: center;
+	}
+}
+.idx-sort-bar #idx-map-message {
+	@media (max-width:768px) {
+		width:100%;
+		text-align: left;
+		white-space: normal;
+	}
+}
+.idx-map #search-toolbar .sort .mnu-item {
+	@media (max-width:768px) {
+		white-space: normal;
+	}
+}
+
+/* # Map Search Legend
+=====================================================================================================
+=====================================================================================================*/
+
+
+#idx-map-legend {
+    width: 220px;
+    float: left;
+}
+
+#idx-map-legend .legend_tab {
+    background: url(../../img/map-legendtabs.png) no-repeat 0 0;
+    cursor: pointer;
+    float: left;
+    width: 20px;
+    height: 70px;
+    right: -1px;
+    position: relative;
+}
+#idx-map-legend .legend_tab:hover {
+}
+#idx-map-legend .legend_tab.current {
+    background: url(../../img/map-legendtabs.png) no-repeat -20px 0;
+    cursor: pointer;
+    float: left;
+    width: 20px;
+    height: 70px;
+}
+#idx-map-legend .legend_contents,
+#idx-map-legend .stats_contents {
+    min-height: 225px;
+}
+#idx-map-legend .legend_content {
+    background: @white;
+    padding: 20px 20px 0px 20px;
+    border: 1px solid @border-grey; border-right: none;
+    float: left;
+    width: 200px;
+    margin-top: -100px;
+}
+#idx-map-legend .legend_content form {
+    margin: 0;
+}
+#idx-map-legend .legend_content form .legend {
+    margin: 0; padding: 0;
+}
+#idx-map-legend .legend_content form .toggleset label input {
+    position: absolute;
+    right: 5px; top: 2px;
+}
+#idx-map-legend .stats_tab {
+    background: url(../../img/map-legendtabs.png) no-repeat 0 -70px;
+    cursor: pointer;
+    float: left;
+    width: 20px;
+    height: 56px;
+    right: -1px;
+    top: 2px;
+    position: relative;
+    clear: left;
+}
+#idx-map-legend .stats_tab.current {
+    background: url(../../img/map-legendtabs.png) no-repeat -20px -70px;
+}
+#idx-map-legend .legend_content .field {
+	margin-bottom: 20px;
+}
+#idx-map-legend .legend_content label {
+	display: block;
+	border-bottom: 1px solid @grey;
+	position: relative;
+	img {
+		position: absolute;
+		right: 0; top: 3px;
+	}
+}
+#idx-map-search-wrap .stats_contents .keyvalset {
+	h5 { 
+		margin: 0;	
+	}
+	ul 	{
+		margin-bottom: 20px;
+		padding-left:0;
+	}
+	li	{
+		border-bottom: 1px solid @grey;
+		list-style:none;
+		strong, span {
+			padding: 3px 0;
+		}
+	}
+}
+// New Keval Classes
+#idx-map-search-wrap .stats_contents {
+	background: @light-grey;
+	margin: -10px -10px 0 -10px;
+	padding: 10px 10px 0 10px;
+	h4 {
+		margin: 0;
+	}
+	.kvs {
+		padding: 0 0 10px;
+	}
+	
+}
+// ie sucks
+.ie7 #idx-map-legend .legend_content {
+    margin-top: 0px;
+}
+
+.footnote {
+	font-size: 85%;
+}
+
+/*--------------------------
+Map Popups
+--------------------------*/
+.map-tooltip .popover {
+	@media only screen and (max-width:768px) {
+		width:100%;
+	}
+
+	background-color: @white;
+	font-size: .8rem;
+	width: 400px;
+	
+	.title {
+		background-color: @grey;
+		padding: .8rem;
+		
+		a {
+			color: @black;
+		}
+	}
+	
+	h4 {
+		margin: 0;
+		padding: 0;
+	}
+	
+	.photo, summary {
+		display: block;
+		float: left;
+	}
+	
+	.photo {
+		margin-right: .8rem;
+	}
+	
+	.action-close {
+		float: right;
+	}
+	
+	.btnset.mini {
+		display: none;
+	}
+	header {
+		margin-bottom:0;
+	}
+	.body {
+		padding: 10px;
+	}
+	border-bottom: 1px solid @border-grey;
+	small {
+		font-size: 100%;
+		margin-left: .5rem;
+	}
+	footer {
+		padding: 10px;
+		display: block;
+		text-align: left;
+		clear: both;
+	}
+}
+
+.map-tooltip {
+	@media only screen and (max-width:768px) {
+		position: relative !important;
+		top: 0 !important;
+		left: 0 !important;
+		right: auto !important;
+		bottom: auto !important;
+		margin-top: -2rem !important;
+		margin-bottom:15px;
+		padding-top: 0 !important;
+		&:before {
+			content: "\f0d8";
+			display: block;
+			font-family: "FontAwesome";
+			font-size: 30px;
+			position: absolute;
+			text-align: center;
+			top: -20px;
+			width: 100%;
+			color:@black;
+		}
+	}
+	.popover {
+		padding:0;
+	}
+	// Multiple Listings
+	.popover.stacked {
+		header {
+			strong {
+				color:@black;
+			}
+		}
+		.body {
+			padding:5px;
+		}
+		.popover {
+			width:100%;
+			.action-close {
+				display:none;
+			}
+			&:last-child {
+				border-bottom:none;
+			}
+			.body {
+				border-left:none;
+				border-right:none;
+			}
+		}
+		
+	}
+}
+
+// IDX Map Page
+.idx-map.search_map {
+	#idx-map-search-wrap {
+		@media (max-width:768px) {
+			max-height:450px;
+		}
+	}
+	.map-tooltip {
+		@media (max-width:768px) {
+			margin-top: 0px;
+    		margin-left: 0px;
+			bottom: -15px!important;
+		}	
+	}
+}

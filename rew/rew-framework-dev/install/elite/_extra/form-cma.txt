@@ -1,0 +1,80 @@
+<div class="uk-panel uk-panel-box uk-margin-top">
+    <p>Simply fill out this form to receive your free home evaluation. Our experienced real estate
+        team will review your home's details, and provide you with an up-to-date Comparable Market
+        Analysis.</p>
+</div>
+
+<form class="uk-form uk-form-stacked" action="?submit" method="post"  id="elite_cms_extra_form_cma">
+
+    <input type="hidden" name="cmaform" value="true">
+    <input class="hidden" name="email" value="" autocomplete="off">
+    <input class="hidden" name="first_name" value="" autocomplete="off">
+    <input class="hidden" name="last_name" value="" autocomplete="off">
+
+    <fieldset>
+
+        <div class="uk-grid uk-grid-small">
+            <div class="uk-width-1-1 uk-width-medium-1-2 uk-margin-bottom">
+                <label class="uk-form-label">First Name
+                    <small class="required">*</small>
+                </label>
+                <div class="uk-form-controls">
+                    <input class="uk-width-1-1 uk-form-large" name="onc5khko" value="" required>
+                </div>
+            </div>
+            <div class="uk-width-1-1 uk-width-medium-1-2 uk-margin-bottom">
+                <label class="uk-form-label">Last Name
+                    <small class="required">*</small>
+                </label>
+                <div class="uk-form-controls">
+                    <input class="uk-width-1-1 uk-form-large" name="sk5tyelo" value="" required>
+                </div>
+            </div>
+            <div class="uk-width-1-1 uk-width-medium-1-2 uk-margin-bottom">
+                <label class="uk-form-label">Email
+                    <small class="required">*</small>
+                </label>
+                <div class="uk-form-controls">
+                    <input class="uk-width-1-1 uk-form-large" type="email" name="mi0moecs" required>
+                </div>
+            </div>
+            <div class="uk-width-1-1 uk-width-medium-1-2 uk-margin-bottom">
+                <label class="uk-form-label">Phone</label>
+                <div class="uk-form-controls">
+                    <input class="uk-width-1-1 uk-form-large" type="tel" name="telephone" value="">
+                </div>
+            </div>
+            <div class="uk-width-1-1 uk-width-medium-1-2 uk-margin-bottom">
+                <label class="uk-form-label">When do you plan to sell?</label>
+                <div class="uk-form-controls">
+                    <select class="uk-width-1-1 uk-form-large" name="when_sell">
+                        <option value="">-</option>
+                        <option value="3_months">3 Months</option>
+                        <option value="6_months">6 Months</option>
+                        <option value="9_months">9 Months</option>
+                        <option value="1_year">1 Year</option>
+                        <option value="1_year+">1 Year+</option>
+                    </select>
+                </div>
+            </div>
+            <div class="uk-width-1-1 uk-margin-bottom">
+                <label class="uk-form-label">Additional Information</label>
+                <div class="uk-form-controls">
+                    <textarea class="uk-width-1-1" name="comments" rows="4"
+                              placeholder="Please list the additional amenities of your house"></textarea>
+                </div>
+            </div>
+            <div class="uk-width-1-1 uk-margin-bottom">
+                <div class="uk-form-controls uk-form-controls-text uk-margin">
+                    <p class="uk-form-controls-condensed">
+                        {opt_in}
+                    </p>
+                </div>
+            </div>
+            <div class="uk-form-row">
+                <button type="submit" class="uk-button uk-button-medium">Find out my Home's Worth
+                </button>
+            </div>
+        </div>
+    </fieldset>
+</form>

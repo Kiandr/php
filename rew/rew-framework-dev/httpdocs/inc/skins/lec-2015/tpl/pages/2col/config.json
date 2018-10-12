@@ -1,0 +1,43 @@
+{
+	"config" : {
+		"order"			: 2,
+		"title"			: "2 Column",
+		"description"	: "The 2 Column Layout is used in most cases and includes a sidebar for site navigation. The sidebar can be configured to appear on the left or right on a page-by-page basis.",
+		"selectable"	: "true"
+	},
+    "containers" : {
+        "sidebar" : {
+		    "cms-nav" : {
+				"_enabled"	: "{info.cms}",
+				"breakout"	: true
+		    },
+			"blog-nav" : {
+				"_enabled"	: "{info.blog}"
+			},
+			"directory-nav" : {
+				"_enabled"	: "{info.directory}"
+			}
+        }
+    },
+    "variables" : {
+	    "navPosition" : {
+		    "type"		: "select",
+		    "title"		: "Navigation",
+		    "required"	: true,
+		    "default"	: "right",
+		    "options"	: [
+			    { "value" : "left", "title" : "Left" },
+			    { "value" : "right", "title" : "Right" }
+		    ]
+	    },
+		"background" : {
+			"type"			: "image",
+			"title"			: "Background Image",
+			"tooltip"		: "Recommended size: 1600x225"
+		},
+		"heading" : {
+			"type"			: "text",
+			"title"			: "Heading Text"
+		}
+    }
+}

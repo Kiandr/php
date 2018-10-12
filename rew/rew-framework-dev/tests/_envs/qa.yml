@@ -1,0 +1,19 @@
+modules:
+  config:
+    PhpBrowser:
+      url: http://rew:rew@dev.48-qa.rewdev.com
+    WebDriver:
+      host: hub-cloud.browserstack.com
+      port: 80
+      browser: chrome
+      url: http://rew:rew@dev.48-qa.rewdev.com
+      restart: false
+      capabilities:
+        browserstack.user: brennonobst1
+        browserstack.key : rSNG5XXAxpdP4wprz3LN
+      default_admin_password: h3eA3qP3
+    \REW\Test\Helper\Api:
+      key: be53b6a3116c0bf1ddd263480c95d9eb265490d3b6d464500d13947686782f74
+    \REW\Test\Helper\E2E:
+      domain: dev.48-qa.rewdev.com
+      domainPrefix: http://rewdev:rewdev@

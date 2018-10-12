@@ -1,0 +1,38 @@
+<div class="uk-width-small-1-1 uk-width-medium-1-3 uk-width-large-1-3">
+    <div class="cta-container toggle-container active" id="cta001">
+        <h3>Chicago Buyers <span class="uk-visible-small"><i class="uk-icon uk-icon-close toggle" id="cta-toggle"></i></span></h3>
+        <div class="cta-container-inner">
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non leo venenatis, efficitur purus ac, cursus elit. Fusce malesuada, turpis a auctor suscipit, nisi libero lobortis urna.</p>
+        </div>
+        <div class="uk-position-bottom">
+            <a class="uk-button uk-button-large uk-button-block" href="#">Call To Action Link</a>
+        </div>
+    </div>
+</div>
+
+<div class="uk-width-small-1-1 uk-width-medium-1-3 uk-width-large-1-3">
+    <div class="cta-container toggle-container inactive" id="cta002">
+        <h3>Chicago Sellers <span class="uk-visible-small"><i class="uk-icon uk-icon-open toggle" id="cta-toggle"></i></span></h3>
+        <div class="cta-container-inner">
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non leo venenatis, efficitur purus ac, cursus elit. Fusce malesuada, turpis a auctor suscipit, nisi libero lobortis urna.</p>
+        </div>
+        <div class="uk-position-bottom">
+            <a class="uk-button uk-button-large uk-button-block" href="#">Call To Action Link</a>
+        </div>
+    </div>
+</div>
+
+<div class="uk-width-small-1-1 uk-width-medium-1-3 uk-width-large-1-3">
+    <div class="cta-container toggle-container inactive" id="cta003">
+        <h3>Chicago Buyers <span class="uk-visible-small"><i class="uk-icon uk-icon-open toggle" id="cta-toggle"></i></span></h3>
+        <div class="cta-container-inner">
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non leo venenatis, efficitur purus ac, cursus elit. Fusce malesuada, turpis a auctor suscipit, nisi libero lobortis urna.</p>
+        </div>
+        <div class="uk-position-bottom">
+            <a class="uk-button uk-button-large uk-button-block" href="#">Call To Action Link</a>
+        </div>
+    </div>
+</div>

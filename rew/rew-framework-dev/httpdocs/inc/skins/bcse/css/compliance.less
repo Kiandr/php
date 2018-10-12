@@ -1,0 +1,52 @@
+/** Show Provider First **/
+.listing .featured-provider {
+	color: #8c8c8c;
+	font: 500 16px/20px "source sans pro";
+	margin: 0 0 15px;
+	left: auto;
+	text-align: center;
+}
+
+// BMLS
+.bmls .mediaProvider .icon {
+    display: none;
+}
+
+.bmls .flowgrid_x1 .mediaProvider .icon {
+    display: block;
+}
+
+// REBGV COMPLIANCE
+body.rebgv .flowgrid .mediaProvider span {
+	display: block;
+}
+
+body.rebgv .flowgrid_x1 .mediaProvider span.icon {
+	padding-left: 10px;
+	float: right;
+}
+
+body.rebgv .homepage-content .mediaProvider span.office {
+	height: 16px;
+}
+
+// WPML Compliance
+.wpml .wpmlLogo {
+    padding: 5px;
+}
+
+.wpml #listing-body > div:nth-child(11) > h4 {
+    display: none;
+}
+
+// SCIAR Compliance - The listing office is required on the LIST view results, but not the rest of the results.
+body.sciar {
+    .listing .office, .popover .office {
+        display: none;
+    }
+    div.listings.flowgrid_x1 {
+        .office {
+            display: block;
+        }
+    }
+}

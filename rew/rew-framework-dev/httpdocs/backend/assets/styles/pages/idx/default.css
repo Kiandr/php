@@ -1,0 +1,228 @@
+#idx-builder-panels {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.idx-panels .panel {
+    overflow: hidden;
+    display: block;
+}
+
+.panel .trigger {
+    display: flex;
+}
+
+.idx-panels select,
+.idx-panels input {
+    border: 1px solid #d2d1d8;
+    padding: 8px;
+}
+
+@media (max-width: 1200px) {
+    .idx-panels {
+        flex-direction: column;
+        border: 0;
+    }
+
+    .idx-panels .panel {
+        border: 0 !important;
+        border-bottom: 1px solid #ddd !important;
+    }
+
+    .idx-panels .trigger {
+        padding: 0 6px;
+    }
+
+    .idx-panels .content {
+        position: static;
+        padding: 10px;
+        border-top-width: 1px;
+    }
+
+    .idx-panels .toggle {
+        display: block;
+    }
+}
+
+.panel .btns.R .btn {
+    float: left;
+}
+
+.panel .ttl {
+    flex: 1;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; /* this is needed for the overflow rules */
+    padding: 10px 0;
+    align-self: center;
+}
+
+.panel .content {
+    display: none;
+    padding: 6px 0;
+    font-size: 15px;
+    overflow: hidden;
+}
+
+.panel-new {
+    padding: 0;
+    margin: 24px 0;
+    background: #f8f7fa;
+    border-radius: 2px;
+}
+
+.panel {
+    border-radius: 2px;
+    margin: 0 0 24px;
+    padding: 12px 0;
+}
+
+.panel.ui-sortable-helper {
+    height: 66px !important;
+}
+
+.panel__hd {
+    padding: 12px;
+    background: #e2e1e8;
+    border-radius: 2px 2px 0 0;
+}
+
+.panel__hd .ttl {
+    color: #60606d;
+}
+
+.panel__bd {
+    padding: 12px;
+}
+
+.panel input,
+.panel select {
+    width: 100%;
+}
+
+.panel input[type=checkbox] {
+    width: auto;
+}
+
+.panel .range {
+    padding: 0;
+    margin: 0;
+}
+
+#bdx-builder-panels .panel-City label {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 599px) {
+    #bdx-builder-panels .panel-City label {
+        display: block;
+    }
+}
+
+.toggleset label {
+    padding: 0 24px;
+    vertical-align: middle;
+    display: block;
+    position: relative;
+}
+
+.toggleset label.tabbed {
+    margin-left: 24px;
+}
+
+.toggleset label input {
+    vertical-align: middle;
+    width: auto;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+.panel .pair .left,
+.panel .range .min {
+    float: left;
+    width: calc(50% - 18px);
+}
+
+
+.panel .pair .right,
+.panel .range .max {
+    float: right;
+    width: calc(50% - 18px);
+}
+
+.panel .range .tween {
+    text-align: center;
+    width: 36px;
+    float: left;
+}
+
+#idx-builder-map {
+    height: 200px;
+    margin: 0 0 24px;
+}
+
+/* fix scrollable/page drag issues */
+
+#idx-builder-panels,
+#export-data {
+    position: relative;
+}
+
+#idx-builder-panels .panel,
+#export-data .panel {
+    border: 1px solid #ddd;
+    margin: 12px 0;
+    padding: 0 6px;
+    box-sizing: 1px 0 1px rgab(0, 0, 0, .1);
+    height: auto !important;
+}
+
+#idx-builder-panels .panel.ui-sortable-placeholder,
+#export-data .panel.ui-sortable-placeholder {
+    height: 48px !important;
+}
+
+/* IDX PANEL MAP CONTROLS */
+
+#GPolygonControl a,
+#GRadiusControl a {
+    margin-right: 12px;
+}
+
+#GPolygonControl ul,
+#GRadiusControl ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#GPolygonControl .delete,
+#GRadiusControl .delete {
+    text-decoration: none;
+    color: #999;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 900px) {
+    .panel .content .kv .k {
+        width: 100px;
+        flex-shrink: 0;
+        overflow: hidden;
+        text-overflow: hidden;
+    }
+
+    .panel .pair .left,
+    .panel .range .min,
+    .panel .pair .right,
+    .panel .range .max {
+        width: 100%;
+    }
+
+    .panel .pair .tween,
+    .panel .range .tween {
+        text-align: left;
+    }
+}

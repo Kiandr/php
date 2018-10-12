@@ -1,0 +1,105 @@
+#app_search_head {
+    box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+    position: relative;
+    z-index: 99;
+}
+
+#app_search_head .bar {
+    display: flex;
+}
+
+#app_search_head .bar form {
+    flex: 1;
+}
+
+#app_search_head input {
+    float: left;
+    margin: 0 12px 0 0;
+    color: inherit;
+    text-decoration: inherit;
+    padding: 24px 12px;
+    font-size: 20px;
+    font-weight: normal;
+    border: none;
+    width: 100%;
+    background: transparent;
+    color: #fff;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#app_search_results {
+    display: block;
+    padding: 24px 0;
+    color: #fff;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+#app_search_results strong {
+    padding: 0 24px;
+    display: block;
+    font-size: 22px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    color: #f8f7fa;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#app_search_results ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#app_search_results li {
+    margin: 12px 0;
+}
+
+#app_search_results a,
+#app_search_results p {
+    text-decoration: none;
+    padding: 12px 24px;
+    color: #fff;
+    display: block;
+    font-size: 18px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#app_search_results a:hover {
+    background: #50505d;
+}
+
+#app_search_results .indent {
+    padding-left: 24px;
+}
+
+/* TODO: Review use cases for these selectors (deletable?) */
+
+.search-ph {
+    display: inline-flex;
+    border: 1px solid #c1c1c9;
+    border-radius: 20px;
+    padding: 4px 14px;
+    align-self: center;
+    margin: 16px 6px;
+}
+
+.search-ph input {
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    width: 90px;
+    padding-left: 4px;
+}
+
+.search-ph .icon {
+    margin-top: 2px;
+}

@@ -1,0 +1,10 @@
+<header>
+	<h2>We are Jordan Copeland Realty</h2>
+	<h3 class="small-caps">The best way to Buy and sell in Nashville</h3>
+	<hr>
+</header>
+<div class="body">
+	<p>Our team is dedicated to putting our experience and local knowledge to work for you in all steps of your real estate transaction, from start to finish. Find out why Jordan Copeland Realty is one of the most respected teams for buying and selling in Nashville.<br><br>We deliver the very best in Nashville real estate, because you deserve no less.<br /><br /></p>
+	<img class="signature" data-src="/inc/skins/bcse/img/signature.png" alt="">
+	<a class="buttonstyle small-caps colored-bg2" style="margin: 17px 10px 0;" href="/about.php">More About Us</a>
+</div>

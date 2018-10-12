@@ -1,0 +1,22 @@
+{
+    "name": "@rew/rew-website",
+    "version": "4.6.5",
+    "private": true,
+    "dependencies": {
+        "less": "2.7.2",
+        "less-plugin-clean-css": "1.5.1"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-preset-flow": "^6.23.0",
+        "cz-conventional-changelog": "^2.1.0",
+        "eslint": "^4.9.0",
+        "eslint-plugin-react": "^7.4.0",
+        "flow-bin": "^0.59.0"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    }
+}

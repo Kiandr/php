@@ -1,0 +1,58 @@
+@import "~uikit/dist/scss/uikit-mixins";
+
+// LESS related
+@import "~uikit/dist/scss/core/variables.scss";
+
+// Defaults
+@import "~uikit/dist/scss/core/base.scss";
+
+// Layout
+@import "~uikit/dist/scss/core/grid.scss";
+@import "~uikit/dist/scss/core/panel.scss";
+@import "~uikit/dist/scss/core/block.scss";
+@import "~uikit/dist/scss/core/article.scss";
+@import "~uikit/dist/scss/core/comment.scss";
+@import "~uikit/dist/scss/core/cover.scss";
+
+// Navs
+@import "~uikit/dist/scss/core/nav.scss";
+@import "~uikit/dist/scss/core/navbar.scss";
+@import "~uikit/dist/scss/core/subnav.scss";
+@import "~uikit/dist/scss/core/breadcrumb.scss";
+@import "~uikit/dist/scss/core/pagination.scss";
+@import "~uikit/dist/scss/core/tab.scss";
+@import "~uikit/dist/scss/core/thumbnav.scss";
+// slidenav and slideshow are not included in UIKIT core
+@import "~uikit/dist/scss/components/slidenav.scss";
+@import "~uikit/dist/scss/components/slideshow.scss";
+@import "~uikit/dist/scss/components/autocomplete.scss";
+
+// Elements
+@import "~uikit/dist/scss/core/list.scss";
+//@import "~uikit/dist/scss/core/description-list.scss";
+@import "~uikit/dist/scss/core/table.scss";
+@import "~uikit/dist/scss/core/form.scss";
+
+// Common
+@import "~uikit/dist/scss/core/button.scss";
+@import "~uikit/dist/scss/core/icon.scss";
+@import "~uikit/dist/scss/core/close.scss";
+@import "~uikit/dist/scss/core/badge.scss";
+@import "~uikit/dist/scss/core/alert.scss";
+@import "~uikit/dist/scss/core/thumbnail.scss";
+// ??? @import "~uikit/dist/scss/core/overlay.scss";
+//@import "~uikit/dist/scss/core/column.scss";
+@import "~uikit/dist/scss/core/animation.scss";
+
+// JavaScript
+@import "~uikit/dist/scss/core/dropdown.scss";
+@import "~uikit/dist/scss/core/modal.scss";
+@import "~uikit/dist/scss/core/offcanvas.scss";
+@import "~uikit/dist/scss/core/switcher.scss";
+
+// Need to be loaded last
+@import "~uikit/dist/scss/core/text.scss";
+@import "~uikit/dist/scss/core/utility.scss";
+@import "~uikit/dist/scss/core/flex.scss";
+//@import "~uikit/dist/scss/core/contrast.scss";
+@import "~uikit/dist/scss/core/print.scss";

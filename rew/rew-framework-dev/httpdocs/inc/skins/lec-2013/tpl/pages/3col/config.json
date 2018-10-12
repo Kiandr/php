@@ -1,0 +1,54 @@
+{
+	"config" : {
+		"order"			: 3,
+		"title"			: "3 Column",
+		"description"	: "This layout is exactly like the 2 column template except that a quick search appears in the right column.",
+		"selectable"	: "true"
+	},
+    "containers" : {
+    	"body" : {
+            "user-bar" : {
+            }
+    	},
+        "sidebar" : {
+        	"social-share" : {},
+		    "cms-snippet"  : {
+		    	"name"	: "lec-sidebar"
+		    },
+		    "cms-nav"	: {
+		    }
+        },
+        "secondary" : {
+        	"idx-search" : {
+		        "_enabled"		: "{variable.showSearch}"
+	        },
+	        "rss-reader" : {
+		        "_enabled"		: "{variable.showBlog}"
+	        },
+	        "idx-listings" : {
+		        "_enabled"		: "{variable.showListings}",
+		        "template"		: "feature.tpl.php",
+		        "stylesheet"	: "feature.css.php",
+		        "viewClass"		: "",
+		        "limit"			: 1
+	        }
+        }
+    },
+    "variables" : {
+	    "showBlog" : {
+		    "type"		: "boolean",
+		    "title"		: "Blog Summaries",
+		    "default"	: "true"
+	    },
+	    "showSearch" : {
+		    "type"		: "boolean",
+		    "title"		: "Show Quick Search",
+		    "default"	: "true"
+	    },
+	    "showListings" : {
+		    "type"		: "boolean",
+		    "title"		: "Show Featured Listing",
+		    "default"	: "true"
+	    }
+    }
+}

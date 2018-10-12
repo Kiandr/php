@@ -1,0 +1,273 @@
+// ------- Colors -------
+$gray-000:                      #fafbfc !default;
+$gray-100:                      #edeef1 !default;
+$gray-200:                      #d5d5da !default;
+$gray-300:                      #a8a7ae !default;
+$gray-400:                      #7b7983 !default;
+$gray-450:                      #60606C !default;
+$gray-500:                      #60606c !default;
+$gray-600:                      #40404c !default;
+
+
+$blue:                          #2692f7 !default;
+$green:                         #4eae50 !default;
+$yellow:                        #ff9933 !default;
+$orange:                        #ff6f22 !default;
+$red:                           #eb4641 !default;
+
+$primary:                       $blue !default;
+$success:                       $green !default;
+$warning:                       $orange !default;
+$danger:                        $red !default;
+
+$black:                         #41404E !default;
+$white:                         #fff !default;
+
+$colors: (
+  black:                        $black,
+  white:                        $white,
+
+  primary:                      $primary,
+  success:                      $success,
+  warning:                      $warning,
+  danger:                       $danger
+);
+
+@function _text-set($background) {
+  @if (lightness($background) < 65) {
+    @return $gray-000;
+  } @else {
+    @return $black;
+  }
+}
+
+// ------- Breakpoints -------
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+@import "./breakpoints";
+
+// ------- Type -------
+$body-bg:                       $gray-000;
+$body-font:                     "Lato", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$mono-font:                     Consolas, "Liberation Mono", Menlo, Courier, monospace !default;
+$font-family-base:              $body-font;
+
+$font-size-base:                1rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg:                  1.25rem !default;
+$font-size-sm:                  .875rem !default;
+$font-size-xs:                  .75rem !default;
+$font-size-xxs:                 .675rem !default;
+$font-letter-spacing:           .5px !default;
+
+// ------- Gutter -------
+$gutter:                        1rem !default;
+
+// ------- Border -------
+$border-radius:                 .19rem !default;
+$border-size:                   1px !default;
+$border-style:                  solid !default;
+$border-color:                  #D5D5DA !default;
+$border:                        $border-size $border-style;
+
+// ------- Font Sizes -------
+$font-size-h1:                  3rem !default;        // 48px
+$font-size-h2:                  2.5rem !default;      // 40px
+$font-size-h3:                  2rem !default;        // 32px
+$font-size-h4:                  1.75rem !default;     // 28px
+$font-size-h5:                  1.5rem !default;      // 24px
+$font-size-h6:                  1rem !default;        // 16px
+
+$font-size-large:               1.25 !default;
+$font-size-small:               .75 !default;
+
+// ------- Font Weights -------
+$font-weight-normal:            normal !default;
+$font-weight-base:              $font-weight-normal;
+$line-height-base:              1.5 !default;
+
+$font-weight-black:             900 !default;
+$font-weight-heavy:             800 !default;
+$font-weight-bold:              700 !default;
+$font-weight-semibold:          600 !default;
+$font-weight-medium:            500 !default;
+$font-weight-regular:           400 !default;
+$font-weight-light:             300 !default;
+$font-weight-thin:              200 !default;
+$font-weight-hairline:          100 !default;
+
+$font-weight-h1:                $font-weight-light;
+$font-weight-h2:                $font-weight-light;
+$font-weight-h3:                $font-weight-light;
+$font-weight-h4:                $font-weight-regular;
+$font-weight-h5:                $font-weight-light;
+$font-weight-h6:                $font-weight-semibold;
+
+// ------- Line Heights -------
+$line-height-default:           1.5 !default;
+$line-height-heading:           1.35 !default;
+$line-height-h1:                $line-height-heading;
+$line-height-h2:                $line-height-heading;
+$line-height-h3:                $line-height-heading;
+$line-height-h4:                $line-height-heading;
+$line-height-h5:                $line-height-heading;
+$line-height-h6:                $line-height-heading;
+
+// ------- Buttons -------
+$button-background-color:       darken($gray-100, 2.5%) !default;
+$button-border-color:           $button-background-color !default;
+$button-text-color:             _text-set($button-background-color) !default;
+$button-border-radius:          $border-radius !default;
+
+$button-font-family:            $body-font !default
+$button-font-weight:            $font-weight-semibold !default;
+$button-font-size:              $font-size-sm !default;
+
+$button-padding-top:            .5rem !default;
+$button-padding-right:          1rem !default;
+$button-padding-bottom:         .5rem !default;
+$button-padding-left:           1rem !default;
+
+$button-padding:
+        $button-padding-top
+        $button-padding-right
+        $button-padding-bottom
+        $button-padding-left;
+
+// ------- Shadows ------
+$shadow-color:                  transparentize($gray-600, .92);
+$shadow-secondary-color:        transparentize($gray-600, .9);
+
+$shadows: (
+  0: none,
+  1: (0 1px 1px 0 #{$shadow-color}, 0 1px 1px 1px #{$shadow-secondary-color}),
+  2: (0 1px .19rem 1px #{$shadow-color}, 0 .19rem 7px 1px #{$shadow-secondary-color}),
+  3: (0 .19rem 6px 1px #{$shadow-color}, 0 7px 14px 1px #{$shadow-secondary-color}),
+  4: (0 5px 9px 2px #{$shadow-color}, 0 11px 21px 2px #{$shadow-secondary-color}),
+  5: (0 8px 12px 2px #{$shadow-color}, 0 15px 28px 2px #{$shadow-secondary-color}),
+);
+@import "./shadows";
+
+// ------- Thumbs -------
+$thumb-size:                    3rem !default
+$thumb-font-size:               $font-size-base !default
+$thumb-border-radius:           .125rem !default;
+$thumb-background-color:        $gray-100 !default;
+$thumbs: (
+  a: (
+    background:                 #fee0dd,
+    color:                      #fb857b
+  ),
+  b: (
+    background:                 #f9d0ce,
+    color:                      #ea4640
+  ),
+  c: (
+    background:                 #f8c7d8,
+    color:                      #e52565
+  ),
+  d: (
+    background:                 #ecccdf,
+    color:                      #b7387d
+  ),
+  e: (
+    background:                 #e2cfe4,
+    color:                      #8d4194
+  ),
+  f: (
+    background:                 #d8d1e5,
+    color:                      #644c9b
+  ),
+  g: (
+    background:                 #d4d3e6,
+    color:                      #54529d
+  ),
+  h: (
+    background:                 #d0d4e7,
+    color:                      #4657a0
+  ),
+  i: (
+    background:                 #d0dbec,
+    color:                      #4657a0
+  ),
+  j: (
+    background:                 #c9e4fc,
+    color:                      #4673b6
+  ),
+  k: (
+    background:                 #cbe8f5,
+    color:                      #34a3d9
+  ),
+  l: (
+    background:                 #c2eef3,
+    color:                      #21bbd1
+  ),
+  m: (
+    background:                 #c6eae9,
+    color:                      #26abac
+  ),
+  n: (
+    background:                 #c1e5e1,
+    color:                      #179688
+  ),
+  o: (
+    background:                 #d1ead2,
+    color:                      #4dac52
+  ),
+  p: (
+    background:                 #e1efd2,
+    color:                      #89c051
+  ),
+  q: (
+    background:                 #ecf0c1,
+    color:                      #b7c525
+  ),
+  r: (
+    background:                 #f7efc6,
+    color:                      #dec030
+  ),
+  s: (
+    background:                 #fdeec6,
+    color:                      #f9bf33
+  ),
+  t: (
+    background:                 #fce4c8,
+    color:                      #f59532
+  ),
+  u: (
+    background:                 #fbddc9,
+    color:                      #f17833
+  ),
+  v: (
+    background:                 #fad5cb,
+    color:                      #ec5936
+  ),
+  w: (
+    background:                 #ecd6cf,
+    color:                      #b75a42
+  ),
+  x: (
+    background:                 #f5dbd6,
+    color:                      #da6f5f
+  ),
+  y: (
+    background:                 #dedede,
+    color:                      #7b7b7b
+  ),
+  z: (
+    background:                 #e6e6e6,
+    color:                      #9c9c9c
+  )
+);
+
+// ------- Modal -------
+$modal-zindex:                  1050 !default;
+$modal-background-color:        $white !default;
+$modal-border-radius:           .125rem !default;
+$modal-padding-base:            1.5rem !default;
+$modal-padding-sm:              $modal-padding-base / 2 !default;
+$modal-padding-lg:              $modal-padding-base * 2 !default;

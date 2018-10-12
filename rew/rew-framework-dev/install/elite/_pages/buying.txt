@@ -1,0 +1,12 @@
+<h1>Home Buyer's Guide and Tools</h1>
+<p><a href="/idx/"><strong>Search Homes Right Now</strong></a>: Use the search tool to browse the wide variety of single-family homes, duplexes and condominiums on the local real estate market.</p>
+<p><a href="/home-finder.php"><strong>Register for the Home Finder</strong></a> and let your dream home come to you. Members can also create <strong>saved searches</strong>, collect their <strong>favorites</strong> and sign up for <strong>instant email alerts</strong> when new homes that fit their criteria come on the market.</p>
+<p><a href="/first-time-home-buying.php"><strong>First-Time Buyer?</strong></a> Read about some things you need to be aware of, if you're new to this process.</p>
+<p><strong>Learn About the Community</strong> and homes in the surrounding area before you invest. Refer to the Featured Areas section for community information.</p>
+<p><a href="/guarantee.php"><strong>Buy Your Home with a REALTOR</strong></a>&reg;: Read our buyer's guarantee and find out why working with a REALTOR&reg; takes the guesswork out of buying a home.</p>
+<p><a href="/mortgage-calculator.php"><strong>Use the Mortgage Calculator</strong></a> to figure out what your mortgage payments will be on the home you want.</p>
+<p><a href="/contact.php"><strong>Connect to a Professional</strong></a>: Contact us anytime you need to know more about the area or any property that interests you. When you're ready to take the next step toward purchasing a home, we're here to help.</p>
+<p><a href="/overseas-property.php"><strong>Out-of-Country Purchases</strong></a>: We can help you buy property here, even if you're in another country.</p>
+<h3>Please fill out the form below and one of our qualified agents will be in contact to help you get started on your home search</h3>
+<div>#form-buyers#</div>
+<p>*Your information will never be shared with any third party.</p>

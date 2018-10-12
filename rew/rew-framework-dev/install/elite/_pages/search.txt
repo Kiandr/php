@@ -1,0 +1,3 @@
+<h1>Search for Homes</h1>
+<p>Contact us anytime for one-to-one service and personalized information on the local real estate market. Call our office or use the form below to tell us what you're looking for and start your home search right now.</p>
+<p>#form-buyers#</p>

@@ -1,0 +1,363 @@
+// TJOHNSON - GALLERY ON IDX DETAILS
+.idx-details-gallery-container {
+    @include bp-xsmall {
+        min-height: 200px;
+    }
+
+    @include bp-medium {
+        min-height: 500px;
+    }
+
+    .idx-details-gallery-button {
+        line-height: 24px;
+        padding: 6px 20px;
+        text-transform: uppercase;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .slick-slide {
+        min-height: 250px;
+        background-repeat: no-repeat;
+        background-position:center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        opacity: .4;
+        width: calc(100vw) !important;
+
+        @include bp-xsmall {
+            min-height: 250px;
+        }
+
+        @media (min-width: 480px) {min-height: 380px;}
+
+        @include bp-medium {
+            min-height: 520px;
+        }
+
+        @include bp-large {
+            width: calc(70vw) !important;
+        }
+
+        @include bp-xlarge {
+            width: calc(50vw) !important;
+            min-height: 580px;
+        }
+
+        &.slick-current {
+            opacity: 1;
+        }
+    }
+
+    .slick-arrow {
+        display: inline-block;
+        position: absolute;
+        z-index: 1;
+
+        &:hover {
+            opacity: .8;
+            cursor: pointer;
+        }
+
+        &.idx-gallery-arrow-left {
+            left: 20px;
+            height: 45px;
+            top: 40%;
+
+            @include bp-xsmall {
+                height: 45px;
+                top: 40%;
+            }
+
+            @include bp-medium {
+                height: 70px;
+                left: 3%;
+                top: 43%;
+            }
+
+            @include bp-large {
+                height: auto;
+                left: 16%;
+                top: 45%;
+            }
+
+            @include bp-xlarge {
+                left: 26%;
+            }
+        }
+
+        &.idx-gallery-arrow-right {
+            right: 20px;
+            height: 45px;
+            top: 40%;
+
+            @include bp-xsmall {
+                height: 45px;
+                top: 40%;
+            }
+
+            @include bp-medium {
+                height: 70px;
+                right: 3%;
+                top: 43%;
+            }
+
+            @include bp-large {
+                height: auto;
+                right: 16%;
+                top: 45%;
+            }
+
+            @include bp-xlarge {
+                right: 26%;
+            }
+        }
+    }
+}
+
+// TJOHNSON - MODAL POPUP OF GALLERY ON IDX DETAILS
+.idx-details-gallery-viewall {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    .idx-details-gallery-overlay {
+        position: fixed;
+        opacity: 0.80;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .idx-details-gallery-overlay-inner {
+        position: relative;
+        max-height: 75vh;
+        z-index: 100;
+
+        h3 {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+
+            @include bp-xsmall {
+                max-width: 75%;
+            }
+        }
+
+        .idx-details-gallery-overlay-close {
+            font-size: 18px;
+        }
+
+        .idx-details-gallery-overlay-thumb {
+            margin-bottom: 3px;
+            max-height: 145px;
+        }
+
+        .idx-details-gallery-overlay-large {
+            max-height: 600px;
+        }
+
+        [data-uk-slideshow-item] {
+            cursor: pointer;
+        }
+    }
+}
+
+
+// IDX Details Toolbar (right below slideshow)
+.fw-idx-details-toolbar {
+    font-family: $base-body-font-family;
+    font-weight: $font-weight-thin;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    @media only screen and (min-width: 1450px) {
+        padding-top: 30px;
+        padding-bottom: 28px;
+    }
+
+    // Tool Bar Next/Back
+    i {
+        font-size: 2em;
+        font-weight: $font-weight-thin;
+    }
+
+    .toolbar-left {
+        float: left;
+
+        @media only screen and (min-width: 1450px) {
+            position: absolute;
+            left: 0;
+        }
+
+        a {
+            margin-left: 10px;
+            margin-bottom: 10px;
+            display: block;
+
+            @media only screen and (min-width: 1450px) {
+                margin-bottom: 0;
+            }
+
+            img {
+                max-height: 20px;
+
+                @media only screen and (min-width: 1450px) {
+                    max-height: 100%;
+                }
+            }
+        }
+
+        .back-to-results {
+            display: inline-block;
+            line-height: 1.5em;
+            margin-left: 15px;
+            margin-right: 15px;
+
+            @media only screen and (min-width: 1450px) {
+                display: none;
+            }
+        }
+    }
+
+    .toolbar-right {
+        float: right;
+
+        @media only screen and (min-width: 1450px) {
+            position: absolute;
+            right: 0;
+        }
+
+        a {
+            margin: 0 10px;
+            padding-left: 10px;
+            display: inline-block;
+
+            @media only screen and (max-width: 767px) {
+                &:first-child,
+                &:last-child {
+                    margin-top: -10px;
+                    padding-top: 10px;
+                    margin-bottom: -10px;
+                    padding-bottom: 10px;
+                    border-left: 1px solid #bebebe;
+                }
+
+                &:first-child {
+                    margin-right: 0;
+                }
+            }
+
+            img {
+                max-height: 20px;
+
+                @media only screen and (min-width: 1450px) {
+                    max-height: 100%;
+                }
+            }
+        }
+
+        .idx-details-next,
+        .idx-details-prev {
+            display: inline-block;
+            margin-left: 15px;
+            margin-right: 15px;
+
+            @media only screen and (min-width: 1450px) {
+                display: none;
+            }
+        }
+    }
+    // Tool Bar Center Content
+    .toolbar-content {
+        @media only screen and (max-width: 1450px) {
+            max-width: 100%;
+            padding-right: 20px;
+            padding-left: 20px;
+            width: 100%;
+            text-align: center;
+            clear: both;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin-bottom: -10px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            padding-bottom: 0px;
+        }
+
+        @include bp-medium {
+            text-align: left;
+        }
+
+        @media only screen and (min-width: 1450px) {
+            display: block;
+            clear: none;
+            width: auto;
+            margin-bottom: 0;
+        }
+
+        @media only screen and (max-width: $breakpoint-medium) {
+            .showing-btn-container {
+                padding: 0;
+                width: calc(100% + 20px);
+            }
+        }
+
+        .uk-button-medium {
+            white-space: nowrap;
+            text-align: center;
+            width: 100%;
+
+            @include bp-medium {
+                float: right;
+                width: 100%;
+            }
+
+            @include bp-large {
+                min-width: 292px;
+                max-width: 292px;
+            }
+
+            i {
+                margin-left: 10px;
+                font-size: 25px;
+                position: relative;
+                top: 2px;
+            }
+        }
+
+        .uk-row-first {
+            h2 {
+                font-weight: 300;
+                margin-bottom: 5px;
+                font-size: 24px;
+
+                @include bp-medium {
+                    margin-bottom: 8px;
+                    font-size: 28px;
+                }
+
+                @include bp-large {
+                    font-size: 34px;
+                }
+
+            }
+
+            margin-bottom: 25px;
+
+            @include bp-medium {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

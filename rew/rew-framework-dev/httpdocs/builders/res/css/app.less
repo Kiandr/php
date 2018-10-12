@@ -1,0 +1,2299 @@
+// adding some basic brew styles
+.clearfix {
+	&:before,
+	&:after {
+		content: "";
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+.border-radius(@topleft, @topright, @bottomright, @bottomleft) {
+	-webkit-border-radius: @topleft @topright @bottomright @bottomleft;
+	-moz-border-radius: @topleft @topright @bottomright @bottomleft;
+	-o-border-radius: @topleft @topright @bottomright @bottomleft;
+	border-radius: @topleft @topright @bottomright @bottomleft;
+}
+
+.rounded(@radius) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	-o-border-radius: @radius;
+	border-radius: @radius;
+}
+
+.transition( @duration: 1s, @easing: ease ) {
+	-webkit-transition: all @duration @easing;
+	-moz-transition: all @duration @easing;
+	-ms-transition: all @duration @easing;
+	-o-transition: all @duration @easing;
+	transition: all @duration @easing;
+}
+
+.box-shadow( @x-axis: 0, @y-axis: 1px, @blur: 2px, @color: rgba( 0, 0, 0, 0.1 ), @inset: '' ) {
+	-webkit-box-shadow: @inset @x-axis @y-axis @blur @color;
+	-moz-box-shadow: @inset @x-axis @y-axis @blur @color;
+	-o-box-shadow: @inset @x-axis @y-axis @blur @color;
+	box-shadow: @inset @x-axis @y-axis @blur @color;
+}
+
+
+/*-----------------------------------------------------
+General Template overrides
+*/
+
+.item-image {
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+
+.brewImage {
+	background: #ddd !important;
+	background: rgba(0,0,0,0.2) !important;
+	position: relative;
+}
+
+
+// placeholder styles
+
+::-webkit-input-placeholder {
+   color: #999;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #999;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #999;
+}
+
+:-ms-input-placeholder {
+   color: #999;
+}
+
+input,
+select {
+	text-transform: none;
+}
+
+#content form {
+	background: transparent;
+}
+
+#content form:before,
+#content form:after {
+	background: transparent;
+}
+
+ul {
+	text-indent: 0;
+}
+
+li:before {
+	display: none;
+}
+
+
+
+/*-----------------------------------------------------
+Breadcrumbs
+*/
+.bdx-breadcrumbs {
+	margin-bottom: 12px;
+	ul,
+	li {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		color: #bbb;
+	}
+
+	li {
+		display: inline-block;
+	}
+
+	a {
+		color: #777;
+		margin: 0 5px 0 0;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	li {
+		&:after {
+			content: "\002F";
+			margin: 0 10px;
+			color: #aaa;
+		}
+
+		&:last-child {
+			color: #555;
+			&:after {
+				content: "";
+			}
+		}
+	}
+}
+
+/*-----------------------------------------------------
+Pagination
+*/
+
+.pagination {
+	clear: both;
+}
+
+/*-----------------------------------------------------
+Messages
+*/
+
+.bdx-msg-negative,
+.bdx-msg-positive {
+	padding: 10px;
+	margin-bottom: 12px;
+
+	p {
+		margin-bottom: 8px;
+		font-size: 95%;
+		line-height: 1.6;
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.bdx-msg-negative {
+	border: 1px solid #d2a762;
+	background: #e9d8bc;
+}
+
+.bdx-msg-positive {
+	border: 1px solid #4eab23;
+	background: #d3e8ca;
+}
+
+
+.bdx-provider {
+	clear: both;
+	color: #666;
+	color: rgba(0,0,0,0.7);
+	font-style: italic;
+	padding: 0 0 20px;
+}
+
+/*-----------------------------------------------------
+Tab container
+*/
+
+.bdx-tabcontain {
+	ul {
+		.clearfix();
+		list-style: none !important;
+		margin: 0 !important;
+		padding: 0 !important;
+
+		li {
+			float: left;
+			margin: 0 3px 0 0;
+			padding: 0;
+			-webkit-border-radius: 3px 3px 0 0;
+			-moz-border-radius: 3px 3px 0 0;
+			-ms-border-radius: 3px 3px 0 0;
+			border-radius: 3px 3px 0 0;
+			background: rgba(0,0,0,0.05);
+
+			a {
+				display: block;
+				text-decoration: none;
+				padding: 3px 10px;
+				position: relative;
+				color: #777;
+			}
+
+			&.selected {
+				background: #ddd;
+				background: rgba(0,0,0,0.15);
+				a {
+					color: #444;
+				}
+			}
+		}
+	}
+}
+
+
+/*-----------------------------------------------------
+Slideshow II - Flexslider
+*/
+
+.bdx-slideshow {
+	position: relative;
+	margin-bottom: 24px;
+	border: 1px solid #ccc;
+	border-color: rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+	background: #ddd;
+	background: rgba(0, 0, 0, 0.2);
+}
+
+.bdx-slideshow ul,
+.bdx-slideshow ul li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.bdx-slideshow ul li.brewImage {
+	background: transparent !important;
+}
+
+.bdx-slideshow .flex-container,
+.bdx-slideshow .flex-slider{
+	a:hover,
+	a:focus{
+		outline: none;
+	}
+}
+
+.bdx-slideshow .slides,
+.bdx-slideshow .flex-control-nav,
+.bdx-slideshow .flex-direction-nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.bdx-slideshow .flex-pauseplay span {
+	text-transform: capitalize;
+}
+
+/* Base styles */
+
+.bdx-slideshow .flexslider {
+	margin: 0;
+	padding: 0;
+
+	.slides {
+
+		> li {
+			display: none;
+			-webkit-backface-visibility: hidden;
+		}
+
+		img {
+			display: block;
+		}
+
+		&:after{
+			content: "\0020";
+			display: block;
+			clear: both;
+			visibility: hidden;
+			line-height: 0;
+			height: 0;
+		}
+
+		html[xmlns] &{
+			display: block;
+		}
+
+		* html &{
+			height: 1%;
+		}
+
+		.no-js &{
+			> li{
+				&:first-child{
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+/* Default theme */
+
+.bdx-slideshow .flexslider {
+	position: relative;
+	zoom: 1;
+
+	.slides{
+		zoom: 1;
+	}
+}
+
+.bdx-slideshow .flex-viewport {
+	max-height: 2000px;
+	.transition();
+	.loading &{
+		max-height: 300px;
+	}
+}
+
+.bdx-slideshow .carousel li {
+	margin-right: 5px;
+}
+
+
+/* Direction Nav */
+
+.bdx-slideshow .flex-direction-nav {
+	*height: 0;
+
+	// Global styles
+	a  {
+		text-decoration:none;
+		text-indent: -99999em;
+		display: block;
+		width: 20px;
+		height: 30px;
+		margin: -20px 0 0;
+		position: absolute;
+		top: 50%;
+		z-index: 10;
+		overflow: hidden;
+		opacity: 0;
+		cursor: pointer;
+		color: rgba(0,0,0,0.8);
+		text-shadow: 1px 1px 0 rgba( 255, 255, 255, 0.3 );
+	    .transition( 0.3s, ease-in-out );
+
+		&:before  {
+			font-size: 40px;
+			display: inline-block;
+		}
+	}
+
+	// Prev
+	.flex-prev {
+		left: -50px;
+		background: url('/builders/res/img/sprites.png') 0 0 no-repeat;
+		background-size: 30px auto;
+	}
+
+	// Next
+	.flex-next {
+		right: -50px;
+		background: url('/builders/res/img/sprites.png') 0 -30px no-repeat;
+		background-size: 30px auto;
+	}
+
+	.flex-disabled {
+		display: none;
+	}
+}
+
+// Hover states
+.bdx-slideshow .flexslider:hover .flex-direction-nav {
+	.flex-prev {
+		opacity: 1.0;
+		left: 10px;
+	}
+
+	.flex-next {
+		opacity: 1.0;
+		right: 10px;
+	}
+}
+
+// Disabled
+.bdx-slideshow .flex-disabled {
+	opacity: 0!important;
+	filter: alpha(opacity=0);
+	cursor: default;
+}
+
+// Play/Pause
+
+.bdx-slideshow .flex-pauseplay a {
+	display: block;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	bottom: 5px;
+	left: 10px;
+	opacity: 0.8;
+	z-index: 10;
+	overflow: hidden;
+	cursor: pointer;
+	color: #000;
+
+	&:before {
+		font-family: "flexslider-icon";
+		font-size: 20px;
+		display: inline-block;
+		content: '\f004';
+	}
+
+	&:hover {
+		opacity: 1;
+	}
+
+	.flex-play:before {
+		content: '\f003';
+	}
+}
+
+// Control Nav
+
+.bdx-slideshow .flex-control-nav {
+	width: 100%;
+	position: absolute;
+	bottom: -40px;
+	text-align: center;
+
+	li {
+		margin: 0 6px;
+		display: inline-block;
+		zoom: 1;
+		*display: inline;
+	}
+}
+
+
+// Control paging
+.bdx-slideshow .flex-control-paging li {
+	a {
+		width: 11px;
+		height: 11px;
+		display: block;
+		background: #666;
+		background: rgba(0,0,0,0.5);
+		cursor: pointer;
+		text-indent: -9999px;
+		.box-shadow( 0, 0, 3px, rgba(0,0,0,0.3), inset );
+
+		&:hover {
+			background: #333;
+			background: rgba(0,0,0,0.7);
+		}
+
+		&.flex-active {
+			background: #000;
+			background: rgba( 0, 0, 0, 0.9 );
+			cursor: default;
+		}
+	}
+}
+
+
+.bdx-slideshow .flex-control-thumbs {
+	margin: 5px 0 0;
+	position: static;
+	overflow: hidden;
+
+	li {
+		width: 25%;
+		float: left;
+		margin: 0;
+	}
+
+	img {
+		width: 100%;
+		display: block;
+		opacity: .7;
+		cursor: pointer;
+		.transition();
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	.flex-active {
+		opacity: 1;
+		cursor: default;
+	}
+}
+
+
+// Flexslider - responsive
+@media screen and ( max-width: 860px ) {
+
+	.bdx-slideshow .flex-direction-nav{
+
+		.flex-prev {
+			opacity: 1;
+			left: 10px;
+		}
+
+		.flex-next {
+			opacity: 1;
+			right: 10px;
+		}
+	}
+}
+
+
+
+/*-----------------------------------------------------
+Listing items
+*/
+
+.bdx-listings-grid {
+	.clearfix();
+	float: left;
+	width: 100%;
+}
+
+.bdx-listing-item {
+	width: 23.5%;
+	margin-right: 2%;
+	float: left;
+	margin-bottom: 20px;
+	min-height: 0 !important;
+
+	&:nth-of-type(4n+1) {
+		clear: left;
+	}
+	&:nth-of-type(4n+4) {
+		margin-right: 0;
+	}
+
+	header {
+		margin-bottom: 8px;
+
+		.pricerange {
+			color: #666;
+			color: rgba(0,0,0,0.5);
+			font-style: italic;
+		}
+	}
+
+	.item-image {
+		border: 1px solid #ddd;
+		border-color: rgba(0,0,0,0.1);
+	}
+
+	.details {
+		padding: 10px 0;
+	}
+
+	p.var {
+		margin-bottom: 0;
+
+		&.name {
+			strong {
+				font-weight: normal;
+			}
+			span {
+				color: rgba(0,0,0,0.7);
+				font-style: italic;
+			}
+		}
+	}
+
+	 sup {
+		font-size: 0.7em;
+	}
+}
+
+
+
+/*-----------------------------------------------------
+Similar Listings
+
+each listing uses the 'listing item' class
+
+*/
+
+.bdx-similar-listings-container {
+	padding-top: 20px;
+	margin-top: 20px;
+	border-top: 1px solid #ccc;
+	border-top-color: rgba(0,0,0,0.3);
+	clear: both;
+	.clearfix();
+}
+
+
+
+
+/*-----------------------------------------------------
+State List and City List (or individual state) landing pages
+eg. /builders/ and /builders/texas/
+*/
+
+
+
+.state-results-container .bdx-state-item,
+.city-results-container .bdx-city-item {
+	margin-right: 2%;
+	float: left;
+	text-align: center;
+	border: 1px solid #ccc;
+	background-color: fade(#000, 0%);
+	-webkit-transition: background-color 0.2s;
+	-moz-transition: background-color 0.2s;
+	-o-transition: background-color 0.2s;
+	transition: background-color 0.2s;
+	min-height: 0 !important;
+	margin-bottom: 20px;
+
+	&:hover {
+		background-color: #ddd;
+		background-color: fade(#000, 10%);
+	}
+
+	a {
+		text-decoration: none;
+		display: block;
+	}
+
+	.images {
+		line-height: 0;
+		padding: 10px 0 8px;
+		.clearfix();
+		text-align: center;
+
+		.item-image {
+			width: 30%;
+			display: inline-block;
+			border-radius: 100px;
+
+			img {
+				//width: 200%;
+			}
+		}
+	}
+
+	.details {
+		padding: 0 20px;
+	}
+
+	header {
+		margin-bottom: 5px;
+		padding-top: 15px;
+	}
+
+	.info a {
+		color: #666;
+		color: rgba(0,0,0,0.7);
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	p strong,
+	p span {
+		font-weight: normal;
+		display: block;
+	}
+
+	p strong {
+		font-size: 16px;
+	}
+
+	p span {
+		font-size: 14px;
+	}
+}
+
+
+.state-results-container .bdx-state-item {
+	width: 31.3333%;
+
+	&:nth-of-type(3n+1) {
+		clear: left
+	}
+	&:nth-of-type(3n+3) {
+		margin-right: 0;
+	}
+
+	.images {
+		padding: 18px 4px 8px;
+	}
+}
+
+.city-results-container .bdx-city-item {
+	width: 23.5%;
+
+	&:nth-of-type(4n+1) {
+		clear: left;
+	}
+
+	&:nth-of-type(4n+4) {
+		margin-right: 0;
+	}
+}
+
+
+/*-----------------------------------------------------
+Search - at top of Cities list/Individual State pages
+eg. /builders/texas/
+*/
+
+
+.search-wrapper {
+	background: #ddd;
+	background: rgba(0,0,0,0.15);
+	padding: 10px 20px;
+	margin: 0 0 24px;
+	border-top: 0;
+}
+
+.subdivision-search-container,
+.homeplan-search-container {
+
+
+	form {
+		margin-bottom: 0;
+	}
+
+	.bdx-search-row {
+		padding: 8px 0;
+		.clearfix();
+	}
+
+	.bdx-search-field {
+		float: left;
+		margin-right: 10px;
+	}
+
+	.bdx-search-input {
+		float: left;
+		width: 30%;
+
+		input {
+			display: block;
+			width: 100%;
+			padding: 4px;
+		}
+	}
+
+	.bdx-search_price {
+		width: 65%;
+		margin-left: 5%;
+		float: left;
+	}
+
+	.bdx-slider-header {
+		.clearfix();
+
+		label {
+			float: left;
+		}
+		small {
+			float: right;
+		}
+	}
+
+	.btnset {
+		width: 15%;
+		float: right;
+		clear: none;
+		text-align: right;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.subdivision-search-container,
+.homeplan-search-container {
+	.bdx-search-options {
+		width: 85%;
+		float: left;
+		padding: 8px 0 0;
+		.clearfix();
+
+		label {
+			display: inline-block;
+		}
+
+		select, input {
+			display: inline-block;
+		}
+
+		input[type="checkbox"],
+		input[type="radio"] {
+			margin: -3px 4px 0 0
+		}
+	}
+}
+
+
+
+
+
+
+
+/*-----------------------------------------------------
+Communities page, AKA individual City page
+eg. /builders/texas/communities/?search[City]=San+Antonio
+*/
+
+.bdx-sidebar_search_form {
+	width: 25%;
+	float: right;
+	padding-top: 60px;
+
+	.close-search {
+		display: none;
+		position: absolute;
+		top: -5px;
+		right: 10px;
+
+		i.cross {
+			background-image: url('/builders/res/img/sprites.png');
+			background-size: 30px auto;
+			height: 12px;
+			width: 12px;
+			margin: 5px 3px;
+			background-position: 0 -175px;
+			display: block;
+		}
+
+		.btn {
+			padding: 1px 4px;
+		}
+	}
+
+	input[type=text],
+	select {
+		width: 100%;
+	}
+
+	select[multiple] {
+		height: 80px;
+	}
+
+	select[name="search[City][]"] {
+		height: 122px;
+	}
+
+	form {
+		clear: both;
+		.btnset:first-child {
+			padding-top: 0;
+		}
+
+		.btnset {
+			margin-bottom: 0;
+		}
+
+		button {
+			display: block;
+			float: none;
+			width: 100%;
+		}
+	}
+
+	.ac-input {
+
+		.menu {
+			background: #fff;
+			border: 1px solid #ddd;
+			border-color: rgba(0,0,0,0.2);
+		}
+
+		label {
+			font-weight: normal;
+			line-height: 1.5;
+			padding: 5px 10px;
+
+			em {
+				font-style: normal;
+				font-weight: bold;
+			}
+
+			&:hover {
+				background-color: #eee;
+			}
+		}
+	}
+
+
+	.search-City {
+		max-height: 230px;
+		overflow: auto;
+	}
+}
+
+.community-results-container,
+.listing-results-container {
+	float: left;
+	width: 70%;
+}
+
+	.listing-results-container {
+		.bdx-listing-item {
+			width: 32%;
+
+			&:nth-of-type(4n+1) {
+				clear: none;
+			}
+			&:nth-of-type(4n+4) {
+				margin-right: 2%;
+			}
+
+			&:nth-of-type(3n+1) {
+				clear: left;
+			}
+			&:nth-of-type(3n+3) {
+				margin-right: 0;
+			}
+		}
+	}
+
+.bdx-search-toggle {
+	display: none;
+
+	.btn {
+		display: block;
+		width: 100%;
+	}
+}
+
+.search-title-container .search-title {
+	margin: 0 0 30px;
+	text-shadow: none;
+	h1 {
+		margin-bottom: 12px;
+	}
+
+	h2 {
+		color: #888;
+		margin-bottom: 12px;
+	}
+
+	p {
+		font-style: italic;
+		margin-bottom: 20px;
+	}
+}
+
+
+
+/*-----------------------------------------------------
+Individual Community
+eg. /builders/community/2852/
+*/
+
+#bdx-community-detail {
+
+	// for PT2
+	.addthis_toolbox {
+		display: none;
+	}
+
+	.bdx-col1 {
+		width: 64.6666667%;
+		float: left;
+	}
+
+	.bdx-col2 {
+		width: 33.3333334%;
+		float: right;
+	}
+
+
+	.bdx-features-container {
+		.clearfix();
+		margin-bottom: 24px;
+		ul.list-group {
+			list-style: none;
+			padding-left: 1em;
+			text-indent: -1em;
+			margin: 0;
+		}
+
+		li {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		.list-group li {
+			width: 33.3333%;
+			float: left;
+
+			&:before {
+				display: inline-block;
+				width: 15px;
+				height: 15px;
+				background: url('/builders/res/img/sprites.png') 0 -58px no-repeat;
+				background-size: 30px;
+				content: "";
+				margin-right: 5px;
+			}
+		}
+	}
+
+
+	.community-listings-cta {
+		padding: 20px 0 0;
+		border-top: 1px solid #ddd;
+		border-top-color: rgba(0,0,0,0.1);
+		text-align: center;
+		margin: 10px 10% 20px;
+		display: table;
+		width: 80%;
+
+		p {
+			margin: 0;
+		}
+
+		.cta-intro {
+			font-style: italic;
+			display: table-cell;
+			vertical-align: middle;
+			width: 30%;
+			text-align: center;
+		}
+
+		.cta-image {
+			display: block;
+			line-height: 0;
+			margin-bottom: 5px;
+			display: table-cell;
+			vertical-align: middle;
+			width: 40%;
+			text-align: center;
+		}
+
+		.cta-link {
+			font-size: 0.95em;
+			text-transform: uppercase;
+			display: table-cell;
+			vertical-align: middle;
+			width: 30%;
+			text-align: center;
+
+			a {
+				text-decoration: none;
+				color: #888;
+			}
+		}
+	}
+
+	#community-listings {
+		clear:both;
+		padding-top: 20px;
+		margin-top: 20px;
+		border-top: 1px solid #ccc;
+		border-top-color: rgba(0, 0, 0, 0.3);
+	}
+
+	.bdx-description {
+		clear:both;
+	}
+} // end #bdx-community-detail
+
+
+
+
+.community-listings-container,
+.bdx-community-item {
+	.clearfix();
+	min-height: 0 !important;
+}
+
+.bdx-community-item {
+	padding-bottom: 0;
+	margin-bottom: 30px;
+
+	.btnset {
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+
+	.image-container {
+		float: left;
+		width: 27%;
+		position: relative;
+		border: 1px solid #ccc;
+		border-color: rgba(0, 0, 0, 0.3);
+
+		.btn {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	header {
+		margin-bottom: 0;
+
+		h3 {
+			display: inline-block;
+		}
+
+		.pricerange {
+			color: #888;
+			font-size: inherit;
+			font-style: italic;
+		}
+	}
+
+	.details {
+		float: right;
+		width: 70%;
+
+		p {
+			margin-bottom: 0;
+		}
+	}
+
+	.val.address {
+		color: #888;
+		text-transform: uppercase;
+	}
+} // end .bdx-community-item
+
+
+
+/*-----------------------------------------------------
+Agent and Lender CTAs
+Used on both the individual Community and individual Listing pages
+*/
+
+
+.bdx-agent-info,
+.bdx-lender-info,
+.bdx-community-property-info {
+
+	margin-bottom: 24px;
+	border: 1px solid rgba(0,0,0,0.1);
+	padding: 20px;
+
+	.bdx-cta-title h5 {
+		margin-bottom: 8px;
+	}
+
+	.bdx-cta-body {
+		display: table;
+		width: 100%;
+	}
+
+	.bdx-agent-photo-contain,
+	.bdx-lender-photo-contain,
+	.bdx-properties-photo-contain {
+		width: 35%;
+		display: table-cell;
+		vertical-align: middle;
+		padding: 0 20px 0 0;
+	}
+
+	.bdx-agent-photo,
+	.bdx-lender-photo,
+	.bdx-properties-photo  {
+		border-radius: 100px;
+		overflow: hidden;
+		// fix for Chrome being buggy
+		-webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+		min-width: 80px;
+	}
+
+
+	.bdx-info {
+		width: 65%;
+		display: table-cell;
+		vertical-align: middle;
+
+		.bdx-name {
+			margin-bottom: 0;
+			font-size: 20px;
+			color: #666;
+		}
+
+		.bdx-title,
+		.bdx-phone {
+			display: block;
+		}
+
+		.btnset {
+			margin-bottom: 0;
+			padding-bottom: 0;
+
+			.btn {
+				white-space: normal;
+			}
+		}
+	}
+}
+
+/*-----------------------------------------------------
+BDX Inquire Form
+*/
+
+.bdx-inquire-form {
+	.field.firstname,
+	.field.lastname,
+	.field.email,
+	.field.phone {
+		width: 48%;
+
+		input {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	.field.firstname,
+	.field.email {
+		float: left;
+		clear: left;
+	}
+
+	.field.lastname,
+	.field.phone {
+		float: right;
+
+	}
+
+	.field.message {
+		clear: both;
+		width: 100%;
+
+		textarea {
+			display: block;
+			width: 100%;
+		}
+	}
+}
+
+.popup #body {
+	padding: 0;
+}
+
+/*-----------------------------------------------------
+Inquire form
+Used on both the individual Community and individual Listing pages
+*/
+
+/*
+.community-inquire-wrap,
+.listing-inquire-wrap{
+	border: 1px solid #ddd;
+	border-color: rgba(0,0,0,0.2);
+	padding: 20px;
+	margin-bottom: 20px;
+
+	h4 {
+		margin-top: 0;
+	}
+
+
+
+	.bdx-agent-info {
+		display: table;
+		width: 100%;
+		margin-bottom: 10px;
+
+
+		.bdx-agent-photo-contain {
+			width: 35%;
+			display: table-cell;
+			vertical-align: middle;
+			line-height: 0;
+			background: transparent;
+		}
+
+		.bdx-agent-photo {
+			overflow: hidden;
+			position: relative;
+			-webkit-border-radius: 200px;
+			-moz-border-radius: 200px;
+			-o-border-radius: 200px;
+			border-radius: 200px;
+			-webkit-transform: rotate(0);
+		}
+
+		.bdx-info {
+			width: 65%;
+			padding-left: 12px;
+			display: table-cell;
+			vertical-align: middle;
+			line-height: 1.4;
+		}
+
+		.bdx-name,
+		.bdx-title,
+		.bdx-phone {
+			display: block;
+		}
+
+		.bdx-name {
+			font-size: 18px;
+
+		}
+
+		.bdx-title {
+			text-transform: uppercase
+		}
+	}
+
+
+	.bdx-inquire-form {
+		clear: both;
+
+		form {
+			padding: 0 !important; // LEC2013 override
+			border: 0 !important; // LEC2013 override
+			margin-bottom: 0;
+		}
+
+		div {
+			.clearfix();
+		}
+		label {
+			display: block;
+		}
+
+		input, textarea {
+			display: block;
+			width: 100%;
+			padding: 4px;
+		}
+
+		.btnset {
+			margin-bottom: 0;
+			padding-bottom: 0;
+			text-align: right;
+		}
+	}
+}
+*/
+
+
+
+
+
+/*-----------------------------------------------------
+Individual listings pages
+eg. /builders/community/2852/1082053/
+*/
+
+#bdx-listing-detail {
+	padding-bottom: 30px;
+	.clearfix();
+
+	.addthis_toolbox {
+		display: none;
+	}
+
+	.bdx-col1 {
+		width: 64.6666667%;
+		float: left;
+		.clearfix();
+	}
+
+	.bdx-col2 {
+		width: 33.3333334%;
+		float: right;
+	}
+
+	.bdx-listing-info,
+	.bdx-community-info {
+		width: 49%;
+		float: left;
+	}
+
+	.bdx-listing-info {
+		margin-right: 2%;
+	}
+
+	.bdx-listing-description {
+		clear: both;
+	}
+
+	.bdx-listing-detail-section,
+	.bdx-community-detail-section {
+		margin-bottom: 30px;
+
+		h3 {
+			margin-bottom: 8px;
+		}
+
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		li {
+			.clearfix();
+		}
+
+		strong {
+
+		}
+		span {
+
+		}
+	}
+
+}
+
+
+/*-----------------------------------------------------
+Price Sliders
+*/
+
+/*	General CSS resets; */
+.bdx-noUi-target * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-touch-callout: none;
+	-ms-touch-action: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	cursor: default;
+}
+
+/*	Main slider bar; */
+.bdx-noUi-base {
+	width: 100%;
+	margin: 1px;
+	height: 15px;
+	position: relative;
+	margin: 5px 1px;
+}
+
+.bdx-noUiSlider.bdx-noUi-target {
+	margin: 0 11px;
+}
+
+/*	Handles + active state */
+.bdx-noUi-handle {
+	top: -3px;
+	left: -11px;
+	width: 22px;
+	height: 22px;
+	z-index: 1;
+	position: relative;
+	border: 1px solid #ccc;
+	.rounded(2px);
+	background: #fff;
+}
+.bdx-noUi-active {
+	background: #E9E9E9;
+	box-shadow: inset 0 0 5px #DDD;
+}
+
+
+/*	Styling-only classes; */
+.bdx-noUi-connect {
+	-webkit-transition: background 0.6s;
+	transition: background 0.6s;
+}
+.bdx-noUi-background {
+	background: #aaa;
+	border-radius: 2px;
+	box-shadow: 0 0 4px rgba(0,0,0,0.3) inset;
+}
+
+/* the 'selected' part of the slider */
+.bdx-noUi-origin.bdx-noUi-origin-lower {
+	background: #ddd;
+	background: rgba(0,0,0,0.2);
+}
+
+.bdx-noUi-origin.bdx-noUi-origin-upper {
+	box-shadow: 0 0 4px rgba(0,0,0,0.3) inset;
+}
+
+/*	Functional styles for handle positioning; */
+.bdx-noUi-origin {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	border-radius: inherit;
+}
+.bdx-noUi-origin + .bdx-noUi-origin {
+	background: inherit !important;
+}
+.bdx-noUi-z-index {
+	z-index: 10;
+}
+
+/*	Adaptations for the vertical slider; */
+.bdx-noUi-vertical {
+	width: 38px;
+	height: 100%;
+}
+.bdx-noUi-vertical .bdx-noUi-origin {
+	bottom: 0;
+	left: 0;
+}
+.bdx-noUi-vertical .bdx-noUi-handle  {
+	top: -23px;
+	left: -3px;
+}
+
+/*	Slider disabled state; */
+[disabled] .bdx-noUi-base {
+	background: #DDD;
+}
+[disabled] .bdx-noUi-handle {
+	background: #F7F7F7;
+	cursor: not-allowed;
+}
+[disabled] .bdx-noUi-connect {
+	background: #EEE;
+}
+
+/*	Transition states; */
+.bdx-noUi-state-tap .bdx-noUi-origin {
+	-webkit-transition: left 0.3s, top 0.3s;
+	transition: left 0.3s, top 0.3s;
+}
+.bdx-noUi-state-blocked .bdx-noUi-connect {
+	background: #7f8c8d;
+}
+
+
+
+
+
+// overrides for specific templates - primarily PT-1R and LEC 2013:
+// both have really extreme font sizes for headers, and it looks a bit odd in some spots
+
+/* PT-1R */
+.pt-1r {
+	.bdx-community-item,
+	#bdx-listing-detail,
+	.bdx-similar-listings-container,
+	.community-listings-container {
+		h3 {
+			font-size: 16px;
+			line-height: 1.5;
+		}
+	}
+
+	.community-inquire-wrap,
+	.listing-inquire-wrap {
+		h4 {
+			font-size: 15px;
+			line-height: 1.5;
+		}
+	}
+}
+
+/* PT-2R */
+.pt-2r {
+	.bdx-state-item,
+	.bdx-city-item {
+		h2 {
+			font-size: 16px;
+		}
+	}
+}
+
+/* BCSE */
+.bcse {
+
+	&.builder-states,
+	&.builder-cities,
+	&.builder-search,
+	&.builder-community,
+	&.builder-listing {
+
+		#body {
+			padding-top: 40px;
+		}
+	}
+
+	.bdx-state-item,
+	.bdx-city-item {
+		h2 {
+			font-size: 32px;
+			margin-bottom: 0;
+		}
+	}
+
+	.search-title-container .search-title h2 {
+		font-size: 32px;
+	}
+
+	.bdx-listing-item h3,
+	.bdx-community-item header h3 {
+		margin-bottom: 0;
+	}
+
+	.bdx-sidebar_search_form form .field input[type="checkbox"] {
+		border: 0 !important; // !important to override the !important in main stylesheet
+	}
+
+	.bdx-properties-cta-container {
+		.btn {
+			line-height: 20px;
+			padding-top: 6px;
+			padding-bottom: 6px;
+			-webkit-border-radius: 32px;
+			-moz-border-radius: 32px;
+			border-radius: 32px;
+		}
+	}
+
+	.bdx-agent-info,
+	.bdx-lender-info,
+	.bdx-community-property-info {
+		.bdx-info .btnset .btn {
+			line-height: 20px;
+			padding-top: 6px;
+			padding-bottom: 6px;
+			-webkit-border-radius: 32px;
+			-moz-border-radius: 32px;
+			border-radius: 32px;
+		}
+	}
+}
+
+
+/* LEC-2010 */
+.lec-2010 {
+	#body #wrap #content {
+		width: 100%;
+	}
+
+	.bdx-listing-item h3,
+	.bdx-community-item header h3 {
+		margin-bottom: 0;
+	}
+
+}
+
+/* LEC-2011 */
+.lec-2011 {
+
+	&.builder-states,
+	&.builder-cities,
+	&.builder-search,
+	&.builder-community,
+	&.builder-listing {
+		#page #content {
+			width: 100%;
+		}
+	}
+
+	#page #content .bdx-slideshow,
+	#page #content .bdx-breadcrumbs {
+		ul,
+		li {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+	}
+
+	.bdx-listing-item h3,
+	.bdx-community-item header h3 {
+		margin-bottom: 0;
+	}
+}
+
+/* LEC-2012 */
+.lec-2012 {
+	&.builder-states,
+	&.builder-cities,
+	&.builder-search,
+	&.builder-community,
+	&.builder-listing {
+		#content {
+			width: 100%;
+		}
+	}
+	@media only screen and (min-width: 880px) {
+		#content {
+			padding-right: 40px;
+		}
+	}
+}
+
+/* LEC-2013 */
+.lec-2013 {
+	.idx-user-bar {
+		margin-bottom: 0;
+	}
+
+	#content div form {
+		padding: 0;
+		border: 0;
+		border-radius: 0;
+	}
+
+	.bdx-state-item {
+		h2 {
+			font-size: 30px;
+			margin-bottom: 0;
+		}
+	}
+	.bdx-city-item {
+		h2 {
+			font-size: 24px;
+			margin-bottom: 0;
+		}
+	}
+
+	.bdx-listing-item {
+		h3 {
+			margin-bottom: 0;
+		}
+	}
+
+	.bdx-community-item {
+		h3 {
+
+			margin-bottom: 0;
+		}
+		p {
+			margin-bottom: 0;
+		}
+	}
+
+	.btnset .btn,
+	.btnset button {
+		font-family: "Proxima N W15 Reg","HelveticaNeue","Helvetica Neue","helvetica Neue",Arial,sans-serif;
+	}
+}
+
+/* LEC-2014 */
+
+.lec-2014 {
+	.bdx-listing-item {
+		h3 {
+			margin-bottom: 0;
+		}
+	}
+
+	.bdx-community-item {
+		h3 {
+
+			margin-bottom: 0;
+		}
+		p {
+			margin-bottom: 0;
+		}
+	}
+}
+
+
+/* Custom */
+.custom.default,
+.pt-1r43 {
+	&.builder-states,
+	&.builder-cities,
+	&.builder-search,
+	&.builder-community,
+	&.builder-listing {
+		#page #content,
+		#content {
+			width: 100%;
+			left: 0;
+			margin-left: 0;
+		}
+
+		#sidebar {
+			display: none;
+		}
+	}
+}
+
+/*-----------------------------------------------------
+IE8-specific styles
+*/
+
+
+.lte8 {
+	// ie8 doesn't like nth-of-type or nth-child
+	.bdx-listing-item {
+		width: 23.5%;
+		margin-right: 1.5%;
+	}
+
+	.city-results-container .bdx-city-item {
+		width: 23.5%;
+		margin-right: 1.5%;
+	}
+
+
+
+	// overrides for 2x sprite image, and pre-animation slideshow controls
+	.bdx-slideshow {
+		.flex-direction-nav {
+			.flex-prev,
+			.flex-next {
+				background-image: url('/builders/res/img/sprites-ie8.png');
+			}
+		}
+	}
+
+	#bdx-community-detail {
+		.bdx-features-container {
+			.list-group li {
+				&:before {
+					background-image: url('/builders/res/img/sprites-ie8.png');
+				}
+			}
+		}
+	}
+
+	.bdx-sidebar_search_form {
+		.close-search {
+			i.cross {
+				background-image: url('/builders/res/img/sprites-ie8.png');
+			}
+		}
+	}
+}
+
+/*-----------------------------------------------------
+Media Queries
+*/
+
+
+
+@media only screen and (max-width: 879px) {
+	.state-results-container .bdx-state-item,
+	.city-results-container .bdx-city-item {
+		width: 32%;
+
+		&:nth-of-type(4n+1) {
+			clear: none
+		}
+		&:nth-of-type(4n+4) {
+			margin-right: 2%;
+		}
+		&:nth-of-type(3n+1) {
+			clear: left;
+		}
+		&:nth-of-type(3n+3) {
+			margin-right: 0;
+		}
+
+		.images {
+			padding: 10px 0 8px;
+		}
+	}
+
+	/*-----------------------------------------------------
+	Listing items
+	*/
+	.bdx-listing-item {
+		width: 32%;
+
+		&:nth-of-type(4n+1) {
+			clear: none
+		}
+		&:nth-of-type(4n+4) {
+			margin-right: 2%;
+		}
+
+		&:nth-of-type(3n+1) {
+			clear: left
+		}
+		&:nth-of-type(3n+3) {
+			margin-right: 0;
+		}
+	}
+
+	/*-----------------------------------------------------
+	Individual Community
+	*/
+
+	#bdx-community-detail {
+
+		.bdx-features-container ul.list-group {
+			li {
+				width: 50%;
+			}
+		}
+	}
+
+	/*-----------------------------------------------------
+	Agent, Lender CTAs
+	*/
+	.bdx-agent-info,
+	.bdx-lender-info,
+	.bdx-community-property-info {
+		.bdx-agent-photo-contain,
+		.bdx-lender-photo-contain,
+		.bdx-properties-photo-contain {
+			width: 40%;
+			padding-right: 10px;
+		}
+
+		.bdx-info {
+			width: 55%;
+		}
+	}
+} // end < 879px
+
+
+
+@media only screen and (max-width: 650px) {
+	.state-results-container .bdx-state-item,
+	.city-results-container .bdx-city-item {
+		width: 49%;
+
+		&:nth-of-type(3n+1) {
+			clear: none;
+		}
+		&:nth-of-type(3n+3) {
+			margin-right: 2%;
+		}
+
+		&:nth-of-type(2n+1) {
+			clear: left;
+		}
+		&:nth-of-type(2n+2) {
+			margin-right: 0;
+		}
+	}
+
+	/*-----------------------------------------------------
+	Communities page
+	*/
+	.bdx-sidebar_search_form {
+		position: absolute;
+		width: 50%;
+		left: -55%;
+		transition: left 0.5s;
+		background: #fff;
+		padding: 10px 10px 10px 20px;
+		z-index: 20;
+		box-shadow: 0 0 5px rgba(0,0,0,0.5);
+
+		&.visible {
+			left: -10px;
+		}
+
+		.close-search {
+			display: block;
+		}
+
+		form {
+			margin-top: 30px;
+		}
+	}
+
+	.community-results-container,
+	.listing-results-container {
+		width: 100%;
+		float: left;
+	}
+
+	.bdx-search-toggle {
+		display: block;
+	}
+
+
+
+	/*-----------------------------------------------------
+	Listing items
+	*/
+	.bdx-listing-item,
+	.listing-results-container .bdx-listing-item {
+		width: 49%;
+
+		&:nth-of-type(3n+1) {
+			clear: none;
+		}
+		&:nth-of-type(3n+3) {
+			margin-right: 2%;
+		}
+
+		&:nth-of-type(2n+1) {
+			clear: left;
+		}
+		&:nth-of-type(2n+2) {
+			margin-right: 0;
+		}
+	}
+
+
+	/*-----------------------------------------------------
+	Individual Community
+	*/
+
+	#bdx-community-detail {
+
+		.bdx-col1,
+		.bdx-col2 {
+			width: 100%;
+			float: none;
+		}
+
+		.bdx-features-container ul.list-group {
+			li {
+				width: 33.3333%;
+			}
+		}
+
+		.community-listings-cta {
+			display: block;
+			text-align: center;
+			.cta-intro,
+			.cta-image,
+			.cta-link {
+				display: block;
+				width: 100%;
+			}
+		}
+	}
+
+	/*-----------------------------------------------------
+	Search
+	*/
+	.subdivision-search-container,
+	.homeplan-search-container {
+		.bdx-search-input,
+		.bdx-search-options,
+		.btnset {
+			width: 100%;
+			float: none;
+			clear: both;
+		}
+
+		.bdx-search_price {
+			width: 90%;
+			margin-left: 3%;
+		}
+
+		.bdx-search-options {
+			padding: 0 10px;
+		}
+
+		.btnset {
+			text-align: center;
+			margin-top: 20px;
+		}
+	}
+
+	/*-----------------------------------------------------
+	Listing Detail
+	*/
+	#bdx-listing-detail {
+		.bdx-col1,
+		.bdx-col2 {
+			width: 100%;
+			float: none;
+		}
+	}
+
+
+	/*-----------------------------------------------------
+	Inquire Forms
+	*/
+
+	/*
+	.community-inquire-wrap,
+	.listing-inquire-wrap {
+		.agent-info {
+			width: 70%;
+		}
+
+		.field.firstname,
+		.field.email {
+			width: 48%;
+			float: left;
+		}
+
+		.field.lastname,
+		.field.phone {
+			width: 48%;
+			float: right;
+		}
+	}
+	*/
+
+	/*-----------------------------------------------------
+	Agent, Lender CTAs
+	*/
+	.bdx-agent-info,
+	.bdx-lender-info,
+	.bdx-community-property-info {
+		.bdx-agent-photo-contain,
+		.bdx-lender-photo-contain,
+		.bdx-properties-photo-contain {
+			width: 30%;
+			padding-right: 20px;
+		}
+
+		.bdx-info {
+			width: 55%;
+		}
+	}
+} // end < 650px
+
+
+@media only screen and (max-width: 480px) {
+
+	#content,
+	#content-primary,
+	#page #content {
+		min-height: 0;
+	}
+
+
+	.state-results-container .bdx-state-item,
+	.city-results-container .bdx-city-item {
+		width: 100%;
+		float: auto;
+	}
+
+	/*-----------------------------------------------------
+	Listing items
+	*/
+	.bdx-listing-item,
+	.listing-results-container .bdx-listing-item {
+		width: 100%;
+		float: none;
+		text-align: center;
+	}
+
+	.bdx-listing-item header h3 {
+		text-align: center !important;
+	}
+
+	/*
+	Cities Page
+	*/
+
+	.subdivision-search-container,
+	.homeplan-search-container {
+
+		.bdx-search-input {
+			margin-bottom: 10px;
+		}
+
+		.bdx-search-field {
+			width: 100%;
+			float: none;
+			clear: both;
+		}
+	}
+
+	/*-----------------------------------------------------
+	Communities page
+	*/
+	.bdx-sidebar_search_form {
+		width: 80%;
+		left: -85%;
+
+		&.visible {
+			left: -10px;
+		}
+	}
+
+	.bdx-community-item {
+		.image-container,
+		.details {
+			width: 100%;
+			float: none;
+		}
+		.image-container {
+			margin-bottom: 10px;
+		}
+
+		header {
+			text-align: center;
+			h3, span {
+				display: block;
+				text-align: center !important;
+			}
+		}
+
+		.val.address,
+		.val.desc {
+			text-align: center;
+		}
+
+		.btnset {
+			text-align: center;
+		}
+	}
+
+
+	/*-----------------------------------------------------
+	Individual Community
+	*/
+
+	#bdx-community-detail {
+
+		.bdx-features-container ul.list-group {
+			li {
+				width: 50%;
+			}
+		}
+	}
+
+	/*-----------------------------------------------------
+	Listing Detail
+	*/
+	#bdx-listing-detail {
+		.bdx-listing-info,
+		.bdx-community-info {
+			width: 100%;
+			float: none;
+			margin: 0;
+
+			h3 {
+				text-align: left;
+			}
+		}
+	}
+
+
+	/*-----------------------------------------------------
+	Inquire Forms
+	*/
+	/*
+	.community-inquire-wrap,
+	.listing-inquire-wrap {
+		.agent-info,
+		.field.firstname,
+		.field.email,
+		.field.lastname,
+		.field.phone {
+			width: 100%;
+			float: none;
+		}
+	}
+	*/
+
+	/*-----------------------------------------------------
+	Agent, Lender CTAs
+	*/
+	#page .bdx-agent-info,
+	#page .bdx-lender-info,
+	#page .bdx-community-property-info {
+		.bdx-info {
+			h3.bdx-name {
+				text-align: left !important;
+			}
+		}
+	}
+
+	/*-----------------------------------------------------
+	BDX Inquire Form
+	*/
+
+	.bdx-inquire-form {
+		.field.firstname,
+		.field.lastname,
+		.field.email,
+		.field.phone {
+			width: 100%;
+			float: none;
+		}
+	}
+
+} // end < 480px
+
+
+
+// IE8 specific styles
+

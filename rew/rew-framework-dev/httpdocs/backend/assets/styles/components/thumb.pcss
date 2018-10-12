@@ -1,0 +1,87 @@
+.thumb {
+    width: 72px;
+    height: 72px;
+    display: inline-flex;
+    position: relative;
+    border-radius: 2px;
+    display: inline-block;
+    color: #fff;
+    overflow: hidden;
+    font-size: 32px;
+    line-height: 32px;
+}
+
+.thumb > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.thumb--contain > img {
+    object-fit: contain;
+}
+
+.thumb .icon,
+.thumb__label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+
+.thumb--round {
+    && {
+        border-radius: 100%;
+    }
+}
+
+.thumb--tiny {
+    && {
+        height: 16px;
+        width: 16px;
+        font-size: 8px;
+        line-height: 8px;
+    }
+}
+
+.thumb--small {
+    && {
+        height: 24px;
+        width: 24px;
+        font-size: 12px;
+        line-height: 12px;
+    }
+}
+
+.thumb--medium {
+    && {
+        height: 48px; /* two line-heights */
+        width: 48px;
+        font-size: 24px;
+        line-height: 24px;
+    }
+}
+
+.thumb--large {
+    && {
+        height: 72px; /* three line-heights */
+        width: 72px;
+    }
+}
+
+/**
+ * TODO: Review use case for `.thb`
+ * Currently we use `.thumb`
+ * Review tpl files and change `thb` to `thumb`
+ */
+
+.thb img {
+    margin: -2px 0 0 0;
+    border-radius: 2px;
+}
+
+.thb--round img {
+    border-radius: 50%;
+    margin: -7px 0; /* specific to usr image in header -- may need seperation */
+}

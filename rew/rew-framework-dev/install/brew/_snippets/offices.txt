@@ -1,0 +1,6 @@
+{
+	"_comment" : "Offices Module",
+	"name" : "offices",
+	"config" : {
+	}
+}

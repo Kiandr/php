@@ -1,0 +1,25 @@
+.btns--add-new .btn {
+    font-size: 14px;
+    background-color: #2692f7;
+    border-color: #2692f7;
+    padding: 4px 16px;
+}
+
+.btns--add-new .btn .icon {
+    margin-right: 4px;
+    margin-bottom: 0;
+    width: 24px !important;
+    height: 24px !important;
+}
+
+#app__sidebar {
+    background-color: #f8f7f7;
+
+    @media (min-width: 901px) {
+        padding-top: 32px;
+    }
+}
+
+#app__main {
+    padding-top: 24px;
+}

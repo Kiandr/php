@@ -1,0 +1,5 @@
+<div class="modal-header">
+<h1>How Much House Can You Afford?</h1>
+</div>
+<p>#mortgage-calculator#</p>
+<p class="highlight"><a href="/contact.php">Contact us</a> for more information about financing your next real estate purchase.</p>

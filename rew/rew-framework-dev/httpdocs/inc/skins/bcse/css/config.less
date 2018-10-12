@@ -1,0 +1,81 @@
+/*--------------------------
+GRID & LAYOUT
+--------------------------*/
+@colWidth		:	60;
+@gutterWidth	:	20;
+@idx-map-height :	500px;
+
+/*--------------------------
+COLORS
+--------------------------*/
+
+// Layout Colors
+@bgA			:	#fff;				// Main Container
+@fgA			:	#6f6f6f;			// Main Content
+
+@bgB			:	#333;				// Foot
+@fgB			:	#999;				// Foot
+
+
+.swatchHeadings() {
+	color: #6f6f6f;
+	//.fgColorUp(50%);					// Heading Color
+	//color: #6f2798;
+}
+.swatchFgMuted() {
+	.fgColorUp(5%,@fgA,@bgA);			// Muted Foreground Color
+	//color: pink;
+}
+
+
+// New Fandango
+@swatch1		:	#65C0C3;
+@swatch1_lite	:	lighten(@swatch1,10%);
+@swatch1_dark	:	darken(@swatch1,10%);
+
+// UI Colors
+@bgU			:	#999;
+@fgU			:	#fff;
+@uiAccentColor	:	@swatch1_lite;
+@quickSearchButton : #008000;
+@sliderColor	: #777;
+
+
+/*--------------------------
+TYPOGRAPHY
+--------------------------*/
+@baseline		:	24px;
+@font_pageCopy	:	Georgia, serif;
+@font_Headings	:	Georgia, serif;
+.ui_font()			{ font: 300 16px Georgia, serif;; line-height: @baseline; }
+.ui_font_bolder()	{ font: 400 16px Georgia, serif;; line-height: @baseline; }
+.ui_font_small()	{ font: normal 11px Georgia, serif;; line-height: @baseline; }
+
+/*------------------------------
+Barbara Cororan Special Edition
+------------------------------*/
+
+@grey-line 	: #e9e9e9;
+@background : #FAFAFA;
+@text-color	: #666666;
+@dark-border: #cccccc;
+@font-stack	: "Gill Sans MT","Gill Sans",helvetica,arial,sans-serif;
+@body-text	: Georgia, serif;
+@sub-feature: #65c0c3;
+@swatch1 : #47ABB0;
+@swatch2 : #ff7a7a;
+@swatch1-light: lighten(@swatch1,10%);
+@swatch2-light: lighten(@swatch2,10%);
+@section-dark: #3a3a3a;
+@feature-background-path : url(../schemes/default/img/feature-background.jpg);
+@agent-background-path: url(../img/agent-bg.jpg);
+
+/*------------------------------
+// Sellers/Radio Landing
+------------------------------*/
+
+@radioPrimary: @swatch1; // Dark
+@radioSecondary: @swatch2; // Light
+@radioAccent: @swatch2; // Green
+@radioLinks: @swatch1;
+@radioImg: url(/inc/skins/brew/img/bg-radio-landing.jpg);

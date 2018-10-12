@@ -1,0 +1,144 @@
+{
+    "config": {
+        "title": "Cover Page",
+        "description": "Use for homepage &amp; landing pages.",
+        "selectable": true,
+        "order": 1
+    },
+    "containers": {
+        "feature": {
+            "feature-slides": {
+                "_enabled": true,
+                "slides": "{variable.slides}"
+            }
+        },
+        "featured": {
+            "feature-listings": {
+                "_enabled": "{variable.showFeatureListings}"
+            }
+        },
+        "featured-listings": {
+            "idx-listings": {
+                "_enabled": "{variable.showFeaturedListings}",
+                "template": "featured.tpl.php",
+                "limit": 12
+            }
+        },
+        "featured-agents": {
+            "agents": {
+                "_enabled": "{variable.showFeaturedAgents}",
+                "template": "featured.tpl.php",
+                "thumbnails": "185x185",
+                "mode": "spotlight",
+                "limit": 12
+            }
+        }
+    },
+    "variables": {
+        "slides": {
+            "type": "list",
+            "minItems": 0,
+            "maxItems": 100,
+            "title": "Featured Slides",
+            "createText": "Add Feature Slide",
+            "updateText": "Edit Feature Slide",
+            "revertText": "Revert Slides",
+            "previewText": "Slide #{#}",
+            "default": [{
+                "image": "/inc/skins/fese/img/fredrik-slide.jpg",
+                "heading": "Find Your Dream Home",
+                "posVertical": "B",
+                "posHorizontal": "M",
+                "showSearchForm": true
+            }],
+            "variables": {
+                "image": {
+                    "type": "image",
+                    "title": "Image",
+                    "required": true
+                },
+                "title": {
+                    "type": "text",
+                    "title": "Title"
+                },
+                "heading": {
+                    "type": "text",
+                    "title": "Heading"
+                },
+                "paragraph": {
+                    "type": "text",
+                    "title": "Paragraph"
+                },
+                "buttonText": {
+                    "type": "text",
+                    "title": "Button Text"
+                },
+                "buttonLink": {
+                    "type": "text",
+                    "title": "Button URL"
+                },
+                "posVertical": {
+                    "type": "select",
+                    "title": "Vertical Position",
+                    "default": "C",
+                    "required": true,
+                    "options": [
+                        { "value": "T", "title": "Top" },
+                        { "value": "C", "title": "Center" },
+                        { "value": "B", "title": "Bottom" }
+                    ]
+                },
+                "posHorizontal": {
+                    "type": "select",
+                    "title": "Horizontal Position",
+                    "default": "M",
+                    "required": true,
+                    "options": [
+                        { "value": "L", "title": "Left" },
+                        { "value": "M", "title": "Middle" },
+                        { "value": "R", "title": "Right" }
+                    ]
+                },
+                "showSearchForm": {
+                    "type": "boolean",
+                    "title": "Show Search Form",
+                    "default": false
+                }
+            }
+        },
+        "showFeatureListings": {
+            "type": "boolean",
+            "title": "Feature Homes",
+            "default": true
+        },
+        "showFeaturedListings": {
+            "type": "boolean",
+            "title": "Featured Listings",
+            "default": false,
+            "children": {
+                "title": {
+                    "type": "text",
+                    "title": "Featured Listings Title",
+                    "default": "Featured Listings"
+                }
+            }
+        },
+        "showFeaturedAgents": {
+            "type": "boolean",
+            "title": "Featured Agents",
+            "default": false,
+            "children": {
+                "title": {
+                    "type": "text",
+                    "title": "Featured Agents Title",
+                    "default": "Meet The Team"
+                }
+            }
+        },
+        "showFeedSwitcher": {
+            "type": "boolean",
+            "title": "Feed Switcher",
+            "default": false
+        }
+    }
+}

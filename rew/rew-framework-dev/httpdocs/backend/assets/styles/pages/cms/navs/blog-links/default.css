@@ -1,0 +1,6 @@
+/* Truncate blog links on smaller screens */
+#blog-links .article__content {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

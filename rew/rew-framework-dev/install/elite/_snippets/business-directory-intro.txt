@@ -1,0 +1,3 @@
+<div class="uk-panel uk-panel-box uk-margin-top">
+    <p>If you know of a business or organization that should appear in our directory, please <a href="/directory/add/">add it</a>!</p>
+</div>

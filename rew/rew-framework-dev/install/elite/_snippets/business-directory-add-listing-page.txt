@@ -1,0 +1,5 @@
+<div class="uk-alert uk-alert-danger" data-uk-alert>
+    <a href="" class="uk-alert-close uk-close"></a>
+    <h2>Attention:</h2>
+    <p>We moderate all listing submissions. If your listing is not meant to be <strong>useful for our local audience</strong>, it will not be approved, so please don't waste your time. If your business is legitimately local but we think your listing is intended only for the "backlink", we will put a "nofollow" attribute on your link so that search engine benefits do not apply.</p>
+</div>

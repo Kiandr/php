@@ -1,0 +1,53 @@
+/* TODO: Update naming for classes */
+#app__main {
+    margin-bottom: 60px;
+}
+
+#agent-report {
+    margin-top: 24px;
+}
+
+table.item_content_summaries {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+}
+
+.item_content_summaries thead th {
+    color: #60606d;
+    padding: 5px 8px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: normal;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.item_content_summaries thead th a {
+    text-decoration: inherit;
+}
+
+.item_content_summaries td {
+    padding: 20px 10px;
+    color: #40404e;
+    border-bottom: 1px solid #e2e1e8;
+}
+
+.item_content_title {
+    font-size: 14px;
+}
+
+.item_content_title a {
+    text-decoration: none;
+}
+
+@media (max-width: 700px) {
+    .table__wrapper {
+        overflow-x: auto;
+        box-shadow: 2px 2px 3px #ccc;
+    }
+}

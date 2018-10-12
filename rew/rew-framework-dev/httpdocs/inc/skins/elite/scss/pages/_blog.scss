@@ -1,0 +1,77 @@
+/*--------------------------------------------------------------------------------------------
+BLOG
+---------------------------------------------------------------------------------------------*/
+
+// Blog comment captcha
+.fw-captcha-container {
+    @media (min-width: #{$breakpoint-medium}) {
+        input {
+            margin-right: 200px + #{$form_large_padding};
+        }
+
+        .fw-captcha {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            width: 200px;
+        }
+    }
+}
+
+.blog-nav {
+    list-style: none;
+    margin-bottom: 30px;
+    padding-left: 0;
+  
+  
+    .uk-nav-header {
+        text-transform: uppercase;
+        font-weight: $font-weight-semi-bold;
+        line-height: 1;
+        padding: 15px;
+        margin: 0;
+        font-size: 16px;
+    }
+  
+    > li {
+        display: block;
+
+        &.uk-nav-header {
+            border: none;
+        }
+    }
+  
+    a {
+        padding: 15px;
+        line-height: 1;
+        display: block;
+        text-decoration: none;
+    }
+  
+    ul {
+        padding-left: 0;
+        list-style: none;
+
+        li a {
+            padding-left: 30px;
+        }
+
+        li {
+            border: none;
+            border-bottom: none;
+        }
+    }
+}
+
+footer.uk-comment-header {
+    background: none;
+}
+
+/*--------------------------------------------------------------------------------------------
+Blog Results
+---------------------------------------------------------------------------------------------*/
+
+.uk-comment-avatar {
+    width: 60px;
+}

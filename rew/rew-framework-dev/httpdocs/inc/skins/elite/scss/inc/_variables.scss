@@ -1,0 +1,129 @@
+// ==========================================================================
+// Global Config
+// ==========================================================================
+
+@import "./auto_vars";
+@import "./scheme_config";
+
+// FONT STACK
+$base-body-font-family:	'Source Sans Pro', Helvetica, Arial, sans-serif !default;
+$base-header-font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif !default;
+$base-body-line-height: 1.5 !default;
+
+// SMALL FONT SIZES
+$base-h1-font-size:	36px !default;
+$base-h2-font-size:	20px !default;
+$base-h3-font-size:	18px !default;
+$base-h4-font-size:	16px !default;
+$base-h5-font-size:	14px !default;
+$base-h6-font-size:	12px !default;
+$base-h1-font-size-display:	36px !default;
+$base-body-font-size: 14px !default;
+
+// LARGE FONT SIZES 
+$base-h1-font-size-large:	48px !default;
+$base-h2-font-size-large:	36px !default;
+$base-h3-font-size-large:	24px !default;
+$base-h4-font-size-large:	16px !default;
+$base-h5-font-size-large:	14px !default;
+$base-h6-font-size-large:	12px !default;
+$base-body-font-size-large: 16px !default;
+$base-h1-font-size-display-large:	60px !default;
+
+// FONT WEIGHTS
+$font-weight-thin       :	200 !default;
+$font-weight-light      :	300 !default;
+$font-weight-medium     :	400 !default;
+$font-weight-semi-bold  :	600 !default;
+$font-weight-bold       :	700 !default;
+$font-weight-ultra-bold :	900 !default;
+
+// SOCIAL MEDIA COLORS
+$facebook-color  :  #3b5998 !default;
+$twitter-color   :  #1da1f3 !default;
+$google-color    :  #dc4a3d !default;
+$linkedin-color  :  #0077b5 !default;
+$pinterest-color :  #cb2027 !default; 
+
+
+/* ------------------------------------------------------------
+REWMOD ASHLEY J: MAR/1/2017 - Helper UI Colours
+
+These stay the same across all schemes. Individual 
+brand colours are set in each scheme's config.scss files 
+
+* If these variables need to be re-defined for custom schemes,
+add the variables into that scheme's config.scss *
+--------------------------------------------------------------- */
+$base-gray		:	#e7e7e7 !default;	// Light Grey
+$base-gray-drk	:	#adadaf !default;	// Medium Grey
+$base-white		: 	#ffffff !default;	// Base White
+$base-black		: 	#231f20 !default;	// Base Black
+
+
+// BASE AND BODY COLOR
+$base-em-color: $base-black !default;
+
+// BUTTON MEDIUM
+$button-medium-font-size: 20px !default;
+$button-medium-padding-horizontal: 25px !default;
+$button-medium-height: 44px !default;
+$button-medium-line-height: 44px !default;
+
+// BUTTON LARGE
+$button-large-font-size: 14px !default;
+$button-large-padding-horizontal: 18px !default;
+$button-large-height: 27px !default;
+$button-large-line-height: 27px !default;
+$button-large-height-large: 54px !default;
+$button-large-line-height-large: 54px !default;
+$button-large-font-size-large: 21px !default;
+$button-large-padding-horizontal-large: 52px !default; 
+
+// GRID
+$grid-gutter-horizontal:                         20px !default;
+$grid-gutter-vertical:                           20px !default;
+$grid-gutter-large-horizontal:                   35px !default;
+$grid-gutter-large-vertical:                     35px !default;
+$grid-gutter-xlarge-horizontal:                  50px !default;
+$grid-gutter-xlarge-vertical:                    50px !default;
+$grid-gutter-small-horizontal:                   20px !default;
+$grid-gutter-small-vertical:                     20px !default;
+
+// UTILITY VARIABLES
+$utility-container-max-width:                    1024px !default;  //PREVIOUS 980
+$utility-container-padding-horizontal:           25px !default;
+
+$utility-container-large-max-width:              1260px !default; //PREVIOUS 1200
+$utility-container-large-padding-horizontal:     0px !default; // PREVIOUS 35
+
+$utility-container-xlarge-max-width:             1420px !default; //PREVIOUS 1200
+$utility-container-xlarge-padding-horizontal:    35px !default;
+
+$utility-align-horizontal:                       15px !default;
+$utility-align-vertical:                         15px !default;
+$utility-height-viewport-min-height:             600px !default;
+$utility-margin:                                 15px !default;
+$utility-margin-small:                           5px !default;
+$utility-margin-large:                           50px !default;
+$utility-border-rounded:                         5px !default;
+$utility-heading-large-small-font-size:          36px !default;
+$utility-heading-large-small-line-height:        42px !default;
+$utility-heading-large-font-size:                52px !default;
+$utility-heading-large-line-height:              64px !default;
+$utility-link-muted-color:                       #444 !default;
+$utility-link-muted-hover-color:                 #444 !default;
+$utility-scrollable-text-height:                 300px !default;
+$utility-scrollable-box-height:                  170px !default;
+$utility-scrollable-box-padding:                 10px !default;
+$utility-scrollable-box-border:                  #ddd !default;
+$utility-scrollable-box-border-width:            1px !default;
+
+// NON UIKIT THINGS
+$compact-form-spacing:                           0px !default;
+$idx-advanced-row-margin:                        15px !default;
+$idx-advanced-row-height:                        35px !default;
+$idx-advanced-row-padding:                       3px !default;
+$icon-font-path:                                 '#{$skin-url}build/fonts/' !default;
+$ionicons-font-path:                             $icon-font-path !default;
+$map-legend-width:                               200px !default;

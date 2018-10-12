@@ -1,0 +1,73 @@
+.trig {
+    position: relative;
+    float: left;
+}
+
+.trig .btn {
+    float: left;
+}
+
+.trig .mnu,
+.dropdown {
+    position: absolute;
+    width: 200px;
+    z-index: 999;
+    margin: 0;
+    border: none;
+    border-radius: 2px;
+    background: #fff;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
+    padding: 0;
+    pointer-events: all;
+    display: none;
+}
+
+.trig .mnu.TR {
+    left: auto;
+    right: 0;
+}
+
+.trig .mnu.TL {
+    left: 0;
+    right: auto;
+}
+
+.trig .mnu.BR {
+    left: auto;
+    right: 0;
+    bottom: 100%;
+    top: auto;
+}
+
+.trig.trig-dis:hover .mnu {
+    display: none;
+}
+
+.trig .mnu li {
+    float: none;
+}
+
+.trig + .trig .btn--ico {
+    margin-left: 6px;
+}
+
+.trig .mnu a {
+    float: none;
+    padding: 12px;
+}
+
+.trig .mnu a:hover {
+    background: #f8f7fa;
+    transition: .33s all;
+}
+
+.trig .mnu li.current a {
+    background: #f8f7fa;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#app_nav .trig .mnu a .ico {
+    top: 4px;
+    margin-top: 0;
+}

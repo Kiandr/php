@@ -1,0 +1,13 @@
+{
+	"config" : {
+		"title"			: "IDX Details",
+		"description"	: "Use for IDX Details Page",
+		"selectable"	: false
+	},
+    "containers" : {
+        "body" : {
+			"user-bar" : {
+			}
+        }
+    }
+}

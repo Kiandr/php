@@ -1,0 +1,181 @@
+.feat-search {
+	position: absolute;
+    bottom: 20%;
+    left: 0;
+	width: 100%;
+	text-align: center;
+	opacity:0;
+	.wrp.S4 {
+		@media (max-width:680px) {
+			padding:0;
+		}
+	}
+}
+.feat-search .feat-search-title {
+    color: @white;
+	text-shadow: 0px 0px 5px rgba(0,0,0,.4);
+    display: block;
+	text-align: center;
+	clear:both;
+    text-decoration: none;
+    padding: 15px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    white-space: nowrap;
+	@media (max-width:680px) {
+		font-size:48px;
+		line-height:48px;
+		text-align: center !important;
+		white-space: normal !important;
+	}
+}
+.feat-search .idx-search-form {
+	display:block;
+	width: 80%;
+    margin: 0 auto;
+	@media (max-width:680px) {
+		width: 100% !important;
+	}
+}
+.feat-search .idx-search-form .search-input-container {
+    background: rgba(15,15,19,.6);
+    padding: 20px;
+	position: relative;
+	display: block!important;
+	width: 100%;
+	margin:0;
+	@media (max-width:680px) {
+		padding:15px;
+	}
+}
+.feat-search .mmm .ac-input {
+	border-color:transparent;
+	border-bottom: 0;
+	border-top:0;
+	text-align: left;
+}
+.feat-search .mmm .ac-input input {
+	line-height: 1.5;
+    padding-top: 12px;
+    padding-bottom: 12px;
+	color:@btn-grey;
+	padding-right: 88px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+	&:focus,
+	&:active {
+		outline:none;
+	}
+}
+.feat-search .idx-search-form .search-input-container button {
+    position: absolute;
+    right: -1px;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+}
+.feat-search .idx-search-form .ac-input .menu label {
+	color:@btn-grey;
+} 
+
+// Positions
+.slide-cta {
+	
+	// Vertical Postions
+	
+	// Top
+    &.slide-TL,
+    &.slide-TM,
+    &.slide-TR {
+        top: 20%;
+    }
+	// Center 
+    &.slide-CL,
+    &.slide-CM,
+    &.slide-CR {
+        top: 40%;
+    }
+	
+    &.slide-BL,
+    &.slide-BM,
+    &.slide-BR {
+        top: auto;
+        bottom: 10%;
+    }
+	
+	// Horizontal Positions
+	
+	// Left
+    &.slide-TL,
+    &.slide-CL,
+    &.slide-BL {
+		text-align: left;
+		h1 {
+			text-align:left;
+		}
+        .feat-search {
+			@media (max-width:1170px) {
+				position: absolute !important;
+				bottom: auto;
+				left: 0;
+				right: auto;
+				width: ~"calc(100vw - 40%)";
+			}
+			@media (max-width:1024px) {
+				width: ~"calc(100vw - 60px)";
+			}
+			.wrp.S4 {
+				@media (min-width:1025px) {
+					padding-left:0;
+				}
+				@media (max-width:1024px) {
+					width:auto;
+					padding:0;
+				}
+				
+			}
+		}
+    }
+	
+	// Middle
+    &.slide-TM,
+    &.slide-CM,
+    &.slide-BM {
+        text-align: center;
+        width: 100%;
+        left: 0;
+    }
+	
+	// Right
+    &.slide-TR,
+    &.slide-CR,
+    &.slide-BR {
+		text-align: right;
+		h1 {
+			text-align: right;
+		}
+        .feat-search {
+			@media (max-width:1170px) {
+				position: absolute !important;
+				bottom: auto;
+				left: auto;
+				right: 0;
+				width: ~"calc(100vw - 40%)";
+			}
+			@media (max-width:1024px) {
+				width: ~"calc(100vw - 60px)";
+			}
+			.wrp.S4 {
+				@media (min-width:1025px) {
+					padding-right:0;
+				}
+				@media (max-width:1024px) {
+					width:auto;
+					padding:0;
+				}
+				
+			}
+		}
+    }
+}

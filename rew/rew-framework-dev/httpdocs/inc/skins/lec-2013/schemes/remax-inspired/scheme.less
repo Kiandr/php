@@ -1,0 +1,238 @@
+@tan: #eee;
+
+#sidebar form.idx-search,
+#content-secondary form.idx-search,
+#body .idx-user-bar
+{
+  background: @tan !important; border-color: darken(@tan,20%) !important;
+}
+
+#sidebar form.idx-search .action-toggle-more,
+#content-secondary form.idx-search .action-toggle-more
+{
+  background-color: darken(@tan,15%); border-color: darken(@tan,20%);
+  color:#777;
+}
+
+//REMAX-INSPIRED
+
+body.popup.idx.dashboard{
+  background:#fff;
+  #body{
+    background:#fff;
+  }
+  #dashboard_tabs .current a{
+    color:#fff;
+  }
+  #dashboard_tabs a{
+    color:#ccc;
+  }
+}
+
+.tpl-homepage #head{
+  background:none;  
+}
+
+.agent-site #head,
+#head{
+  background:#0066b2;
+  .gradient(#0066b2, darken(#0066b2,10%), #0066b2);
+  .wrap{
+    border-color:#555;
+  }
+  nav.horizontal li a{
+    color:#fff;
+  }
+  nav.horizontal li .menu .cta a{
+    background:darken(@swatch1_dark, 10%);
+    &:hover{
+      background:@swatch1_dark;
+    }
+  }
+}
+
+.bg{
+  background:#111;
+}
+
+#feature{
+  .quicksearch{
+    .tabset ul li a{
+      color:#fff;
+    }
+    .tabset ul li.current a{
+      background:#c50106;
+      color: #fff;
+    }
+    form{
+      label{color:#fff;}
+    }
+    .nav .pright, .nav a{
+      color:#fff;
+    }
+  }
+
+  #feature_cta{
+    background: #171717;
+    background: fade(#171717,86%);
+    border-color: #333;
+    border-color: fade(#333,33%);
+    .wrap{
+      p{
+        color:#fff;
+        a{
+          color:#fff;
+        }
+      }
+    }
+  }
+}
+
+.dashboard .btn.pright,
+button.positive, .btn.positive,
+#feature #feature_cta .wrap p .btn,
+#feature .quicksearch form .btnset button{
+  .gradient(#f34346,#d40307,#d40307);
+  border-color:#ae0308;
+  box-shadow:inset 0 1px 0 #f69092;
+  color:#fff;
+  &:hover{
+    .gradient(lighten(#f34346, 7%),#d40307,#d40307);
+  }
+}
+
+#search_mast .btn,
+#listing-body .btn.strong{
+  .gradient(#f34346,#d40307,#d40307);
+  border-color:#ae0308;
+  box-shadow:inset 0 1px 0 #f69092;
+  color:#fff;
+  &:hover{
+    .gradient(lighten(#f34346, 7%),#d40307,#d40307);
+    border-color:#ae0308;
+  }
+}
+
+#sidebar .nav li{
+  border-color:#ccc;
+}
+
+#sidebar .nav a,
+#sidebar .nav li ul{
+  background:#eee;
+  color:#555;
+}
+
+#sidebar .nav .current > a{
+  background:@swatch1_dark;
+  color:#fff;
+}
+
+#sidebar .nav h4{
+  color:#222;
+}
+
+.articleset.listings{
+  article .data-mlsid{
+    color:#333;
+  }
+  
+  article li.data-summary{
+    color:#0075cb;
+  }
+  
+  article .action-favorite{
+    color: #333;
+  }
+}
+
+.articleset.listings.colset_3 article .data-price{
+  color:#333;
+}
+
+#search_head div.line.line_1 .nav{
+  .grid:before, .list:before, .map:before{
+    color:@swatch1_lite;
+  }
+  .grid.current:before, .list.current:before, .map.current:before{
+    color:@swatch1_dark;
+  }
+}
+
+#search_head div.line.line_1 .nav li{
+  a{
+    color:@swatch1;
+  }
+}
+
+#search_head div.line.line_1 .nav li.current a,
+.articleset.listings.colset_3 article .action-favorite{
+  color:@swatch1_dark;
+}
+
+#search_head div.line.line_2 .msg{
+  color:#333;
+}
+
+.nav.horizontal ul li.current{
+  border-color:#333;
+}
+
+.nav li.current>a{
+  background:#555;
+}
+
+.tpl-homepage article.listing .badge{
+  background-image: url('img/badge.png') !important;
+}
+
+#foot{
+  color:#eee;
+  background:darken(@swatch1_dark, 10%);
+  a{
+    color:#fff;
+  }
+  blockquote{
+    p,small{
+      color:#eee;
+    }
+  }
+  .copyright{
+    color:#eee;
+    a{
+      color:#fff;
+    }
+  }
+}
+
+.nav li a{
+  color:#444;
+}
+
+p.strong, blockquote.strong p{
+  color:#555;
+}
+
+blockquote.strong:before{
+  color:#ccc;
+}
+
+div .important, p.important,
+div .highlight, p.highlight{
+  color:#333;
+  p{
+    color:#333;
+  }
+}
+
+form .field label{
+  color:#555
+}
+
+.window.init header h4{
+  color:#fff;
+}
+
+.pagination a{
+  color:#333;
+}

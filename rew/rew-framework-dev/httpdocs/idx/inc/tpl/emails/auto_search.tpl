@@ -1,0 +1,7 @@
+<p>Hello <?=$lead['first_name']; ?> <?=$lead['last_name']; ?>,</p>
+<p>Thank you for using
+<a href="<?=$URL.'?uid='.Format::toGuid($lead['guid']); ?>"><?=$URL; ?></a> for your real estate search! Did you know that you can save your search parameters? <b>Save this Search</b> is a time saving feature that makes it easier than ever before to find homes that meet your needs. Save this Search eliminates the need to fill out a search form each and every time you'd like to view listings, as it not only saves your customized search preferences, but you'll also be notified by email as soon as new properties enter the market that match your criteria. </p>
+<p>Based on your previous searches and properties you've chosen to view in detail, it appears that you're looking for homes with the following attributes: </p>
+<p><?=$search_criteria;?></p>
+<p>If you would like to be notified when new properties with these characteristics are listed on the <?=Lang::write('MLS'); ?>, simply click <a href="<?=$URL.'idx/?'.http_build_query(array_merge($criteria,array('auto_save'=>1,'uid'=>Format::toGuid($lead['guid'])))); ?>">Save this Search</a>! You can also <a href="<?=$URL.'idx/?'.http_build_query(array_merge($criteria,array('uid'=>Format::toGuid($lead['guid'])))); ?>">Refine</a> this search to meet your exact needs!</p>
+<?=$agent['signature']; ?>

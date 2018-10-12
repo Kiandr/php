@@ -1,0 +1,20 @@
+<a class="social__link social--facebook" href="https://www.facebook.com/" target="_blank">
+    <svg>
+        <use xlink:href="/inc/skins/ce/img/assets.svg#icon--facebook" />
+    </svg>
+</a>
+<a class="social__link social--twitter" href="https://twitter.com/" target="_blank">
+    <svg>
+        <use xlink:href="/inc/skins/ce/img/assets.svg#icon--twitter" />
+    </svg>
+</a>
+<a class="social__link social--instagram" href="http://instagram.com/" target="_blank">
+    <svg>
+        <use xlink:href="/inc/skins/ce/img/assets.svg#icon--instagram" />
+    </svg>
+</a>
+<a class="social__link social--linkedin" href="https://www.linkedin.com/" target="_blank">
+    <svg>
+        <use xlink:href="/inc/skins/ce/img/assets.svg#icon--linked-in" />
+    </svg>
+</a>

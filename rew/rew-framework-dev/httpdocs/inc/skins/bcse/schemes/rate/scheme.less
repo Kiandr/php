@@ -1,0 +1,72 @@
+/** temp override before approval - move to page.less if approved****/
+// .meet-agent{background:rgba(0,0,0,25%); border:1px solid white; position: absolute; bottom: 140px; right: 40px; left:auto;}
+/****/
+
+p.highlight, div.highlight{
+	color: #fff;
+	& a{color: #fff;}
+}
+
+#slideshow{background: #000;}
+
+#feature{
+	background-position:left top;
+}
+
+.search-feature #feature .module h2{color: #fff;}
+
+#feature #feature-deck, 
+#sub-feature #feature-deck,
+#sm-slideout .sm-slide{
+	background: @swatch2;
+}
+
+.view-communities-btn{
+	background: @swatch4;
+}
+
+#sub-quicksearch{
+	.dropdown-title{background: @swatch3; color: #333;}	
+	.wrap{}
+}
+
+.tpl-homepage #sub-quicksearch{
+	background: @swatch4; 
+	border: 1px solid #333;
+}
+
+.pg-homepage #head .top-bar{border-bottom-color: #333;}
+#head {
+	background: @swatch4; // needed for mobile view margins
+	.top-bar{
+		background: @swatch4;
+		border-bottom-color: #333;
+		.phone a{color: #fff;} // necessary for dark schemes on mobile, as it adda <a> tags
+	}
+	.top-bar a:hover{color: #fff;}
+	.phone{color: #fff;}
+	nav {
+		.top-level > a{color: #AFAFAF; &:hover{color: #fff;}}
+		.top-level{border-bottom-color: #333; 
+			.touch-drop:before{border-color: #333;}
+			ul{border-color: #333; background: #222;}
+			ul li{border-color: #333;}
+		}
+		.main-navigation{border-color: #333;}
+	}
+}
+
+
+
+
+
+/*
+.meet-agent {
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid #0A73A0;
+  color:#0A73A0;
+  &:hover{
+    color:#0E93CC;
+  }
+}
+*/

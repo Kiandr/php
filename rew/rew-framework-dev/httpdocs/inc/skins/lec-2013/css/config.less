@@ -1,0 +1,53 @@
+/*--------------------------
+GRID & LAYOUT
+--------------------------*/
+@colWidth		:	60;
+@gutterWidth	:	20;
+@idx-map-height :	500px;
+
+// Sellers/Radio Landing Page Max Width
+.maxWidth() {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/*--------------------------
+COLORS
+--------------------------*/
+
+// Layout Colors
+@bgA			:	#fff;				// Main Container
+@fgA			:	#333;				// Main Content
+@bgB			:	spin(#3f4f51, 200);	// Header Color
+@fgC			:	#c7541b;			// Accent Color
+
+// New Fandango
+@swatch1		:	#5B524B;
+//@swatch1  		: 	#4473b9;
+@swatch1_lite	:	lighten(@swatch1,10%);
+@swatch1_dark	:	darken(@swatch1,10%);
+
+// UI Colors
+@bgU			:	#999;
+@fgU			:	#fff;
+@uiColor2		:	lime;
+@uiAccentColor	:	@swatch1_lite;
+@uiSliderColor	:	#675646;
+@featureImage	:	url(../img/featured/interior.jpg);
+
+// Sellers/Radio Landing
+@radioPrimary: #212121; // Dark
+@radioSecondary: #aca394; // Light
+@radioAccent: #73A30A; // Green
+@radioLinks: #f89406;
+@radioImg: url(/inc/skins/lec-2013/img/bg-radio-landing.jpg);
+
+/*--------------------------
+TYPOGRAPHY
+--------------------------*/
+@baseline		:	24px;
+@font_pageCopy	:	"Helvetica Neue", "HelveticaNeue", Arial, Helvetica, "Lucida Grande", sans-serif;
+@font_Headings	:	"Helvetica Neue", "HelveticaNeue", Arial, Helvetica, "Lucida Grande", sans-serif;
+.ui_font()			{ font: normal 14px "Proxima N W15 Reg", "HelveticaNeue", "Helvetica Neue", "helvetica Neue", Arial, sans-serif; line-height: @baseline; }
+.ui_font_bolder()	{ font: 14px "Proxima N W15 Reg", "HelveticaNeue", "Helvetica Neue", "helvetica Neue", Arial, sans-serif; line-height: @baseline; }
+.ui_font_small()	{ font: normal 11px "HelveticaNeue", "Helvetica Neue", "helvetica Neue", Arial, sans-serif; line-height: @baseline; }

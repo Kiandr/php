@@ -1,0 +1,282 @@
+/*--------------------------------------------------------------------------------------------
+MISC CSS - MOSTLY HELPERS
+---------------------------------------------------------------------------------------------*/
+
+// UI KIT RELATED
+.uk-alert span {
+    display: block;
+}
+
+.uk-alert {
+    margin-bottom: 15px;
+    padding: 10px;
+    margin-top: 1em;
+}
+
+.uk-icon-open:before {
+    @extend .uk-icon-plus;
+}
+
+.uk-icon-close:before {
+    @extend .uk-icon-minus;
+}
+
+//  THIS IS TO EXTEND THE WINDOWS ICON INTO A CUSTOM CLASS THAT IT IS COMPATIBLE WITH THE DEFAULT CMS OUTPUT
+.uk-icon-microsoft:before {
+    @extend .uk-icon-windows;
+}
+
+.uk-modal.uk-open {
+    // Modal on IOS has issues with webkit-overflow-scrolling: touch, sometimes stops the modal from being scrollable
+    -webkit-overflow-scrolling: auto;
+    z-index:1;
+}
+
+// http://stackoverflow.com/a/18037511 tested on IOS 9/8 needed the height:100%
+html.uk-modal-page,
+.uk-modal-page body {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}
+
+.uk-modal-header h1 {
+    font-size: 36px;
+}
+
+.uk-modal-body {
+    .uk-form-width-large {
+        width: 100%;
+    }
+}
+
+.uk-modal-footer {
+    overflow: hidden;
+
+    .uk-button {
+        margin-left: 3px;
+    }
+}
+
+// CUSTOM UTILITIES
+.social-media-login-buttons {
+    a {
+        margin-right: 0.25em;
+    }
+}
+
+//VIDEO STYLES
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.pod-radio-video-grid iframe {
+    width: 100%;
+    height: 100%;
+
+    @include bp-xsmall {
+        min-height: 150px;
+    }
+
+    @include bp-small {
+        min-height: 220px;
+    }
+
+    @include bp-large {
+        min-height: 225px;
+    }
+}
+
+.pod-radio-cta {
+    min-height: 150px;
+    height: 150px;
+    text-align: center;
+
+    .cta-inner-container {
+        position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+    }
+}
+
+.bmargin-2 {
+    margin: 0 0 2em 0;
+}
+
+.abs-center {
+    bottom: 0;
+    height: 50%;
+    left: 0;
+    margin: auto;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    text-align: center;
+}
+
+.abs-center-full {
+    bottom: 0;
+    height: 50%;
+    left: 0;
+    margin: auto;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 95%;
+    text-align: center;
+}
+
+.abs-center-full-left {
+    bottom: 0;
+    height: 50%;
+    left: 0;
+    margin: auto;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 95%;
+    text-align: left;
+}
+
+.no-border {
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+}
+
+.rotate-90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+// Box Sizing - Remove if it causes layout issues with framework
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+// Responsive Images
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+// General
+body {
+    font-family: $base-body-font-family;
+    font-size:14px;
+    font-weight:normal;
+    line-height:20px;
+}
+
+// Full Width Style: Add this around .uk-grid to style full width elements
+.fw, .cc-full-width {
+    padding:0;
+}
+
+#sm-slideout {
+    .uk-offcanvas-bar {
+        width: 315px;
+    }
+
+    #sm-slideout-wrap {
+        height: 105%;
+        height: 100vh;
+        padding: 50px 30px 20px;
+        text-align: left;
+    }
+
+    h3 {
+        padding-bottom: 0.5em;
+    }
+
+    ul li {
+        font-family: $base-body-font-family;
+        padding: 0.50em 0 0.50em 0.25em;
+
+        a:hover { text-decoration: none; }
+    }
+
+    ul.sign-in li {
+        display:inline-block;
+    }
+}
+
+#sm-slideout.open,
+.menu-trigger:hover + #sm-slideout {
+    right: 0;
+    left: auto;
+    visibility: visible;
+}
+
+#rew-back2top {
+    display: inline-block;
+    height: 40px;
+    line-height:40px;
+    width: 40px;
+    text-align:center;
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    font-size:16px;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    transition: opacity .5s;
+
+    @media only screen and (min-width: 1024px) {
+        height: 60px;
+        width: 60px;
+        right: 30px;
+        bottom: 30px;
+        line-height:56px;
+        font-size:20px;
+    }
+
+    &.rew-back2top-visible:hover {
+        opacity: 1;
+    }
+
+    &.rew-back2top-visible {
+        visibility: visible;
+        opacity: .8;
+    }
+}
+
+// Visibility for x-large
+.uk-hidden-xlarge {
+    @include bp-xlarge {
+        display: none;
+    }
+}
+
+.uk-visible-xlarge {
+    display: none;
+
+    @include bp-xlarge {
+        display: block;
+    }
+}

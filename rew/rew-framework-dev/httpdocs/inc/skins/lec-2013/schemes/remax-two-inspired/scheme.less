@@ -1,0 +1,729 @@
+.tpl-homepage #head .wrap
+{
+	border-bottom: 1px solid #444 !important;
+}
+
+#head nav.horizontal li a
+{
+	color: #999;
+}
+
+#feature .quicksearch form label,
+#feature .quicksearch form .tween,
+#feature #feature_cta .wrap p,
+#feature #feature_cta .wrap p a
+{
+	color: #777;
+}
+
+#feature .quicksearch .tabset ul li.current a
+{
+	-webkit-box-shadow: 0 -1px 1px 1px rgba(255, 255, 255, 0.2) inset;
+	-moz-box-shadow: 0 -1px 1px 1px rgba(255, 255, 255, 0.2) inset;
+	-ms-box-shadow: 0 -1px 1px 1px rgba(255, 255, 255, 0.2) inset;
+	box-shadow: 0 -1px 1px 1px rgba(255, 255, 255, 0.2) inset;
+}
+
+.tpl-homepage article.listing .badge
+{
+	background-image: url('img/badge.png') !important;
+}
+
+
+#feature #feature_cta .wrap p a:hover
+{
+	color: #999;
+}
+
+
+// REMAX 2 Colour Scheme
+
+
+// 1: Universal Elements
+	// 1a: Variables & Mixins
+	// 1b: Colour & Typography
+	// 1c: Action Items & Buttons
+
+// 2: Header
+	// 2a: Primary Navigation
+	
+
+// 3: Feature
+	// 3a: Quicksearch
+
+// 4: Body
+	// 4a: IDX Styles
+	// 4b: Content
+	// 4c: Sidebar
+
+// 5: Footer
+
+// 6: Reg & Login Popups
+
+
+
+
+// 1: Universal Elements
+
+
+// 1a: Variables & Mixins
+
+@remax-blue : #00678F; // REMAX Blue
+@remax-red :  #B91416; // REMAX Red
+
+@white : #fcfcfc; // default white
+@black : #222222; // default black
+
+@quick-search-bg1 : #ffffff; // light background colour for quicksearch
+@quick-search-bg2 : #efefef; // dark background colour for quicksearch
+
+
+// 1c: Action Items & Buttons
+
+.btnset a.btn, a.btn {
+.gradient(lighten(@remax-blue,15%), @remax-blue, @remax-blue);
+border-color: @remax-blue;
+box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset;
+	&:hover {
+	.gradient(@remax-blue, lighten(@remax-blue,15%), @remax-blue);
+	border-color: lighten(@remax-blue,15%);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
+	}
+} // end .btnset a.btn, a.btn
+
+
+// 2: Header
+
+.tpl-homepage header#head { 
+  background: none transparent;
+}
+
+body.pg-homepage {
+	header#head { 
+
+// Primary Navigation - Home Page
+
+		nav.horizontal {
+		
+		ul {
+
+			li {
+
+				a {
+					&:hover { color: @remax-red; }
+				} // end a
+
+			} // end li
+
+			li.has-menu:hover {
+
+				a {
+				color: @remax-red;
+					&:hover {
+					color: @remax-blue;
+					}
+				} // end a
+
+			} // end li.has-menu
+
+		} // end ul
+
+	} // end nav.horizontal
+
+	} // end header#head
+
+} // body.pg-homepage
+
+body.pg-homepage.agent-site header#head,
+header#head {
+background: none @remax-red;
+
+
+// 2a: Primary Navigation
+
+	nav.horizontal {
+		
+		ul {
+
+			li {
+
+				a {
+				color: @white;
+				color: fade(@white,85%);
+					&:hover { color: @white; }
+				} // end a
+
+			} // end li
+
+			li.has-menu:hover {
+
+				a {
+				color: @remax-red;
+					&:hover {
+					color: @remax-blue;
+					}
+				} // end a
+
+				.cta {
+					
+					a {
+					background: @remax-red;
+						p {
+						color: @white;
+						}
+						&:hover {
+						background: darken(@remax-red,15%);
+						}
+					} // end a	
+
+				} // end .cta
+
+			} // end li.has-menu
+
+		} // end ul
+
+	} // end nav.horizontal
+
+} // end header#head
+
+
+// 3: Feature
+
+// 3a: Quicksearch
+
+#feature {
+
+	.quicksearch {
+	.gradient(fade(@quick-search-bg2,90%), fade(@quick-search-bg1,90%), @quick-search-bg2);
+	border: none;
+
+		.tabset {
+
+			ul {
+
+				li {
+
+					a {
+					color: @remax-red;
+						&:hover {
+						color: @remax-blue;
+						}
+					} // end a
+
+				} // end li
+
+				li.current {
+
+					a {
+					background: @white;
+					background: fade(@white,60%);
+					box-shadow: 0 1px 3px rgba(0,0,0,0.45) inset;
+						color: @remax-red;
+						&:hover {
+						color: @remax-blue;
+						}
+					} // end a
+
+				} // end li.current
+
+			} // end ul
+
+		} // end .tabset
+
+		form {
+			
+			label, .tween {
+			color: @remax-blue;
+			}
+
+			.btnset {
+
+				button[type="submit"] {
+				.gradient(lighten(@remax-blue,15%), @remax-blue, @remax-blue);
+				border-color: @remax-blue;
+				box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset;
+					&:hover {
+					.gradient(@remax-blue, lighten(@remax-blue,15%), @remax-blue);
+					border-color: lighten(@remax-blue,15%);
+					box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
+					}
+				} // end button[type="submit"]
+
+			} // end .btnset
+
+		} // end form
+
+		.nav {
+		background: none @remax-red;
+		border-top: none;
+		.border-radius(0,0,5px,5px);
+
+			a {
+			color: @white;
+				&:hover {
+				color: fade(@white,65%);
+				}
+			} // end a
+
+			.pright { color: @white; }
+
+		} // end .nav
+
+	} // end .quicksearch
+
+	#feature_cta {
+	background: @remax-red;
+	background: fade(@remax-red,80%);
+	border-top: none;
+
+		.wrap {
+	
+			p {
+			color: @white;
+				
+				 a {
+				 color: @white;
+				 	&:hover {
+					color: fade(@white,80%);
+				 	}
+				 } // end a
+
+				 a.btn {
+				.gradient(lighten(@remax-blue,15%), @remax-blue, @remax-blue);
+				border-color: @remax-blue;
+				box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset;
+					&:hover {
+					.gradient(@remax-blue, lighten(@remax-blue,15%), @remax-blue);
+					border-color: lighten(@remax-blue,15%);
+					box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
+					}
+				 } // end a.btn
+	
+			} // end p
+
+		} // end .wrap
+ 
+	} // end #feature_cta
+
+} // end #feature
+
+
+// 4: Body
+
+#body {
+
+	.wrap {
+
+		.articleset {
+		border-bottom-color: @remax-red;
+
+			article.listing.featured {
+			
+					
+			
+					.body {
+					
+						.data-summary {
+						color: @remax-red;
+						}
+			
+					} // end .body
+			
+			} // end article.listing.featured
+
+		} // end .articleset
+
+// 4a: IDX Styles
+
+		.idx-user-bar {
+		background: lighten(#ccc,15%) !important;
+		border: solid 1px darken(#ccc,5%) !important;
+
+			.nav {
+				
+				ul {
+
+					li {
+
+						a {
+						color: @black;
+							&:hover {
+							color: @remax-blue;
+							}
+						} // end a
+
+					} // end li
+
+				} // end ul
+
+			} // end .nav
+
+		} // end .idx-user-bar
+
+		#search_head {
+
+			.nav {
+
+				ul {
+
+					li {
+
+						a {
+						background: none transparent;
+						color: darken(#ccc,5%);
+							&:hover {
+							color: @remax-blue;
+							}
+						} // end a
+
+					} // end li
+
+					li.grid:before, li.list:before, li.map:before {
+					color: darken(#ccc,5%);
+					} // end li.grid:before, li.list:before, li.map:before
+
+				} // end ul
+
+			} // end .nav
+
+			.pagination { background: none transparent; }
+
+		} // end #search_head
+
+		#search_mast {
+
+			.noUiSlider.horizontal {
+			background: darken(@white,5%);
+		
+				a:first-child {
+				background: lighten(@remax-blue,25%) !important;
+				} // end a:first-child
+		
+				div { background: none @remax-red !important; }
+		
+			} // end .noUiSlider.horizontal
+	
+			.save_search {
+	
+				.btn {
+				.gradient(lighten(@remax-blue,15%), @remax-blue, @remax-blue);
+				border-color: @remax-blue;
+				box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset;
+					&:hover {
+					.gradient(@remax-blue, lighten(@remax-blue,15%), @remax-blue);
+					border-color: lighten(@remax-blue,15%);
+					box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
+					}
+				} // end .btn
+	
+			} // end .save_search
+	
+		} // end #search_mast
+
+		#listing-body {
+
+			.btnset {
+
+				a.btn.strong {
+				.gradient(lighten(@remax-blue,15%), @remax-blue, @remax-blue);
+				border-color: @remax-blue;
+				box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset;
+					&:hover {
+					.gradient(@remax-blue, lighten(@remax-blue,15%), @remax-blue);
+					border-color: lighten(@remax-blue,15%);
+					box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
+					}
+				} // end a.btn.strong
+
+			} // end .btnset
+
+		} // end #listing-body
+
+		aside#sidebar {
+
+		#idx-feeds_1 {
+
+			ul.nav {
+
+				li {
+				border-bottom: none;
+
+					a {
+					background: darken(@white,5%);
+					} // end a
+
+				} // end li
+
+				li.current {
+
+					a {
+					background: @remax-red;
+					color: @white;
+					} // end a
+
+				} // end li.current
+
+			} // end ul.nav
+
+		} // end #idx-feeds_1
+
+		.idx-search {
+		background: lighten(#ccc,15%);
+		border: solid 1px darken(#ccc,2%);
+		} // end .idx-search
+
+	} // end aside#sidebar
+
+
+// 4b: Content
+
+		#content {
+
+			blockquote.strong {
+
+				p {
+				color: @remax-red;
+				}
+
+			} // end blockquote.strong	
+
+			form { 
+			padding: 40px 0;
+			border: none;
+
+				button.positive {
+				.gradient(lighten(@remax-blue,15%), @remax-blue, @remax-blue);
+				border-color: @remax-blue;
+				box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset;
+					&:hover {
+					.gradient(@remax-blue, lighten(@remax-blue,15%), @remax-blue);
+					border-color: lighten(@remax-blue,15%);
+					box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
+					}
+				} // end button.positive
+ 
+			} // end form
+
+		} // end #content
+
+// 4c: Sidebar
+
+		aside#sidebar {
+		background: none transparent;
+
+			.communities {
+
+				.nav {
+
+					ul {
+
+						li {
+
+							a { background: none transparent; }
+
+						} // end li
+
+					} // end ul
+
+					a {
+					background: lighten(#ccc,15%);
+					} // end a
+
+				} // end .nav
+
+			} // end .communities
+
+			.nav {
+
+				li {
+				border-color: darken(#ccc,2%);
+
+					a {
+					color: @black;
+						&:hover {
+						color: @remax-blue;
+						}
+					} // end a
+
+				} // end li
+
+				li.current {
+				background: none transparent;
+
+					> a { background: none transparent; color: @remax-blue; }
+
+					ul {
+
+						li {
+						
+							a {
+							color: @black;
+								&:hover {
+								color: @remax-blue;
+								}
+							} // end a
+
+						} // end li
+
+					} // end ul
+					
+				} // end li.current
+
+			} // end .nav
+
+		} // end aside#sidebar
+
+		.pagination {
+		background: lighten(#ccc,15%);
+
+		} // end pagination
+
+	} // end .wrap
+
+} // end #body
+
+
+#body.left-sidebar {
+
+	aside#sidebar {
+
+		.module.nav {
+
+			.nav {
+
+				li {
+				border-color: darken(#ccc,2%);
+
+					a {
+					color: @black;
+						&:hover {
+						color: @remax-blue;
+						}
+					} // end a
+
+				} // end li
+
+				li.current {
+
+					ul {
+
+						li {
+						
+							a {
+							color: @black;
+								&:hover {
+								color: @remax-blue;
+								}
+							} // end a
+
+						} // end li
+
+					} // end ul
+					
+				} // end li.current
+
+			} // end .nav
+
+		} // end .module.nav
+
+	} // end aside#sidebar
+
+} // end #body.left-sidebar
+
+// 5: Footer
+
+footer#foot {
+background: @remax-red;
+
+	blockquote {
+
+		p, small {
+		color: @white;
+		color: fade(@white, 80%);
+		}
+
+	} // end blockquote
+
+	address {
+	color: @white;
+	color: fade(@white, 80%);
+	}
+
+	ul, .dataset {
+
+		li {
+		color: @white;
+		color: fade(@white, 80%);
+
+			a {
+			color: @white;
+			color: fade(@white, 80%);
+				&:hover {
+				color: @white;
+				}
+			} // end a
+
+		} // end li
+
+	} // end ul
+
+	div, .copyright {
+	border-color: @white;
+	color: fade(@white, 80%);
+
+		a {
+		color: @white;
+		color: fade(@white, 80%);
+			&:hover {
+			color: @white;
+			}
+		} // end a
+
+	} // end div, .copyright
+
+} // end footer#foot
+
+
+// 6: Reg & Login Popups / User Dashboard
+
+body.popup {
+
+	#dashboard {
+
+		.tabset {
+
+			.current {
+
+				a {
+
+					.label {
+					background: none @remax-red;
+					border: none;
+					}
+					
+				} // end a
+
+			} // end .current
+
+		} // end .tabset
+
+	} // end #dashboard
+
+} // end body.popup
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

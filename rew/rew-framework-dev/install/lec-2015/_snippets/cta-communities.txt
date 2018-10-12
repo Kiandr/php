@@ -1,0 +1,41 @@
+<div class="well">
+	<div class="colset colset-2 colset-4-lg colset-4-xl">
+		<h3 class="text-center">Browse Communities</h3>
+		<div class="col nav text-center">
+			<ul>
+				<li><a href="#">Community Name</a></li>
+				<li><a href="#">Community Name</a></li>
+				<li><a href="#">Community Name</a></li>
+				<li><a href="#">Community Name</a></li>
+				<li><a href="#">Community Name</a></li>
+			</ul>
+		</div>
+		<div class="col nav text-center">
+			<ul>
+				<li><a href="#">Community Name</a></li>
+				<li><a href="#">Community Name</a></li>
+				<li><a href="#">Community Name</a></li>
+				<li><a href="#">Community Name</a></li>
+				<li><a href="#">Community Name</a></li>
+			</ul>
+		</div>
+		<div class="col nav text-center">
+			<ul>
+				<li><a href="#">Community Name</a></li>
+				<li><a href="#">Community Name</a></li>
+				<li><a href="#">Community Name</a></li>
+				<li><a href="#">Community Name</a></li>
+				<li><a href="#">Community Name</a></li>
+			</ul>
+		</div>
+		<div class="col nav text-center">
+			<ul>
+				<li><a href="#">Community Name</a></li>
+				<li><a href="#">Community Name</a></li>
+				<li><a href="#">Community Name</a></li>
+				<li><a href="#">Community Name</a></li>
+				<li><a href="#">Community Name</a></li>
+			</ul>
+		</div>
+	</div>
+</div>

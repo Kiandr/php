@@ -1,0 +1,259 @@
+.ui-datepicker-buttonpane button {
+    padding: 9px 14px;
+    background: #edecef;
+    color: #60606d;
+    border: 1px solid #eaeaea;
+    border-radius: 2px;
+    font: 16px/24px Lato, sans-serif;
+    overflow: hidden;
+    position: relative;
+
+    /* Safari */
+    transition: all .5s;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-decoration: none;
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: center;
+    border-bottom-color: #c1c1c9;
+    display: inline-block;
+}
+
+.ui-datepicker-buttonpane button:first-child {
+    width: calc(50% - 12px);
+    float: left;
+}
+
+.ui-datepicker-buttonpane button:last-child {
+    width: calc(50% - 12px);
+    float: right;
+}
+
+.ui-tabs-hide {
+    display: none;
+}
+
+.ui-tabs-panel {
+    padding: 20px;
+}
+
+.ui-dialog {
+    border: 1px solid #c1c1c9;
+    border-radius: 2px;
+    background: #fff;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
+}
+
+.ui-dialog-titlebar {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.ui-dialog-content {
+    padding: 12px;
+}
+
+.ui-dialog-titlebar-close {
+    float: right;
+}
+
+.ui-slider {
+    border: 0;
+    background: #c1c1c9;
+    border-radius: 7px;
+    position: relative;
+}
+
+.ui-slider-horizontal {
+    height: 6px;
+}
+
+.ui-slider-vertical {
+    height: 15em;
+    width: 6px;
+}
+
+.ui-slider-handle {
+    width: 20px;
+    height: 20px;
+    background: #0096d8;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    margin-left: -10px;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+    position: absolute;
+    display: block;
+    top: 50%;
+    margin-top: -10px;
+}
+
+.ui-slider-vertical .ui-slider-handle {
+    left: 50%;
+    margin-left: -10px;
+}
+
+.ui-slider-handle:hover {
+    opacity: .8;
+}
+
+.ui-slider-range {
+    border: 0;
+    border-radius: 7;
+    background: #0096d8;
+    position: absolute;
+}
+
+.ui-slider-horizontal .ui-slider-range {
+    top: 0;
+    height: 6px;
+}
+
+.ui-slider-vertical .ui-slider-range {
+    left: 0;
+    width: 6px;
+}
+
+.ui-autocomplete.ui-menu {
+    border: 1px solid #c1c1c9;
+    border-radius: 2px;
+    background: #fff;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    z-index: 900;
+    max-height: 300px;
+    overflow: auto;
+}
+
+.ui-autocomplete.ui-menu li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+.ui-autocomplete.ui-menu a {
+    display: block;
+    padding: 12px;
+    color: inherit;
+    cursor: pointer;
+}
+
+.ui-autocomplete.ui-menu a:hover {
+    background: #0096d8;
+    color: #fff;
+}
+
+.ui-autocomplete.ui-menu a:hover strong.v,
+.ui-autocomplete.ui-menu a:hover .v {
+    color: #fff;
+}
+
+.ui-autocomplete.ui-menu img {
+    height: 64px;
+    width: 84px;
+    float: left;
+    margin: 4px 24px 0 0;
+}
+
+.ui-autocomplete.ui-menu .bd .v {
+    display: block;
+    color: #40404e;
+}
+
+.ui-autocomplete.ui-menu .bd strong.v {
+    color: #444;
+}
+
+.ui-autocomplete.ui-menu .bd {
+    overflow: hidden;
+    display: block;
+}
+
+.ui-dialog-buttonset {
+    padding: 12px 6px;
+    overflow: hidden;
+}
+
+.ui-dialog.ui-widget {
+    /* these are inline and need important */
+    left: 50% !important;
+    top: 50% !important;
+    width: 680px !important;
+    position: fixed;
+    z-index: 9999 !important;
+    max-width: calc(100% - 24px);
+    max-height: calc(100% - 24px);
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    overflow: auto; /* rather do this on .ui-dialog-content, but inline display: block/none prevents decent display */
+}
+
+#app__main .ui-sortable-placeholder {
+    background: #ddd;
+    border-color: #ccc;
+}
+
+.ui-sortable-helper {
+    position: absolute;
+    pointer-events: none;
+    z-index: 9999;
+    border: 1px solid #f8f7fa;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .1);
+    margin: 0;
+    padding: 0 10px;
+    opacity: .95 !important;
+}
+
+/* Make the autocomplete dropdown responsive on smaller screens */
+@media only screen and (max-width: 500px) {
+    .ui-autocomplete.ui-menu {
+        z-index: 900;
+        overflow: auto;
+    }
+}
+
+/* jqueryui tabs - Currently used on lead summary page */
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+    border: 1px solid #0096d8;
+    background: #0096d8;
+}
+
+/* Fix broken button display for date/time picker (BREW48-2674) */
+.ui-timepicker-div {
+    border: 1px solid transparent;
+}
+
+/* Fix low contrast highlight color for date/time picker (BREW48-2674) */
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight {
+    color: #fff;
+}
+
+/* Fix import listings content section (BREW48-2906) */
+
+#import-success.ui-state-highlight,
+#import-errors.ui-state-highlight {
+    color: #101005;
+    padding: 12px;
+}
+
+@media (max-width: 680px) {
+    .ui-dialog .ui-dialog-titlebar-close {
+        padding: 8px !important;
+        width: 40px !important;
+        height: 40px !important;
+        top: 24% !important;
+        touch-action: manipulation;
+    }
+}

@@ -1,0 +1,4 @@
+# Don't require authorization for images
+<FilesMatch "\.(jpe?g|png|gif)$">
+Require all granted
+</FilesMatch>

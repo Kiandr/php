@@ -1,0 +1,113 @@
+#app__sidebar {
+    z-index: 999;
+    width: 200px;
+    z-index: 999;
+    padding: 0;
+    float: left;
+    flex-shrink: 0;
+    transition: all .5s;
+    background-color: #f8f7f7;
+}
+
+@media only screen and (min-width: 901px) {
+    #app__sidebar .nav__dropdown-toggle {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #app__sidebar .mnu--stacked {
+        overflow-y: auto;
+        max-height: calc(100vh - 25%);
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #app__sidebar {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: auto;
+        background: #fff;
+        padding: 0;
+        box-shadow: 0 0 3px rgba(0, 0, 0, .05);
+        z-index: 1040;
+    }
+
+    #app__sidebar::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1005;
+        content: "";
+        width: 24px;
+        height: 60px;
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 1)));
+    }
+
+    #app__sidebar .mnu.mnu--stacked {
+        -webkit-overflow-scrolling: touch;
+        overflow-x: auto;
+    }
+
+    #app__sidebar .mnu.mnu--stacked li .icon,
+    #app__sidebar .nav__dropdown-toggle .icon {
+        display: block;
+        margin: 0 auto;
+        z-index: -1;
+        pointer-events: none; /* Prevent svg icons in mobile nav from receiving click events */
+    }
+
+    #app__sidebar .nav__dropdown-toggle {
+        border: none;
+        background: transparent;
+        appearance: none;
+        font-size: 12px;
+        line-height: 12px;
+        width: 80px;
+        color: #40404e;
+        padding: 6px 0 12px;
+        display: block;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        cursor: pointer;
+    }
+
+    .mnu.mnu--stacked {
+        position: relative;
+        display: flex;
+    }
+
+    .mnu.mnu--stacked > ul {
+        display: flex;
+        margin-left: 20px !important;
+    }
+
+    .mnu.mnu--stacked > ul > li {
+        float: left;
+    }
+
+    .mnu.mnu--stacked > ul > li:last-of-type {
+        margin-right: 24px;
+    }
+
+    #app__sidebar .mnu.mnu--stacked li a {
+        font-size: 12px;
+        padding: 12px;
+        line-height: 12px;
+        white-space: nowrap;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #app__sidebar .mnu.mnu--stacked li a {
+        padding: 6px;
+        font-size: 10px;
+    }
+}
