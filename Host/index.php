@@ -19,4 +19,7 @@ include_once 'Db.php';
 // $karray->printAuthorArray();
 
 $myDb = new Db();
-//$myDb->connect();
+$myDb->connect();
+//insertId
+//$myDb->insertId();
+$myDb->Select();
