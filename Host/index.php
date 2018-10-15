@@ -3,7 +3,11 @@
 //include_once 'Person.php';
 //include_once 'Author.php';
 //include_once 'KArray.php';
+//require_once 'Form.php';
 include_once 'Db.php';
+
+$mydb = new Db();
+$mydbdb->GetAlLFromUser();
 
 //$newAuthor = new Author("Samuel Langhorne", "Clemens", 1899);
 
@@ -18,8 +22,8 @@ include_once 'Db.php';
 // $karray->setAuthorAssositiveArray($authorsAssociative);
 // $karray->printAuthorArray();
 
-$myDb = new Db();
-$myDb->connect();
-//insertId
-//$myDb->insertId();
-$myDb->Select();
+// $myDb = new Db();
+// $myDb->connect();
+// $myDb->Select();
+
+// Building Forms
