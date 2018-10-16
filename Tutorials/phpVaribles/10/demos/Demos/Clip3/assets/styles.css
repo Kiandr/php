@@ -1,0 +1,22 @@
+* { padding: 0; margin: 0; font-family: sans-serif;  font-size: 18px;  color: #FCFBF7; background: #6D6649; -webkit-box-sizing: border-box;    -moz-box-sizing: border-box; box-sizing: border-box;}
+h2 { font-size: 30px;  padding-top: 40px; background: inherit; }
+h3 { font-size: 25px;  margin-bottom: 50px; background: inherit; }
+body { }
+div { margin: 0 0 20px 0; }
+pre { font-family: monospace; }
+label { float: left; display: block; width: 200px; text-align: right; padding-right: 20px; }
+input, textarea, select { width: 400px; border: solid 3px #322C1C; padding: 5px; background: #FCFBF7; color: #322C1C; }
+input[type=submit] { background: #322C1C; border: solid 5px #464029; color: #FCFBF7; padding: 5px;  }
+input[type=file] { background: #6D6649; border: 0; color: #FCFBF7; padding: 5px;  }
+img { height: 150px; float: left; margin-right: 40px; }
+
+#Body { width: 700px; margin: 0 auto; text-align: left; }
+#Body div { text-align: center;}
+#Body > div { padding-top: 100px; }
+#HeaderWrapper { background: #322C1C; width: 100%; margin: 0 0 50px 0; }
+#Header {  width: 500px; overflow: hidden; margin: 0 auto 0 auto; background: inherit;  }
+.multiple input { width: auto; margin: 0 15px 0 5px; }
+.multiple { font-size: 14px; }
+.submit { margin-top: 50px; font-size: 14px; }
+.submit input { width: auto; margin: 0 15px 0 5px; float: left; }
+

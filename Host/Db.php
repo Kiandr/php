@@ -8,13 +8,13 @@ private $dbServer = "localhost";
 private $dbName = "Test";
 function __construct(){}
 
-public function InsertIntoUser($name, $gender, $color){
+public function InsertIntoUser($name, $gender, $color, $password){
     $connection = new mysqli($this->dbServer, $this->dbUserName, $this->dbPassword, $this->dbName);
     echo "<pre>";
     print_r($user);
     print_r($connection);
 
-    $query = "INSERT INTO users (name, gender, colour) VALUES ('$name', '$gender', '$color')";
+    $query = "INSERT INTO users (name, gender, colour, password) VALUES ('$name', '$gender', '$color', 'password_hash($password, PASSWORD_DEFAULT)')";
     print_r($query);
     $connection->query($query);
     
@@ -55,7 +55,37 @@ public function GetAlLFromUser(){
     $connection->close();
     return result;
 }
+public function Login($user, $pass){
+    echo "going to login ";
+    $connection = new mysqli($this->dbServer, $this->dbUserName, $this->dbPassword, $this->dbName);
+    //echo "<pre>";
+    //print_r($user);
+    //print_r($pass);
 
+    $query = sprintf("SELECT * FROM users WHERE name='%s'",$user);
+    //"SELECT count(*) FROM users WHERE users.name = '$user'";
+    
+    echo $query;
+    $result = mysqli_query($connection, $query);
+    print_r($result);
+    foreach ($result as $row){
+        echo "<li>";
+        echo htmlspecialchars($row['name']);
+        echo htmlspecialchars($row['gender']);
+        echo htmlspecialchars($row['colour']);
+        echo "</li>" ;
+    }
+
+
+    
+    if($connection->connect_errno)
+    {
+        echo "Database Connection Failed. Reason: ".$connection->connect_error;
+        exit("Database Connection Failed. Reason: ".$this->myConnection->connect_error);
+    }
+    $connection->close();
+
+}
 public function connect(){
 $dbPassword = "root";
 $dbUserName = "root";
