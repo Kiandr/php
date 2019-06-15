@@ -1,3 +1,0 @@
-<div class="msg">
-    <p>If you know of a business or organization that should appear in our directory, please <a href="/directory/add/">add it</a>!</p>
-</div>

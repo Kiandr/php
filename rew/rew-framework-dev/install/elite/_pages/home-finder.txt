@@ -1,4 +1,0 @@
-<h1>Home Finder</h1>
-<p>Great new homes come on the market every day and many are sold before they've even been advertised. If you're looking for real estate in this area, we can help you beat other home buyers to the hottest new homes for sale on the market. Just fill out the form below and we'll get back to you personally with your best matches.</p>
-<p>#form-buyers#</p>
-<p class="footnote">*Your information will never be shared with any third party.</p>

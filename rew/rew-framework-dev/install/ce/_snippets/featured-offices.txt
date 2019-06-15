@@ -1,7 +1,0 @@
-{
-    "name": "offices",
-    "config": {
-        "template": "cover.tpl.php",
-        "limit": 2
-    }
-}

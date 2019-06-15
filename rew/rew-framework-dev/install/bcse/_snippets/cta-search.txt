@@ -1,9 +1,0 @@
-<header>
-	<h3 class="small-caps">Technology to fit you</h3>
-	<h2>At Home or on the go, Listings are always with you</h2>
-	<hr>
-</header>
-<div class="body">
-	<p>When it comes to convenience, our site is unparalleled. Whether you're in the comfort of your home, or on the go, our site works flawlessly on multiple devices so you can find the information you need.</p>
-	<a class="buttonstyle small-caps colored-bg2" href="/idx/">Search Homes</a>
-</div>

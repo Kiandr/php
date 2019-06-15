@@ -1,1 +1,0 @@
-<?php /* empty file to prevent default module.js.php */ ?>

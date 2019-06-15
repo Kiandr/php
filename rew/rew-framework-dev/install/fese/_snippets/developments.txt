@@ -1,9 +1,0 @@
-{
-    "_comment": "Developments Module",
-    "name": "developments",
-    "config": {
-        "template": "results.tpl.php",
-        "javascript": "results.js.php",
-        "stylesheet": "results.css.php"
-    }
-}

@@ -1,2 +1,0 @@
-// Add form
-import './add';

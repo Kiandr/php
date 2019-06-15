@@ -1,7 +1,0 @@
-/* Truncate blog link title on smaller screens */
-.bar .bar__title {
-    display: inline-block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}

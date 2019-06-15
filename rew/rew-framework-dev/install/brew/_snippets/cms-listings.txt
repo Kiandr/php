@@ -1,6 +1,0 @@
-{
-	"_comment" : "CMS Listings Module",
-	"name" : "cms-listings",
-	"config" : {
-	}
-}

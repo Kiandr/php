@@ -1,6 +1,0 @@
-<section class="uk-container pod-contact-form-boxed">
-    <div class="uk-container">
-        <h2>{heading}</h2>
-        #form-seller-radio-boxed#
-    </div>
-</section>

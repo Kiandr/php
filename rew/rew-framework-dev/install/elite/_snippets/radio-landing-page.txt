@@ -1,7 +1,0 @@
-{
-    "_comment" : "Radio Landing Page Module",
-    "name" : "radio-landing-page",
-    "config" : {
-        "type" : "radio"
-    }
-}

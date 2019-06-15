@@ -1,1 +1,0 @@
-<?php /* this empty file disables default details.js.php */ ?>

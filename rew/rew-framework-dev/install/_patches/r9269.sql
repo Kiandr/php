@@ -1,1 +1,0 @@
-ALTER TABLE `default_info` DROP COLUMN `gapikey`;

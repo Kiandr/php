@@ -1,6 +1,0 @@
-SHELL=/bin/bash
-PATH=/usr/local/bin:/bin:/usr/bin
-MAILTO="cronlogs@realestatewebmasters.com"
-PHPRC=~/etc/
-#X	X	*	*	*	php ~/app/httpdocs/backend/cron/master.php
-#*/15	*	*	*	*	php ~/app/httpdocs/backend/cron/maintenance.php

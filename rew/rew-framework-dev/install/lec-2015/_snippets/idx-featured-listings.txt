@@ -1,7 +1,0 @@
-{
-	"_comment" : "Featured Listings Module",
-	"name" : "idx-listings",
-	"config" : {
-		"viewClass" : "colset equal-heights colset-1-sm colset-2-md colset-3-lg colset-3-xl"
-	}
-}

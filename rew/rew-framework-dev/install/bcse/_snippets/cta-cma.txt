@@ -1,9 +1,0 @@
-<header>
-	<h3 class="small-caps">Money Matters</h3>
-	<h2>Find out where you stand ...</h2>
-	<hr>
-</header>
-<div class="body">
-	<p>Compare your home to others in your neighborhood, Calculate your Mortgage, and find a Lender.</p>
-	<a class="buttonstyle small-caps colored-bg2" href="/cma.php">Get Started!</a>
-</div>

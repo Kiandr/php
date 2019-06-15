@@ -1,9 +1,0 @@
-<div class="social-share">
-	<a class="webicon facebook" href="#" title="Find Us on Facebook" target="_blank">Facebook</a>
-	<a class="webicon twitter" href="#" title="Find Us on Twitter" target="_blank">Twitter</a>
-	<a class="webicon googleplus" href="#" title="Find Us on Google+" target="_blank">Google+</a>
-	<a class="webicon linkedin" href="#" title="Find Us on LinkedIn" target="_blank">LinkedIn</a>
-	<a class="webicon pinterest" href="#" title="Find Us on Pinterest" target="_blank">Pinterest</a>
-	<a class="webicon youtube" href="#" title="Find Us on YouTube" target="_blank">YouTube</a>
-	<a class="webicon rss" href="/blog/rss/" title="Subscribe to RSS" target="_blank">RSS</a>
-</div>

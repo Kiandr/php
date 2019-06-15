@@ -1,5 +1,0 @@
-{
-	"_comment" : "Sitemap Module",
-	"name" : "sitemap",
-	"config" : {}
-}

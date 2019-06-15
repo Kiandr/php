@@ -1,5 +1,0 @@
-<section class="uk-container uk-container pod-sellers-intro">
-    <h1>{heading}</h1>
-    <div>{as-heard-on}</div>
-    <a data-modal-auto="contact" href="/contact.php" class="uk-button uk-button-large">{sub-heading}</a>
-</section>

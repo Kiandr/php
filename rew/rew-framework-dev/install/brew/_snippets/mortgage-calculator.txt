@@ -1,6 +1,0 @@
-{
-	"_comment" : "Mortgage Calculator Module",
-	"name" : "mortgage-calculator",
-	"config" : {
-	}
-}

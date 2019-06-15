@@ -1,7 +1,0 @@
-<section class="uk-container pod-radio-tabs">
-    <div class="uk-margin uk-grid" data-uk-grid-margin="">
-        <div class="uk-width-1-1">
-            {tab-content}
-        </div>
-    </div>
-</section>

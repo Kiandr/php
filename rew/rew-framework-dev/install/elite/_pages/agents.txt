@@ -1,2 +1,0 @@
-<h1>Our Agents</h1>
-<p>#agents#</p>

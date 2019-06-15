@@ -1,4 +1,0 @@
-//Functions for Directory
-(function() {
-
-})();

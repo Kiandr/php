@@ -1,1 +1,0 @@
-<?php /* empty to disable default BREW tpl */ ?>

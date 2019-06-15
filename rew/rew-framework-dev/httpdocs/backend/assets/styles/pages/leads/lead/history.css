@@ -1,9 +1,0 @@
-#history-timeline .expand-event {
-    text-decoration: none;
-}
-
-@media (max-width: 900px) {
-    #history-timeline .expand-event {
-        font-size: 26px;
-    }
-}

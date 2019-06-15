@@ -1,7 +1,0 @@
-{
-    "_comment": "Communities List",
-    "name": "communities-list",
-    "config": {
-        "thumbnails":"500x500"
-    }
-}

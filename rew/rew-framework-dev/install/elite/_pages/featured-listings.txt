@@ -1,2 +1,0 @@
-<h1>Our Featured Listings</h1>
-<p>#idx-featured-search#</p>

@@ -1,3 +1,0 @@
-<h1>Chicago Real Estate</h1>
-<span>Your Search Ends Here</span>
-<a class="uk-button uk-button-slideshow" href="#">Call To Action</a>

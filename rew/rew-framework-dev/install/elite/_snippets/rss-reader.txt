@@ -1,6 +1,0 @@
-{
-    "_comment" : "RSS Reader Module",
-    "name" : "rss-reader",
-    "config" : {
-    }
-}

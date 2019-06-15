@@ -1,7 +1,0 @@
-<!--
-<div class="colset colset-2-sm colset-4 footer-logos">
-	<div class="col">
-		<img src="/inc/skins/lec-2015/img/logo-fair-housing.png" alt="">
-	</div>
-</div>
--->

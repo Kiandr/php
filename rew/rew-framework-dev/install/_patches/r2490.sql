@@ -1,1 +1,0 @@
-ALTER TABLE `directory_categories` ADD `order` INT( 11 ) UNSIGNED NOT NULL AFTER `meta_tag_desc` ;

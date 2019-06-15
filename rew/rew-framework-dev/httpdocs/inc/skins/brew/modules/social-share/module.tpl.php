@@ -1,1 +1,0 @@
-<?php rew_snippet('social-share'); ?>

@@ -1,2 +1,0 @@
--- Adding Mobile IDX Registration
-ALTER TABLE  `users` CHANGE  `forms`  `forms` SET(  'Contact Form',  'Approve Form',  'Buyer Form',  'Seller Form',  'IDX Registration',  'IDX Inquiry',  'Mobile IDX Registration' ) NOT NULL DEFAULT  '';
